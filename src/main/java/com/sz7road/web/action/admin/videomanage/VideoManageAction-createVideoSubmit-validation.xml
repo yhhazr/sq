@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="videoInfo.videoTitle">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="admin.video.validate.videoTitle.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">50</param>
+			<message key="admin.video.validate.videoTitle.length.error"></message>
+		</field-validator>
+	</field>
+	
+	<field name="videoInfo.videoLink">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="admin.video.validate.videoLink.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">100</param>
+			<message key="admin.video.validate.videoLink.length.error"></message>
+		</field-validator>
+	</field>
+	
+	<field name="uploadPath">
+		<field-validator type="required">
+			<param name="trim">true</param>
+			<message key="admin.video.validate.uploadPath.null.error"></message>
+		</field-validator>
+	</field>
+
+</validators>

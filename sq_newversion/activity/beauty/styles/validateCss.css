@@ -1,0 +1,202 @@
+html,body,div,p,h1,h2,h3,a,ul,li,form,span,ol,table{ margin:0; padding:0;}
+img,table{ border:none;}
+em{ font-style:normal;}
+ul,li,ol{ list-style:none;}
+/*
+@font-face
+{
+font-family: MSYH;
+src: url('../images/MSYH.TTF');
+}
+*/
+/*IE6 fixed bug*/
+
+/*
+* html{overflow:hidden;}
+* html body{height:100%;overflow:auto;}
+* html #pop{position:absolute;}
+*/
+
+body{ background-color:#fff; text-align:center;font:normal 12px/1.6 Verdana, Geneva, sans-serif ,"宋体";}
+a:link{ text-decoration:none;}
+.orderDv a:hover{ text-decoration:none;}
+.clear{ clear:both;}
+.clear:after{display:block;visibility:hidden; height:0px; line-height:0; overflow:hidden; clear:both; content:"";}
+.wrap{ margin:0 auto;text-align:center;}
+.grayCo{ color:#ccc;}
+.color66{ color:#666;}
+.noBold{ font-weight:normal;}
+.darkRd{color:#a2144b;}
+.red{ color:#ec1669;}
+.size12{ font-size:12px; font-weight:normal;}
+.size16{ font-size:16px;}
+/*--弹出框--*/
+#pop{z-index:99; position:fixed; left:50%; top:50%; font-size:14px; font-weight:bold;}
+.titHd{ width:100%; height:46px; position:relative; }
+.titHd h2, .rank h3, .moodBell h3{background:url(../images/titleHd.png) left top no-repeat;}
+.titHd h2{ line-height:46px; text-align:left; color:#fff;  padding:0 20px;font-size:20px; font-weight:bold; text-shadow:0px 0px 3px #4e000d;}
+.closePo{ font-size:20px; color:#fff; position:absolute; top:8px; right:20px; display:inline-block; overflow:hidden; width:30px; height:30px; text-indent:-9999em; background:url(../images/orderBt.png) right top no-repeat;}
+.popCt{padding:30px; background-color:#fffbfb; color:#6e0c31; border:1px solid #78002d; border-top:none; -webkit-border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-o-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;}
+.popCt .orderDv{padding-top:30px; text-align:center;}
+.popCt .orderDv a{ display:inline-block; width:182px; height:53px; line-height:53px; color:#fff; background:url(../images/orderBt.png) left top no-repeat; font-size:20px; font-weight:bold; text-shadow:0px 0px 3px #4e000d;}
+.popCt .orderDv a:hover{ background-position:left -58px;}
+.popCt em, .t{ color:#ec0032;}
+.popCt .tips{padding-top:30px;}
+.formList li input.noBor{ border:none;}
+.formList li{ position:relative; margin-bottom:24px; padding-left:100px; text-align:left;zoom:1;}
+.formList li.noMarg{margin-bottom:0px;}
+.formList li input{ width:200px; height:24px;padding:0 8px; line-height:24px; border:1px solid #c81a63;}
+.formList li input.authCode{ width:80px;}
+.formList li.norInput input, .buyUser .formList li input.cust-bt, .formList li .norInput input{width:14px; height:14px; vertical-align:middle; border:none;margin-right:4px;}
+.formList li input.flower-many{width:86px;}
+.cust-flower{margin-right:5px;}
+.formList li textarea, .assInput{ border:1px solid #c81a63;}
+.formList li label{ position:absolute; left:0; top:2px; width:92px; text-align:right;}
+.assInput{width:300px;}
+#buyFr .formList li{margin-bottom:12px;}
+.cho-bank span{ color:#666; font-weight:normal; font-size:12px; display:inline-block; width:33%; text-align:left;}
+
+
+#dataTip, #loginPo, #flower, #joinPop, #message, #buyFr,#dataRule,#dataReward, #pay-result, #giving-ok, #giving-fail, #fan-list,#buy-result,#tips, #dataTipS{ display:none;}
+.dataTip, .loginPo, .flower, .joinPop, .message,.dataRule,.dataReward,  .giving-ok, .giving-fail, .fan-list ,.tips, .dataTipS{ width:450px;}
+.buyFr, .pay-result,.buy-result{ width:528px;}
+.joinPop .titHd h2, .buyFr .titHd h2,.pay-result .titHd h2,.buy-result .titHd h2{ background-position:left -54px;}
+.showName{padding-right:25px;}
+.seePro, .orderMess a{ display:inline-block; width:102px; height:28px; line-height:28px; color:#bc0047;text-align:center; background:url(../images/orderBt.png) left -112px no-repeat;}
+.seePro{ display:none;}
+.joinPop .popCt .orderDv{padding-top:15px;}
+.t{margin-left:3px;}
+.deletBt{ display:inline-block; position:absolute; width:18px; height:18px; background:url(../images/deleBt.png) left top no-repeat;right:-5px;top:-5px;}
+.wrapImg{ position:relative; display:inline-block; margin-right:15px; cursor:pointer; border:1px solid #e0244b; vertical-align:middle;}
+.wrapImg img{border:none;}
+#localImag{padding-top:10px; margin-bottom:5px;}
+.imgIE7{ display:inline-block;}
+
+.buyUser .formList li input{width:60px;}
+.buyUser{ border-bottom:1px dotted #ac153d; position:relative; text-align:right; padding-bottom:7px;margin-bottom:12px;}
+.buyUser .showImg{ text-align:center; display:inline-block; width:76px; height:88px;float:left; border:1px solid #ac153d;margin-right:40px;}
+.buyUser img{ vertical-align:middle;}
+
+#codeImg{margin:0 7px;}
+.cgCode{ color:#ac153d; text-decoration:underline;}
+.formList li.payType{padding-left:85px;}
+.payType input{margin-left:15px;}
+
+.message .popCt{ text-align:left;}
+.mesList{ border-bottom:1px dotted #ac153d; line-height:28px;padding:0 0 20px 20px;}
+.orderMess{ text-align:right; padding-top:12px;}
+.orderMess a.cancelBt{ background-position:left -142px; color:#666; margin-right:10px;}
+.seePro:hover, .commiBt:hover{ background-position:right -112px;}
+
+
+/*--美女风采--*/
+.mienWrap{min-width:1040px;background:#fff url(../images/wrapBg.jpg) center top no-repeat; margin:0 auto; text-align:center;}
+.head{ width:998px; height:480px; background:url(../images/wrapCont.jpg) center top no-repeat;margin:0 auto; }
+.butt{ position:relative;}
+.butt a{ position:absolute; overflow:hidden; text-indent:-9999em;}
+.indexBt{ width:122px; height:32px; right:0; top:0;}
+.applyBt{width:100px; height:100px;right:108px; top:40px;}
+.mienBt{width:150px;height:47px;left:20px;top:423px;}
+.forumBt{width:151px;height:47px;left:197px;top:423px;}
+.ruleBt{width:230px;height:67px;left:384px;top:414px;}
+.awardBt{width:151px;height:47px;left:649px;top:422px;}
+.joinBt{width:151px;height:47px;left:827px;top:423px;}
+
+.search{ text-align:left; height:65px; background:url(../images/searDv.png) left top no-repeat; margin:0 auto; width:978px;padding:12px 10px 0 10px;}
+.search input{ width:166px; padding-left:7px; height:20px; line-height:20px; border:1px solid #bab8b8; text-align:left; margin-right:12px; vertical-align:top;}
+.search label{display:inline-block; height:26px; line-height:26px; color:#333; font-weight:bold; font-size:14px;}
+.search a{ display:inline-block; height:24px; padding-left:16px; background:url(../images/meinBt.png) left top no-repeat; color:#474747; margin-right:12px;}
+.search a span{display:inline-block; height:24px; padding-right:16px; background:url(../images/meinBt.png) right -26px no-repeat; line-height:24px;}
+#serverList{margin-left:10px;}
+#serverList,.search a.searBt{ vertical-align:middle;}
+
+.meinLogin{float:right; overflow:hidden;}
+.meinLogin input{ width:130px; height:24px;}
+i{font-style:normal;}
+.gameName,.regBtn{float:right;}
+.gameName{padding-right:15px;line-height:26px;}
+.belleList{ width:958px;padding:0 20px 20px 20px; background:url(../images/mienRpt.png) left top repeat-y; margin:0 auto; overflow:hidden;}
+
+.belleList .moodBell{ float:right; width:677px;min-height:1000px;_height:1000px;}
+.moodBell .girlList{border-left:1px solid #fdbeca;border-right:1px solid #fdbeca;border-bottom:1px solid #fdbeca;  background-color:#fef1f3;padding-bottom:20px; border-radius:0 0 5px 5px;}
+.moodBell ul{width:665px;padding-left:12px;  overflow:hidden;zoom:1;}
+
+.moodBell h3{ height:30px;}
+.moodBell ul li{background: #fff; padding:7px 6px 7px 7px; width:200px; height:266px; background:url(../images/liBk1.png) left top no-repeat; float:left; margin-right:8px; margin-bottom:14px; display:inline; overflow:hidden;}
+/*.moodBell ul li{border: 1px solid #c8c8c8;-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);-moz-box-shadow: 0 0 3px rgba(0,0,0,.2); box-shadow: 0 0 3px rgba(0,0,0,.2);-webkit-border-radius: 5px; -moz-border-radius: 5px;border-radius: 5px;}*/
+.belong,.f_carry{ overflow:hidden; padding-top:5px; text-align:left;}
+.belong p{float:right; text-align:left; color:#888;}
+.f_carry{ text-align:left;margin-bottom:7px;}
+.f_ord{ float:right;}
+.f_ord a,.red_bt{ display:inline-block;padding-left:5px; height:18px; background:url(../images/meinBt.png) left -63px no-repeat; color:#fff; text-decoration:none; margin-left:7px;}
+.f_ord a span, .red_bt span{ display:inline-block; padding-right:5px; height:18px;background:url(../images/meinBt.png) right -83px no-repeat;line-height:16px; *line-height:18px; cursor:pointer;}
+.f_many, .ico-s{background:url(../images/litIco.png) left top no-repeat;}
+.f_many{ display:inline-block; padding-left:22px;}
+.f_man{ background:#fed8df; height:60px; padding:0 7px; text-align:left; overflow:hidden; overflow-y:auto;}
+
+.rank{ width:272px; float:left; padding-bottom:13px; background:url(../images/rankImg.png) left bottom no-repeat; margin-bottom:17px;}
+.rank h3, .moodBell h3{ text-indent:-9999em;  height:49px;}
+.rank_be h3{ background-position:left -155px;}
+.rank_mo h3{ background-position:left -207px; }
+.rank_fan h3{background-position:left -103px;}
+.rank_be li, .rank_fan li{margin:0 4px;}
+.rank_be li.cutBk, .rank_fan li.cutBk, .fan-list li.cutBk{ background-color:#feedf0;}
+.rank_be li.cut-Bk, .rank_fan li.cut-Bk{ background-color:#ffbac4; font-weight:bold;}
+.moodBell h3{ height:53px; background-position: left -266px;}
+.rank ol, .rank .rmo_img{ background:url(../images/rankRpt.png) left top repeat-y;}
+.rank ol li, .fan-list ol li{ position:relative; height:21px; padding:5px 3px 5px 36px;}
+.rank ol li.s_pic{padding:3px 6px; height:117px; font-size:14px; text-align:left; display:none;}
+.s_pic div{padding-left:137px; position:relative; background-color:#fff7f9; height:105px; padding-top:10px; font-size:14px;}
+.s_pic div img{ position:absolute; left:7px; top:13px;}
+.s_pic p{ line-height:24px;}
+.s_pic .s_t{color:#333;}
+.rank ol li em, .fan-list ol li em{ display:inline-block; width:20px; height:20px; position:absolute; left:7px; top:5px; background:url(../images/litIco.png) left -48px no-repeat; color:#fff; font-weight:bold; text-align:center;}
+.rank ol li em.fst, .fan-list ol li em.fst{ background-position:left -23px; color:#b74c6a;}
+.rank ol li em span{ display:inline-block;}
+.r_n{width:40%;}
+.r_a{width:30%;}
+.r_m{width:29%;}
+.r_n, .r_a, .r_m{display:inline-block; height:20px; line-height:20px; text-align:left;}
+#page a{margin:0 5px; color:#a2144b;}
+/*--支付--*/
+.payInfo{border-top:1px dotted #ac153d; border-bottom:1px dotted #ac153d; background:#fff; padding:18px 0;margin-bottom:24px;}
+.payInfo span{display:inline-block;}
+.payRes{margin-left:20px; margin-bottom:24px;text-align:left;}
+.payRes .ico-s{padding:20px 0 20px 86px; display:inline-block;}
+.payFail{ text-align:center;}
+.payFail .ico-s{ background-position:left -277px; text-align:left;}
+.paySucces{ text-align:center;}
+.paySucces .ico-s{background-position:left -207px; font-size:18px; font-weight:bold;}
+span.pay-m{ text-align:right; width:44%}
+span.pay-i{ text-align:left; text-indent:12px; width:55%; font-size:12px;}
+a.goBind{ color:#007fe1; text-decoration:underline; margin-left:10px;}
+/*--赠送结果--*/
+#giving-fail .ico-s{padding:10px 0 10px 70px; background-position:left -70px;text-align:left;}
+#giving-fail .orderDv{padding-top:10px;}
+#giving-ok .ico-s{padding:21px 0 21px 70px; margin-left:54px; text-align:left; background-position:left -136px;}
+/*--赠送排行榜--*/
+.fan-list ol{border-top:1px dotted #ac153d; border-bottom:1px dotted #ac153d;}
+.fan-head{padding-bottom:7px;}
+.fan-head span{ display:inline-block;}
+.fan-head .r_p{width:10%;}
+.fan-head .r_a{width:28%;}
+.fan-head .r_n{width:35%;}
+.fan-head .r_m{width:27%;}
+/*--错误提示--*/
+.wrongTip{ position:absolute; left:100px; top:26px; font-size:12px; color:#ff0000;}
+.buy-result{ text-align:left;}
+.buy-result .tit-pay{margin-bottom:16px;}
+.buy-result .pay-tip-ct{ background-color:#fff; border:1px solid #f5bac8; padding:20px;}
+#buy-result .orderDv a{width:142px; height:44px; line-height:44px; font-size:16px; background-position:left -176px;}
+#buy-result .orderDv a:hover{background-position:left -225px;}
+/*--轮播--*/
+#imgFocs{ overflow:hidden;}
+#imgFocs ul li{ float:left; display:inline; overflow:hidden;}
+#imgFocs .control{ height:26px; font-size:26px; line-height:26px;_font-size:13px; clear:both;}
+#imgFocs .control span{ cursor:pointer; margin-left:7px; color:#fff;}
+#imgFocs .control .cut_c{color:#f10950;}
+#imgFocs .control span.current{color:#ff0000;}
+
+
+
+

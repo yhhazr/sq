@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="js"><!--<![endif]-->
+<head id="www-7road-com">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Copyright" content="Copyright www.7road.com 2011. All Rights Reserved.">
+    <title>神曲</title>
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/sq-client.css" />
+</head>
+<body>
+    <div class="doc server clearfix"><!-- Document start -->	
+        <div class="container">
+            <div class="welcome clearfix">
+                <h1><em>ddt@7road.com</em> 欢迎您登录，请选择服务器！<a href="" class="logout">注销</a></h1>
+                <p><span class="last">双线105服 御龙超神</span> <a href="" class="gamestart"></a></p>
+            </div>
+
+            <div class="servers">
+                <div class="servers-area">
+                    <ul class="tabs">
+                        <li class="tab active"><a href="#">1-100区</a></li>
+                        <li class="tab"><a href="#">100-500区</a></li>
+                    </ul>
+                    <div class="quick-start clearfix">
+                        <form action="" method="POST" id="quick-start">
+                            <input type="text" id="number" name="number" />
+                            <input type="submit" id="submit" name="submit" class="" value="" />
+                        </form>
+                    </div>
+
+                    <div class="server-area">
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                        <div class="viewport">
+                            <div class="overview">
+                                <ul>
+                                    <li class="hot"><a href="">S21 众神时代1</a></li>
+                                    <li class="hot"><a href="">S21 众神时代2</a></li>
+                                    <li class="hot"><a href="">S21 众神时代3</a></li>
+                                    <li class="hot"><a href="">S21 众神时代4</a></li>
+                                    <li class="maintain"><a href="">S21 众神时代5</a></li>
+                                    <li class="hot"><a href="">S21 众神时代6</a></li>
+                                    <li class="hot"><a href="">S21 众神时代7</a></li>
+                                    <li class="hot"><a href="">S21 众神时代8</a></li>
+                                    <li class="hot"><a href="">S21 众神时代9</a></li>
+                                    <li class="hot"><a href="">S21 众神时代10</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="server-area none">
+                        <div class="scrollbar" style="height: 200px;"><div class="track" style="height: 200px;"><div class="thumb" style="top: 0px; height: 27.378507871321013px;"><div class="end"></div></div></div></div>
+                        <div class="viewport">
+                             <div class="overview">
+                                <li class="hot"><a href="">S21 众神时代</a></li>
+                                <li class="hot"><a href="">S21 众神时代</a></li>
+                                <li class="hot"><a href="">S21 众神时代</a></li>
+                                <li class="hot"><a href="">S21 众神时代</a></li>
+                                <li class="hot"><a href="">S21 众神时代</a></li>
+                                <li class="hot"><a href="">S21 众神时代</a></li>
+                                <li class="hot"><a href="">S21 众神时代</a></li>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </div><!-- Document end -->
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../../js/jquery.tinyscrollbar.min.js"></script>
+    <script src="../../js/sq-client.js"></script>
+    <script>
+        $(function (){
+            // tabs
+            $('.tab a').click(function (e){
+                e.preventDefault();
+            })
+            $('.tabs .tab').on('mouseenter', function (){
+                var index = $(".tabs li").index(this);
+                $(this).addClass("active").siblings().removeClass("active");
+                
+                $(".server-area").eq(index).show().siblings(".server-area").hide();
+                // scrollbar
+                $('.server-area').eq(index).tinyscrollbar({size:97,sizethumb:30});
+            });
+
+            // scrollbar
+            $('.server-area').tinyscrollbar({size:97,sizethumb:30});
+        })
+    </script>
+</body>
+</html>

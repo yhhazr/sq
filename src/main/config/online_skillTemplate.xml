@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="skillTemplate" namespace="/" extends="json-default">
+		
+		<action name="getSkillTemplate" class="com.sz7road.web.action.online.skillTemplate.SkillTemplateAction" method="getSkillTemplate">
+			<result name="success" type="json">
+				<param name="root">json</param>
+			</result>		
+		</action>
+		
+	</package>
+
+</struts>

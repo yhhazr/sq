@@ -1,0 +1,476 @@
+/* Document styles */
+body {
+	font: 12px '宋体', sans-serif;
+}
+.doc {
+	width:484px;
+	height:360px;
+	margin:0 auto 0;
+}
+.sign-in {
+	background:url("http://image.7road.com/client/signin-bg.png") no-repeat transparent;
+}
+.sign-up {
+	background:url("http://image.7road.com/client/signup-bg.png") no-repeat transparent;
+}
+.server {
+	background:url("http://image.7road.com/client/servers-bg.png") no-repeat transparent;
+}
+.news-page {
+	height:178px;
+}
+.container {
+	overflow:hidden;
+	position:relative;
+}
+#tips {
+	position:absolute;
+	right:0;
+	bottom:0;
+	color:red;
+	width:180px;
+	text-align:center;
+	font-size:14px;
+}
+label.tips {
+	clear:both;
+	color:red;
+	font-size:12px;
+	width:205px;
+	margin:0 0 0 190px;
+	text-align:left;
+	position:relative;
+	top:2px;
+	_position:absolute;
+	_top:27px;
+}
+label.error {
+	background:url("http://image.7road.com/client/i.png") no-repeat 0 -74px;
+	position:absolute;
+	right:4px;
+	top:2px;
+	width:19px;
+	height:19px;
+}
+#signup label.error {
+	right:120px;
+	top:2px;
+}
+#signup #tips {
+	left:0;
+	display:inline;
+}
+
+/* News styles */
+.news {
+	background:url("http://image.7road.com/client/news.png") no-repeat transparent;
+	margin:2px auto 0;
+	width:456px;
+	height:178px;
+}
+.news .hd {height:35px;}
+.news .bd .news-list {
+	margin:0 auto;
+	height:120px;
+	text-indent:15px;
+}
+.news .bd .news-list li {
+	color:#74a6a2;
+	height:25px;
+	line-height:25px;
+	list-style:square inside;
+	font-size:5px;
+	zoom:1;
+	position:relative;
+}
+.news .bd .news-list li.hot {
+	color:#ffd800;
+}
+.news .bd .news-list li span {
+	display:inline;
+	position:absolute;
+	right:5px;
+	bottom:0;
+	font-size:12px;
+}
+.news .bd .news-list li a {
+	color:#74a6a2;
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	text-decoration:none;
+}
+.news .bd .news-list li.hot a {
+	color:#ffd800;
+}
+.news .bd .news-list li a:hover {color:#fff;}
+
+/* Signin styles */
+.signin {
+	margin:0 auto;
+	width:456px;
+	padding-bottom:20px;
+	position:relative;
+}
+.signin-l{
+	float:left;
+	padding-top:1px;
+	width:253px;
+}
+.signin-l .field {
+	height:25px;
+	margin-top:20px;
+	width:253px;
+	position:relative;
+}
+.signin-l .field .title {
+	background-image:url("http://image.7road.com/client/t.png");
+	cursor:pointer;
+	text-indent:-9999px;
+	width:56px;
+	height:22px;
+	display:inline;
+	float:left;
+}
+.signin-l .field input {
+	background:none;
+	border:none;
+	color:#bfdeec;
+	float:right;
+	font-size:16px;
+	font-weight:bold;
+	line-height:23px;
+	height:23px;
+	width:185px;
+	text-indent:5px;
+}
+.signin .field .inside {
+	color:#77777d;
+	font-size:12px;
+	left:75px;
+	line-height:25px;
+	width:100px;
+	position:absolute;
+	display:none;
+}
+.signin-l .username-field .title {background-position:0 0;}
+.signin-l .password-field .title {background-position:0 -22px;}
+.signin-l .remember-field {
+	margin-top:15px;
+	padding-left:67px;
+	overflow:hidden;
+}
+.signin-l .remember-field .checkbox {
+	background:url("http://image.7road.com/client/i.png") no-repeat 0 -31px;
+	cursor:pointer;
+	display:block;
+	float:left;
+	width:21px;
+	height:21px;
+}
+.signin-l .remember-field .unchecked {background:url("http://image.7road.com/client/i.png") no-repeat 0 -52px;}
+.signin-l .remember-field .text {
+	cursor:pointer;
+	color:#7dddd5;
+	display:block;
+	font-size:14px;
+	float:left;
+	line-height:22px;
+	margin-left:5px;
+}
+.signin-l .remember-field input {display:none;}
+.signin-r {color:#86ebe3;float:right;width:189px;}
+.signin-r .submit-field input {
+	background:url("http://image.7road.com/client/btn.png?version=1.0") no-repeat 0 0;
+	border:none medium;
+	cursor:pointer;
+	display:block;
+	margin-top:5px;
+	width:187px;
+	height:108px;
+	text-indent:-9999px;
+}
+.signin-r .submit-field input:hover {background-position:-192px -1px;}
+.signin-r .submit-field a {
+	color:#86ebe3;
+	display:inline;
+	font-size:14px;
+	margin:0 0;
+}
+.signin-r .submit-field a.fl {float:left;margin-left:20px;}
+.signin-r .submit-field a.fr {float:right;margin-right:20px;}
+
+/* Signup styles */
+.signup {
+	margin:0 auto;
+	width:456px;
+}
+.signup .field {
+	height:25px;
+	margin-top:20px;
+	width:456px;
+	position:relative;
+}
+.signup .field .title {
+	background-image:url("http://image.7road.com/client/t.png");
+	cursor:pointer;
+	text-indent:-9999px;
+	display:inline;
+	float:left;
+	margin-left:80px;
+}
+.signup .field input {
+	background:none;
+	border:none;
+	color:#bfdeec;
+	font-size:16px;
+	font-weight:bold;
+	float:left;
+	line-height:20px;
+	height:20px;
+	width:155px;
+	text-indent:5px;
+	margin-left:12px;
+}
+.signup .field .inside {
+	color:#77777d;
+	font-size:12px;
+	left:190px;
+	line-height:23px;
+	position:absolute;
+	display:none;
+}
+.signup .username-field {margin-top:13px;}
+.signup .username-field .title {background-position:0 -43px;width:91px;height:25px;}
+.signup .password-field .title {background-position:0 -68px;width:93px;height:23px;}
+.signup .repeat-field .title {background-position:0 -93px;width:91px;height:24px;}
+.signup .captcha-field .title {background-position:0 -118px;width:93px;height:23px;}
+.signup .captcha-field img {
+	cursor:pointer;
+	margin-left:-61px;
+	_margin-left:-71px; /* for IE6 */
+	position:relative;
+}
+.signup .captcha-field .refresh {
+	color:#9fa1ab;
+	font-size:14px;
+	margin-left:10px;
+	width:100px;
+	*margin-left:5px;
+}
+.signup .submit-field {
+	height:109px;
+	margin-top:25px;
+	width:456px;
+	position:relative;
+}
+.signup .submit-field input {
+	background:url("http://image.7road.com/client/btn.png?version=1.0") no-repeat 0 -109px;
+	border:none medium;
+	cursor:pointer;
+	display:block;
+	float:none;
+	width:187px;
+	height:108px;
+	text-indent:-9999px;
+	margin:0 auto;
+}
+.signup .submit-field input:hover {background-position:-192px -110px;}
+.signup .submit-field a {
+	color:#86ebe3;
+	display:inline;
+	font-size:14px;
+	margin:0;
+	position:absolute;
+	right:45px;
+	bottom:0;
+}
+
+/* Server styles */
+.welcome {
+	width:456px;
+	margin:0 auto;
+}
+.welcome h1 {
+	color:#ffd39b;
+	font-size:12px;
+	line-height:25px;
+	height:25px;
+	text-indent:10px;
+	overflow:hidden;
+	position:relative;
+}
+.welcome h1 em {color:#ffea00;}
+.welcome h1 a.logout {color:#ff0000;}
+.welcome p {
+	height:88px;
+	overflow:hidden;
+}
+.welcome p .last {
+	display:inline;
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:35px;
+	width:215px;
+	height:43px;
+	line-height:43px;
+	text-indent:40px;
+	text-decoration:underline;
+}
+.welcome p .last, .welcome p .last a {color:#f9c804;}
+.welcome p .gamestart {
+	background:url("http://image.7road.com/client/btn.png?version=1.0") no-repeat 0 -219px;
+	display:inline;
+	float:right;
+	margin-top:-2px;
+	height:87px;
+	width:179px;
+	margin-right:10px;
+}
+.welcome p .gamestart:hover {background-position:-192px -220px;}
+.servers {
+	width:456px;
+	margin:0 auto;
+	position:relative;
+}
+.servers .servers-area {}
+.servers .servers-area .tabs {padding-left:10px;overflow:hidden;}
+.servers .servers-area .tabs li {
+	display:block;
+	float:left;
+	width:126px;
+	height:39px;
+}
+.servers .servers-area .tab a {
+	background:url("http://image.7road.com/client/tabs.png") no-repeat 0 -66px;
+	color:#98c7d1;
+	font-weight:bold;
+	display:block;
+	width:106px;
+	height:23px;
+	line-height:23px;
+	margin:8px auto 0;
+	text-align:center;
+}
+.servers .servers-area .tabs .active a {
+	background:url("http://image.7road.com/client/tabs.png") 0 -95px;
+	color:#56f5ff;
+	width:126px;
+	height:39px;
+	line-height:38px;
+	font-size:14px;
+	font-weight:bold;
+	margin:0 auto;
+}
+.servers .servers-area .tabs a:hover {text-decoration:none;}
+.servers .servers-area .none {display:none;}
+.servers .server-area {
+	width:456px;
+	margin:11px auto 0;
+}
+.server-area {
+	width:456px;
+	margin:10px 0;
+}
+.server-area .viewport {
+	width:439px;
+	height:120px;
+	overflow:hidden;
+	position:relative;
+	_float:left; /*for IE6*/
+}
+.server-area .overview {
+	color:#fff;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:0;
+	margin:0;
+}
+.server-area .scrollbar{
+	background:transparent url(http://image.7road.com/client/i.png) no-repeat -185px 0;
+	position:relative;
+	float:right;
+	width:17px;
+	padding:13px 0;
+}
+.server-area .track {
+	height:100%;
+	width:15px;
+	position:relative;
+	padding:0 1px;
+}
+.server-area .thumb {
+	background:transparent url(http://image.7road.com/client/i.png) no-repeat -169px 0;
+	height:30px;
+	width:15px;
+	margin:0 0 0;
+	cursor:pointer;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+}
+.disable {display:none; }
+.noSelect { user-select:none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+.servers .server-area ul {width:439px;overflow:hidden;}
+.servers .server-area li {
+	background-image:url("http://image.7road.com/client/tabs.png");
+	display:inline;
+	float:left;
+	width:204px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	margin:0 0 10px 10px;
+}
+.servers .server-area li a {
+	color:#d8c288;
+	font-size:14px;
+}
+.servers .server-area .hot {
+	background-position:0 0;
+}
+.servers .server-area .hot:hover {
+	background:url("http://image.7road.com/client/hot.png") -2px 0;
+}
+.servers .server-area .maintain {
+	background-position:0 -33px;
+}
+
+.quick-start {}
+.quick-start input {
+	background-color:transparent;
+	border:none medium;
+	float:left;
+}
+.quick-start input#number {
+	background:url("http://image.7road.com/client/i.png") no-repeat 0 -95px;
+	color:#ecd9b0;
+	font-size:14px;
+	width:45px;
+	height:24px;
+	line-height:24px;
+	margin:3px 0 0 167px;
+	text-indent:6px;
+}
+.quick-start input#submit {
+	background:url("http://image.7road.com/client/i.png") no-repeat 0 0;
+	height:30px;
+	width:125px;
+	margin:0 0 0 35px;
+}
+.quick-start #submit:hover {background:url("http://image.7road.com/client/gamestart.png") no-repeat -3px -2px;}
+
+/* IE styles */
+.ie6 .news-list li, .ie7 .news-list li {
+	list-style:square;
+	margin-left:20px;
+	text-indent:0;
+}
+
+/* Let's clear some floats */
+.clearfix:before, .clearfix:after {content:"\0020";display:block;height:0;overflow:hidden;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="registration" namespace="/" extends="default,json-default">
+		
+		<action name="registrationSubmit" class="com.sz7road.web.action.online.user.UserAction" method="registrationSubmit">
+				<result name="success" type="json"></result>
+				<result name="input" type="json"></result>
+		</action>
+		<action name="checkEmail" class="com.sz7road.web.action.online.user.UserAction" method="checkEmail">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="checkUserName" class="com.sz7road.web.action.online.user.UserAction" method="checkUserName">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="checkVerifyCode" class="com.sz7road.web.action.online.user.UserAction" method="checkVerifyCode">
+			<result name="success" type="json"></result>
+		</action>
+	
+	</package>
+	
+	<package name="onlineUser" namespace="/" extends="default,json-default">
+		<action name="loginSubmit" class="com.sz7road.web.action.online.user.UserAction" method="loginSubmit">
+			<result name="success" type="json"></result>	
+			<result name="input" type="json"></result>	
+		</action>
+		<action name="checkLogin" class="com.sz7road.web.action.online.user.UserAction" method="checkLogin">
+			<result name="success" type="json"></result>		
+		</action>
+
+		<action name="logout" class="com.sz7road.web.action.online.user.UserAction" method="logoutSubmit">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="indexLogout" class="com.sz7road.web.action.online.user.UserAction" method="indexLogout">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="loginGame" class="com.sz7road.web.action.online.user.UserAction" method="loginGame">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+	
+	<package name="sign" namespace="/" extends="default,json-default">
+		<action name="sign" class="com.sz7road.web.action.online.signmanage.SignAction" method="userSign">
+			<result name="success" type="json" />
+		</action>
+		<action name="exchangeGift" class="com.sz7road.web.action.online.signmanage.SignAction" method="exchangeGift">
+			<result name="success" type="json" />
+		</action>
+		
+		<action name="mytoken" class="com.sz7road.web.action.online.signmanage.SignAction" method="geneToken">
+			<result name="success" type="json" >
+				<param name="includeProperties">
+					token
+				</param>
+			</result>
+		</action>
+	</package>
+
+
+</struts>

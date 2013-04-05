@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华丽时装霸气来袭_第七大道《神曲》官方网站</title>
+<style type="text/css">
+*{ margin:0; padding:0;}
+a{ text-decoration:none}
+a:hover{ text-decoration:underline;}
+body{ background:#000818 url(images/index_body.jpg) no-repeat 50% 0;}
+.content{ width:1000px; margin:0 auto; position:relative; height:754px;}
+.goindex{ position:absolute; width:106px; height:32px; background:url(images/goindex.png) no-repeat; top:5px; left:14px; text-indent:-9999px;}
+.xiala{ position:absolute; width:267px; height:24px; background:url(images/xiala.png) no-repeat; top:5px; right:5px;}
+.xialabox{ width:267px;  position:absolute; top:24px; left:0; background-color:#2e81d1; display:none;}
+.xiala a,.xiala span{ cursor:pointer;height:24px; padding:0 10px; width:247px; color:#FFF; overflow:hidden; display:block; font:normal 12px/24px 宋体; text-decoration:none;}
+.xiala a:hover{ background:#266bae;}
+.xiala a.first:hover{ background:none;}
+.nav{ width:1000px; height:150px; position:absolute; left:0px; top:322px; z-index:20;background:url(images/navbg.jpg) no-repeat 0 0;}
+.nav a{ float:left; height:150px; width:250px; background-image:url(images/navbghover.jpg); background-repeat:no-repeat; background-position:0 -530px; outline:none;}
+.nav a#one:hover{ background-position:0 0;}
+.nav a#two:hover{ background-position:-250px 0;}
+.nav a#three:hover{ background-position:-500px 0;}
+.nav a#four:hover{ background-position:-750px 0;}
+
+.footer{ width:830px; height:95px; margin:45px auto 0; font-size:12px; font-family:宋体; line-height:20px;}
+.logo{ width:167px; height:70px; background:url(images/logo.jpg) no-repeat; float:left; margin-top:5px;}
+.txt{ float:left; color:#283d67; margin:10px 0 0 60px;}
+.txt a{color:#4e6ca8; padding:0 5px;}
+.txt a.fri{ padding-left:0}
+.begingame{ width:600px; height:240px; position:absolute; left:218px; bottom:64px; z-index:30;}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="content">
+	<a href="http://sq.7road.com" target="_blank" class="goindex">进入官网</a>
+    <div class="xiala">
+    	<span>往期专题回顾</span>
+    	<div class="xialabox" id="xialabox">
+		    <a href="http://sq.7road.com/qixi/index.html" target="_blank">2012年8月七夕情人节</a>
+            <a href="http://sq.7road.com/summer/index.html" target="_blank">2012年7月暑期夏令营</a>
+            <a href="http://sq.7road.com/CJ2012/index.html" target="_blank">2012年7月以我为王</a>
+			<a href="http://sq.7road.com/shaizhao/index.html" target="_blank">2012年7月玩家照片墙</a>
+    	</div>
+    </div>
+    <div class="nav">
+    	<a href="content.html#three" id="one" hidefocus="true"></a>
+        <a href="content.html#two" id="two" hidefocus="true"></a>
+        <a href="content.html#one" id="three" hidefocus="true"></a>
+        <a href="content.html#four" id="four" hidefocus="true"></a>
+    </div>
+    <div class="begingame">
+    	<object data="beginbutton.swf" type="application/x-shockwave-flash" width="600" height="240" id="b">
+        <param name="movie" value="beginbutton.swf" />
+        <param name="wmode" value="transparent" />
+        </object>
+    </div>
+    
+</div>
+
+<div class="footer">
+	<a href="http://my.7road.com/" target="_blank" class="logo"></a>
+    <div class="txt">
+        <a href="http://my.7road.com/" class="fri">第七大道</a>|<a href="http://my.7road.com/links.asp">合作伙伴</a>|<a href="http://my.7road.com/job.asp">招贤纳士</a>|<a href="http://my.7road.com/Contact.asp">联系方式</a>|<a href="http://my.7road.com/View.asp">意见反馈</a>|<a href="http://account.7road.com/legal_notice.html">法律声明</a>|<a href="http://account.7road.com/service/">纠纷处理</a>
+        <p>Copyright 2009 www.7road.com All rights reserved深圳第七大道科技有限公司</p>
+        <p>文网游备字[2012]W-RPG029号 文网文[2010]207号 | 增值电信业务经营许可证：粤B2-20100091</p>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="images/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".xiala span").click(function(event){
+		event = event ? event : window.event;
+		$(".xialabox").show();
+		event.stopPropagation();
+	});
+	$("body").click(function(){
+		$(".xialabox").hide()
+	})	
+	
+})
+</script>
+</html>

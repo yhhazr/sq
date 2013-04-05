@@ -1,0 +1,440 @@
+@charset "utf-8";
+.page{background:#031E44 url(http://image5.7road.com/bg.jpg) no-repeat 50% 40px;min-width:1000px;margin: 0 auto;}
+a{text-decoration:none;}
+.f_l{float:left;}
+.f_r{float:right;}
+.clear{clear:both;}
+.navImage ul li a{display:block;text-indent:-999em;overflow:hidden;}
+.hotNews .newsTitleDot,.hotNews .hotDot,.hotNewsList ul li .newsDot,.playerPic .playerPicTxt,.shareBtn,.navImage ul li a:hover{background:url(http://image5.7road.com/spritesBg1.jpg) no-repeat;}
+.navImage ul li a{background:url(http://image3.7road.com/spritesBg2.jpg) no-repeat;}
+.hotNews .hotNewsDot,.hotNews .latestNewsDot{background:url(http://image4.7road.com/hotSpritesBg.png) no-repeat;}
+/*.reg,.login{color: #444; position: relative; top:12px;width:50px;text-align:center;display: inline-block;text-decoration:none; line-height:12px; height:12px;}*/
+
+.head_login_div {
+position: absolute;
+float: right;
+width: 400px;
+right: 20px;
+}
+.head_login {
+position: relative;
+float: left;
+width: 220px;
+height: 20px;
+top: 12px;
+margin-left: 70px;
+padding-left: 50px;
+text-decoration: underline;
+font-size: 1em;
+font-weight: bold;
+}
+.reg, .login {
+color: #444;
+position: relative;
+margin-top: 2px;
+padding-left: 5px;
+padding-right: 5px;
+width: 52px;
+text-align: center;
+display: inline-block;
+text-decoration: none;
+line-height: 18px;
+height: 18px;
+}
+.head_login_div .sc {
+position: absolute;
+float: right;
+top: 10px;
+right: 50px;
+text-decoration: underline;
+}
+.start{
+	width:58px;
+	padding-right:14px;
+}
+.reg{border-right:1px solid #bebebe;}
+.headerNav{background:url(http://image5.7road.com/nav.gif) no-repeat 50% 0;height:17px;display:block;margin-top:46px;overflow:visible/hidden/scroll/auto;}
+.flash{height:425px;width:1000px;position:absolute;top:40px;}
+.flashInner{margin-left:0;position:relative;}
+.flash_placeholder
+{
+position: absolute;
+top: 265px;
+left: 40%;
+width: 200px;
+height: 150px;
+z-index: 10;
+cursor: pointer;
+}
+#img_placeholder
+{
+	width:1000px;
+	margin: 0 auto;
+	position: absolute;
+}
+.left_img_placeholder
+{
+	width: 400px;
+	float: left;
+	padding-top: 104px;
+	margin-left: 25px;
+	display: inline;
+}
+.right_img_placeholder
+{
+	float: left;
+	width: 358px;
+	padding-top: 104px;
+	display: inline;
+	margin-left: 200px;
+		
+}
+
+.flash_placeholder a
+{
+	display: inline-block;
+	width: 200px;
+	height: 150px;
+}
+.nav{margin-top:393px;}
+.navImage{width:980px;padding:3px 0 9px 20px;margin:0;z-index:2;position:relative;clear:both;}
+.navImage ul li{float:left;margin:0 0 0 16px;width:164px;height:84px;display:inline;}
+.navImage ul li a{width:164px;height:73px;margin:0 auto;}
+.navImage ul li a.gameMaterialBtn{background-position:-171px 0;}
+.navImage ul li a.gameMaterialBtn:hover{background-position:0 0;}
+.navImage ul li a.gameIntroduceBtn{background-position:-171px -85px;}
+.navImage ul li a.gameIntroduceBtn:hover{background-position:0 -85px;}
+.navImage ul li a.clientDownBtn{background-position:-171px -170px;}
+.navImage ul li a.clientDownBtn:hover{background-position:0 -170px;}
+.navImage ul li a.allToolBtn{background-position:-171px -255px;}
+.navImage ul li a.allToolBtn:hover{background-position:0 -255px;}
+.navImage ul li a.headerRegBtn{width:119px;background-position:-120px -340px;}
+.navImage ul li a.headerRegBtn:hover{background-position:0 -340px;}
+.navImage ul li a.headerPayBtn{width:118px;background-position:-120px -425px;}
+.navImage ul li a.headerPayBtn:hover{background-position:-1px -425px;}
+.navImage ul li.w119{width:119px;margin:0;}
+.navImage ul li.w118{width:118px;margin:0;}
+.navImage ul li.marginL0{margin-left:0;}
+.line1{clear:both;width:959px;height:15px;padding-top:0;margin:0 auto 0;background:url(http://image.7road.com/line1.jpg) left bottom no-repeat;}
+
+.main-contant{background:#022e5a;margin:0px 20px 0;padding:0 10px 20px;}
+.contant{width:655px;overflow:hidden;float:left;padding-right:9px;border-right:1px solid #1877A1;}
+
+.news_menu{width:655px;height:41px;margin:20px 0px;border:1px solid #002046;}
+.news_menu ul li{float:left;width:118px;height:41px;overflow:hidden;}
+.news_menu ul li a{display:block;width:118px;height:41px;line-height:41px;text-align:center;font-weight:bold;font-size:16px;color:#fff;background:url(http://image1.7road.com/news_menu.jpg)  no-repeat -29px 0;}
+.news_menu ul li a.nav_selected{background:url(http://image2.7road.com/news_menu_on.jpg) no-repeat -29px 0;color:#022e5a;}
+.news_more{float:left;height:29px;padding:12px 9px 0 8px;background:url(http://image3.7road.com/news_menu.jpg) no-repeat;}
+.news_menu ul li a:hover{text-decoration:none;}
+.info{padding-left:7px;}
+.info h3 a:link{color:#d0efff;text-decoration:none;}
+.info h3 a:hover{color:#d0efff;text-decoration:underline;}
+.info h3 a:VISITED{color:#d0efff;text-decoration:none;}
+.info h3{color:#d0efff; font-size:22px; display: block; margin-bottom:7px;}
+.info-tag{color: #fff; display: block; margin-bottom:14px;font-size:14px;}
+.spokesmanName{ color: #22BE70; font-weight:normal;}
+.info-content{ padding-bottom:30px;background:url(http://image4.7road.com/info.jpg) no-repeat 0 100%;}
+.info-tag span{ display: inline-block; padding-right:25px;}
+.infoImg{margin-right:18px;}
+.infoImg img{display: block;border:1px solid transparent; float:left;}
+.infoImg img:hover{border:1px #49a4ff solid;}
+
+.infoContant{float: right;width:450px; font-size:13px;color:#e0f6ff;line-height: 2;}
+.infoContant p{line-height: 2;}
+.info-link{color: #2ceb6b;padding-left:5px;margin-top:15px;}
+.infoContant a:link{ text-decoration:none; }
+.infoContant a:hover{text-decoration:underline;}
+.infoContant a:visited{text-decoration:none;}
+.videoList{display: block; width:653px; padding:12px 0; margin:8px 0 55px 0; background-color:#022c58; border:1px solid #134476;}
+.videoList li{display: block; float: left; margin-left:8px;display:inline;border:1px solid #fff; border-color:#00203f;}
+.videoList li a,.videoList li a img{display: block;}
+.videoList li a img{border:1px solid transparent;float:left;}
+.videoList li a img:hover{border:1px  #49a4ff solid;}
+
+.dl_menu{width:655px;height:41px;border:1px solid #002046;}
+.dl_menu ul li{float:left;width:147px;height:41px;color:#00162c;}
+.dl_menu ul li a{display:block;width:147px;height:41px;color:#fff;text-align:center;line-height:41px;font-size:16px;font-weight:bold;background:url(http://image5.7road.com/news_menu.jpg) no-repeat;}
+.dl_menu ul li a.nav_select{background:url(http://image.7road.com/news_menu_on.jpg) no-repeat;color:#022e5a;}
+.dl_menu ul li a:hover{text-decoration:none;}
+.otherList{display:block;margin-bottom:20px;}
+.otherMenu{ background:url(http://image1.7road.com/ind_menu.jpg) no-repeat; width:653px; height:43px;}
+.otherMenu ul{ display:block;}
+.otherMenu li{ float:left; display:block; width:163px; height:43px; font-size:14px; color:#00162c; text-align:center; line-height:43px;}
+.otherMenu li a{ float:left; display:block; width:163px; height:43px; color:#ffffff; text-decoration:none; text-align:center; line-height:43px;font-weight: bold;}
+.otherMenu li a:hover{ float:left; background:url(http://image2.7road.com/ind_menu_on.jpg) no-repeat; display:block; color:#ffffff; width:164px; height:43px; text-decoration:none; text-align:center; line-height:43px;}
+.otherBox{ margin-top:8px; background:url(http://image3.7road.com/menu_list_bg.jpg) no-repeat; width:655px; height:196px;}
+.otherBox_list{float:left; width:115px;}
+.otherBox_list ul{display:block;}
+.otherBox_list ul li{ width:115px; height:39px; display:block; text-align:center; line-height:39px;}
+.otherBox_list ul li a{width:115px; height:39px; color:#2b91c6; text-decoration:none; display:block;text-align:center; line-height:39px;}
+.otherBox_list ul li a:hover{background:url(http://image4.7road.com/menu_list_on.jpg) no-repeat;width:115px; height:39px; color:#ffffff; text-decoration:none; display:block;text-align:center; line-height:39px;}
+.otherBox_contant{ width:538px;color:#ffffff;}
+
+.side{float:right;width:265px;}
+.sideBox{display: block;}
+.sideBox .patpic {
+    display: block;
+    height: 125px;
+}
+.sideBox .patpic ul li {float:left;margin:4px 4px 0 0;}
+.patpic li a img{display:block;border:1px solid #fff;float:left;}
+.patpic li a img:hover{border:1px solid #49a4ff;}
+.sideBox .title{display:block;height:28px;border-bottom:2px solid #1877a1;margin-bottom:10px;}
+.newActivity a.newActivity a img{ display: block;}
+.newActivity a{margin-bottom:8px;display:inline-block;}
+.serviceList ul {display: block;background: #08447e; padding:15px 0 5px 8px;border:#124d86 1px solid; margin-bottom:15px;}
+.serviceList ul li{ color:#FFEA01; display: block;margin-bottom:10px; background:url(http://image5.7road.com/icon.png) no-repeat -105px -16px; padding-left:22px;}
+.newActivity a img{display: block;border:1px solid #2c5279; float:left;}
+.newActivity a img:hover{border:1px #49a4ff solid;}
+
+.serviceName,.service{display: inline-block; width:118px; color:#fff;}
+.serviceName a:link{color:white;text-decoration: none;}
+.serviceName a:hover{color:white; text-decoration: underline;}
+.serviceName a:visited{color:white; text-decoration: none;}
+.service{width:75px;}
+.playName{float: left;}
+.lv{float: right;}
+.playTop{color: #fff;}
+.playTop ul{display: block;}
+.playTop ul li{display: block; padding:5px 10px;width:230px;}
+.playTop ul .two{background-color: #0c457d;}
+.message{color:#2ceb6b; display: block;padding-bottom:3px;}
+.form{color:#fff;}
+.discuss ul li{padding:2px 0;display: block; border-bottom:1px #09477d solid;}
+.clientCenter{color:#fff;margin-top:15px;}
+.gameAnnouncement{display: block; padding:25px 0;border-bottom:#022e5a solid 1px;color:#4678aa; text-align:center;}
+.footer-info{ margin:0 auto;padding:30px 0;}
+.footer-info,.footer-info a{color:#b8b8b8; text-decoration:none;}
+.footer-info,.footer-info a:hover{color:#b8b8b8; text-decoration:underline;}
+.footer-info,.footer-info a:VISITED{color:#b8b8b8; text-decoration:none;}
+.footer-info a{display: inline-block;width:65px;text-align:center;}
+.footer-info .footer-logo{float: left; display: inline;width:auto;}
+.footer-logo{margin:0 20px 0 190px;display:inline;}
+.footer-logo img{display: block;}
+.footer-info-text{float: left; position: relative;}
+.footer .fri{width:60px;text-align:left;}
+/*ios支持*/
+.footer{-webkit-text-size-adjust: 80%;}
+.sideBox{margin-bottom:10px;}
+.b_wb,.b_findMore,.i_news,.i_clientCenter,.i_discuss,.i_playTop,.i_serviceList,.i_newActivity,.i_cl{background:url(http://image.7road.com/icon.png) no-repeat 0 0;display: inline-block;}
+.b_wb{width:104px;height:27px;background-position:0 0}
+.b_findMore{width:86px;height:27px;background-position:0 -51px;text-indent:-9999px;}
+.i_news{width:94px;height:22px;background-position:0 -78px}
+.i_clientCenter{width:92px;height:20px;background-position:0 -100px}
+.i_discuss{width:93px;height:23px;background-position:0 -120px}
+.i_playTop{width:92px;height:22px;background-position:0 -143px}
+.i_serviceList{width:110px;height:21px;background-position:0 -165px}
+.i_newActivity{width:95px;height:23px;background-position:0 -186px}
+.i_cl{width:12px;height:12px;background-position:-104px 0}
+.b_tag_01,.b_tag_02,.b_tag_03,.b_tag_04,.b_tag_05,.b_tag_06{background:url(http://image1.7road.com/nav.png) no-repeat 0 0; display: inline-block;}
+
+.b_tag_01{width:116px;height:42px;background-position:0 0;}
+.b_tag_02{width:120px;height:42px;background-position:-117px 0}
+.b_tag_03{width:121px;height:42px;background-position:-237px 0}
+.b_tag_04{width:112px;height:42px;background-position:-359px 0}
+.b_tag_05{width:115px;height:42px;background-position:-472px 0}
+.b_tag_06{background-position: -588px 0;
+    color: #C9ECFE;
+    font-size: 14px;
+    height: 42px;
+    line-height: 43px;
+    text-align: center;
+    text-decoration: none;
+    width: 66px;}
+.b_tag_2_01,.b_tag_2_02,.b_tag_2_03,.b_tag_2_04,.b_tag_2_05,.b_tag_2_06{background:url(http://image2.7road.com/nav.png) no-repeat 0 0; display: inline-block;}
+.b_tag_2_01{width:116px;height:42px;background-position:0 -92px}
+.b_tag_2_02{width:121px;height:42px;background-position:-117px -92px}
+.b_tag_2_03{width:121px;height:42px;background-position:-238px -92px}
+.b_tag_2_04{width:112px;height:42px;background-position:-359px -92px}
+.b_tag_2_05{width:115px;height:42px;background-position:-472px -92px}
+.b_tag_2_06{width:66px;height:42px;background-position:-588px -92px}
+.dl_menu{margin-bottom:10px;}
+.last .info-content{background:none;padding-bottom:20px;}
+.more{margin-bottom: 20px; text-align:right;}
+.more a{margin-right:10px;}
+.header{position: relative;}
+.fx{position: absolute;right:0px;color:#3e3e3e;width:165px;height:50px;top:20px; right:45px; text-align:right;}
+.fx p{padding-bottom:5px;}
+.headerNav{position: relative;}
+.headerNav a{display: inline-block; position: absolute; width:63px; height:15px; text-indent:-9999px;}
+.headerNav-1{left:39px;}
+.headerNav-2{left:149px;}
+.headerNav-3{left:264px;}
+.headerNav-4{left:674px;}
+.headerNav-5{left:788px;}
+.headerNav-6{left:898px;}
+.b_ryWall{display: inline-block; position: absolute; background:url(http://image3.7road.com/tag.jpg) no-repeat 0 0; width:127px; height:32px; text-indent:-9999px;}
+.b_ryWall{right:60px; top:41px;}
+
+.view{border:1px solid #124574;}
+.view .view-title{display: block;height:45px;border-bottom:1px #144377 solid; background-color: #032241; line-height:45px; text-align:center; color:#cbecff; font-size:22px;}
+.view-contant{padding:15px; color:#73bde2; background-color: #093461;}
+.view-contant p{font-family:"宋体";line-height:20px;}
+.view-contant span a {color:#67ed4e}
+.view-contant h4{display: block;height:12px;line-height:12px;color: #07c84b; font-size:13px; padding-bottom:15px;margin-bottom:30px; border-bottom:1px dashed #204c7b;}
+.share{margin-top:40px;border-top:1px dashed #204c7b;padding:20px 0; text-align:right;}
+.crumb{color:#57a7ca; padding: 5px 0 20px 0;}
+.crumb li{
+			position: relative;
+			z-index: 3;
+			float:left;
+			list-style:none;
+		}
+.crumb a{ color: #4896ba; text-decoration:none;}
+.left-s{display: inline-block;width:0px;height:0px; font-size:0px; border-width:5px;border-color:#032e59 #032e59 #032e59 #56a9d3; border-style:solid; margin:0 10px;}
+.fxBox{position: relative;}
+.select{position:relative;background:url(http://image4.7road.com/selected.jpg) no-repeat 0 0; height:27px;cursor:pointer;width:248px;line-height:27px; color:#092d51;text-indent:15px;font-size:16px;margin-top:15px;z-index:3}
+.select .selectList{position: absolute;top:27px;padding:0px;width:248px;left:1px; display:none;}
+.select .selectList a{display:block;width:246px;height:27px;border-bottom:1px dashed #00162c;text-decoration:none;color:#000;background:#fff;padding:0;margin:0;}
+.select .selectList a li{padding:0;margin:0;}
+.select .selectList a:hover{color:#fff;background:#0C457D;padding:0;margin:0;}
+.log_msg{float: right;position : relative;top : 12px;right : 200px;}
+.mySelect{height:27px;cursor: pointer; width:248px; margin-bottom:15px; line-height:27px; color:#092d51;font-size:16px;z-index:3}
+p.message span a{color:white !important;text-decoration:none;}
+p.message span a:hover{color:white !important;text-decoration:underline;}
+p{ margin:0; padding:0;}
+.kefu{ width:204px;}
+.telphone{ padding:0 0 0 42px; width:204px; height:35px; background:url(http://image5.7road.com/telphone.jpg) no-repeat; line-height:35px; font-weight:bold; color:#124972;}
+.telphone a{font-weight:bold; color:#124972;text-decoration:none;font-family: "Verdana"}
+.qq{ margin-top:5px; padding:4px 0 0 42px; width:204px; height:49px; background:url(http://image.7road.com/service.jpg) no-repeat; font-weight:bold; color:#124972;font-size:14px; font-weight:normal;}
+.qq a{font-weight:bold; color:#124972;font-size:14px; font-weight:normal;text-decoration:none;margin-left: 4px}}
+.qqred{color:#d62302; font-size:12px;}
+.mail{ margin-top:2px; padding:4px 0 0 12px; width:204px; height:50px; background:url(http://image1.7road.com/service_email.jpg) no-repeat; color:#2a5671; font-size:14px;}
+.mail a{color:#2a5671; font-size:14px;text-decoration:none;}
+p.message a:link{color:white;text-decoration:none;}
+p.message a:hover{color:white;text-decoration:underline;}
+p.message a:VISITED{color:white;text-decoration:none;}
+
+.bottom_link a{
+    color: #73BDE2;
+    font-size: 12px;
+    line-height: 24px;
+}
+.bottom_link a:hover{
+    color: #BD0A01;
+    font-size: 12px;
+    line-height: 24px;
+}
+.news_text_content{font-family:"宋体";font-size:14px;color:#e0f6ff;line-height:25px;}
+a:link{text-decoration:none;}
+a:visited {text-decoration: none;} 
+a:hover {text-decoration:underline;}
+
+@media screen {
+	#main_link
+		{
+			z-index: 4;
+			font-family:"微软雅黑";
+			font-size:15px;
+			position: absolute;
+			top:30px;
+			left:20px;
+		}
+	#main_link a{font-family:"微软雅黑";font-size:16px;color:#022a58;	font-weight:bold;}
+	#main_link a:hover{text-decoration:none;}
+		#right_link
+		{
+			text-align:right;
+		}
+	.ym-grid {
+		display:table;
+		width:100%;
+		table-layout:fixed;
+		list-style-type: none;
+		padding-left:0;
+		padding-right:0;
+		margin-left:0;
+		margin-right:0;
+	}
+
+	.ym-gl { float:left; margin: 0; }
+	.ym-gr { float:right; margin: 0 0 0 -5px; }
+	/* Layout Module Configuration */
+    .ym-wrapper {
+		width: 960px;
+		margin: 0 auto;
+    }
+
+	/* 960.gs port for YAML 4 */
+	.ym-g960-1 { width: 60px; }
+	.ym-g960-2 { width: 120px; }
+	.ym-g960-3 { width: 180px; }
+	.ym-g960-4 { width: 240px; }
+	.ym-g960-5 { width: 300px; }
+	.ym-g960-6 { width: 360px; }
+	.ym-g960-7 { width: 420px; }
+	.ym-g960-8 { width: 480px; }
+	.ym-g960-9 { width: 540px; }
+	.ym-g960-10 { width: 600px; }
+	.ym-g960-11 { width: 660px; }
+	.ym-g960-12 { width: 720px; }
+	.ym-g960-13 { width: 780px; }
+	.ym-g960-14 { width: 840px; }
+	.ym-g960-15 { width: 900px; }
+	.ym-g960-16 { width: 960px; }
+}
+.ym-g960-2 a,.ym-gr a{float:left;width:92px;height:18px;line-height:18px;overflow:hidden;text-align:left;}
+.ym-g960-2 span{float:left;width:1px;height:18px;margin-left:0px;background:#a1a8ad;display:inline;}
+/*热点新闻*/
+.hotNews{position:relative;width:318px;padding-bottom:10px;margin:0px 0 15px 7px;display:inline;border:1px solid #034e87;background:#02376c;}
+.hotNews:hover{background:#0e467e;}
+.marginL18{}
+.hotNews .hotNewsDot,.hotNews .latestNewsDot{position:absolute;top:-2px;left:-1px;width:40px;height:44px;background-position:0 0;}
+.hotNews .latestNewsDot{background-position:0 -44px;_background-position:0 -45px;}
+.hotNews h2{height:50px;padding-left:50px;line-height:50px;font-weight:bold;font-size:20px;color:#ffea01;font-family:"微软雅黑";overflow:hidden;}
+.hotNews .newsTitleDot{float:left;width:11px;height:7px;margin:22px 5px 0 0;background-position:-321px -379px;overflow:hidden;}
+.hotNews strong{padding-right:28px;background:url(http://image1.7road.com/hotDot.png) right 0 no-repeat;}
+.hotNews strong.newDot{background:url(http://image2.7road.com/newDot.png) right 0 no-repeat;}
+.hotNews strong a{color:#ffea01;}
+.hotNews strong a.red{color:#ff5c00;}
+.hotNews .hotNewsTitleDate{width:50px;font-size:12px;font-weight:normal;color:#4e7d96;}
+.hotNews .newsSummary{position:relative;font-size:14px;height:56px;line-height:28px;padding:0 10px 0 13px;color:#fff;overflow:hidden;}
+.hotNews .newsSummaryMore{position:absolute;right:11px;top:28px;}
+.hotNews .newsSummaryMore a{font-size:12px;color:#2aff00;}
+.newsMainList{}
+.newsMainList .line2{height:1px;line-height:1px;font-size:0;border-top:1px dashed #0a5895;margin:10px 10px;;overflow:hidden;}
+.newsMainList ul li{float:left;width:140px;height:16px;margin:2px 0 8px 14px;display:inline;line-height:16px;overflow:hidden;}
+.newsMainList ul li a{color:#fff;font-size:13px;}
+.newsMainList ul li a:hover{color:#ffe600;}
+
+.hotNewsList{width:660px;height:142px;margin:0px 0 20px 8px;}
+.hotNewsList .hotNewsPic{position:relative;width:196px;height:142px;}
+.hotNewsList .hotNewsPic .latestDot{position:absolute;top:1px;left:1px;width:57px;height:51px;background:url(http://image3.7road.com/latestDot.png) no-repeat;_position:static;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://image.7road.com/latestDot.png',sizingMethod='scale');}
+.hotNewsList .hotNewsPic a{display:block;width:194px;height:140px;border:1px solid #18467b;color:#2aff00;overflow:hidden;}
+.hotNewsList .hotNewsPic a:hover{border:1px solid #49a4ff;}
+.hotNewsList .hotNewsPic a img{width:194px;height:140px;}
+.hotNewsList ul{float:left;width:424px;padding-left:10px;overflow:hidden; border:1px solid #024488; border-top:none; background-color:#012244;}
+.hotNewsList ul li{float:left;width:419px;height:18px;border-bottom:1px dashed #114a83;margin:6px 0 0px;overflow:hidden; padding-bottom:3px;}
+.hotNewsList ul li a{line-height:14px;color:#dff4ff;font-size:13px;}
+.hotNewsList ul li .newsDot{width:6px;height:8px;margin:3px 5px 0 0;overflow:hidden; background:url(http://image5.7road.com/lantie_libg.jpg) no-repeat;}
+.hotNewsList ul li .newsDate{width:50px;color:#007eff;font-size:13px;margin-top: -2px; }
+.hotNewsList ul li a{color:#007eff;cursor:pointer;}
+.hotNewsList ul li a:hover {color:#ffea01;}
+.hotNewsList ul li img{ margin-left:5px;}
+
+/*玩家靓照*/
+.playerPic{height:320px;margin-top:20px;}
+.playerPic .playerPicTxt{width:90px;height:20px;background-position:-240px -426px;}
+.playerPic ul li{float:left;margin:5px 17px 10px 0;display:inline;}
+.playerPic ul li a{float:left;width:112px;height:124px;border:1px solid #0b447b;cursor:text;}
+.playerPic ul li a:hover{border:1px solid #49a4ff;}
+
+
+/*蓝贴20120823*/
+.lantie{ float:left; width:436px; margin-left:15px; }
+.lantie h2{ height:30px; background:url(http://image3.7road.com/lantie_title.jpg) no-repeat; width:436px;}
+.lantie h2 a{ float:right; width:50px; height:12px; margin:9px 14px 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

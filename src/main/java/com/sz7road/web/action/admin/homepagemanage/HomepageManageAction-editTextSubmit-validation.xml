@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="homepageItem.name">
+		<field-validator type="requiredstring">
+			<message key="admin.homepage.validate.name.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">50</param>
+			<message key="admin.homepage.validate.name.length.error"></message>
+		</field-validator>
+	</field>	
+	<field name="homepageItem.position">
+		<field-validator type="requiredstring">
+			<message key="admin.homepage.validate.showPosition.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">50</param>
+			<message key="admin.homepage.validate.showPosition.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="homepageItem.content">
+		<field-validator type="requiredstring">
+			<message key="admin.homepage.validate.content.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">200</param>
+			<message key="admin.homepage.validate.content.length.error"></message>
+		</field-validator>
+	</field>
+</validators>

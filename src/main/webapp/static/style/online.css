@@ -1,0 +1,1365 @@
+body {
+	margin: 0px;
+	font-size: 12px;
+	padding: 42px 0 0;
+	color: #29619e;
+	background:
+		url(http://ossweb-img.qq.com/images/xj/web201110/main_bg.jpg)
+		no-repeat center 42px
+}
+
+div,ul,ol,li,form,h1,h2,h3,h4,p,dl,dd,dt {
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	blr: expression(this.onFocus =   this.blur () );
+	outline: none;
+	color: #29619e;
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #e9380f
+}
+
+.center {
+	text-align: center
+}
+
+.clear {
+	clear: both
+}
+
+.wrap {
+	width: 1000px;
+	margin: auto;
+	position: relative
+}
+
+.wrap h2 {
+	text-indent: -9999px
+}
+
+.relative {
+	position: relative
+}
+
+.none {
+	display: none
+}
+
+/* top */
+.top {
+	width: 1000px;
+	height: 422px;
+	margin: auto;
+	position: relative
+}
+
+#menu {
+	width: 960px;
+	position: absolute;
+	left: 20px;
+	top: 0
+}
+
+/* bg */
+.bgbot {
+	width: 100%;
+	min-width: 1000px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/bot_bg.jpg')
+		no-repeat center bottom;
+	padding-bottom: 164px
+}
+
+/* left */
+.left {
+	width: 282px;
+	float: left
+}
+
+.leftbtn {
+	width: 282px;
+	height: 323px;
+	overflow: hidden
+}
+
+#btn {
+	position: absolute;
+	left: 10px;
+	top: -47px
+}
+
+.leftquick {
+	width: 225px;
+	height: 155px;
+	margin: 10px 0 0 27px
+}
+
+.leftquick h2 {
+	width: 225px;
+	height: 79px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+}
+
+.leftul {
+	width: 225px;
+}
+
+.leftul li {
+	width: 130px;
+	height: 23px;
+	padding-left: 11px;
+	line-height: 23px;
+	float: left;
+	border-bottom: 1px #ebe1d7 dashed;
+	color: #616161
+}
+
+.leftul li.l2 {
+	width: 73px;
+}
+
+.leftul li.b0 {
+	border: 0
+}
+
+.leftul li .arr {
+	float: left;
+	width: 3px;
+	height: 5px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 9px 4px 0 0;
+	line-height: 0
+}
+
+.leftul li a {
+	float: left;
+	color: #616161;
+	height: 23px
+}
+
+.leftul li .red,.leftul li a:hover {
+	color: #e9380f
+}
+
+.leftul li .h {
+	float: left;
+	width: 11px;
+	height: 11px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png')
+		no-repeat -3px 0;
+	line-height: 0;
+	overflow: hidden;
+	margin: 6px 0 0 4px
+}
+
+.leftsafe {
+	width: 228px;
+	height: 167px;
+	margin-left: 24px
+}
+
+.leftsafe h2 {
+	width: 228px;
+	height: 72px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -79px
+}
+
+.leftsafe .leftul {
+	margin-left: 3px
+}
+
+.lefttel {
+	width: 225px;
+	height: 78px;
+	margin-left: 28px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg?d=20120104')
+		no-repeat 0 -151px
+}
+
+.leftheal {
+	width: 224px;
+	height: 172px;
+	margin: 18px 0 0 28px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -229px
+}
+
+.leftheal h2 {
+	width: 224px;
+	height: 49px
+}
+
+.leftheal ul {
+	width: 200px;
+	height: 98px
+}
+
+.leftheal li {
+	width: 99px;
+	height: 22px;
+	color: #898989;
+	float: left;
+	text-align: right
+}
+
+.leftheal p {
+	text-align: center;
+	color: #afafaf
+}
+
+/* main */
+.main {
+	width: 475px;
+	float: left;
+	color: #5c5c5c
+}
+
+.main a {
+	color: #5c5c5c
+}
+
+.main a:hover {
+	color: #e9380f;
+	text-decoration: underline
+}
+
+.cloud {
+	width: 475px;
+	height: 66px;
+	position: relative
+}
+
+#cloud {
+	position: absolute;
+	left: -15px;
+	top: -35px
+}
+
+.main .link {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.news {
+	width: 445px;
+	height: 184px;
+	position: relative
+}
+
+.newsnav {
+	width: 445px;
+	height: 40px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -976px
+}
+
+.more {
+	display: block;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	line-height: 0;
+	text-indent: -9999px;
+	right: 29px;
+	top: 14px
+}
+
+.newsnav strong {
+	float: left;
+	height: 40px;
+	margin-right: 1px;
+	text-indent: -9999px;
+	cursor: pointer
+}
+
+.nav1 {
+	width: 88px;
+	margin-left: 11px
+}
+
+.nav2 {
+	width: 90px
+}
+
+.nav3 {
+	width: 90px
+}
+
+.nav4 {
+	width: 90px
+}
+
+.newsnav .nav1:hover,#n1 .nav1 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -11px 0
+}
+
+.newsnav .nav2:hover,#n2 .nav2 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -100px 0
+}
+
+.newsnav .nav3:hover,#n3 .nav3 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -191px 0
+}
+
+.newsnav .nav4:hover,#n4 .nav4 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -282px 0
+}
+
+#n1 #latest,#n2 #news,#n3 #bulletin,#n4 #media {
+	display: block
+}
+
+.newslist {
+	width: 445px;
+	height: 144px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -401px
+}
+
+.newslist ul {
+	width: 425px;
+	padding: 11px 0 0 11px
+}
+
+.newslist li {
+	width: 425px;
+	height: 24px;
+	line-height: 14px;
+	float: left
+}
+
+.newslist li.topnews {
+	height: 18px;
+	border-bottom: 1px #ebe0d5 dashed;
+	margin-bottom: 5px;
+	color: #e9380f
+}
+
+.newslist li .sort {
+	float: left;
+	width: 42px;
+	height: 16px;
+	line-height: 14px;
+	color: #fff;
+	text-align: center;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png')
+		no-repeat 0 -11px
+}
+
+.newslist li .sort:hover {
+	text-decoration: none
+}
+
+.newslist li .link {
+	float: left;
+	margin-left: 13px;
+	width: 25em;
+	overflow: hidden
+}
+
+.newslist li.topnews .link {
+	color: #e9380f;
+	font-weight: bold
+}
+
+.newslist li .time {
+	float: right
+}
+
+.newslist li.topnews .time {
+	font-weight: bold
+}
+
+.newslist h3 {
+	position: absolute;
+	left: -99999px
+}
+
+.mainad {
+	width: 475px;
+	height: 100px
+}
+
+.mainad p {
+	margin-left: -2px
+}
+
+.mainad img {
+	float: left;
+	width: 216px;
+	height: 74px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -1101px;
+	padding: 1px 2px 3px;
+	margin-right: 20px
+}
+
+.mainad .img2,.mainad .img2 img {
+	margin: 0
+}
+
+.info {
+	width: 445px;
+	height: 220px;
+	overflow: hidden
+}
+
+.infonav {
+	width: 445px;
+	height: 40px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -1016px;
+	position: relative
+}
+
+.infonav strong {
+	float: left;
+	height: 40px;
+	margin-right: 1px;
+	text-indent: -9999px;
+	cursor: pointer
+}
+
+.infonav .nav1:hover,#i1 .nav1 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -11px -40px
+}
+
+.infonav .nav2:hover,#i2 .nav2 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -100px -40px
+}
+
+.infonav .nav3:hover,#i3 .nav3 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -191px -40px
+}
+
+.infonav .nav4:hover,#i4 .nav4 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -282px -40px
+}
+
+.infolist {
+	width: 445px;
+	height: 180px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -401px
+}
+
+.infopic {
+	width: 202px;
+	height: 144px;
+	float: left;
+	margin: 20px 0 0 10px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat 0 -80px;
+	_display: inline;
+	text-indent: -9999px
+}
+
+#equip .infopic {
+	background-position: -202px -80px
+}
+
+#event .infopic {
+	background-position: 0 -224px
+}
+
+#exp .infopic {
+	background-position: -202px -224px
+}
+
+.infolist ul {
+	width: 220px;
+	float: left;
+	margin: 22px 0 0 4px
+}
+
+.infolist li {
+	width: 220px;
+	height: 24px;
+	line-height: 18px;
+	float: left
+}
+
+.infolist li .arr {
+	float: left;
+	width: 3px;
+	height: 5px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 6px 3px 0 0;
+	line-height: 0
+}
+
+.infolist li .sort {
+	float: left;
+	margin-right: 8px
+}
+
+.infolist li .link {
+	float: left;
+	width: 14em;
+	height: 18px;
+	overflow: hidden
+}
+
+.infolist li .time {
+	float: right;
+	color: #898989
+}
+
+.video {
+	width: 445px;
+	height: 214px;
+	margin-top: 2px;
+	background: no-repeat 0 -582px;
+	position: relative
+}
+
+.video .more {
+	right: 23px;
+	top: 10px
+}
+
+.videonav {
+	background:url('/image/test.gif');
+	width: 88px;
+	height: 142px;
+	position: absolute;
+	left: 156px;
+	top: 50px
+}
+
+.videonav strong,.videonav a {
+	width: 88px;
+	display: block;
+	text-indent: -9999px;
+	cursor: pointer
+}
+
+.vid1,.vid1 a {
+	height: 22px
+}
+
+.vid2,.vid2 a {
+	height: 29px
+}
+
+.vid3,.vid3 a {
+	height: 29px
+}
+
+.vid4,.vid4 a {
+	height: 29px
+}
+
+.vid5,.vid5 a {
+	height: 26px
+}
+
+.vid1:hover,#v1 .vid1 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -213px -708px
+}
+
+.vid2:hover,#v2 .vid2 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -213px -730px
+}
+
+.vid3:hover,#v3 .vid3 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -213px -759px
+}
+
+.vid4:hover,#v4 .vid4 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -213px -788px
+}
+
+.vid5:hover,#v5 .vid5 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -213px -817px
+}
+
+.videopic {
+	width: 150px;
+	height: 148px;
+	padding-top: 44px
+}
+
+.videopic .pic {
+	display: block;
+	width: 150px;
+	height: 148px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -1px -368px;
+	text-indent: -9999px
+}
+
+.videolist {
+	width: 400px;
+	margin: 20px 0 0 29px
+}
+
+.videolist li {
+	width: 400px;
+	
+	line-height: 23px;
+	border-bottom: 1px #ebe1d7 dashed
+}
+
+.videolist li .arr {
+	width: 3px;
+	height: 5px;
+	float: left;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 10px 5px 0 0;
+	line-height: 0
+}
+
+.videolist li .sort {
+	float: left;
+	margin-right: 5px
+}
+
+.videolist li a {
+	float: left
+}
+
+.videolist li .time {
+	float: right
+}
+
+.videolist li a div{
+	width:120px;
+	height:120px;
+	float:left;
+	margin-left:5px;
+	margin-top:10px
+}
+
+.videolist li  a div img{
+	width:120px;
+	height:120px
+}
+
+
+#art a {
+	background-position: -214px -368px
+}
+
+#movie a {
+	background-position: -1px -538px
+}
+
+#zine a {
+	background-position: -214px -538px
+}
+
+#comic a {
+	background-position: -1px -708px
+}
+
+.media {
+	width: 445px;
+	height: 180px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -796px;
+	margin-top: 18px
+}
+
+.medianav {
+	width: 205px;
+	height: 163px;
+	padding: 9px 0 0 8px;
+	float: left
+}
+
+.medianav strong {
+	display: block;
+	width: 205px;
+	text-indent: -9999px;
+	cursor: pointer
+}
+
+.med1 {
+	height: 50px
+}
+
+.med2 {
+	height: 59px
+}
+
+.med3 {
+	height: 54px
+}
+
+.med1:hover,#m1 .med1 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -8px -887px
+}
+
+.med2:hover,#m2 .med2 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -8px -937px
+}
+
+.med3:hover,#m3 .med3 {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -8px -996px
+}
+
+.medialist {
+	
+	width: 150px;
+	float: right;
+	position: absolute;
+	left:245px;
+	top:30px;
+	padding: 22px 0 0 10px
+}
+
+.medialist ul {
+	width: 150px
+	
+}
+
+.medialist li {
+	width: 150px;
+	height: 30px;
+	line-height: 18px;
+	float: left
+}
+
+.medialist li .arr {
+	float: left;
+	width: 3px;
+	height: 5px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 6px 3px 0 0;
+	line-height: 0
+}
+
+.medialist li .sort {
+	float: left;
+	margin-right: 8px;
+	display: none
+}
+
+.medialist li .link {
+	float: left;
+	width: 14em;
+	overflow: hidden
+}
+
+.medialist li .time {
+	float: right;
+	color: #898989
+}
+
+.medialist li.topnews {
+	border-bottom: 1px #ded4ca dashed;
+	margin-bottom: 5px
+}
+
+.medialist li.topnews .arr,.medialist li.topnews .sort,.medialist li.topnews .time
+	{
+	display: none
+}
+
+.medialist li.topnews .link {
+	width: 150px;
+	float: none;
+	color: #5c5c5c;
+	font-weight: bold
+}
+
+/* right */
+.right {
+	width: 243px;
+	float: left
+}
+
+.focus {
+	width: 218px;
+	height: 222px;
+	padding-top: 1px
+}
+
+.gg {
+	width: 216px;
+	height: 220px;
+	overflow: hidden;
+	border: 1px #c58438 solid
+}
+
+.gg-box {
+	width: 216px;
+	height: 220px;
+	overflow: hidden;
+	position: relative
+}
+
+.gg-box img {
+	width: 216px;
+	height: 220px;
+}
+
+.gg-box a {
+	color: #333;
+	display: block;
+}
+
+.gg-box .gb {
+	width: 216px;
+	height: 220px;
+	overflow: hidden
+}
+
+.gg-box ul li {
+	height: 220px;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.gg-box .n {
+	position: absolute;
+	left: 95px;
+	bottom: 8px;
+	height: 17px;
+	width: 200px;
+	font: bold 10px Tahoma;
+	z-index: 10;
+}
+
+.gg-box span {
+	float: left;
+	margin-right: 10px;
+	width: 11px;
+	height: 11px;
+	text-indent: -9999px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png')
+		no-repeat 0 -28px;
+	cursor: pointer;
+}
+
+.gg-box span.curr {
+	background-position: -16px -28px;
+}
+
+.rightad {
+	width: 216px;
+	height: 73px;
+	margin: 27px 0 36px
+}
+
+.rightad img {
+	float: left;
+	width: 216px;
+	height: 74px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -1101px;
+	padding: 1px 2px 3px;
+	margin-left: -2px
+}
+
+.rightswf {
+	width: 243px;
+	height: 191px;
+	position: relative
+}
+
+#portal {
+	position: absolute;
+	left: -32px;
+	top: -40px
+}
+
+.rank {
+	width: 215px;
+	height: 240px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat -230px -120px;
+	color: #5c5c5c;
+	overflow: hidden
+}
+
+.ranktop {
+	width: 215px;
+	height: 48px;
+	position: relative
+}
+
+.ranktop h3 {
+	width: 136px;
+	height: 34px;
+	position: absolute;
+	left: 38px;
+	top: 0;
+	text-indent: -9999px
+}
+
+.ranktop .lv {
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg?d=20120105')
+		no-repeat 0 -1179px
+}
+
+.rankserv {
+	height: 28px;
+	padding-left: 24px
+}
+
+.rankserv span {
+	float: left;
+	width: 60px;
+	height: 18px;
+	line-height: 18px
+}
+
+.rankserv select {
+	width: 105px;
+	height: 18px;
+	float: left;
+	background: #efefef;
+	color: #8f9094
+}
+
+.rank ul {
+	width: 187px;
+	margin-left: 14px
+}
+
+.rank li {
+	height: 25px;
+	margin-bottom: 5px;
+	float: left;
+	line-height: 25px
+}
+
+.rank .ranknum {
+	width: 31px;
+	text-indent: -9999px
+}
+
+.rank .name {
+	width: 106px
+}
+
+.rank .up,.rank .down {
+	width: 10px
+}
+
+.rank .up span,.rank .down span {
+	width: 5px;
+	height: 3px;
+	overflow: hidden;
+	display: block;
+	line-height: 0;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png')
+		no-repeat 0 -44px;
+	margin-top: 11px;
+	display: none
+}
+
+.rank .down span {
+	background-position: 0 -49px
+}
+
+.rank .data {
+	width: 40px
+}
+
+.rightmedia {
+	width: 218px;
+	height: 212px;
+	position: relative
+}
+
+.rm {
+	width: 218px;
+	height: 41px;
+	background: url('')
+		no-repeat -227px -360px
+}
+
+.rmon {
+	width: 218px;
+	height: 212px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_swap.jpg')
+		no-repeat -223px -850px
+}
+
+#s1 h3 {
+	width: 218px;
+	height: 41px;
+	cursor: pointer;
+	text-indent: -9999px
+}
+
+.s1ul {
+	width: 214px;
+	position: absolute;
+	left: 0px;
+	top: 41px;
+	background: #ffc62f;
+	padding: 0 1px 1px;
+	display: none
+}
+
+.rmon .s1ul {
+	display: block
+}
+
+.s1ul ul {
+	width: 212px;
+	min-height: 170px;
+	_height: 170px;
+	padding-bottom: 5px;
+	background: #ffce48;
+	border: 1px #ffda67 solid;
+	border-top: 0
+}
+
+.s1ul li {
+	width: 195px;
+	height: 22px;
+	margin: auto;
+	line-height: 22px;
+	border-bottom: 1px #e1b148 dashed
+}
+
+.s1ul li.bd0 {
+	border: 0
+}
+
+.s1ul li a {
+	display: block;
+	color: #8c5a03
+}
+
+.s1ul li a:hover {
+	text-decoration: none
+}
+
+/* footer */
+.footer {
+	width: 755px;
+	height: 74px;
+	margin: 121px 0 0 123px;
+	font-family: Tahoma
+}
+
+.footer,.footer a {
+	color: #5d2b22;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer .wrap {
+	position: relative;
+	padding: 15px 0 0 220px;
+	width: 510px;
+	line-height: 22px;
+	margin: 0
+}
+
+.footer span {
+	padding: 0 5px;
+	font: normal 10px/22px simsun;
+	overflow: hidden;
+}
+
+.footer p.r {
+	float: right;
+	margin: -20px 10px 0 0;
+	_margin: -20px 20px 0 0;
+}
+
+.footer p.e {
+	margin-top: -4px;
+	font-size: 10px;
+	line-height: 19px;
+}
+
+.footer p.w {
+	margin-top: -4px
+}
+
+.footer a.tg,.footer a.s {
+	position: absolute;
+	display: block;
+	top: 19px;
+	left: 21px;
+	width: 110px;
+	height: 35px;
+	text-indent: -999px;
+	overflow: hidden;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -1056px;
+}
+
+.footer a.s {
+	width: 65px;
+	height: 45px;
+	background-position: -121px -1056px;
+	left: 142px
+}
+
+.ost_bg {
+	background:
+		url(http://ossweb-img.qq.com/images/js/topfiles/ost1202/ostb.png)
+		no-repeat;
+}
+
+.ost_hdn {
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.ost_fl {
+	float: left;
+}
+
+.ost_fr {
+	float: right;
+}
+
+.ost_ml10 {
+	margin-left: 10px;
+}
+
+.ost_c707 {
+	color: #707E91 !important;
+}
+
+.ost_h40 {
+	height: 40px;
+	overflow: hidden;
+}
+
+.ost_lsn {
+	list-style: none;
+}
+
+.ost_box {
+	width: 100%;
+	min-width: 980px;
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	color: #464646;
+	left: 0;
+	top: 0 !important;
+	text-align: left;
+	font-size: 12px;
+	z-index: 8000;
+	font-family: Tahoma, "simsun";
+	border: 1px solid #C9C9C9;
+	border-width: 1px 0;
+	-webkit-text-size-adjust: none;
+}
+
+.ost_inner {
+	width: 980px;
+	padding: 0 5px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+	line-height: 40px;
+}
+
+.ost_logo {
+	width: 205px;
+	padding: 0 15px 0 0;
+	background-position: 0 -40px;
+}
+
+.ost_blnk {
+	display: block;
+	height: 100%;
+}
+
+.ost_ad {
+	width: 230px;
+}
+
+.ost_total {
+	width: 98px;
+	background-position: -138px -80px;
+}
+
+.ost_title {
+	padding: 0 0 0 13px;
+	font-size: 12px;
+	font-weight: normal;
+	cursor: pointer;
+	margin: 0;
+	text-indent: 0 !important;
+	line-height: 40px;
+}
+
+.ost_sites {
+	width: 90px;
+	background-position: -185px -120px;
+	padding: 0 10px 0 0;
+}
+
+.ost_slnk {
+	display: block;
+	height: 16px;
+	margin: 12px 0 0 5px;
+}
+
+.ost_tgc {
+	width: 16px;
+	background-position: 0 -132px;
+}
+
+.ost_tga {
+	width: 14px;
+	background-position: -16px -132px;
+}
+
+.ost_tgsr {
+	width: 17px;
+	background-position: -30px -132px;
+}
+
+.ost_gh {
+	width: 16px;
+	background-position: -47px -132px;
+}
+
+.ost_login {
+	width: 138px;
+	background-position: 0 -80px;
+	text-indent: 35px;
+	line-height: 40px;
+}
+
+.ost_head {
+	padding: 11px 9px 0 0;
+	line-height: normal;
+}
+
+.ost_name {
+	color: #FC4F02 !important;
+	font-weight: bold;
+}
+
+.ost_msg {
+	background-position: right -40px;
+	padding: 0 3px 0 0;
+	line-height: 13px;
+}
+
+.ost_mlnk {
+	display: inline-block;
+	height: 19px;
+	padding: 7px 0 0 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 9px;
+	background-position: -220px -40px;
+}
+
+.ost_mlnk:hover {
+	text-decoration: none;
+}
+
+.ost_msgn {
+	width: 15px;
+	background-position: -100px -120px;
+}
+
+.ost_mlnkn {
+	display: block;
+	height: 12px;
+	margin: 14px 0 0 0;
+}
+
+.ost_score {
+	background-position: -265px -80px;
+	padding: 0 0 0 25px;
+	margin: 0 0 0 5px;
+}
+
+.ost_big {
+	width: 970px;
+	height: 185px;
+	padding: 0 3px 3px 3px;
+	border-bottom: 1px solid #EEEEEE;
+	background: #FFFFFF;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0 0 0 -488px;
+	display: none;
+}
+
+.ost_nb {
+	border: none;
+}
+
+.ost_pop {
+	width: 813px;
+	height: 332px;
+	top: 35px;
+	right: 7px;
+	position: absolute;
+	display: none;
+	z-index: 9000;
+}

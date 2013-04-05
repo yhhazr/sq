@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* { margin:0; padding:0 }
+
+body { background:url("http://image.7road.com/bgScore.jpg") no-repeat center 0; font-size:12px; color:#5e1c1b; font:12px/20px "宋体"; }
+
+a { text-decoration:none; color:#953721; blr:expression(this.onFocus=this.blur());
+outline:none; cursor:pointer; }
+
+a:hover { text-decoration:underline; }
+
+ul, li { list-style:none; }
+
+.top { width:960px; height:335px; background:url("http://image.7road.com/index_01.jpg"); margin:auto; position:relative; }
+
+.top_flash{ position:absolute; bottom:0px; left:0px;}
+
+.top a.logo { position:absolute; width:202px; height:90px; overflow:hidden; text-indent:-1000px; top:10px; left:5px; }
+
+.top .links { position:absolute; top:0px; left:368px; width:300px; height:27px; }
+
+.top .links a { overflow:hidden; text-indent:-1000px; width:58px; height:25px; display:block; float:left; }
+
+.main { width:960px; height:508px; background:url("http://image.7road.com/index_02.jpg"); margin:auto; position:relative; }
+
+.main a.qd { display:block; position:absolute; left:0; top:0; width:250px; height:100px; overflow:hidden; text-indent:-1000em; }
+
+.main .msg { position:absolute; top:8px; left:260px; width:263px; height:83px; }
+
+.main .msg p { padding-bottom:3px; }
+
+.main .msg span, .main .msg strong { color:#b13b00; }
+
+.main h3 { font-size:18px; font-family:"微软雅黑"; color:#90380b; height:38px; line-height:28px; }
+
+.main .about { position:absolute; top:3px; left:560px; width:380px; height: 164px; }
+
+.main .more { position:absolute; top:192px; left:555px; width:370px; height:164px; }
+
+.main .more h3 { padding-left:5px; height:33px; }
+
+.main .more table { width:100%; background:#de912d; color:#8d4d0f; }
+
+.main .more th { background:#fadfa0; line-height:30px; }
+
+.main .more td { line-height:18px; padding:3px 5px; background:#fadfa0; }
+
+.data { position:absolute; top:116px; left:36px; width:476px; height: 373px; }
+
+.data h3 { padding-left:15px; }
+
+.data h3 span { color:#cb3901; }
+
+.data table { font-size:18px; font-family:"微软雅黑"; background:#cda550; width:100%; line-height:30px; text-align:center; font-weight:800; }
+
+.data td { background:#f9db94; line-height:44px; color:#874f1a; }
+
+.data th { background:#cc3a01; color:#ffe4a4; line-height:38px; }
+
+.data td.no { background:#facf7c; }
+
+.data td.yes { background:#f9db94 url("http://image.7road.com/yes.png") no-repeat center center; }
+
+.foot { width:960px; height:456px; background:url("http://image.7road.com/index_03.jpg"); margin:auto; position:relative; line-height:22px; }
+
+.foot .copy { position:absolute; top:357px; left:345px; color:#ceaf66; }
+
+.foot ul { padding:44px 0 0 38px; }
+
+.foot li { float:left; margin-right:10px; width:173px; margin-right:6px; height:177px; color:#8d4d0f; }
+
+.foot li img { display:block; margin:auto; }
+
+.foot li p { padding:10px 10px; line-height:18px; }
+
+.foot li div { font-weight:bold; }
+
+.foot li a.get { display:inline-block; width:77px; height:28px; text-align:center; line-height:27px; background:url("http://image.7road.com/btn.jpg"); color:#f9db94; margin-left:20px; margin-right:5px; }
+
+.foot li a.get:hover { text-decoration:none; color:#ff0; }
+
+.foot li span { color:#f00; }
+
+.copy a { color:#ceaf66; }
+
+.copy a:hover{ text-decoration:none; color:#fff;}
+
+/*--duihuan--*/
+#duihuan_box{width:360px; height:160px; background:#f9e1b6; border:1px solid #f8ecbf; margin:0 auto; position:fixed;top:50%;margin-top:-80px;left:50%;margin-left:-180px;z-index:99999;}
+#duihuan_box h3{ font-size:18px; height:30px; line-height:30px; width:100%;font-weight:600;text-align:center;color:#ae0808;border-bottom:1px solid #e19c2e;background:#f5b958; }
+#duihuan_inner{border-top:1px solid #fbeaca; padding-top:10px;}
+#duihuan_inner p{ text-align:center; line-height:24px; width:100%;}
+#duihuan_inner p span{color:#ae0808; font-weight:600;}
+#duihuan_bottom{ width:180px; height:35px; margin:0 auto; margin-top:10px;}
+.code_txt{ width:300px; height:38px;line-height:38px; display:block; overflow:hidden; margin:0 auto;border:1px solid #efc373; background:#fcf6ec; text-align:center; font-size:18px; font-weight:600; }
+#duihuan_bottom .copy_btn,#duihuan_bottom a.close{width:82px; height:28px; line-height:28px; font-size:14px; border:none; cursor:pointer; text-align:center; background:url(http://image.7road.com/copy_btn.png) no-repeat; font-family:"微软雅黑"; color:#fff; font-weight:600; display:block; float:left; margin-right:8px; overflow:hidden;}
+/*---tishi--*/
+#tishi_box{width:400px; height:180px; background:#fff;margin:0 auto;position:fixed;top:50%;left:50%;margin-top:-90px;margin-left:-200px;z-index:99999;}
+
+#tishi_box_top{ width:100%; height:36px; line-height:36px; background:url(http://image.7road.com/tishi_top_bg.png) no-repeat; position:relative; overflow:hidden;}
+
+#tishi_box h1{ font-size:18px;font-weight:600; text-indent:30px;color:#fff; }
+
+#tishi_box_top a.close{ display:block; width:22px; height:22px; position:absolute; right:10px; top:5px;text-indent:-9999px;}
+
+#tishi_inner{border:2px solid #f8ab2e; padding-top:20px; width:396px; height:124px; border-top:none;}
+
+#tishi_inner h3{font-size:14px;font-weight:600;color:#f7a12f; text-indent:0px;}
+
+#tishi_inner img{ float:left; margin-left:20px; display:inline;}
+
+#tishi_inner p{ line-height:28px;margin-bottom:5px;}
+
+.tishi_sumbit_btn{width:87px; height:30px; line-height:28px; font-size:14px; border:none; cursor:pointer; text-align:center; background:url(http://image.7road.com/tishi_btn.png) no-repeat; font-family:"微软雅黑"; color:#fff; font-weight:600; display:block; float:left; margin-right:8px; overflow:hidden;}
+/*---login--*/
+.win-login,.win-register{
+	position: fixed;
+	_position: absolute;
+	top: 50%;
+	left: 50%;
+	display: none;
+	_top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+	z-index:10001;
+}
+.win-login{
+	width: 512px;
+	height: 316px;
+	background-color: #fff;
+	margin: -158px 0 0 -256px;
+	_margin-top: 0;
+}
+.win-login-tips{
+	color: #333;
+	border-bottom: 1px solid #ddd;
+	height: 52px;
+	line-height: 52px;
+	width: 512px;
+}
+.win-login-tips h2{
+	font-size: 16px;
+	padding-left: 10px;
+}
+.close-win{
+	float: right;
+	width: 22px;
+	height: 22px;
+	margin: 15px 10px 0 0;
+	background: url(http://image.7road.com/iconBg.png) no-repeat -81px -24px;
+}
+.close-win:hover{ 
+	background-position: -106px -24px;
+}
+.win-login-box{
+	float: left;
+	margin: 10px 0 0 60px;
+	display: inline;
+}
+.login-list,.login-btn,.forget-pass{
+	float: left;
+	position: relative;
+	width: 400px;
+	margin-top: 10px;
+}
+.login-list-text{
+	float: left;
+	width: 80px;
+	text-align: right;
+	font-size: 14px;
+	margin-top: 5px;
+	color: #333;
+}
+.login-list-input{
+	float: left;
+	width: 244px;
+	height: 26px;
+	background: url(http://image.7road.com/inputBg.png) no-repeat 0 0;
+	border:0;
+	outline: none;
+	padding: 5px;
+	font: bold 16px/26px Arial;
+}
+.login-list-inpuselect{
+	background: url(http://image.7road.com/inputBg.png) no-repeat 0 -38px;
+}
+
+.login-submit{
+	width: 120px;
+	height: 41px;
+	float: left;
+	background: url(http://image.7road.com/iconBg.png) no-repeat -20px -226px;
+}
+.login-submit:hover{
+	background-position: -20px -267px;
+}
+.login-btn{
+	margin: 20px 0 0 80px;
+	display: inline;
+}
+.login-btn input{
+	float: left;
+	margin: 26px 0 0 10px;
+}
+.login-btn label{
+	float: left;
+	margin: 27px 0 0 4px;
+	line-height: 12px;
+}
+.forget-pass{
+	margin: 30px 0 0 80px;
+	display: inline;
+}
+.forget-pass a{
+	color: #0663b1;
+	text-decoration: underline;
+	margin-right: 20px;
+	padding-left: 20px;
+	background: url(http://image.7road.com/iconBg.png) no-repeat;
+	float: left;
+	line-height: 18px;
+}
+.forget-pass a.a{
+	background-position: -183px -169px;
+}
+.forget-pass a.b{
+	background-position: -184px -204px;
+}
+.server-response-err{
+	float: left;
+	margin-top: 12px;
+	text-align: center;
+	color: red;
+	padding-left: 130px;
+}

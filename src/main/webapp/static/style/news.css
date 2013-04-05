@@ -1,0 +1,1199 @@
+body {
+	margin: 0px;
+	font-size: 12px;
+	padding: 42px 0 0;
+	color: #29619e;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/news_bg.jpg')
+		no-repeat center 42px
+}
+
+div,ul,ol,li,form,h1,h2,h3,h4,p,dl,dd,dt {
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	blr: expression(this.onFocus = this.blur () );
+	outline: none;
+	color: #29619e;
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+.center {
+	text-align: center
+}
+
+.clear {
+	clear: both
+}
+
+.wrap {
+	width: 1000px;
+	margin: auto;
+	position: relative
+}
+
+.wrap h2 {
+	text-indent: -9999px
+}
+
+.relative {
+	position: relative
+}
+
+.none {
+	display: none
+}
+
+/* top */
+.top {
+	width: 1000px;
+	height: 258px;
+	margin: auto;
+	position: relative
+}
+
+#menu {
+	width: 960px;
+	position: absolute;
+	left: 20px;
+	top: 0
+}
+
+/* bg */
+.bgbot {
+	width: 100%;
+	min-width: 1000px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/bot_bg.jpg')
+		no-repeat center bottom;
+	padding-bottom: 164px
+}
+
+/* left */
+.left {
+	width: 272px;
+	float: left
+}
+
+.leftbtn {
+	width: 272px;
+	height: 357px;
+	overflow: hidden
+}
+
+#btn {
+	position: absolute;
+	left: 10px;
+	top: -10px
+}
+
+.leftquick {
+	width: 225px;
+	height: 155px;
+	margin: 10px 0 0 27px
+}
+
+.leftquick h2 {
+	width: 225px;
+	height: 79px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+}
+
+.leftul {
+	width: 225px;
+}
+
+.leftul li {
+	width: 130px;
+	height: 23px;
+	padding-left: 11px;
+	line-height: 23px;
+	float: left;
+	border-bottom: 1px #ebe1d7 dashed;
+	color: #616161
+}
+
+.leftul li.l2 {
+	width: 73px;
+}
+
+.leftul li.b0 {
+	border: 0
+}
+
+.leftul li .arr {
+	float: left;
+	width: 3px;
+	height: 5px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 9px 4px 0 0;
+	line-height: 0
+}
+
+.leftul li a {
+	float: left;
+	color: #616161;
+	height: 23px
+}
+
+.leftul li .red,.leftul li a:hover {
+	color: #e9380f
+}
+
+.leftul li .h {
+	float: left;
+	width: 11px;
+	height: 11px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png')
+		no-repeat -3px 0;
+	line-height: 0;
+	overflow: hidden;
+	margin: 6px 0 0 4px
+}
+
+.leftsafe {
+	width: 228px;
+	height: 167px;
+	margin-left: 24px
+}
+
+.leftsafe h2 {
+	width: 228px;
+	height: 72px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -79px
+}
+
+.leftsafe .leftul {
+	margin-left: 3px
+}
+
+.lefttel {
+	width: 225px;
+	height: 78px;
+	margin-left: 28px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg?d=20120104')
+		no-repeat 0 -151px
+}
+
+.leftheal {
+	width: 224px;
+	height: 172px;
+	margin: 18px 0 0 28px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -229px
+}
+
+.leftheal h2 {
+	width: 224px;
+	height: 49px
+}
+
+.leftheal ul {
+	width: 200px;
+	height: 98px
+}
+
+.leftheal li {
+	width: 99px;
+	height: 22px;
+	color: #898989;
+	float: left;
+	text-align: right
+}
+
+.leftheal p {
+	text-align: center;
+	color: #afafaf
+}
+
+/* main */
+.main {
+	width: 576px;
+	float: left;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/content.jpg')
+		repeat-y;
+	color: #5c5c5c
+}
+
+.main a {
+	color: #5c5c5c
+}
+
+.main a:hover {
+	color: #e9380f;
+	text-decoration: underline
+}
+
+.mainbot {
+	width: 576px;
+	padding-bottom: 35px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/content_bot.jpg')
+		no-repeat bottom
+}
+
+.maintop {
+	width: 576px;
+	height: 90px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg');
+	position: relative
+}
+
+.newstop1,.newstop2,.newstop3,.newstop4,.newstop5 {
+	display: block;
+	position: absolute;
+	width: 91px;
+	height: 20px;
+	left: 27px;
+	top: 59px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -90px;
+	text-indent: -9999px
+}
+
+.newstop2 {
+	background-position: -91px -90px
+}
+
+.newstop3 {
+	background-position: -182px -90px
+}
+
+.newstop4 {
+	background-position: -273px -90px
+}
+
+.path {
+	position: absolute;
+	right: 30px;
+	top: 65px
+}
+
+.path span,.path a {
+	color: #999;
+	float: left
+}
+
+.path a:hover {
+	text-decoration: underline
+}
+
+.path .arr {
+	width: 3px;
+	height: 5px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 5px 5px 0;
+	line-height: 0
+}
+
+.content {
+	width: 576px;
+	min-height: 850px;
+	margin-top: 1px;
+	color: #584a52
+}
+
+.content a {
+	color: #584a52
+}
+
+.newsbanner {
+	width: 517px;
+	height: 141px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -110px;
+	margin: 0 auto 16px;
+	text-indent: -9999px
+}
+
+.newstit {
+	width: 520px;
+	height: 23px;
+	background: #f9f7f8;
+	border-top: 1px #dcd7d8 solid;
+	border-bottom: 1px #dcd7d8 solid;
+	color: #940800;
+	line-height: 23px;
+	font-size: 12px;
+	text-align: center;
+	margin: 0 auto
+}
+
+.newsinfo {
+	width: 520px;
+	height: 23px;
+	background: #f9f7f8;
+	border-bottom: 1px #dcd7d8 solid;
+	line-height: 23px;
+	font-size: 12px;
+	text-align: center;
+	margin: 0 auto
+}
+
+.newsinfo a {
+	color: #584a52
+}
+
+#text {
+	width: 520px;
+	margin: 10px auto;
+	line-height: 200%
+}
+
+.site {
+	width: 520px;
+	margin: auto;
+	text-align: right;
+	line-height: 24px
+}
+
+.share {
+	width: 520px;
+	margin: auto;
+	text-align: right;
+	line-height: 24px;
+	text-align: right
+}
+
+.share a {
+	color: #940800
+}
+
+#sns {
+	float: right;
+	margin-right: -10px
+}
+
+.sns {
+	list-style: none;
+	padding: 5px;
+}
+
+.sns_lst {
+	float: left;
+	padding: 0 5px 0 0;
+}
+
+.sns_lnk {
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: 500px;
+	overflow: hidden;
+	cursor: pointer;
+	background: url('http://ossweb-img.qq.com/images/js/sns/icons.png')
+		no-repeat;
+}
+
+.sns_weibo {
+	background-position: 0 0;
+}
+
+.sns_qzone {
+	background-position: 0 -16px;
+}
+
+.sns_xiaoyou {
+	background-position: 0 -32px;
+}
+
+.sns_kaixin {
+	background-position: 0 -48px;
+}
+
+.sns_renren {
+	background-position: 0 -64px;
+}
+
+.sns_baidu {
+	background-position: 0 -80px;
+}
+
+.sns_douban {
+	background-position: 0 -96px;
+}
+
+.sns_shuqian {
+	background-position: 0 -112px;
+}
+
+.sns_sina {
+	background-position: 0 -128px;
+}
+
+.newstag {
+	width: 520px;
+	height: 105px;
+	background: #f9f7f8;
+	border-top: 1px #dcd7d8 solid;
+	border-bottom: 1px #dcd7d8 solid;
+	line-height: 24px;
+	margin: 20px auto 0
+}
+
+.newstag ul {
+	width: 520px;;
+	border-top: 1px #dcd7d8 solid
+}
+
+.newstag li {
+	width: 515px;
+	height: 24px;
+	padding-left: 5px
+}
+
+.newstag li .arr {
+	width: 3px;
+	height: 5px;
+	float: left;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 10px 5px 0 0;
+	line-height: 0
+}
+
+.newstag li a {
+	float: left
+}
+
+.newsdown {
+	width: 518px;
+	height: 207px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -251px;
+	position: relative;
+	margin: 20px auto 0
+}
+
+.newsdown p {
+	position: absolute;
+	left: -99999px
+}
+
+.newsdown a {
+	display: block;
+	position: absolute;
+	width: 148px;
+	height: 42px;
+	right: 14px;
+	top: 147px;
+	text-indent: -9999px
+}
+
+/* right */
+.right {
+	width: 152px;
+	float: left;
+	position: relative
+}
+
+.rightad {
+	width: 137px;
+	height: 330px;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/rightad.png?d=20111226');
+	position: absolute;
+	left: 10px;
+	top: 20px
+}
+
+.rightad a {
+	display: block;
+	width: 100px;
+	height: 24px;
+	margin-left: 20px;
+	text-indent: -9999px
+}
+
+.rightad .img {
+	display: block;
+	width: 116px;
+	height: 114px;
+	margin: 31px 0 14px 11px;
+	text-indent: 0
+}
+
+.rightad .rn2 {
+	height: 29px
+}
+
+.rightad .rn3 {
+	height: 30px
+}
+
+.rightad .rn4 {
+	height: 29px
+}
+
+.rightad .rn5 {
+	height: 26px
+}
+
+.rightad .rn6 {
+	width: 28px;
+	height: 25px;
+	margin-left: 54px
+}
+
+.rightad .rn1:hover,.rightad .rn2:hover,.rightad .rn3:hover,.rightad .rn4:hover,.rightad .rn5:hover
+	{
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/rightad.png')
+		no-repeat -137px 0
+}
+
+.rightad .rn2:hover {
+	background-position: -137px -24px
+}
+
+.rightad .rn3:hover {
+	background-position: -137px -53px
+}
+
+.rightad .rn4:hover {
+	background-position: -137px -83px
+}
+
+.rightad .rn5:hover {
+	background-position: -137px -112px
+}
+
+/* footer */
+.footer {
+	width: 755px;
+	height: 74px;
+	margin: 171px 0 0 123px;
+	font-family: Tahoma
+}
+
+.footer,.footer a {
+	color: #5d2b22;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer .wrap {
+	position: relative;
+	padding: 15px 0 0 220px;
+	width: 510px;
+	line-height: 22px;
+	margin: 0
+}
+
+.footer span {
+	padding: 0 5px;
+	font: normal 10px/22px simsun;
+	overflow: hidden;
+}
+
+.footer p.r {
+	float: right;
+	margin: -20px 10px 0 0;
+	_margin: -20px 20px 0 0;
+}
+
+.footer p.e {
+	margin-top: -4px;
+	font-size: 10px;
+	line-height: 19px;
+}
+
+.footer p.w {
+	margin-top: -4px
+}
+
+.footer a.tg,.footer a.s {
+	position: absolute;
+	display: block;
+	top: 19px;
+	left: 21px;
+	width: 110px;
+	height: 35px;
+	text-indent: -999px;
+	overflow: hidden;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/main.jpg')
+		no-repeat 0 -1056px;
+}
+
+.footer a.s {
+	width: 65px;
+	height: 45px;
+	background-position: -121px -1056px;
+	left: 142px
+}
+
+/* newslist */
+.listnav {
+	width: 517px;
+	height: 32px;
+	margin: 15px 0 0 29px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -458px;
+	position: relative
+}
+
+.listnav a {
+	display: block;
+	position: absolute;
+	width: 92px;
+	height: 28px;
+	left: 50px;
+	bottom: 0;
+	text-indent: -9999px
+}
+
+.listnav .ln2,.listnav .ln2on {
+	left: 158px
+}
+
+.listnav .ln3,.listnav .ln3on {
+	left: 267px
+}
+
+.listnav .ln4,.listnav .ln4on {
+	left: 375px
+}
+
+.listnav .ln1:hover,.listnav .ln1on,.listnav .ln2:hover,.listnav .ln2on,.listnav .ln3:hover,.listnav .ln3on,.listnav .ln4:hover,.listnav .ln4on
+	{
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat -50px -494px
+}
+
+.listnav .ln2:hover,.listnav .ln2on {
+	background-position: -158px -494px
+}
+
+.listnav .ln3:hover,.listnav .ln3on {
+	background-position: -267px -494px
+}
+
+.listnav .ln4:hover,.listnav .ln4on {
+	background-position: -375px -494px
+}
+
+.newslist {
+	width: 517px;
+	margin: 20px 0 0 29px
+}
+
+.newslist li {
+	width: 517px;
+	height: 24px;
+	line-height: 23px;
+	border-bottom: 1px #ebe1d7 dashed
+}
+
+.newslist li .arr {
+	width: 3px;
+	height: 5px;
+	float: left;
+	background:
+		url('http://ossweb-img.qq.com/images/xj/web201110/main_icon.png');
+	overflow: hidden;
+	margin: 10px 5px 0 0;
+	line-height: 0
+}
+
+.newslist li .sort {
+	float: left;
+	margin-right: 5px
+}
+
+.newslist li a {
+	float: left
+}
+
+.newslist li .time {
+	float: right
+}
+
+.newspage {
+	padding-top: 30px;
+	text-align: center
+}
+
+.newspage a {
+	margin: 0 20px
+}
+
+/* cdkey */
+.cdkbanner {
+	width: 517px;
+	height: 148px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -522px;
+	margin: 0 auto 16px;
+	text-indent: -9999px
+}
+
+.cdk {
+	width: 520px;
+	height: 235px;
+	background: #f9f7f8;
+	border-top: 1px #dcd7d8 solid;
+	border-bottom: 1px #dcd7d8 solid;
+	line-height: 24px;
+	margin: 10px auto 0
+}
+
+.cdk .gift {
+	padding: 16px 0 0 24px;
+	height: 24px
+}
+
+.cdk .gift a {
+	color: #940800
+}
+
+.t-cdk {
+	width: 480px;
+	margin: auto
+}
+
+.t-cdk th {
+	width: 85px;
+	height: 35px;
+	text-align: right;
+	font-weight: normal
+}
+
+.t-cdk td {
+	width: 380px;
+	height: 35px;
+	padding-left: 15px
+}
+
+.t-cdk .ipt1,.t-cdk .ipt2 {
+	width: 360px;
+	height: 14px;
+	padding: 3px 10px;
+	background: #5c493a;
+	border: 0;
+	color: #fff
+}
+
+.t-cdk .ipt2 {
+	width: 115px;
+	float: left;
+	margin-top: 6px
+}
+
+.t-cdk select {;
+	background: #5c493a;
+	color: #fff;
+	border: 0;
+	margin: 0 15px 0 0
+}
+
+.t-cdk .code {
+	width: 95px;
+	height: 30px;
+	float: left;
+	margin: 3px 15px 0
+}
+
+.t-cdk .change {
+	float: left;
+	margin-top: 3px
+}
+
+.cdksub {
+	display: block;
+	width: 126px;
+	height: 49px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -670px;
+	cursor: pointer;
+	text-indent: -9999px;
+	margin: 20px auto 0
+}
+
+.cdkinfo {
+	width: 480px;
+	margin: 10px auto 0;
+	line-height: 24px
+}
+
+/* event */
+.evbanner {
+	width: 517px;
+	height: 148px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -719px;
+	margin: 0 auto 16px;
+	text-indent: -9999px
+}
+
+.evlist {
+	width: 520px;
+	margin: 5px auto 0
+}
+
+.evlist li {
+	width: 520px;
+	height: 118px;
+	background: #f9f7f8;
+	border-top: 1px #dcd7d8 solid;
+	border-bottom: 1px #dcd7d8 solid;
+	position: relative;
+	margin-bottom: 20px
+}
+
+.evlist img {
+	width: 214px;
+	height: 72px;
+	border: 1px #c7712f solid;
+	position: absolute;
+	left: 0;
+	top: 19px
+}
+
+.evlist h3 {
+	width: 285px;
+	height: 16px;
+	margin: 19px 0 0 235px;
+	color: #940800;
+	font-size: 12px;
+	border-bottom: 1px #e6dad2 dashed
+}
+
+.evlist .evcon {
+	width: 270px;
+	height: 48px;
+	line-height: 24px;
+	margin-left: 235px;
+	overflow: hidden
+}
+
+.evlist .evtime {
+	width: 210px;
+	height: 24px;
+	line-height: 24px;
+	margin-left: 235px;
+	overflow: hidden;
+	float: left
+}
+
+.evlist .eventer {
+	width: 60px;
+	height: 15px;
+	background: url(http://ossweb-img.qq.com/images/xj/web201110/news.jpg)
+		no-repeat -126px -670px;
+	text-indent: -9999px;
+	float: left;
+	margin-top: 5px
+}
+
+/* down */
+.downbanner {
+	width: 517px;
+	height: 155px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -867px;
+	margin: 0 auto 16px;
+	text-indent: -9999px
+}
+
+.downver {
+	width: 520px;
+	height: 50px;
+	margin: auto;
+	overflow: hidden
+}
+
+.downver li {
+	width: 239px;
+	height: 22px;
+	line-height: 22px;
+	background: #f9f7f8;
+	border: 1px #dcd7d8 solid;
+	border-left: 0;
+	float: left;
+	padding-left: 20px
+}
+
+.downver .lr {
+	width: 240px;
+	border-right: 0
+}
+
+.downver .lb {
+	border-top: 0
+}
+
+.downver .md5 {
+	width: 35px;
+	height: 15px;
+	float: left;
+	margin: 4px 5px 0 0;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat -186px -670px;
+	text-indent: -9999px
+}
+
+.downver .tt {
+	float: left
+}
+
+.downnav {
+	width: 520px;
+	height: 85px;
+	margin: 25px auto 0
+}
+
+.downnav a {
+	width: 148px;
+	height: 60px;
+	float: left;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat 0 -1026px;
+	margin-right: 37px;
+	text-indent: -9999px
+}
+
+.downnav .dn2 {
+	background-position: -148px -1026px
+}
+
+.downnav .dn3 {
+	background-position: -296px -1026px;
+	margin: 0
+}
+
+.tit-md {
+	width: 520px;
+	height: 23px;
+	margin: auto;
+	line-height: 16px;
+	display: none
+}
+
+.tit-md .ic1 {
+	float: left;
+	width: 24px;
+	height: 14px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat -221px -670px;
+	margin-right: 5px
+}
+
+.mediadown {
+	width: 520px;
+	height: 50px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+	display: none
+}
+
+.mediadown li {
+	width: 64px;
+	height: 22px;
+	line-height: 22px;
+	background: #f9f7f8;
+	border-bottom: 1px #dcd7d8 solid;
+	border-right: 1px #dcd7d8 solid;
+	float: left;
+	text-align: center
+}
+
+.mediadown .lr {
+	width: 65px;
+	border-right: 0
+}
+
+.mediadown .lt {
+	border-top: 1px #dcd7d8 solid
+}
+
+.tit-down1,.tit-down2 {
+	display: block;
+	width: 91px;
+	height: 20px;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat -364px -90px;
+	text-indent: -9999px;
+	margin-left: 29px
+}
+
+.tit-down2 {
+	background-position: -455px -90px;
+	width: 109px
+}
+
+.line {
+	width: 517px;
+	height: 3px;
+	line-height: 0;
+	background: url('http://ossweb-img.qq.com/images/xj/web201110/news.jpg')
+		no-repeat -29px -87px;
+	margin: 8px 0 10px 29px;
+	overflow: hidden
+}
+
+.downtd {
+	width: 520px;
+	margin: 0 auto 30px;
+	overflow: hidden
+}
+
+.downtd li {
+	width: 100px;
+	height: 22px;
+	line-height: 22px;
+	background: #f9f7f8;
+	border-bottom: 1px #dcd7d8 solid;
+	border-right: 1px #dcd7d8 solid;
+	float: left;
+	text-align: center
+}
+
+.downtd .lt {
+	border-top: 1px #dcd7d8 solid
+}
+
+.downtd .l2 {
+	width: 76px
+}
+
+.downtd .l3 {
+	width: 90px
+}
+
+.downtd .l4 {
+	width: 86px
+}
+
+.downtd .l5 {
+	width: 164px;
+	border-right: 0
+}
+
+.downtd .l5 a {
+	text-decoration: underline
+}
+
+.otherdown {
+	width: 520px;
+	height: 50px;
+	margin: 0 auto;
+	overflow: hidden
+}
+
+.otherdown li {
+	width: 85px;
+	height: 22px;
+	line-height: 22px;
+	background: #f9f7f8;
+	border-bottom: 1px #dcd7d8 solid;
+	border-right: 1px #dcd7d8 solid;
+	float: left;
+	text-align: center
+}
+
+.otherdown .lr {
+	width: 86px;
+	border-right: 0
+}
+
+.otherdown .lt {
+	border-top: 1px #dcd7d8 solid
+}
+
+.mwb {
+	width: 515px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.wbshow {
+	width: 1000px;
+	overflow: hidden;
+}
+
+.wb_lst {
+	width: 74px;
+	padding: 20px 36px 0 0;
+	text-align: center;
+	float: left;
+	list-style: none;
+}
+
+.wb_box {
+	position: relative;
+	height: 74px;
+	margin: 0 0 10px 0;
+}
+
+.wb_img {
+	border: 2px solid #FFFFFF;
+	width: 70px;
+	height: 70px;
+}
+
+.wb_ipt {
+	position: absolute;
+	left: 2px;
+	bottom: 2px;
+}
+
+.ms .wb_nm {
+	color: #A6A6A6;
+}
+
+.mq .wb_nm {
+	color: #717171;
+}
+
+.wb_lsn {
+	width: 163px;
+	height: 43px;
+	cursor: pointer;
+	margin: 30px auto 0 auto;
+}
+
+.hidden {
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+.ms .wb_lsn {
+	background: url(http://ossweb-img.qq.com/images/js/media/listen_s.png)
+		no-repeat;
+}
+
+.mq .wb_lsn {
+	background: url(http://ossweb-img.qq.com/images/js/media/listen_q.png)
+		no-repeat;
+}
+
+.bngg {
+	width: 520px;
+	height: 100px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+/*  |xGv00|8c37a455a54e112e23cddacad4fc5e73 */

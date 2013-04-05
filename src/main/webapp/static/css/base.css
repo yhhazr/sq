@@ -1,0 +1,42 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,p,th,td{margin:0;padding:0;font-family:"微软雅黑","宋体",Tahoma,sans-serif;}
+body{font-size:12px;}
+table{border-collapse:collapse;border-spacing:0;}
+th,em{font-style:normal;font-weight:normal;}
+ul li{list-style:none;}
+fieldset,img{border:0;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;}
+input,select,form img,button{vertical-align:middle;}
+section,article,aside,header,footer,nav,dialog,figure{display:block;}
+.f_l{float:left;display:inline;}
+.f_r{float:right;display:inline;}
+.navLogo,.navFavorites a{text-indent:-999em;overflow:hidden;}
+.navLogo{background:url(http://image4.7road.com/spritesBg1.jpg) no-repeat;}
+
+.box,.topNav,.clearfix,.main,.footer{zoom:1;}
+.box:after,.topNav:after,.clearfix:after,.main:after,.footer:after{content:" ";clear:both;zoom:1;height:1%;display:block;}
+.box,.topNav,.main,.footer{margin:0 auto;width:1000px;}
+.normalInput{border:1px solid #ccc;}
+.focusInput{border:1px solid #06ceff;} 
+
+.topNavWrap{height:40px;background:url(http://image2.7road.com/top-Nav.png) repeat-x 0 -2px;}
+.navLogo{width:113px;height:30px;margin:3px 5px 0 0;background-position:-240px -447px;}
+
+.navRegLogin{margin-top:8px;}
+.navFavorites{}
+.navFavorites a{float:left;background:url(http://image3.7road.com/icon.png) no-repeat 0 -28px;height:23px;width:64px;}
+.navRegLogin .regLogin{margin-top:4px;font-weight:bold;}
+.head_login_content a{color:#444;padding:0 5px;width:52px;text-align:center;float:left;line-height:18px;height:18px;}
+.head_login_content a.navReg{border-right:1px solid #BEBEBE;}
+.head_login_content a:hover{text-decoration:underline;}
+.indexLogout{position:relative;left:10px;color:#444;}
+.gray{color:gray;}
+.idx_name{color: #444;}
+
+#slideMessage li{ list-style-type:none; color: #444;}
+#slideMessage li a{ color: #444;}
+#slideMessage{float: left; width: 300px;height: 20px;line-height: 20px;margin-top: 10px;overflow: hidden;margin-left:10px; }

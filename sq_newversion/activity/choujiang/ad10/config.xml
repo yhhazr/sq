@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xml>
+	<config>
+		<swf>swf/loadingBg.swf</swf>
+		<swf>swf/ren.swf</swf>
+		<swf>swf/bg.swf</swf>
+		<flv>swf/sq2.flv</flv>
+	</config>
+</xml>

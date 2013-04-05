@@ -1,0 +1,12 @@
+.view{width:665px; background-color:#022e5a;}
+.title_newpake{position:relative; left:16px; padding-top:14px; width:627px; height:43px;}
+.textBox{width:627px; padding:8px 0 0 16px;}
+.h4{padding-top:16px; font-size:16px; color:#ffffff; line-height:22px; font-weight:normal;}
+.h5{padding-top:16px; font-size:12px; color:#ffffff; line-height:22px; font-weight:normal;}
+.fnt_title{padding:12px 0 0 0; font-size:16px; font-weight:bold; color:#ffffff;}
+.fnt_reward{font-size:12px; font-weight:normal; color:#2ceb6b;}
+.fnt_spe{color:#ff0000;}
+.textinput{border:1px solid #001529; font-size:14px; color:#092d51;}
+p{color:#ffffff;}
+p a{color:#ffffff; text-decoration:underline;}
+p a:hover{color:#ffffff; text-decoration:none;}

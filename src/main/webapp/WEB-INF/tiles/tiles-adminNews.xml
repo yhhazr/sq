@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminNewsCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.newsManage.createNews"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/news/admin_createNews.jsp" />
+	</definition>
+	<definition name="adminNewsQuery" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.news.list"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/news/admin_NewsList.jsp" />
+	</definition>
+	<definition name="adminNewsEdit" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.news.editNews"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/news/admin_editNews.jsp" />
+	</definition>
+
+</tiles-definitions>

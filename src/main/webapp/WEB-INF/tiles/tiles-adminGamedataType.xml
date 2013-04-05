@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="gameDataTypeList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.gameDate.gameDataTypeList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/gameDateType/admin_gamedatetypelist.jsp" />
+	</definition>
+	
+	<definition name="editGameDataType" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.gameDate.editGameDataType"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/gameDateType/admin_editgamedatetype.jsp" />
+	</definition>
+
+	<definition name="createGameDataType" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.gameDate.createGameDataType"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/gameDateType/admin_creategamedatetype.jsp" />
+	</definition>
+</tiles-definitions>

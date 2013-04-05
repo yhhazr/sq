@@ -1,0 +1,781 @@
+.skill_wizard_001_light, 
+.skill_wizard_001_gray, 
+.skill_wizard_002_light, 
+.skill_wizard_002_gray, 
+.skill_wizard_003_light, 
+.skill_wizard_003_gray,
+.skill_wizard_004_light, 
+.skill_wizard_004_gray, 
+.skill_wizard_005_light, 
+.skill_wizard_005_gray, 
+.skill_wizard_006_light, 
+.skill_wizard_006_gray, 
+.skill_wizard_007_light, 
+.skill_wizard_007_gray, 
+.skill_wizard_008_light, 
+.skill_wizard_008_gray, 
+.skill_wizard_009_light, 
+.skill_wizard_009_gray, 
+.skill_wizard_010_light, 
+.skill_wizard_010_gray, 
+.skill_wizard_011_light, 
+.skill_wizard_011_gray, 
+.skill_wizard_012_light, 
+.skill_wizard_012_gray, 
+.skill_wizard_013_light, 
+.skill_wizard_013_gray, 
+.skill_wizard_014_light, 
+.skill_wizard_014_gray, 
+.skill_wizard_015_light, 
+.skill_wizard_015_gray, 
+.skill_wizard_016_light, 
+.skill_wizard_016_gray, 
+.skill_wizard_017_light, 
+.skill_wizard_017_gray, 
+.skill_wizard_018_light, 
+.skill_wizard_018_gray{
+	background: url(http://image.7road.com/skill/skills_wizard.png) no-repeat;
+}
+
+.skill_wizard_001_light{
+	background-position: 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_001_gray{
+	background-position: 0 -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_002_light{
+	background-position: -50px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_002_gray{
+	background-position: -50px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_003_light{
+	background-position: -100px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_003_gray{
+	background-position: -100px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_004_light{
+	background-position: -150px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_004_gray{
+	background-position: -150px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_005_light{
+	background-position: -200px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_005_gray{
+	background-position: -200px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_006_light{
+	background-position: -250px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_006_gray{
+	background-position: -250px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_007_light{
+	background-position: -300px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_007_gray{
+	background-position: -300px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_008_light{
+	background-position: -350px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_008_gray{
+	background-position: -350px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_009_light{
+	background-position: -400px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_009_gray{
+	background-position: -400px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_010_light{
+	background-position: -450px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_010_gray{
+	background-position: -450px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_011_light{
+	background-position: -500px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_011_light{
+	background-position: -500px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_012_light{
+	background-position: -550px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_012_gray{
+	background-position: -550px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_013_light{
+	background-position: -600px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_013_gray{
+	background-position: -600px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_014_light{
+	background-position: 0 -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_014_gray{
+	background-position: 0 -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_015_light{
+	background-position: -50px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_015_gray{
+	background-position: -50px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_016_light{
+	background-position: -100px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_016_gray{
+	background-position: -100px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_017_light{
+	background-position: -150px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_017_gray{
+	background-position: -150px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_018_light{
+	background-position: -200px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_wizard_018_gray{
+	background-position: -200px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+/*射手*/
+.skill_hunter_001_gray, .skill_hunter_001_light, .skill_hunter_002_gray, .skill_hunter_002_light, .skill_hunter_003_gray, .skill_hunter_003_light, .skill_hunter_004_gray, .skill_hunter_004_light, .skill_hunter_005_gray, .skill_hunter_005_light, .skill_hunter_006_gray, .skill_hunter_006_light, .skill_hunter_007_gray, .skill_hunter_007_light, .skill_hunter_008_gray, .skill_hunter_008_light, .skill_hunter_009_gray, .skill_hunter_009_light, .skill_hunter_010_gray, .skill_hunter_010_light, .skill_hunter_011_gray, .skill_hunter_011_light, .skill_hunter_012_gray, .skill_hunter_012_light, .skill_hunter_013_gray, .skill_hunter_013_light, .skill_hunter_014_gray, .skill_hunter_014_light, .skill_pawn_003_special_gray, .skill_pawn_003_special_light, .skill_pawn_005_special_gray, .skill_pawn_005_special_light{
+	background: url(http://image.7road.com/skill/sprites_hunter.png) no-repeat;
+}
+
+.skill_hunter_001_gray{
+	background-position: 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_001_light{
+	background-position: -50px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_002_gray{
+	background-position: -100px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_002_light{
+	background-position: -150px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_003_gray{
+	background-position: -200px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_003_light{
+	background-position: -250px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_004_gray{
+	background-position: -300px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_004_light{
+	background-position: -350px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_005_gray{
+	background-position: -400px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_005_light{
+	background-position: -450px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_006_gray{
+	background-position: -500px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_006_light{
+	background-position: -550px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_007_gray{
+	background-position: 0 -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_007_light{
+	background-position: -50px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_008_gray{
+	background-position: -100px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_008_light{
+	background-position: -150px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_009_gray{
+	background-position: -200px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_009_light{
+	background-position: -250px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_010_gray{
+	background-position: -300px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_010_light{
+	background-position: -350px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_011_gray{
+	background-position: -400px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_011_light{
+	background-position: -450px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_012_gray{
+	background-position: -500px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_012_light{
+	background-position: -550px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_013_gray{
+	background-position: 0 -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_013_light{
+	background-position: -50px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_014_gray{
+	background-position: -100px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_hunter_014_light{
+	background-position: -150px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_pawn_003_special_gray{
+	background-position: -200px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_pawn_003_special_light{
+	background-position: -250px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_pawn_005_special_gray{
+	background-position: -300px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_pawn_005_special_light{
+	background-position: -350px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+/*战士*/
+.skill_warrior_001_gray, .skill_warrior_001_light, .skill_warrior_002_gray, .skill_warrior_002_light, .skill_warrior_003_gray, .skill_warrior_003_light, .skill_warrior_004_gray, .skill_warrior_004_light, .skill_warrior_005_gray, .skill_warrior_005_light, .skill_warrior_006_gray, .skill_warrior_006_light, .skill_warrior_007_gray, .skill_warrior_007_light, .skill_warrior_008_gray, .skill_warrior_008_light, .skill_warrior_009_gray, .skill_warrior_009_light, .skill_warrior_010_gray, .skill_warrior_010_light, .skill_warrior_011_gray, .skill_warrior_011_light, .skill_warrior_012_gray, .skill_warrior_012_light, .skill_warrior_013_gray, .skill_warrior_013_light, .skill_warrior_014_gray, .skill_warrior_014_light, .skill_warrior_015_gray, .skill_warrior_015_light, .skill_warrior_016_gray, .skill_warrior_016_light, .skill_warrior_017_gray, .skill_warrior_017_light, .skill_warrior_018_gray, .skill_warrior_018_light, .skill_warrior_019_gray, .skill_warrior_019_light, .skill_warrior_020_gray, .skill_warrior_020_light, .skill_warrior_021_gray, .skill_warrior_021_light, .skill_warrior_022_gray, .skill_warrior_022_light{
+	background: url(http://image.7road.com/skill/sprites_warrior.png) no-repeat;
+}
+
+.skill_warrior_001_gray{
+	background-position: 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_001_light{
+	background-position: -50px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_002_gray{
+	background-position: -100px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_002_light{
+	background-position: -150px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_003_gray{
+	background-position: -200px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_003_light{
+	background-position: -250px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_004_gray{
+	background-position: -300px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_004_light{
+	background-position: -350px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_005_gray{
+	background-position: -400px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_005_light{
+	background-position: -450px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_006_gray{
+	background-position: -500px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_006_light{
+	background-position: -550px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_007_gray{
+	background-position: 0 -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_007_light{
+	background-position: -50px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_008_gray{
+	background-position: -100px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_008_light{
+	background-position: -150px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_009_gray{
+	background-position: -200px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_009_light{
+	background-position: -250px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_010_gray{
+	background-position: -300px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_010_light{
+	background-position: -350px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_011_gray{
+	background-position: -400px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_011_light{
+	background-position: -450px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_012_gray{
+	background-position: -500px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_012_light{
+	background-position: -550px -50px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_013_gray{
+	background-position: 0 -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_013_light{
+	background-position: -50px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_014_gray{
+	background-position: -100px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_014_light{
+	background-position: -150px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_015_gray{
+	background-position: -200px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_015_light{
+	background-position: -250px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_016_gray{
+	background-position: -300px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_016_light{
+	background-position: -350px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_017_gray{
+	background-position: -400px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_017_light{
+	background-position: -450px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_018_gray{
+	background-position: -500px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_018_light{
+	background-position: -550px -100px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_019_gray{
+	background-position: 0 -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_019_light{
+	background-position: -50px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_020_gray{
+	background-position: -100px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_020_light{
+	background-position: -150px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_021_gray{
+	background-position: -200px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_021_light{
+	background-position: -250px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_022_gray{
+	background-position: -300px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.skill_warrior_022_light{
+	background-position: -350px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+
+
+/*箭头样式*/
+.arrow_1_light, .arrow_2_light, .arrow_3_light, .arrow_4_light, .arrow_1_gray, .arrow_2_gray, .arrow_3_gray, .arrow_4_gray{
+	background: url(http://image.7road.com/skill/arrows.png) no-repeat;
+}
+
+.arrow_1_light{
+	background-position: 0 0;
+	width: 31px;
+	height: 21px;
+}
+
+.arrow_2_light{
+	background-position: -342px 0;
+	width: 132px;
+	height: 21px;
+}
+
+.arrow_3_light{
+	background-position: -36px 0;
+	width: 73px;
+	height: 53px;
+}
+
+.arrow_4_light{
+	background-position: -188px 0;
+	width: 73px;
+	height: 53px;
+}
+
+.arrow_1_gray{
+	background-position: 0 -26px ;
+	width: 31px;
+	height: 21px;
+}
+
+.arrow_2_gray{
+	background-position: -342px -25px ;
+	width: 132px;
+	height: 21px;
+}
+
+.arrow_3_gray{
+	background-position: -112px 0;
+	width: 73px;
+	height: 53px;
+}
+
+.arrow_4_gray{
+	background-position: -264px 0;
+	width: 73px;
+	height: 53px;
+}
+
+

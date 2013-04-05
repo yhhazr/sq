@@ -1,0 +1,36 @@
+.page{background:url(http://image.7road.com/login.jpg) no-repeat; overflow:hidden;}
+.main-contant{width:474px; height:335px; position:relative;}
+.close{ width:35px; float:right;}
+.login-area{ padding:75px 0 0 50px; width:420px; height:200px; position:relative;}
+.login-area ul{}
+.login-area ul li{ padding:15px 0 0 20px; list-style-type:none; font-size:14px; color:#ffffff;}
+input{ border:1px solid #0e0f10; height:32px; line-height:32px; width:180px; text-indent:4px;font-size: 15px;font-weight: bold;}
+.ties{ font-size:12px; color:#8ac0cd; padding-left:8px;}
+p{ margin:0 0 0 90px;}
+h3{display:inline; margin:0 0 0 110px;}
+h3 a{ font-weight:normal; color:#10d5f2; text-decoration:underline;}
+h3 a:hover{ font-weight:normal; color:#10d5f2; text-decoration:underline;}
+h4{ padding:0 0 0 12px; color:#cafffe; font-weight:normal; font-size:14px;}
+h4 a{ color:#0ecefe; text-decoration:underline;}
+h4 a:hover{ color:#0ecefe; text-decoration:underline;}
+.fnt_user{ font-size:14px; font-weight:bold; color:#ffb709;}
+h5{ padding:20px 0 0 12px; font-size:14px; font-weight:normal;}
+h5 a{ color:#0ecefe; text-decoration:underline;}
+h5 a:hover{ color:#0ecefe; text-decoration:underline;}
+h5 img{ vertical-align:bottom;}
+h6{ padding:20px 0 0 12px; height:30px; line-height:30px; font-weight:normal; color:#cafffe;}
+h6 a{ color:#0ecefe; text-decoration:none;}
+h6 a:hover{ color:#0ecefe; text-decoration:underline;}
+.fnt_info{ color:#f0aa01;}
+.login_error, .log_message{color: #C2AA25;height: 14px;padding:0; text-align:center; width:190px;margin-bottom: 5px;}
+.loged {display:none;margin: 0px;padding: 0px;}	
+.username { font-size:14px; color:#ffb709;font-weight: bold;}
+span .no_email  {margin-left: 10px;color:  #d9b815;}
+.lastserver {font-size: 1.2em; color:#f0aa01;}
+.login_game_div {display:none;}
+.otherservers {color:#0ecefe;text-decoration:none;}
+.otherservers:hover{color:#0ecefe;text-decoration:underline;}
+.logout{margin-right:20px;color:#0ecefe; text-decoration:underline;}
+.myA{ color:#0ecefe; text-decoration:underline;}
+#submit{position:relative; left:3px;}
+.lastserver{cursor:pointer;}

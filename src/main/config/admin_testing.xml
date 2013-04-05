@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="testPrepare" namespace="/test" extends="default">
+		<action name="rechargePrepare" class="com.sz7road.web.action.admin.testmanage.RechargeTestAction" method="testPrepare">			
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">rechargeTest</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+	<package name="testSubmit" namespace="/testSubmit" extends="default,json-7road">
+		<action name="recharge" class="com.sz7road.web.action.admin.testmanage.RechargeTestAction" method="testSubmit">			
+			<result name="input" type="json"></result>
+			<result name="success" type="json"></result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>3秒快速注册_神曲第七大道</title>
+<style type="text/css">
+
+</style>
+<script>
+var _hmt = _hmt || [];
+
+</script>
+</head>
+
+<body>
+
+<!--百度统计代码-->
+<div style="display:none"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F74a586d333946b764ec92cc4cb49374a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div><!-- 底部end -->
+
+<a onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'literature']); " href="javascript:void(0)"  >点我点我点我点我</a>
+</body>
+
+
+
+<script type="text/javascript" src="http://static.7road.com/js/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="http://static.7road.com/js/jquery.cookie.js" charset="UTF-8"></script>
+<script type="text/javascript">
+var global={
+	"registerUrl":"http://sq.7road.com/game7road/registrationSubmit.action",
+	"getLatestServerUrl":"http://sq.7road.com/game7road/onlineGame/acquireId.action",//获取最新能够登陆的区服信息
+	"checkUserNameUrl":"http://sq.7road.com/game7road/checkUserName.action",
+	"adStatisticsUrl":"http://sq.7road.com/game7road/enterFromAd.action",
+	"gameUrl":"http://account.7road.com/PlayGame2?g=1&game=S&subGame=0&z="
+};
+var flag=false;
+var toGameUrl;
+$(function(){
+	var adId = getUrlParam("adId");
+	var site = getUrlParam("site");
+	if(adId != "" && adId != null && !isNaN(adId)){
+		$.get(global.adStatisticsUrl + "?adId=" + adId + "&site=" + site,function(data){
+		});
+	}
+	//限制空格
+	$(".retInput").bind("keydown",function(event){
+		if(event.keyCode=="32"){
+			event.preventDefault();
+		}
+	});
+
+	//判断用户名js验证
+	$("#userName").bind("blur",function(){
+		var username=$(this);
+		var flag=true;
+		if(!username.val()){
+			username.siblings(".error").text("用户名不能为空").addClass("red");
+			username.siblings(".errorImg").show();
+		}else{
+			//定义不合法字符
+			var unauthorizedNames=['gamemaster','gm','shit','bitch','fvc','phuc','fuk','shenqu','fuck','admin','7road'];
+			for(i=0;i<unauthorizedNames.length;i++){
+				if(username.val().indexOf(unauthorizedNames[i])==0){
+					username.siblings(".error").text("用户名含有非法字符").addClass("red");
+					username.siblings(".errorImg").show();
+					flag=false;
+         			return ;
+				}
+			};
+			//后端检查用户名
+			if(flag){
+				$.get(global.checkUserNameUrl,{"inName":$(this).val()},function(data){
+					if(data.result==="false"){
+						username.siblings(".error").text(data.respMsg).addClass("red");
+						username.siblings(".errorImg").show();
+					}else{
+						//正确
+						username.siblings(".errorImg").show().addClass("trueImg");
+					}
+				})
+			}
+		}
+	}).bind("focus",function(){
+		$(this).siblings(".error").removeClass("red").text("6-20个英文字符、数字、下划线");
+		$(this).siblings(".errorImg").removeClass("trueImg").hide();
+	});
+
+	//判断密码js验证
+	$("#password1").bind("blur",function(){
+		var pwdValLength=$.trim(this.value).length;
+		if(pwdValLength<6||pwdValLength>20){
+			$(this).siblings(".error").text("密码长度为6-20位").addClass("red");
+			$(this).siblings(".errorImg").show();
+			flag=false;
+		}else if(pwdValLength<1){
+			$(this).siblings(".error").text("密码不能为空").addClass("red");
+			$(this).siblings(".errorImg").show();
+			flag=false;
+		}else{
+			//判断成功
+			$(this).siblings(".errorImg").show().addClass("trueImg");
+			flag=true;
+		}
+	}).bind("focus",function(){
+		$(this).siblings(".error").removeClass("red").text("至少6位字符（字母、数字、下划线）");
+		$(this).siblings(".errorImg").removeClass("trueImg").hide();
+	})
+
+
+	//判断确认密码框js验证
+	$("#password2").bind("blur",function(){
+		var pwdValLength=$.trim(this.value).length;
+		if(pwdValLength<6||pwdValLength>20){
+			$(this).siblings(".error").text("密码长度为6-20位").addClass("red");
+			$(this).siblings(".errorImg").show();
+			flag=false;
+		}else if(pwdValLength<1){
+			$(this).siblings(".error").text("密码不能为空").addClass("red");
+			$(this).siblings(".errorImg").show();
+			flag=false;
+		}else if($("#password1").val()!==$(this).val()){
+			$(this).siblings(".error").text("两个密码不一致").addClass("red");
+			$(this).siblings(".errorImg").show();
+			flag=false;
+		}else{
+			$(this).siblings(".errorImg").show().addClass("trueImg");
+			flag=true;
+		}
+	}).bind("focus",function(){
+		$(this).siblings(".error").removeClass("red").text("至少6位字符（字母、数字、下划线）");
+		$(this).siblings(".errorImg").removeClass("trueImg").hide();
+	}).bind("keydown",function(event){
+		if (event.keyCode == '13') {
+			event.preventDefault();
+			beiginRegister();
+			return false; 
+		}
+	})
+
+	$("#beginReg").live("click",function(){
+		beiginRegister();
+	});
+});
+
+
+function beiginRegister(){
+	if($("#checkbox").attr("checked")!="checked"){
+			alert("您还没有选择同意并接受用户注册协议书");
+			flag=false;
+		}
+	var user = $.trim($("#userName").val()),pass1 = $.trim($("#password1").val()),pass2 = $.trim($("#password2").val());
+	if(flag){
+		jQuery.ajax({
+			url: global.registerUrl,
+			type: 'POST',
+			async:false,
+			data: {"inName":user,"password1":pass1,"password2":pass2},
+			success: function(data) {
+				if(data.result==="true"){
+					if(data.bbsData != null){
+						$("body").append(data.bbsData);//同步论坛
+					}
+					$.get(global.getLatestServerUrl,function(data){
+						toGameUrl = "http://account.7road.com/PlayGame2?g=1&game=S&subGame=0&z="+data.id+"";
+						setTimeout(function(){
+							document.location.href = toGameUrl;
+						},1500)
+					});
+				}else{
+					$(".serverError").text(data.respMsg);
+					flag=false;
+				}
+			},
+		    error: function(xhr, textStatus, errorThrown) {
+		      $(".serverError").text("服务器连接超时,请稍后再试");
+		      flag=false;
+		    }
+
+		});
+		
+		
+	}else{
+		//alert("都没验证OK了")
+	}
+};
+function getSite() {
+	var value = "";
+	var query=location.search.substring(1);//获取查询串     
+	var pairs=query.split("&");//获得参数数组     
+	for(var i=0;i<pairs.length;i++){     
+		var pos=pairs[i].indexOf('=');//查找name=value  
+		if(pos==-1) continue;//如果没有找到就跳过     
+        var argname=pairs[i].substring(0,pos);//提取name   
+		if(argname=="site") {
+			value=pairs[i].substring(pos+1);//提取value
+			$.cookie('site', value, {expires:0, path: '/',domain: COOKIE_NAME});
+			break;
+		}
+	}
+	if(value=="") {
+		value = $.cookie('site');
+		if(value == null) {
+			value = "";
+		}
+	}
+	return value;     
+}
+function getNewGamezoneId(){
+	var newGamezoneId=getNewestGameServerId();
+	if(newGamezoneId)
+	{
+		return newGamezoneId;
+	}else{
+		
+		return 942;
+	}
+}
+//获取URL参数
+function getUrlParam(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+}
+
+</script>
+</html>

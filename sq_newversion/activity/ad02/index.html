@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>7road神曲 V1.6全球首发</title>
+<style type="text/css">
+*{ margin:0; padding: 0;}
+body{ font-family: 宋体; background:#000 url(http://image.7road.com/baidu/ad02/bodybg.jpg) no-repeat 50% 0;}
+.main{ width: 1000px; margin:0 auto; height: 600px; position: relative;}
+.regBox{ width: 426px; position: absolute; z-index: 120; top: 423px; left: 33px;  height: 150px;}
+.regList{ margin-top: 22px;width: 426px; float: left; position: relative;}
+.regTxt{ float: left; font-size: 14px; color: #000; font-weight: bold; width: 80px; text-align: right; line-height: 22px;}
+.regTxt4{ padding-left: 0;}
+.retInput{ float: left; margin-left: 8px;  outline: none; border:1px solid #000; height: 22px; line-height: 22px; width: 234px; font-size: 16px; font-weight: bold; padding:0 5px; }
+.regBtn{ float: left; width: 127px; height: 35px;  margin: 24px 0 0 135px; background: url(http://image.7road.com/baidu/ad02/aBtn.gif) no-repeat; outline: none; }
+.regBtn:hover{ background: url(http://image.7road.com/baidu/ad02/aBtnHover.png) no-repeat;}
+.oldPlayer{ color: #062b4a; font-size: 14px; float: left; margin:25px 0 0 300px; font-weight: bold;}
+.error,.errorClass,.trueClass{ color: #000; font-size: 12px; line-height:22px; height: 22px; left: 90px; top: 22px; position: absolute; }
+.errorClass,.red{ color: red;}
+.errorImg{ position: absolute; width: 11px; height: 11px;  top: 6px; left: 338px;display: none; }
+.trueImg{ }
+.serverError{ color: red; position: absolute; top: 62px; left: 160px; font-size: 12px; }
+.btnBox{ float: left; position: relative;}
+.tongyi{ float: left; margin: 40px 0 0 75px; color: #0E3B65; font-size: 12px; _margin-left: 38px;} 
+.tongyi a{ color: #0E3B65;}
+.ad01{  width: 1000px; height: 600px;}
+</style>
+<script type="text/javascript">
+var _hmt = _hmt || [];
+</script>
+</head>
+
+<body>
+<div class="main">
+	<div class="ad01">
+		<embed  src='http://image.7road.com/baidu/ad02/main.swf?v=1352975329097' type='application/x-shockwave-flash' width='1000' height='600' quality='high'  menu='false' pluginspage='http://www.macromedia.com/go/getflashplayer' wmode='transparent' play='true' loop='true' scale='showall' devicefont='false' allowScriptAccess='always'></embed>
+	</div>
+	
+	<div class="regBox">
+		<div class="regList">
+			<div class="regTxt">用户名：</div>
+			<input type="text"  class="retInput" maxlength="20"  id="reg_uid"  />
+			<div class="error" id="tab2_1" errormsg="字母开头，6-20个字母数字" truemsg="该用户名可以使用" nullmsg="用户名不能为空" fiveerrormsg="用户名不能有5个重复字符" unrulemsg="该用户名不合法">字母开头，6-20个字母数字</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="regList">
+			<div class="regTxt">登录密码：</div>
+			<input type="test"  class="retInput" maxlength="20"  id="reg_pwd"  />
+			<div class="error" id="tab2_2" errormsg="6-20个英文字符、数字、下划线" truemsg="密码正确" nullmsg="密码不能为空" >至少6位字符（字母、数字、下划线）</div>
+			<div class="errorImg"></div>
+		</div>
+		<!--div class="regList" style="display:">
+			<div class="regTxt regTxt4">确认密码</div>
+			<input type="password"  class="retInput" maxlength="20" id="reg_confirm_pwd"   />
+			<div class="error" id="tab2_3" unequallymsg="两次输入密码不一致" truemsg="密码正确" errormsg="6-20个英文字符、数字、下划线">输入确认密码</div>
+			<div class="errorImg"></div>
+		</div-->
+		<div class="tongyi" style="display:none"><input type="checkbox" checked="true"  name="checkbox" id="agreement" ><span>同意并接受</span><a target="_blank" href="http://account.7road.com//register_notice.html" class="popXieYi">《用户注册服务协议》</a></div>
+		<div class="btnBox">
+			<a class="regBtn" href="javascript:void(0)" id="btntoReg" hidefocus="true"></a>
+			
+			<div class="serverError" id="reg_tip"></div>
+		</div>
+		<a href="http://sq.7road.com/serverList.html" class="oldPlayer" target="_blank" style="display:none">老玩家登录 ></a>
+	</div>
+</div>
+
+
+
+<div id="syncBbs"></div>
+
+
+
+<script type="text/javascript" src="http://static.7road.com/js/lodingRegister.js"></script>
+
+<div style="display:none">
+<!--baidu analytics-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1af3e310f8c9cd774f2968d20f37b226' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--baidu analytics-->
+
+<!--google analytics-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37194163-1']);
+  _gaq.push(['_setDomainName', '7road.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--google analytics-->
+</div>
+</body>
+
+</html>

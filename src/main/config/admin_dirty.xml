@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="dirty" namespace="/dirty" extends="default">
+		
+		<action name="queryDirty" class="com.sz7road.web.action.admin.dirtymanage.DirtyManageAction" method="queryDirtyList">
+			<result name="success" type="tiles">dirtyPage</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="modifyDirtySubmit" class="com.sz7road.web.action.admin.dirtymanage.DirtyManageAction" method="modifyDirtySubmit">
+			<result name="success" type="tiles">tempPage</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+
+</struts>

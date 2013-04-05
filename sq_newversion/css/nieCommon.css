@@ -1,0 +1,31 @@
+@charset "utf-8";
+body,div,span,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,img{ margin:0; padding:0; border:medium none; }
+img,input{ border:0;}
+ul,li{ list-style:none;}
+table{ border-collapse: collapse; border-spacing: 0;}
+a{ color:#000; text-decoration:none; outline:none;  _outline:expression(this.hideFocus=true);}
+a:hover{ text-decoration:underline;}
+h1,h2,h3,h4,h5,h6 { font-size:12px; font-weight:normal;}
+address,cite,code,em,th,i { font-weight:normal; font-style:normal;}
+button, input, select, textarea, label{ vertical-align:middle;}
+.u_line{ text-decoration:underline;}
+.fB{ font-weight:bold;}
+.fN{ font-weight:normal;}
+.f12px{ font-size:12px;}
+.f14px{ font-size:14px;}
+.left{ float:left;}
+.right{ float:right;}
+.blank,.blank5,.blank10,.blank15,.blank20{ display:block; clear:both; font-size:0; overflow:hidden; height:0;}
+.blank5{ height:5px;}
+.blank15{ height:15px;}
+.blank10{ height:10px;}
+.blank20{ height:20px;}
+.mt_5{ margin-top:5px;}
+.mt_10{ margin-top:10px;}
+.mt_15{ margin-top:15px;}
+.zoom{ zoom:1; overflow:auto;}
+.none{ display:none;}
+.red{ color:red;}
+textarea{ line-height:24px; color:#666;}
+.relative{ position:relative;}
+body{font:normal 14px/22px Arial, sans-serif; color:#333; background:#F3F3F3;min-width:1050px;}

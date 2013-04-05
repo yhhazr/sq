@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="message" namespace="/msgManage" extends="default">
+		<!-- 留言列表显示 -->
+		<action name="queryMsg" class="com.sz7road.web.action.admin.msgmanage.MsgManageAction" method="queryMsgList">
+			<result name="success" type="tiles">adminMsgList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<!-- 留言编辑表单 -->
+		<action name="editMsgForm" class="com.sz7road.web.action.admin.msgmanage.MsgManageAction" method="editMsg">
+			<result name="success" type="tiles">adminEditMsg</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<!-- 留言编辑提交 -->
+		<action name="editMsgSubmit" class="com.sz7road.web.action.admin.msgmanage.MsgManageAction" method="editMsgSubmit">
+			<result name="input" type="tiles">adminEditMsg</result>
+			<result name="success" type="redirectAction">queryMsg</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<!-- 删除 -->
+		<action name="deleteMsg" class="com.sz7road.web.action.admin.msgmanage.MsgManageAction" method="deleteMsg">
+			<result name="success" type="redirectAction">queryMsg</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	
+	</package>
+
+</struts>

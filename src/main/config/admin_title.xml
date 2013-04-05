@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="titleManage" namespace="/titleManage" extends="default">
+	
+		<action name="queryTitleList" class="com.sz7road.web.action.admin.titlemanage.TitleManageAction" method="queryTitleList">			
+			<result name="success" type="tiles">adminTitleList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editTitleSubmit" class="com.sz7road.web.action.admin.titlemanage.TitleManageAction" method="editTltleSubmit">			
+			<result name="success" type="tiles">adminTitleList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+	</package>
+</struts>

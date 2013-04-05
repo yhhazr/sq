@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>恶魔回归_第七大道《神曲》官方网站</title>
+<style type="text/css">
+*{ margin:0; padding:0;}
+img{ border:none;}
+a{ text-decoration:none;}
+cite{ font-style:normal}
+a:hover{ text-decoration:underline;}
+html{ overflow-x:hidden;}
+body{ background:url(images/bodybg.jpg) no-repeat 50% 0; height:1011px; font:normal 12px/22px 微软雅黑,宋体;}
+.content{ width:1000px; margin:0 auto; height:916px; position:relative; }
+.tishi{ width:434px; height:141px; background:url(images/tishibg.png) no-repeat; left:100px; bottom:50px; z-index:1; position:absolute;_background-image: none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/tishibg.png", sizingMethod="scale") }
+.fivebtn{ position:absolute; top:315px; left:21px; z-index:3;}
+.begingame{ position:absolute; z-index:2; top:0; right:-161px;}
+.footer{ width:830px; height:95px; margin:0 auto;}
+.logo{ width:167px; height:70px; background:url(images/logo.jpg) no-repeat; float:left; margin-top:5px;}
+.txt{ float:left; color:#660017; margin:10px 0 0 60px;}
+.txt a{color:#660017; padding:0 5px;}
+.txt a.fri{ padding-left:0}
+.goindex{ position:absolute; width:104px; height:28px; top:0; right:89px; z-index:6; display:block; background:url(images/goindexbg.png) no-repeat; outline:none;}
+.xiala{ width:170px; height:28px; position:absolute; top:0; right:207px; font-family:微软雅黑,宋体; font-size:14px; line-height:24px; z-index:6; background:url(images/xialabg.png) no-repeat;}
+.xiala span,.nav a{ color:#ff9a00; width:165px; height:24px; padding-left:5px; display:block; overflow:hidden; cursor:pointer;}
+.nav{ width:168px; border:1px solid #6a0000; background-color:#34020f; position:absolute; z-index:10; left:0; top:27px; display:none;}
+.tcbox{ width:701px; height:514px; background:url(images/tcbg.png) no-repeat; z-index:300;position: fixed;_position: absolute;margin:-257px 0 0 -350px;top: 50%;left: 50%; _margin-top: 0; display:none; color:#fff;
+_top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);}
+.closewin{ position:absolute; width:30px; height:36px; cursor:pointer; top:15px; right:28px;}
+.btn{ position:fixed; _position:absolute; height:80px; width:80px; display:none; cursor:pointer; z-index:300; top:50%; margin-top:-40px; margin-top:0;_top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2); }
+.left{ background:url(images/leftbtn.png) no-repeat; _background:url(images/leftbtn_p8.png) no-repeat;}
+.right{ background:url(images/rgtbtn.png) no-repeat; _background:url(images/rgtbtn_p8.png) no-repeat;}
+.tcbox h2{ width:467px; height:52px; position:absolute; top:18px; left:25px; background-image:url(images/titlebg.png); background-repeat:no-repeat;}
+.texcontent{ width:620px; height:418px; overflow-y:auto; overflow-x:hidden; margin:70px 0 0 25px; padding:0 15px; float:left; display:inline;}
+.texcontent h3{ font:normal 18px/40px 微软雅黑,宋体; color:#ffcc00; height:40px; width:100%; margin-top:20px;}
+.texcontent p{ color:#b4b3b3; font:normal 14px/24px 微软雅黑,宋体; text-indent:24px;}
+.texcontent h3 b{width:6px; background:url(images/h3bg.png) no-repeat 0 0; height:8px; margin:20px 0 0 5px; float:left;}
+.texcontent h3 span{ float:left;}
+.texcontent img{ margin-top:10px;}
+.one_h2{ background-position:0 0; }
+.two_h2{ background-position:0 -52px; }
+.three_h2{ background-position:0 -104px; }
+.four_h2{ background-position:0 -156px; }
+.five_h2{ background-position:0 -208px; }
+.suoping{ width:100%; position:absolute; top:0; left:0; background-color:#000; display:none; z-index:100;}
+.logoflash{ width:265px; height:155px; position:absolute; z-index:4; top:-10px; left:-78px; }
+</style>
+<script type="text/javascript" src="images/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+function lockScreen(boolean){
+	if(boolean){
+		$(".suoping").height($(document).height()).show();
+		$(".suoping").css("opacity","0.5");
+	}else{
+		$(".suoping").hide();	
+	}
+}
+
+var showNum = 0;
+$(function(){
+	$(".xiala span").toggle(function(){
+		$(".nav").fadeIn();	
+	},function(){
+		$(".nav").fadeOut();	
+	});
+	$(".nav a").click(function(){
+		$(".nav").fadeOut();
+	});
+	$("body").click(function(){
+		$(".nav").fadeOut();	
+	});
+	$(".right").click(function(){
+		++showNum;
+		if(showNum>4){
+			showNum=4;
+		}else{
+			$(".tcbox").eq(showNum).fadeIn().siblings(".tcbox").hide();	
+		}	
+	})	
+	$(".left").click(function(){
+		--showNum;
+		if(showNum<0){
+			showNum=0;
+		}else{
+			$(".tcbox").eq(showNum).fadeIn().siblings(".tcbox").hide();	
+		}
+	});
+	$(".closewin").click(function(){
+		$(this).parent().hide();
+		$(".fivehide").hide();
+		$("html").css("overflow-y","scroll");
+		lockScreen(false);
+	});
+	//$(".logoflash").css("left",$(".content").offset().left-70);
+	
+});
+function showSwf(x){
+	$(".fivehide").show();
+	$(".tcbox").eq(x-1).find("img").each(function(){
+		$(this).attr("src",$(this).attr("datasrc"))	
+	})
+	
+	$(".tcbox").eq(x-1).fadeIn().siblings(".tcbox").hide();
+	$("html").css("overflow-y","hidden");
+	lockScreen(true);
+	showNum = x-1;	
+}
+</script>
+</head>
+
+<body>
+
+
+
+
+<div class="content">
+	<div class="logoflash">
+    <object data="logo.swf" type="application/x-shockwave-flash" width="300" height="176" id="c">
+      <param name="movie" value="logo.swf" />
+      <param name="wmode" value="transparent" />
+      </object>
+	</div>
+	<a href="http://sq.7road.com/" target="_blank" class="goindex" hidefocus="true"></a>
+    <div class="xiala">
+    	<span>往期专题回顾</span>
+        <div class="nav">
+        	<a href="http://sq.7road.com/activity/China-Valentin-Day/index.html" target="_blank">2012年8月七夕情人节</a>
+            <a href="http://sq.7road.com/activity/Summer/index.html" target="_blank">2012年7月暑期夏令营</a>
+            <a href="http://sq.7road.com/activity/CJ2012/index.html" target="_blank">2012年7月以我为王</a>
+			<a href="http://sq.7road.com/activity/PhotoShow/index.html" target="_blank">2012年7月玩家照片墙</a>
+            <!--放置专题位置，高度会自动增加-->
+        </div>
+    </div>
+	<div class="tishi"></div>
+    
+    
+    <div class="fivebtn">
+          <object data="fivebutton.swf" type="application/x-shockwave-flash" width="679" height="414" id="a">
+          <param name="movie" value="fivebutton.swf" />
+          <param name="wmode" value="transparent" />
+          </object>
+    </div>
+    
+    <div class="begingame">
+    	<object data="begingame.swf" type="application/x-shockwave-flash" width="619" height="834" id="b">
+        <param name="movie" value="begingame.swf" />
+        <param name="wmode" value="transparent" />
+        </object>
+    </div>
+    
+</div>
+
+
+
+
+
+<div class="footer">
+	<a href="http://my.7road.com/" target="_blank" class="logo"></a>
+    <div class="txt">
+        <a href="http://my.7road.com/" class="fri">第七大道</a>|<a href="http://my.7road.com/links.asp">合作伙伴</a>|<a href="http://my.7road.com/job.asp">招贤纳士</a>|<a href="http://my.7road.com/Contact.asp">联系方式</a>|<a href="http://my.7road.com/View.asp">意见反馈</a>|<a href="http://account.7road.com/legal_notice.html">法律声明</a>|<a href="http://account.7road.com/service/">纠纷处理</a>
+        <p>Copyright 2009 www.7road.com All rights reserved深圳第七大道科技有限公司</p>
+        <p>文网游备字[2012]W-RPG029号 文网文[2010]207号 | 增值电信业务经营许可证：粤B2-20100091</p>
+	</div>
+</div>
+
+
+<div class="fivehide" style="display:none;">	
+    <span class="btn left"></span>
+    <div class="tcbox" onmouseover="centerMove(event)">
+        <span class="closewin"></span>
+        <h2 class="one_h2"></h2>
+        <div class="texcontent">
+        	<h3 style="margin-top:0"><span>玩转VIP</span><b></b></h3>
+            <p>开通VIP的玩家在任意可显示角色名称的地方显示"黄金钻石"标识，彰显VIP的尊贵霸气。同时，使用VIP轮盘可一键自动开启轮盘，无需多次点击转取奖励，操作便捷简单。</p>
+            <h3><span>花之宣告</span><b></b></h3>
+            <p>使用99/999玫瑰花可自由编辑花语，使用后，花语将随系统公告全服通知。为爱来一次大胆的表白吧，让全世界见证纯纯的爱情和友情！</p>
+            <img src="images/blank.png" datasrc="images/6.png" />
+            <h3><span>占星大作战</span><b></b></h3>
+            <p>占星系统可设定一键出售的星运品质，选定后，使用一键出售功能将会自动出售设定类型的星运，简化操作，节省游戏时间。同时还可直接在占星界面中一键合成星运，非常方便哟~</p>
+            <img src="images/blank.png" datasrc="images/7.png" />
+            <h3><span>血拼！跨服战场</span><b></b></h3>
+            <p style="text-indent:0">
+                1、跨服战场调整为按积分差结束，即当对战双方的积分差达到规定值后，可提前结束战场；<br />
+                2、如长时间在战场内挂机，将会被移出战场，不享有战场奖励；<br />
+                3、新增跨服英雄榜，在跨服战场内击杀敌人以及竞技场取胜，都能获得一定的跨服积分，系统<br /><cite style="margin-left:20px">按跨服积分会在英雄榜内进行高至低的排名，进入英雄榜的玩家将获得绝版称号奖励！</cite>
+            </p>
+            <br />
+        </div>
+        
+    </div>
+    <div class="tcbox" onmouseover="centerMove(event)">
+        <span class="closewin"></span>
+        <h2 class="two_h2"></h2>
+        <div class="texcontent">
+        	<h3 style="margin-top:0"><span>新副本</span><b></b></h3>
+            <p>新增"无尽之路"和"永恒圣域"单人副本，"轮回之境"和"神魔战场"多人副本，等级达到70级以上的玩家可进入。</p>
+            <img src="images/blank.png" datasrc="images/8.jpg" />
+            <h3><span>新兵种</span><b></b></h3>
+            <p>新兵种"魔剑士""魔祭司"，他们来自帝国最强的军团，从黑暗的深渊重生，拥有掌控黑暗的强大力量，他们只向最强的实力屈服，而他们所效忠的领主，也将成为大陆上最强的霸主！</p>
+            <img src="images/blank.png" datasrc="images/9.jpg" />
+            <h3><span>试练之塔</span><b></b></h3>
+            <p>试炼之塔作为特殊的副本，玩家需要足够的勇气与实力，或独闯或组队进入副本挑战。试炼之塔将会带给你前所未有的震撼与惊喜（可在英雄之门内选择该副本进入）。</p>
+            <img src="images/blank.png" datasrc="images/4.jpg" />
+            <h3><span>跨服战场</span><b></b></h3>
+            <p>还在抱怨战场来去都是那些人，木有找到新对手吗？全新版本跨服战场隆重推出！！超越的不仅是一个服务器，你将有可能成为更多人崇拜的偶像！</p>
+            <p style="margin:0">与此同时，加入跨服战场可以获得相应的跨服积分，表现优秀的玩家还有机会获得神秘的宝箱和绝版的称号奖励哦！只要按时参与战场，系统会自动匹配不同服务器的玩家与您一起战斗。加入跨服战场一展身手吧，骚年！</p>
+            <h3><span>BOSS替身</span><b></b></h3>
+            <p>不再错过世界BOSS，BOSS替身助你场场爽到爆！在世界BOSS的开放提示面板中选择的"使用替身"，即可激活"替身"代替你参与世界BOSS的战斗，节省时间，游戏更轻松！</p>
+            <h3><span>改名卡</span><b></b></h3>
+            <p>改名卡提供游戏内角色名称修改的功能，玩家可在商城中购买，使用改名卡后可更改角色昵称，一个好名字更利于你邂逅TA哟~</p>
+            <img src="images/blank.png" datasrc="images/5.png" />
+            <h3><span>神曲时报</span><b></b></h3>
+            <p>游戏资讯、精彩活动一览无余，还有幽默诙谐的四格漫画，让你开怀大笑 轻松游戏，无限精彩 尽在《神曲时报》！</p>
+            <br />
+        </div>
+    </div>
+    <div class="tcbox" onmouseover="centerMove(event)">
+        <span class="closewin"></span>
+        <h2 class="three_h2"></h2>
+        <div class="texcontent">
+        	<h3 style="margin-top:0"><span>专属宝箱</span><b></b></h3>
+            <p>参与公会战将有机会领取排名奖励"公会战宝箱"，会长将一定数量的宝箱分配给公会会员，打开宝箱可获得多种珍贵道具。</p>
+           
+            <h3><span>新神秘商店</span><b></b></h3>
+            <p>更新后的神秘商店新增焰影卡、白色羊驼卡、高级魔晶石、高级传说之石、兽灵石等多款极品道具，并且可查看所有玩家获得的极品道具历史记录，神秘商店，多刷多精彩！</p>
+        </div>
+    </div>
+    <div class="tcbox" onmouseover="centerMove(event)">
+        <span class="closewin"></span>
+        <h2 class="four_h2"></h2>
+        <div class="texcontent">
+        	<h3 style="margin-top:0"><span>酷炫时装</span><b></b></h3>
+            <p>绝版牛郎织女、酷炫死神吸血鬼、阳光沙滩比基尼，恶魔回归，时装来袭，V1.5最给力"时装混搭风暴"，谁是潮人一眼定论！</p>
+        	<p style="margin:0">时装可以进行合成，合成除了能提升时装属性外，还有几率能生成绝版稀有时装，让你独一无二，独领风骚！</p>
+            <br />
+            <div><a href="javascript:void(0)" style="font-size:14px; color:#b61e00">敬请关注官方"时装来袭"专题介绍页</a></div>
+            <h3><span>最ing称号</span><b></b></h3>
+            <p>达到相应的条件，即可获得霸气称号，称号控不容错过！</p>
+            <h3><span>翅膀展示</span><b></b></h3>
+            <p>战斗中可以显示翅膀了~还木有翅膀吗？别out啦~快来选购翅膀吧！</p>
+            <img src="images/blank.png" datasrc="images/11.jpg" />
+            <h3><span>活动云集</span><b></b></h3>
+            <p>"日常活动"界面大翻新，云集所有新活动，奖励领到手抽筋，从此，精彩活动不再擦肩而过~</p>
+            <br />
+        </div>
+    </div>
+    <div class="tcbox" onmouseover="centerMove(event)">
+        <span class="closewin"></span>
+        <h2 class="five_h2"></h2>
+        <div class="texcontent">
+        	<h3 style="margin-top:0"><span>占星送大礼</span><b></b></h3>
+            <p style=" text-indent:0">
+            	活动时间：9月24日12：00：00~9月30日23：59：59<br />
+                活动描述：新版本有更高级星运（高于橙色幸运）<br />
+            <cite style="margin-left:62px;">（一颗陨石降落亚拉曼帝国东北部，元首派人调查，获得了传说中的极品星运）</cite><br />
+                活动奖励：能量之源×2<br />
+            </p>
+            <hr style="border:1px solid #262626; margin-top:25px;" />
+            <h3><span>中秋月圆玉兔任务</span><b></b></h3>
+            <p style=" text-indent:0">
+            	活动时间：9月29日00：00：00~10月1日23：59：59<br />
+                活动描述： 中秋节，农历八月十五，我国的传统节日之一。<br />
+              <cite style="margin-left:72px;">应 "人月两团圆"的祈求，百姓纷纷在月下摆设香案，遥遥向月亮祝愿，</cite><br />
+            <cite style="margin-left:72px;">中秋赏月喜团圆，因此这个日子又被称为"团圆节"。</cite><br />
+                活动奖励：
+            </p>
+            <img src="images/blank.png" datasrc="images/12.png" />
+            <br />
+            <img src="images/blank.png" datasrc="images/13.jpg" />
+            <br />
+        </div>
+    </div>
+    <span class="btn right"></span>
+</div>
+
+
+<div class="suoping"></div>
+</body>
+<script type="text/javascript">
+function centerMove(event){
+	event = event ? event : window.event;
+	if(event.stopPropagation){
+		event.stopPropagation();
+	}else{
+		event.cancelBubble=true;
+	}
+	$(".btn").fadeOut().stop(true,true);
+	
+}
+document.body.onmouseover = function(event){
+	event = event ? event : window.event;
+	var centerDiv = document.documentElement.clientWidth/2 - 350;
+	$(".left").css("left",centerDiv-130+"px");
+	$(".right").css("left",centerDiv+750+"px");
+	$(".btn").fadeIn(1000);
+	
+}
+
+</script>
+</html>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="homepageManage" namespace="/homepageManage" extends="default">
+
+		<action name="createFlash" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createItem">			
+			<result name="success" type="tiles">adminFlashCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createMedia" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createItem">			
+			<result name="success" type="tiles">adminMediaCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createText" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createItem">			
+			<result name="success" type="tiles">adminTextCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createImage" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createItem">			
+			<result name="success" type="tiles">adminImageCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createHtml" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createItem">			
+			<result name="success" type="tiles">adminHtmlCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createFlashSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createFlashSubmit">			
+			<result name="input" type="tiles">adminFlashCreate</result>
+			<result name="success" type="redirectAction">queryFlashList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                     application/x-shockwave-flash
+                  </param>
+                  <param name="maximumSize">512000</param>
+            </interceptor-ref>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createImageSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createImageSubmit">			
+			<result name="input" type="tiles">adminImageCreate</result>
+			<result name="success" type="redirectAction">queryImageList</result>
+			<interceptor-ref name="fileUpload">
+            	<param name="allowedTypes">
+            		image/jpeg,image/pjpeg,image/x-ms-bmp,image/png
+            	</param>
+            	<param name="maximumSize">819200</param>
+            </interceptor-ref>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createMediaSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createMediaSubmit">			
+			<result name="input" type="tiles">adminMediaCreate</result>
+			<result name="success" type="redirectAction">queryMediaList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createTextSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createTextSubmit">			
+			<result name="input" type="tiles">adminTextCreate</result>
+			<result name="success" type="redirectAction">queryTextList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createHtmlSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="createHtmlSubmit">			
+			<result name="input" type="tiles">adminHtmlCreate</result>
+			<result name="success" type="redirectAction">queryHtmlList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryFlashList" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="queryItemList">
+			<param name="typeId">1</param>
+			<result name="flash" type="tiles">adminFlashList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryMediaList" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="queryItemList">
+			<param name="typeId">2</param>
+			<result name="media" type="tiles">adminMediaList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryTextList" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="queryItemList">
+			<param name="typeId">3</param>
+			<result name="text" type="tiles">adminTextList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryImageList" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="queryItemList">
+			<param name="typeId">4</param>
+			<result name="image" type="tiles">adminImageList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryHtmlList" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="queryItemList">
+			<param name="typeId">5</param>
+			<result name="html" type="tiles">adminHtmlList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteFlash" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="deleteItem">			
+			<result name="success" type="redirectAction">queryFlashList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteMedia" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="deleteItem">			
+			<result name="success" type="redirectAction">queryMediaList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteText" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="deleteItem">			
+			<result name="success" type="redirectAction">queryTextList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteImage" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="deleteItem">			
+			<result name="success" type="redirectAction">queryImageList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteHtml" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="deleteItem">			
+			<result name="success" type="redirectAction">queryHtmlList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editFlash" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editItem">			
+			<result name="success" type="tiles">adminFlashEdit</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editMedia" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editItem">			
+			<result name="success" type="tiles">adminMediaEdit</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editText" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editItem">			
+			<result name="success" type="tiles">adminTextEdit</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editImage" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editItem">			
+			<result name="success" type="tiles">adminImageEdit</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editHtml" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editItem">			
+			<result name="success" type="tiles">adminHtmlEdit</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editMediaSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editMediaSubmit">			
+			<result name="input" type="tiles">adminMediaEdit</result>
+			<result name="success" type="redirectAction">queryMediaList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editTextSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editTextSubmit">			
+			<result name="input" type="tiles">adminTextEdit</result>
+			<result name="success" type="redirectAction">queryTextList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editHtmlSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editHtmlSubmit">			
+			<result name="input" type="tiles">adminHtmlEdit</result>
+			<result name="success" type="redirectAction">queryHtmlList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editFlashSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editFlashSubmit">			
+			<result name="input" type="tiles">adminFlashEdit</result>
+			<result name="success" type="redirectAction">queryFlashList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                     application/x-shockwave-flash
+                  </param>
+                  <param name="maximumSize">512000</param>
+            </interceptor-ref>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editImageSubmit" class="com.sz7road.web.action.admin.homepagemanage.HomepageManageAction" method="editImageSubmit">			
+			<result name="input" type="tiles">adminImageEdit</result>
+			<result name="success" type="redirectAction">queryImageList</result>
+			<interceptor-ref name="fileUpload">
+            	<param name="allowedTypes">
+            		image/jpeg,image/pjpeg,image/x-ms-bmp,image/png
+            	</param>
+            	<param name="maximumSize">819200</param>
+            </interceptor-ref>	
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+	
+</struts>

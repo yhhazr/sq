@@ -1,0 +1,42 @@
+#head_top_bg {
+	MARGIN: auto; WIDTH: 100%; BACKGROUND: url(../images/head_top_bg.jpg) repeat-x; HEIGHT: 30px; FONT-SIZE: 12px; OVERFLOW: hidden
+}
+#head_top_main {
+	MARGIN: auto; WIDTH: 1000px; HEIGHT: 30px; OVERFLOW: hidden
+}
+.ht_frame {
+	TEXT-ALIGN: left; LINE-HEIGHT: 30px; FLOAT: left; HEIGHT: 30px
+}
+#ht_frame1 {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; WIDTH: 104px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+#ht_frame2 {
+	TEXT-ALIGN: center; WIDTH: 276px; OVERFLOW: hidden
+}
+#scroll_ul {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 30px; PADDING-TOP: 0px
+}
+#scroll_ul LI {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 30px; PADDING-TOP: 0px
+}
+#scroll_ul LI {
+	PADDING-LEFT: 10px
+}
+#scroll_ul LI A {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px
+}
+.top_autocroll {
+	COLOR: red
+}
+#ht_frame3 {
+	MARGIN: auto; WIDTH: 590px; DISPLAY: table-cell; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #111; FONT-SIZE: 12px
+}
+#ht_frame3 A {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #111; FONT-SIZE: 12px
+}
+#ht_frame3 A:visited {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #111; FONT-SIZE: 12px
+}
+#ht_frame3 A:hover {
+	COLOR: #fec248
+}

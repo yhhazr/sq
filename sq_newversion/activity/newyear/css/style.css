@@ -1,0 +1,218 @@
+/* common styles */
+body {
+	font-family:'微软雅黑',sans-serif;
+}
+.clearfix:before, .clearfix:after {
+	content:"\0020";
+	display:block;
+	height:0;
+	overflow:hidden;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom:1;
+}
+
+/* container styles */
+.container {
+	background:url("../img/bg.jpg") no-repeat scroll top center;
+	width:100%;
+	margin:0 auto;
+	height:808px;
+}
+.container.event {
+	background-image:url("../img/events.jpg");
+}
+.container.changed {
+	background-image:url("../img/bg-changed.jpg");
+}
+.container .nav {
+	width:980px;
+	height:140px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+.container .nav h1 {
+	width:83px;
+	height:140px;
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	right:45px;
+	z-index:1;
+}
+
+/* content styles */
+.content {
+	width:100%;
+	overflow:hidden;
+}
+.content .tabs-area {
+	width:100%;
+	position:absolute;
+	top:40px;
+}
+.content .tabs-area .tabs {
+	width:905px;
+	height:117px;
+	margin:0 auto 0;
+	position:absolute;
+}
+.content .tabs-area .tab-content {
+	width:880px;
+	margin:40px auto 0;
+	display:none;
+	color:#510303;
+	padding:0 50px; 
+}
+.content .tabs-area .tab-content h3 {
+	background-image:url("../img/title.png");
+	display:block;
+	height:43px;
+	width:199px;
+	text-indent:-9999px;
+	margin:0 0 0 40px;
+}
+.content .tabs-area .events h3 {
+	background-position:0 0;
+	width:159px;
+}
+.content .tabs-area .detail {
+	width:100%;
+	margin-top:45px;
+}
+.content .tabs-area .detail p {
+	display:inline;
+	float:left;
+	font-size:14px;
+	font-family:'微软雅黑';
+	margin:0 0 30px 0;
+	line-height:23px;
+}
+.content .tabs-area .detail .rune, .content .tabs-area .detail .store {
+	margin-right:0;
+}
+.content .tabs-area .detail p .sub-title {
+	color:#510303;
+	font-size:20px;
+	font-weight:bold;
+}
+.content .tabs-area .detail p .times {
+	color:#fff799;
+	font-size:12px;
+}
+.content .tabs-area .detail p .period {
+	color:#fff100;
+	font-size:14px;
+}
+.content .tabs-area .detail p .in56 {
+	display:inline-block;
+	text-indent:56px;
+}
+.content .tabs-area .detail .pocket {
+	float:left;
+	width:481px;
+	height:141px;
+}
+.content .tabs-area .detail .pocket h4 {
+	background:url("../img/pocket.png") no-repeat;
+	width:481px;
+	height:24px;
+	text-indent:-9999px;
+}
+.content .tabs-area .detail .pocket table {
+	border-left:2px solid #510303;
+	border-top:2px solid #510303;
+	border-collapse:separate;
+	width:481px;
+	text-align:center;
+	margin-top:10px;
+}
+.content .tabs-area .detail .pocket table th, .content .tabs-area .detail .pocket table td {
+	border-bottom:2px solid #510303;
+	border-right:2px solid #510303;
+	height:28px;
+	line-height:28px;
+	width:83px;
+}
+.content .tabs-area .detail .mounts {
+	background:url("../img/mounts.png");
+	width:232px;
+	height:176px;
+	margin-left:50px;
+	float:left;
+}
+.content .tabs-area .delivery h3 {
+	background-position:-160px 0; 
+}
+.content .tabs-area .gifts h3 {
+	background-position:-359px 0; 
+}
+.content .tabs-area .double h3 {
+	background-position:-559px 0; 
+}
+.content .tabs-area .online h3 {
+	background-position:-759px 0; 
+}
+.flash-content {
+	width:1005px;
+	height:800px;
+	overflow:hidden;
+	margin:-140px auto 0;
+	position:relative;
+}
+.flash-content embed {
+	width:1000px;
+	height:800px;
+	display:block;
+}
+.btn {
+	width:900px;
+	height:190px;
+	margin:-303px auto 0;
+	position:relative;
+}
+
+/* Footer styles */
+.footer-wrap {
+	background-color:#fff;
+	width:100%;
+	padding:12px 0;
+	position:relative;
+	margin:0;zoom:1;
+}
+.footer {
+	position:relative;
+	clear:both;
+	width:1000px;
+	height:70px;
+	margin:0 auto;
+}
+.footerNav {
+	margin:0px 0 0 390px;
+	padding:0 0 0 15px;
+	line-height:20px;
+	border-left:1px solid #ccc;
+}
+.footerNav a {
+	margin:0 1px;
+	color:#7c7c7c
+}
+.footerNav p {
+	color:#7c7c7c;
+}
+.footerNav p em {
+	font-family:Verdana;
+	font-size:10px;
+}
+.footerNav a.footerLogo {
+	position:absolute;
+	left:190px;
+	top:20px;
+	width:180px;
+	height:45px;
+	background:url(http://image.h.7road.com/sprites/footerLogo.png) no-repeat;
+}

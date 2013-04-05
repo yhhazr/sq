@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminPhotoCatEdit" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.photo.editPhotoCat"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/photo/admin_editPhotoCat.jsp" />
+	</definition>
+	<definition name="adminPhotoCatCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.photo.createPhotoCat"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/photo/admin_createPhotoCat.jsp" />
+	</definition>
+	<definition name="adminPhotoCatList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.photo.photoCatList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/photo/admin_photoCatList.jsp" />
+	</definition>
+	<definition name="adminPhotoCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.photo.photoUpload"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/photo/admin_uploadPhoto.jsp" />
+	</definition>
+	<definition name="adminEditPhoto" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.photo.editPhotoSubmit"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/photo/admin_editPhoto.jsp" />
+	</definition>
+</tiles-definitions>

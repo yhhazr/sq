@@ -1,0 +1,63 @@
+#footer_b {
+	MARGIN-TOP: 15px; WIDTH: 100%; HEIGHT: 100%; OVERFLOW: hidden
+}
+.footer_1002 {
+	MARGIN: auto; WIDTH: 1002px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #fff; FONT-SIZE: 12px; OVERFLOW: hidden
+}
+.footer_750 {
+	MARGIN: auto; WIDTH: 780px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #fff; FONT-SIZE: 12px; OVERFLOW: hidden
+}
+#footer_b .top {
+	WIDTH: 100%; BACKGROUND: url(/images/footer_bg_1.jpg) repeat-x; HEIGHT: 50px; OVERFLOW: hidden
+}
+#footer_b .top .footer_logo {
+	WIDTH: 358px; BACKGROUND: url(/images/footer_logo.jpg) no-repeat; FLOAT: left; HEIGHT: 50px; OVERFLOW: hidden
+}
+.footer_menu {
+	LINE-HEIGHT: 20px; WIDTH: 100%; BACKGROUND: #e1e1e1; HEIGHT: 140px; OVERFLOW: hidden
+}
+.footer_menu .frame {
+	PADDING-LEFT: 10px; FLOAT: left; HEIGHT: 140px; COLOR: #535353; FONT-SIZE: 13px
+}
+.footer_menu .frame UL {
+	LIST-STYLE-TYPE: none
+}
+.footer_menu .frame LI {
+	WIDTH: 80px; FLOAT: left
+}
+.footer_menu .frame SPAN {
+	LINE-HEIGHT: 24px; COLOR: #b70b0b; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.footer_menu .frame A {
+	COLOR: #535353
+}
+.frame_s_1 {
+	WIDTH: 160px; BORDER-RIGHT: #919191 1px solid
+}
+.frame_s_2 {
+	WIDTH: 130px; BORDER-RIGHT: #919191 1px solid
+}
+.frame_s_e {
+	WIDTH: 300px
+}
+.footer_menu .frame_s_e LI {
+	WIDTH: 100px
+}
+.footer_link {
+	LINE-HEIGHT: 28px; WIDTH: 100%; BACKGROUND: #a1a1a1; COLOR: #fff440; OVERFLOW: hidden
+}
+.footer_link A {
+	COLOR: #fff
+}
+.footer_spet {
+	WIDTH: 100%; BACKGROUND: #dadada; HEIGHT: 1px; OVERFLOW: hidden
+}
+.footer_info {
+	TEXT-ALIGN: center; LINE-HEIGHT: 22px; WIDTH: 100%; BACKGROUND: url(/images/footer_bg_2.jpg) #626262 repeat-x 0px 0px; HEIGHT: 119px; OVERFLOW: hidden
+}
+.footer_info A {
+	COLOR: #fff
+}
+.footer_info A:hover {
+	COLOR: #fff
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抽奖活动</title>
+<style type="text/css">
+*{ margin:0; padding: 0;}
+.rigBox{width: 490px; height: 220px; position: absolute; z-index: 200; top: 200px; left: 500px; background:#000; font-family: 宋体; padding-top: 10px;}
+.rigList{ float: left; width: 490px; height: 26px;margin-top: 10px; line-height: 26px;}
+.rigTxt{ float: left; font-size: 14px; font-weight: bold; color: #fff; width: 80px; text-align: right;}
+.retInput{ float: left; outline: none; border: 1px solid #6B6965; height: 24px; line-height: 24px; background-color: #E4DEDB; width: 202px; font-size: 16px;}
+.errorSpan{ float: left; color:#FFCC66; font-size: 12px; margin-left: 5px; }
+.tongyi{ float: left; margin: 10px 0 0 80px; color: #FC6; font-size: 12px; _margin-left: 40px;} 
+.tongyi a{ color: #FC6;}
+.beginGame{ width: 160px; height: 52px; float: left; background: url(beginBtn.png) no-repeat; margin: 15px 0 0 115px;}
+.red{ color: red;}
+</style>
+</head>
+
+<body>
+<div class="rigBox">
+	<div class="rigList">
+		<div class="rigTxt">用户名：</div>
+		<input type="text" class="retInput" id="reg_uid" maxlength="20" />
+		<span class="errorSpan">6-20个英文字符、数字、下划线</span>
+	</div>
+	<div class="rigList">
+		<div class="rigTxt">登录密码：</div>
+		<input type="password" class="retInput"  id="reg_pwd" maxlength="20" />
+		<span class="errorSpan">至少6位字符（字母、数字、下划线）</span>
+	</div>
+	<div class="rigList">
+		<div class="rigTxt">重复密码：</div>
+		<input type="password" class="retInput" id="reg_confirm_pwd" maxlength="20" />
+		<span class="errorSpan">两次输入的密码保存一致!</span>
+	</div>
+	<div class="tongyi"><input type="checkbox" checked="true" name="checkbox" id="agreement"><span>同意并接受</span><a target="_blank" href="http://account.7road.com//register_notice.html" class="popXieYi">《用户注册服务协议》</a></div>
+	<a href="javascript:void(0)" class="beginGame" id="btntoReg"></a>
+</div>
+
+
+
+<div class="xf-tab-login" style="display:none">
+<table border="0" id="login_panel" style="display: none;">
+<tr>
+<td class="tbtitle" style="width: 150px;">帐&nbsp;&nbsp;&nbsp;&nbsp;号：</td>
+<td><input type="text" class="in2" id="uid" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="tab1_1"></span></td>
+</tr>
+
+<tr>
+<td class="tbtitle" style="width: 150px;">密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+<td><input type="password" class="in2" id="pwd" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="tab1_2"></span></td>
+</tr>
+<tr id="log_verifyTr" style="display:none">
+<td class="tbtitle" style="width: 150px;">验证码：</td>
+<td><input type="text" class="in2" id="verifyCode" maxlength="4" style="width:120px;vertical-align:middle;"/><img id="verifyCodeImg" style="vertical-align:middle;cursor:pointer;" src="http://sq.7road.com/game7road/captcha.do" width="58px" height="27px"  class="logpic" onClick="javascript:this.src='http://sq.7road.com/game7road/captcha.do?'+(new Date().getTime());"></td>
+<td class="tip"><span id="tab1_3" style="height:15px;line-height:15px;overflow:hidden;display:block;"></span><a style="height:15px;line-height:15px;overflow:hidden;display:block;" href="javascript:refleshVerifyCode('verifyCodeImg')">看不清，换一张</a></td>
+</tr>
+<!-- <tr>
+<td></td>
+<td colspan="2" style="font-size: 13px; color: #f7c500;">&nbsp;<span id="login_tip" style="margin-left: 12px;"></span></td>
+</tr> -->
+
+<tr>
+<td></td>
+<td >
+<div><span id="login_tip" style="margin-left: 12px;font-size: 13px; color: #f7c500;"></span></div>
+<a href="javascript:void(0);" class="btn-login" id="btntoLogin"></a>
+</td>
+<td></td>	
+</tr>
+<tr>
+<td style="height:14px;line-height:14px;padding:10px 0 0;"></td>
+<td colspan="2" style="height:14px;line-height:14px;padding:10px 0 0;"><a href="javascript:void(0);" title="" class="quick-login">快速注册</a><a href="http://account.7road.com//forgetpwd.html" target="_blank" title="" class="quick-login">忘记密码</a></td>
+</tr>
+
+
+</table>
+
+<div id="tabLogined" class="xf-tab-logined" style="display: none;">
+<div class="blank20"></div>
+<div style="padding-left:50px;">
+<div class="txtlogin_info">
+<span style="font-size: 13px; color: #f7c500;font-weight: bold;" id="username">XXXXXX</span>, 您好！
+[<a style="font-size: 13px; color: #f7c500;font-weight: bold;" href="javascript:logout();">退出</a>]
+</div>
+<div class="txtsafe_info" >
+<a href="http://account.7road.com/" class="btn2" >完善密保资料</a>
+请绑定邮箱确保帐号安全！
+</div>
+<div class="txtlastlogin_info" style="margin-top:20px;" >您上次登陆的服务器是：</div>
+<div class="txtserver_info" >
+<a href="javascript:void(0);" class="btn3" id="lastserver">【服务器】</a>
+
+</div>
+</div>
+</div> 
+
+<table border="0" id="reg_panel" >
+<tr>
+<td class="tbtitle">帐&nbsp;&nbsp;&nbsp;号:</td>
+<td><input type="text" class="in2" id="" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="">长度6-20,由字母数字组成.</span></td>
+</tr>
+
+<tr>
+<td class="tbtitle">密&nbsp;&nbsp;&nbsp;码:</td>
+<td><input type="password" class="in2" id="" maxlength="20"/></td>
+<td class="tip">&nbsp;<span id="">长度6-20个字符</span></td>
+</tr>
+<tr>
+<td class="tbtitle">确认密码:</td>
+<td><input type="password" class="in2" id="" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="">两次输入的密码请保持一致</span></td>
+</tr>
+<tr>
+<td style="height: 30px;line-height: 30px;"></td>
+<td colspan="2"  style="height: 30px;line-height: 30px;padding-left: 10px;font-size: 13px;">
+<input type="checkbox" id="" checked="checked" /><label> 同意并接受</label><a href="http://account.7road.com//register_notice.html" title="" target="_blank">用户注册服务协议</a>
+
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<a href="javascript:void(0);" class="btn-reg" id=""></a><a href="#" title="" class="old-login">老用户登录</a>
+<span id="reg_tip" class="reg_tip"></span>
+</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+<script type="text/javascript" src="http://static.7road.com/js/config.js?v=1352975329092"></script>
+<script type="text/javascript" src="http://static.7road.com/js/jquery-1.7.1.js"  charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/jquery.cookie.js" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/global.js?v=1352975329092" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/game.js?v=1352975329092" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/user.js?v=1352975329092" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/advert.js?v=1352975329092" charset="UTF-8"></script>
+
+
+</html>

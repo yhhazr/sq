@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	
+	<package name="indexPageFlash" namespace="/indexFlash" extends="default">
+
+		<action name="queryIndexFlashList" class="com.sz7road.web.action.admin.serverResource.IndexPageFlashAction" method="queryIndexFlashList">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">queryIndexFlashList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createFlash" class="com.sz7road.web.action.admin.serverResource.IndexPageFlashAction" method="createFlashPrepare">
+			<result name="input" type="tiles">queryIndexFlashList</result>
+			<result name="success" type="tiles">createIndexFlash</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createFlashSubmit" class="com.sz7road.web.action.admin.serverResource.IndexPageFlashAction" method="createFlashSubmit">
+			<result name="input" type="tiles">createIndexFlash</result>
+			<result name="success" type="redirectAction">queryIndexFlashList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                     application/x-shockwave-flash
+                  </param>
+                  <param name="maximumSize">5120000</param>
+            </interceptor-ref>
+            <interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editFlash" class="com.sz7road.web.action.admin.serverResource.IndexPageFlashAction" method="editFlashPrepare">
+			<result name="input" type="tiles">queryIndexFlashList</result>
+			<result name="success" type="tiles">editIndexFlash</result>
+		</action>
+		<action name="editFlashSubmit" class="com.sz7road.web.action.admin.serverResource.IndexPageFlashAction" method="editFlashSubmit">
+			<result name="input" type="tiles">editIndexFlash</result>
+			<result name="success" type="redirectAction">queryIndexFlashList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                  	application/x-shockwave-flash
+                  </param>
+                  <param name="maximumSize">5120000</param>
+            </interceptor-ref>
+            <interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="removeFlash" class="com.sz7road.web.action.admin.serverResource.IndexPageFlashAction" method="removeFlash">
+			<result name="input" type="tiles">queryIndexFlashList</result>
+			<result name="success" type="redirectAction">queryIndexFlashList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+
+	<package name="logexeImage" namespace="/logexeImage" extends="default">
+
+		<action name="queryLogexeImageList" class="com.sz7road.web.action.admin.serverResource.LogexeImageAction" method="queryLogexeImageList">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">queryLogexeImageList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createLogexeImage" class="com.sz7road.web.action.admin.serverResource.LogexeImageAction" method="createLogexeImagePrepare">
+			<result name="input" type="tiles">queryLogexeImageList</result>
+			<result name="success" type="tiles">createLogexeImage</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createLogexeImageSubmit" class="com.sz7road.web.action.admin.serverResource.LogexeImageAction" method="createLogexeImageSubmit">
+			<result name="input" type="tiles">createLogexeImage</result>
+			<result name="success" type="redirectAction">queryLogexeImageList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                     image/jpeg,image/pjpeg
+                  </param>
+                  <param name="maximumSize">5120000</param>
+            </interceptor-ref>
+            <interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editLogexeImage" class="com.sz7road.web.action.admin.serverResource.LogexeImageAction" method="editLogexeImagePrepare">
+			<result name="input" type="tiles">queryLogexeImageList</result>
+			<result name="success" type="tiles">editLogexeImage</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editLogexeImageSubmit" class="com.sz7road.web.action.admin.serverResource.LogexeImageAction" method="editLogexeImageSubmit">
+			<result name="input" type="tiles">editLogexeImage</result>
+			<result name="success" type="redirectAction">queryLogexeImageList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                     image/jpeg,image/pjpeg
+                  </param>
+                  <param name="maximumSize">5120000</param>
+            </interceptor-ref>
+            <interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="removeLogexeImage" class="com.sz7road.web.action.admin.serverResource.LogexeImageAction" method="removeLogexeImage">
+			<result name="input" type="tiles">queryLogexeImageList</result>
+			<result name="success" type="redirectAction">queryLogexeImageList</result>
+			 <interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+
+</struts>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminFlashCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.createItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_createFlash.jsp" />
+	</definition>
+	<definition name="adminFlashList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.itemList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_flashList.jsp" />
+	</definition>
+	<definition name="adminFlashEdit" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.editItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_editFlash.jsp" />
+	</definition>
+	<definition name="adminMediaList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.itemList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_mediaList.jsp" />
+	</definition>
+	<definition name="adminMediaCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.createItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_createMedia.jsp" />
+	</definition>
+	<definition name="adminMediaEdit" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.editItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_editMedia.jsp" />
+	</definition>
+	<definition name="adminTextList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.itemList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_textList.jsp" />
+	</definition>
+	<definition name="adminTextCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.createItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_createText.jsp" />
+	</definition>
+	<definition name="adminTextEdit" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.editItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_editText.jsp" />
+	</definition>
+	<definition name="adminImageList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.itemList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_imageList.jsp" />
+	</definition>
+	<definition name="adminImageCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.createItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_createImage.jsp" />
+	</definition>
+	<definition name="adminImageEdit" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.editItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_editImage.jsp" />
+	</definition>
+	<definition name="adminHtmlList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.itemList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_htmlList.jsp" />
+	</definition>
+	<definition name="adminHtmlCreate" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.createItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_createHtml.jsp" />
+	</definition>
+	<definition name="adminHtmlEdit" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.homepage.editItem"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/homepage/admin_editHtml.jsp" />
+	</definition>
+	
+	<definition name="adminTitleList" extends="adminDefaultLayout">
+		<put-attribute name="content" value="/WEB-INF/web/admin/title/admin_titleList.jsp" />
+	</definition>
+	
+</tiles-definitions>

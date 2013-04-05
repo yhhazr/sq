@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<swfs>
+	<swf>sound.swf</swf>
+</swfs>
+<urls>
+	<url>http://sq.7road.com/serverList.html</url>				<!--开始游戏-->
+	<url>http://sq.7road.com</url>				<!--进入官网-->
+</urls>
+</data>

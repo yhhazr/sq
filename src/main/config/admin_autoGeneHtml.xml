@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="geneHtmlTimerTask" namespace="/geneHtml" extends="default">
+		<action name="startServerTimerTask" class="com.sz7road.web.action.admin.genehtml.AutoGeneHtmlAction" method="geneServerPageStart">			
+			<result name="success" type="redirectAction">
+				<param name="namespace">/gameServer</param>
+				<param name="actionName">queryGameServerList</param>
+			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="stopServerTimerTask" class="com.sz7road.web.action.admin.genehtml.AutoGeneHtmlAction" method="geneServerPageStop">			
+			<result name="success" type="redirectAction">
+				<param name="namespace">/gameServer</param>
+				<param name="actionName">queryGameServerList</param>
+			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+	<package name="geneAllHtml" namespace="/" extends="default,json-default">
+		<action name="geneAllHtml" class="com.sz7road.web.action.admin.genehtml.GeneHtmlAction" method="geneAllHtml">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="genePlayerRank" class="com.sz7road.web.action.admin.genehtml.GeneHtmlAction" method="genePlayerRank">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="enterFromAd" class="com.sz7road.web.action.online.adStatistics.AdStatisticsAction" method="enterFromAd">
+			<result name="success" type="json"></result>
+		</action>
+
+		
+	</package>
+</struts>

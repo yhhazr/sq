@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="gameServer" namespace="/gameServer" extends="default">
+		
+		<action name="queryGameServerList" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="queryGameServerByPage">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">gameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+
+		<action name="queryOnlineGameServerList" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="queryOnlineGameServerByPage">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">onlineGameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+
+		<action name="restoreGameServer" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="queryGameServerByPage">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">gameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="editGameServer" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="editGameServerPrepare">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">editGameServer</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="editGameServerSubmit" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="editGameServerSubmit">
+			<result name="input" type="tiles">editGameServer</result>
+			<result name="success" type="redirectAction">queryGameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="createGameServer" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="createGameServerPrepare">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">createGameServer</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="createGameServerSubmit" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="createGameServerSubmit">
+			<result name="input" type="tiles">createGameServer</result>
+			<result name="success" type="redirectAction">queryGameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="deleteGameServerSubmit" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="deleteGameServerSubmit">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="redirectAction">queryGameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="editCheckedServersStatus" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="editServerStatusByIds">
+			<result name="input" type="redirectAction">queryGameServerList</result>
+			<result name="success" type="redirectAction">queryGameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="startAllGameServerStatus" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="startAllGameServerStatus">
+			<result name="input" type="redirectAction">queryGameServerList</result>
+			<result name="success" type="redirectAction">queryGameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+
+		<action name="removeStopInfo" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="removeServerStopInfo">
+			<result name="success" type="redirectAction">queryGameServerList</result>
+			<result name="input" type="redirectAction">queryGameServerList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="stopServerStatusByIds" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="stopServerStatusByIdsPrepare">
+			<result name="success" type="dispatcher">/WEB-INF/web/admin/gameServer/admin_stopGameServer.jsp</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+
+		<action name="stopServerStatusByIdsSubmit" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="stopServerStatusByIdsSubmit">
+			<result name="input" type="dispatcher">/WEB-INF/web/admin/gameServer/admin_stopGameServer.jsp</result>
+			<result name="success" type="dispatcher">/WEB-INF/web/admin/gameServer/success.jsp</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+	
+	<package name="bgLoginGame" namespace="/bgLoginGame" extends="default,json-default">
+		
+		<action name="checkLoginGame" class="com.sz7road.web.action.admin.gameservermanage.GameServerAction" method="bgCheckLoginGame">
+			<result name="success" type="json"></result>
+		</action>
+		
+	</package>
+
+</struts>

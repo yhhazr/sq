@@ -1,0 +1,203 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+img,
+object,
+embed {max-width: 100%;}
+
+html {overflow-y: scroll;}
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+body {font: 13px Helmet, Freesans, sans-serif;}
+body, select, input, textarea {color: #333;}
+a {color: #03f;}
+a:hover {color: #69f;}
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Wrapper styles */
+body {background:url("../img/bg.jpg") repeat scroll 0 0 transparent;}
+#header .dBox {width:970px;height:185px;} /* style for top nav*/
+.wrap {background:url("../img/bg02.jpg") no-repeat scroll center 0 transparent;position:relative;overflow:hidden;}
+.wrapper {width:1000px;margin:0 auto 50px;position:relative;}
+.wrapper .header {position:absolute;top:10px;z-index:0;}
+.wrapper .logo {width:226px;height:113px;display:block;}
+.wrapper .flash-content {width:1000px;height:750px;}
+.wrapper .content {position:relative;margin-top:-125px;}
+.wrapper .content h3 a, .wrapper .content h4 a {display:block;}
+.wrapper .content h3, .wrapper .content h4 {background-image:url("../img/text.png");}
+.wrapper .content h3.first {background-position:0 0;width:400px;height:81px;}
+.wrapper .content h4.first {background-position:0 -82px;width:446px;height:19px;}
+.wrapper .content h3.second {background-position:0 -100px;width:645px;height:74px;}
+.wrapper .content h4.second {background-position:0 -175px;width:660px;height:19px;}
+.wrapper .content h3.third {background-position:0 -195px;width:640px;height:51px;display:block;float:left;}
+.wrapper .content .static-text {width:520px;display:block;float:left;font-family:'微软雅黑';font-size:14px;padding-top:10px;}
+.wrapper .content .static-text p {color:#81b5ff;line-height:25px;}
+.wrapper .content .static-text p .title {color:#fffac0;font-size:16px;}
+.wrapper .content .static-text p .td {display:inline-block;text-indent:20px;}
+.wrapper .content .static-text p .td40 {display:inline-block;text-indent:40px;}
+.wrapper .content .static-text p em.red {color:#ff0000;}
+.wrapper .content .static-text p em.white {color:#ffffff;}
+.wrapper .content .static-img {display:block;overflow:hidden;float:left;margin:20px 0 0 60px;}
+.wrapper .content .static-img .big-img {background:url("../img/static-bg01.png") no-repeat scroll 0 0 transparent;width:257px;height:146px;padding:11px 12px 10px 11px;}
+.wrapper .content .static-img .small-img {background:url("../img/static-bg02.png") no-repeat scroll 0 0 transparent;width:248px;height:57px;margin-top:20px;padding:14px 15px 13px;}
+
+
+/* Tabs styles */
+.wrapper .tabs-area {background:url("../img/tabs-bg.png") no-repeat scroll 0 0 transparent;width:852px;height:330px;margin:10px 0 20px;}
+.wrapper .tabs-area .tabs {width:850px;height:67px;}
+.wrapper .tabs-area .tabs li {float:left;line-height:60px;width:212px;height:60px;text-align:center;}
+.wrapper .tabs-area .tabs a.active {height:75px;}
+.wrapper .tabs-area .tabs .tab {background-image:url("../img/tabs.png");display:block;width:210px;height:65px;text-indent:-9999px;margin-left:2px;}
+.wrapper .tabs-area .tabs .low .tab {background-position:0 0;}
+.wrapper .tabs-area .tabs .low a.active {background-position:0 -71px;}
+.wrapper .tabs-area .tabs .mid .tab {background-position:-211px 0;}
+.wrapper .tabs-area .tabs .mid a.active {background-position:-211px -71px;}
+.wrapper .tabs-area .tabs .high .tab{background-position:-422px 0;}
+.wrapper .tabs-area .tabs .high a.active {background-position:-422px -71px;}
+.wrapper .tabs-area .tabs .higher .tab{background-position:-634px 0;}
+.wrapper .tabs-area .tabs .higher a.active {background-position:-634px -71px;}
+.wrapper .tab-content .title {width:211px;color:#bbd7ff;display:block;float:left;font-size:15px;font-weight:bold;font-family:'微软雅黑';}
+.wrapper .tab-content .title li.name {width:211px;height:65px;display:block;line-height:65px;text-align:center;}
+.wrapper .tab-content .title li.gift {width:211px;height:195px;display:block;line-height:195px;text-align:center;}
+.wrapper .tab-content .detail {color:#5d81b8;display:block;float:left;font-size:14px;font-family:'微软雅黑';text-align:center;}
+.wrapper .tab-content .detail li.name {height:65px;display:block;line-height:65px;margin-bottom:20px;position:relative;}
+.wrapper .tab-content .detail li.name .tip {color:#ff0000;display:block;font-size:12px;position:absolute;top:18px;left:270px;}
+.wrapper .tab-content .detail li.gift {line-height:25px;height:25px;text-align:left;text-indent:60px;}
+.wrapper .tab-content .detail li.td {text-indent:80px;}
+.wrapper .tab-content .detail li.tl {text-align:left;text-indent:0px;}
+.wrapper .tab-content li.col1 {width:630px;height:250px;}
+.wrapper .tab-content li.col1 .gift {float:left;width:210px;}
+.wrapper .tab-content li.col2 {width:315px;height:250px;}
+.wrapper .tab-content li.col2 .gift {width:157px;text-indent:17px;float:left;}
+.wrapper .tab-content li.col3 {width:210px;height:250px;}
+.wrapper .tab-content .border {background-color:#0d1126;border-left:1px solid #1b2039;border-right:1px solid #1b2039;float:left;width:1px;height:259px;}
+#content-2, #content-3, #content-4, #content-6, #content-7, #content-8,  #content-10,  #content-11,  #content-12,  #content-14,  #content-15,  #content-16 {display:none;}
+
+/* Scroll styles */
+#scroll {width:74px;height:301px;position:absolute;right:40px;top:725px;}
+#scroll a {background-image:url("../img/scroll.png");width:74px;margin:0 auto;display:block;text-indent:-9999px;}
+#scroll .section1 a {background-position:0 0;height:97px;}
+#scroll .section2 a {background-position:0 -97px;height:47px;}
+#scroll .section3 a {background-position:0 -144px;height:49px;}
+#scroll .back-top a {background-position:0 -193px;height:150px;}
+#scroll .section1 .active {background-position:-75px 0;}
+#scroll .section2 .active {background-position:-75px -97px;}
+#scroll .section3 .active {background-position:-75px -144px;}
+#scroll .back-top .active {background-position:-75px -193px;}
+
+/* Footer styles */
+.footer-wrap {background-color:#fff;width:100%;padding:12px 0;position:relative;margin:0;zoom:1;}
+.footer{position:relative;clear:both;width:1000px;height:70px;margin:0 auto;}
+.footerNav{margin:0px 0 0 390px;padding:0 0 0 15px;line-height:20px;border-left:1px solid #ccc;}
+.footerNav a{margin:0 1px;color:#7c7c7c}
+.footerNav p{color:#7c7c7c;}
+.footerNav p em{font-family:Verdana;font-size:10px;}
+.footerNav a.footerLogo{position:absolute;left:190px;top:20px;width:180px;height:45px;background:url(http://image.h.7road.com/sprites/footerLogo.png) no-repeat;}
+
+
+/* IE styles */
+.ie6 .wrapper .tab-content li.col2 .gift, .ie7 .wrapper .tab-content li.col2 .gift {text-indent:15px;}
+.ie6 .wrapper .tabs-area .tabs .tab.active {height:75px;overflow:hidden;zoom:1;}
+.ie6 .wrapper .content {margin-top:-180px;}

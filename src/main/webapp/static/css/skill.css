@@ -1,0 +1,205 @@
+body{background:#000 url(http://image.7road.com/skill/mainBg.jpg) center top no-repeat;}
+.enterHome,.startGame{float:right;width:110px;height:37px;line-height:37px;text-indent:-99em;overflow:hidden;}
+.enterHome{margin-right:15px;}
+.startGame{margin-right:70px;_margin-right:140px;}
+.page{background:url(http://image.7road.com/skill/bg.png) no-repeat; width:682px; height:511px; position:absolute;right:45px;_right:115px;top:150px;}
+.topNav{padding:44px 0 0 0 ; width:454px; height:36px;}
+.topNav ul{display:block;}
+.topNav ul li{display:block; float:left; padding-right:3px;}
+.points{margin:12px 0 0 142px; width:375px;}
+.points ul{display:block;}
+.points label{font-size: 12px;}
+.points ul li{display:block; float:left; color:#fdf1c6; font-size:16px; font-weight:bold; height:21px; line-height:21px;}
+.num{margin-right:20px;}
+.clear{vertical-align:middle; margin-right:110px;}
+.main{margin:10px 0 0 36px; width:611px; height:298px;}
+.zsjn{background:url(http://image.7road.com/skill/zsjn_bg.jpg) no-repeat; width:611px; height:298px;}
+.fir{}
+.fir ul{display:block;}
+.fir ul li{display:block; width:60px; height:56px; float:left; color:#fdf1c6;}
+.z1{margin:14px 0 0 225px;}
+.z2{margin:14px 0 0 42px;}
+.fsjn{background:url(http://image.7road.com/skill/fsjn_bg.jpg) no-repeat; width:611px; height:298px;}
+.gsjn{background:url(http://image.7road.com/skill/gsjn_bg.jpg) no-repeat; width:611px; height:298px;}
+.ad{padding-left:35px;}
+.menu{margin-right:38px; width:284px; float:right;}
+.menu ul{display:block;}
+.menu ul li{padding:0 2px 1px 0;display:block; float:left; width:140px; height:27px;}
+p{color:#fdf1c6;}
+h5{padding:39px 0 0 38px;}
+a:hover{background-color: transparent;}
+li input{
+	width:50px;
+}
+
+.ym-wrapper{text-align:center;position:relative;width:1000px;}	
+/*自定义*/
+.arrow-box
+{
+	padding-top: 15px ;
+	padding-right: 5px;
+
+}
+
+.down_arrow
+{
+	padding-top: 15px;
+
+	padding-right: 5px;
+
+}
+.up_arrow
+{
+
+
+	padding-right: 5px;
+}
+.long_arrow
+{
+	padding-top: 15px;
+	padding-left:5px;
+	padding-right: 5px;
+}
+.first-row
+{
+    margin-left: 35%;
+
+
+}
+
+#wizard-first-row .ym-g10,#warrior-first-row .ym-g10,#hunter-first-row .ym-g10
+{
+	padding-top: 5px;
+
+}
+
+#wizard-second-row .ym-g10,
+#wizard-third-row .ym-g10,
+#wizard-fourth-row .ym-g10,
+#warrior-second-row .ym-g10,
+#warrior-third-row .ym-g10,
+#warrior-fourth-row .ym-g10,
+#hunter-second-row .ym-g10,
+#hunter-third-row .ym-g10,
+#hunter-fourth-row .ym-g10
+{
+	padding-top: 5px;
+}
+.second-row
+{
+    margin-left: 1%;
+
+}
+
+.third-row
+{
+    margin-left: 35%;
+}
+
+.fourth-row
+{
+    margin-left: 18%;
+}
+
+.skill-point
+{
+    text-align:center;
+    color: white;
+   	visibility: hidden;
+}
+
+.ym-g10 img
+{
+	/*margin-top: -11px;
+	margin-right: -11px;*/
+	cursor: pointer;
+	display: none;
+
+	position: absolute;
+	top:-11px;
+	right:-11px;
+
+}
+
+.right
+{
+	text-align:right;
+	position: relative;
+}
+
+
+/*技能信息预览*/
+.preview{
+	text-align: left;
+	width:242px;
+	min-height:22px;
+	height:auto ;
+	overflow:visible;
+	border:1px solid #7b7b7b;
+	padding:10px;
+	color: white;
+	background:#131521;
+	position: absolute;
+	left:25px;
+	top:25px;
+	z-index: 99;
+	display: none;
+}
+.preview div{
+	margin-top: 6px;
+}
+.skill_name{color:#40abe1;font-size:14px;font-weight:bold;}
+.skill_grade{color:#fff;font-size:14px;font-weight:bold;}
+.next{color:#eac366}
+.now_intro{color:#e2dda5}
+.next_intro{color:#b4b5b7}
+.upgr{color:#f00;}
+
+/*覆盖yaml*/
+.ym-g24
+{
+	width: 24%;
+	position: relative;
+}
+.ym-g10
+{
+	width: 10%;
+	position: relative;
+	
+
+}
+.ym-g15
+{
+	width: 15%;
+	position: relative;
+}
+
+.ym-g8
+{
+	width:8%;
+	position: relative;
+}
+.ym-g7
+{
+	width:7%;
+	position: relative;
+	
+}
+.ym-g48
+{
+	width:47%;
+}
+.ym-gbox {
+padding-top:  10px;
+}
+
+.ym-gl .num
+{
+    color:#fdf1c6; font-size:16px; font-weight:bold; height:21px; line-height:21px;
+    display: block;
+}
+.a_right_pad
+{
+    padding-right:2px;_padding-right:0;
+}
+

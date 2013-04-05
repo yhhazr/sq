@@ -1,0 +1,140 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="js"><!--<![endif]-->
+<head id="www-7road-com">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Copyright" content="Copyright www.7road.com 2011. All Rights Reserved.">
+    <title>《神曲》预约300服领好礼</title>
+    <link rel="stylesheet" type="text/css" href="http://static.7road.com/platform/css/platformCommon.css?v=1364805695237" />
+    <link rel="stylesheet" href="css/normalize.css?v20130401" />
+    <link rel="stylesheet" href="css/jqModal.css?v20130401" />
+    <link href="css/style.css?v20130401" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="jqmOverlay"></div>
+	<!-- 顶部导航条start -->
+	<div id="platformHead"></div>
+	<iframe src="#" id="platIframeHead" style="display:none"></iframe>
+	<script type="text/javascript" src="http://static.7road.com/platform/js/src/platformCommonHead.js"></script>
+	<script>
+		!function(){
+			var url = window.location.href;
+			loginRerArgument(url);
+		}();
+	</script>
+	<!-- 顶部导航条end -->
+    <!-- Document start -->
+	<div id="doc" class="doc clearfix">
+        <div class="container clearfix">
+        	<div class="header clearfix">
+        		<h1>
+        			<a class="logo" href="" title="神曲"><img src="img/logo.png" width="225" height="136" alt="神曲"></a>
+        		</h1>
+        		<ul class="nav">
+        			<li class="game"><a href="http://sq.7road.com/serverList.html" target="_blank" title="进入游戏"></a></li>
+        			<li class="homepage"><a href="http://sq.7road.com/" target="_blank" title="官网首页"></a></li>
+        			<li class="forum"><a href="http://bbs.7road.com/forum.php?gid=37/forum.php?gid=37" target="_blank" title="游戏论坛"></a></li>
+        		</ul>
+        	</div>
+        	<div class="content clearfix">
+        		<div class="select">
+                    <select name="select" size="1" id="server-list">
+                        <option selected="" value="300" serverno="300">神曲 300服 神之纪元</option>
+                    </select>
+                </div>
+                <div class="reserve-btn">
+                    <a href="#" id="reserve" class="jqModal">我要预约</a>
+                </div>
+                <!--div class="slide" id="slide">
+                    <a href="" target="_blank"><img src="http://webpic.my4399.com/newup/1301/191326262936.jpg" width="296" height="137" /></a>  
+                </div-->
+            </div>
+        </div>
+
+        <div id="dialog" class="jqmWindow">
+            <div class="msg">
+                <div class="reserve" style="display:none;">
+                    <h3><strong class="titles">预约服务器：双线300服</strong></h3>
+                    <form id="reserves" action="" method="POST">
+                        <p class="phone-field field">
+                            <label for="phone" class="title">手机号码：</label>
+                            <input type="text" id="phone" name="phone" />
+                            <label class="inside" for="phone">请输入手机号码</label>
+                            <label class="error"></label>
+                            <a class="get-captcha" href="javascript:void(0)">获取短信验证码</a>
+                        </p>
+                        <p class="captcha-field field">
+                            <label for="captcha" class="title">验证码：</label>
+                            <input type="text" id="captcha" name="captcha" maxlength="6" />
+                            <label class="inside" for="captcha">请输入验证码</label>
+                            <label class="error"></label>
+                        </p>
+                        <p class="submit-field">
+                            <input type="submit" value="" />
+                        </p>
+                    </form>
+                </div>
+                <div class="success" style="display:none;">
+                    <div class="single" style="display:none;">百服庆典礼包激活码为：<br /><code class="code"></code> <a href="javascript:void(0)" class="copy">复 制</a></div>
+                    <div class="double" style="display:none;">
+                        <p>百服庆典礼包激活码为：<code class="code first"></code> <a href="javascript:void(0)" class="copy">复 制</a></p>
+                        <p>百服尊享礼包激活码为：<code class="code second"></code> <a href="javascript:void(0)" class="copy">复 制</a></p>
+                    </div>
+                    <!-- Baidu Button BEGIN -->
+                    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                    <a class="bds_tsina"></a>
+                    <a class="bds_tqq"></a>
+                    <a class="shareCount"></a>
+                    </div>
+                    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+                    <script type="text/javascript" id="bdshell_js"></script>
+                    <script type="text/javascript">
+                        var bds_config = {
+                            'bdText':'#神曲新服预约# 我已经成功预约了《神曲》里程碑意义新服双线300服，拿到了百服庆典大礼包。赶快去预约拿豪礼吧（猛戳专题地址）',
+                            'bdPic':'http://sq.7road.com/activity/reservation/reserve.jpg'
+                        }
+                        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+                    </script>
+                    <!-- Baidu Button END -->
+                </div>
+                <!--a href="javascript:void(0)" class="jqmClose close">x</a-->
+            </div>
+        </div>
+    </div><!-- Document end -->
+    <!-- 底部start -->
+	<div id="platformFooter"></div>
+	<script type="text/javascript" src="http://static.7road.com/platform/js/src/platformCommonFooter.js"></script>
+	<!-- 底部end-->
+    <script src="http://lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/reserve.js?v20130401"></script>
+    <script>
+        $(function () {
+            $("#reserves .field input")
+                .on("focus", function(){
+                    $(this).next().hide();
+                })
+                .on("blur", function(){
+                    $(this).next()[!this.value ? "show" : "hide"]();
+                })
+                .trigger("blur");
+        })
+    </script>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.logo img, .nav a, .submit-field input');
+        setMinWidth(doc, 1040);
+        function setMinWidth(elementId, width){
+            var container = document.getElementById(elementId);
+            container.style.width = (container.clientWidth < width) ? width + "px" : "auto";
+        }
+    </script>
+    <![endif]-->
+</body>
+</html>

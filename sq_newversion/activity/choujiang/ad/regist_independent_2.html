@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>3秒快速注册_神曲第七大道</title>
+<style type="text/css">
+*{ margin:0; padding: 0;}
+body{ background: url(http://image.7road.com/bodybg1.jpg) no-repeat 50% 0; font-family: 宋体;}
+.main{ width: 1000px; margin:0 auto; height: 1080px;}
+.regBox{ float: left; margin: 290px 0 0 460px; _margin-left: 230px; width: 426px;}
+.regList{ margin-top: 30px;width: 426px; float: left; position: relative;}
+.regTxt{ float: left; font-size: 16px; color: #063d6c; font-weight: bold; padding-left: 7px; line-height: 30px;}
+.regTxt4{ padding-left: 0;}
+.retInput{ float: left; margin-left: 8px; border: 1px solid #474f63; outline: none; height: 28px; line-height: 28px; width: 212px; font-size: 16px; font-weight: bold; padding:0 5px;}
+.regBtn{ float: left; width: 192px; height: 63px; background: url(http://image.7road.com/btnBG.png) no-repeat 0 0; margin:20px 0 0 76px;}
+.regBtn:hover{ background-position: 0 -63px;}
+.oldPlayer{ color: #062b4a; font-size: 14px; float: left; margin:25px 0 0 300px; font-weight: bold;}
+.error{ color: #0e3b65; font-size: 12px; line-height: 30px; height: 30px; left: 80px; top: 30px; position: absolute;}
+.red{ color: red;}
+.errorImg{ position: absolute; width: 11px; height: 11px; background: red; top: 9px; left: 308px;display: none; background: url(http://image.7road.com/errorbt.png) no-repeat 0 -114px;}
+.trueImg{ background-position: 0 -56px;}
+.serverError{ color: red; position: absolute; top: 100px; left: 80px; font-size: 14px; display: none;}
+.btnBox{ float: left; position: relative;}
+.tongyi{ float: left; margin: 40px 0 0 75px; color: #0E3B65; font-size: 12px;} 
+.tongyi a{ color: #0E3B65;}
+</style>
+</head>
+
+<body>
+<div class="main">
+	<div class="regBox">
+		<div class="regList">
+			<div class="regTxt">账&nbsp;&nbsp;&nbsp;号</div>
+			<input type="text"  class="retInput" maxlength="20"  id="reg_uid" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" />
+			<div class="error" id="tab2_1">6-20个英文字符、数字、下划线</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="regList">
+			<div class="regTxt">密&nbsp;&nbsp;&nbsp;码</div>
+			<input type="password"  class="retInput" maxlength="20"  id="reg_pwd" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" />
+			<div class="error" id="tab2_2">至少6位字符（字母、数字、下划线）</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="regList">
+			<div class="regTxt regTxt4">确认密码</div>
+			<input type="password"  class="retInput" maxlength="20" id="reg_confirm_pwd" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" />
+			<div class="error" id="tab2_3">输入确认密码</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="tongyi"><input type="checkbox" checked="true"  name="checkbox" id="agreement" ><span>同意并接受</span><a target="_blank" href="http://account.7road.com//register_notice.html" class="popXieYi">《用户注册服务协议》</a></div>
+		<div class="btnBox">
+			<a class="regBtn" href="javascript:void(0)" id="btntoReg"></a>
+			<div class="serverError"></div>
+		</div>
+		<a href="http://sq.7road.com/serverList.html" class="oldPlayer" target="_blank">老玩家登录 ></a>
+
+	</div>
+</div>
+
+<div class="xf-tab-login" style="display:none">
+				<table border="0" id="login_panel" style="display: none;">
+					<tr>
+						<td class="tbtitle" style="width: 150px;">帐&nbsp;&nbsp;&nbsp;&nbsp;号：</td>
+						<td><input type="text" class="in2" id="uid" maxlength="20" /></td>
+						<td class="tip">&nbsp;<span id="tab1_1"></span></td>
+					</tr>
+
+					<tr>
+						<td class="tbtitle" style="width: 150px;">密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+						<td><input type="password" class="in2" id="pwd" maxlength="20" /></td>
+						<td class="tip">&nbsp;<span id="tab1_2"></span></td>
+					</tr>
+					<tr id="log_verifyTr" style="display:none">
+						<td class="tbtitle" style="width: 150px;">验证码：</td>
+						<td><input type="text" class="in2" id="verifyCode" maxlength="4" style="width:120px;vertical-align:middle;"/><img id="verifyCodeImg" style="vertical-align:middle;cursor:pointer;" src="http://sq.7road.com/game7road/captcha.do" width="58px" height="27px"  class="logpic" onClick="javascript:this.src='http://sq.7road.com/game7road/captcha.do?'+(new Date().getTime());"></td>
+						<td class="tip"><span id="tab1_3" style="height:15px;line-height:15px;overflow:hidden;display:block;"></span><a style="height:15px;line-height:15px;overflow:hidden;display:block;" href="javascript:refleshVerifyCode('verifyCodeImg')">看不清，换一张</a></td>
+					</tr>
+					<!-- <tr>
+						<td></td>
+						<td colspan="2" style="font-size: 13px; color: #f7c500;">&nbsp;<span id="login_tip" style="margin-left: 12px;"></span></td>
+					</tr> -->
+
+					<tr>
+						<td></td>
+						<td >
+							<div><span id="login_tip" style="margin-left: 12px;font-size: 13px; color: #f7c500;"></span></div>
+							<a href="javascript:void(0);" class="btn-login" id="btntoLogin"></a>
+						</td>
+						<td></td>	
+					</tr>
+                  <tr>
+				  <td style="height:14px;line-height:14px;padding:10px 0 0;"></td>
+						<td colspan="2" style="height:14px;line-height:14px;padding:10px 0 0;"><a href="javascript:void(0);" title="" class="quick-login">快速注册</a><a href="http://account.7road.com//forgetpwd.html" target="_blank" title="" class="quick-login">忘记密码</a></td>
+				  </tr>
+					
+
+				</table>
+				
+				<div id="tabLogined" class="xf-tab-logined" style="display: none;">
+                <div class="blank20"></div>
+					<div style="padding-left:50px;">
+						<div class="txtlogin_info">
+							<span style="font-size: 13px; color: #f7c500;font-weight: bold;" id="username">XXXXXX</span>, 您好！
+							[<a style="font-size: 13px; color: #f7c500;font-weight: bold;" href="javascript:logout();">退出</a>]
+						</div>
+						<div class="txtsafe_info" >
+							<a href="http://account.7road.com/" class="btn2" >完善密保资料</a>
+							请绑定邮箱确保帐号安全！
+						</div>
+						<div class="txtlastlogin_info" style="margin-top:20px;" >您上次登陆的服务器是：</div>
+						<div class="txtserver_info" >
+							<a href="javascript:void(0);" class="btn3" id="lastserver">【服务器】</a>
+							
+						</div>
+					</div>
+				</div> 
+
+				<table border="0" id="reg_panel" >
+					<tr>
+						<td class="tbtitle">帐&nbsp;&nbsp;&nbsp;号:</td>
+						<td><input type="text" class="in2" id="" maxlength="20" /></td>
+						<td class="tip">&nbsp;<span id="">长度6-20,由字母数字组成.</span></td>
+					</tr>
+
+					<tr>
+						<td class="tbtitle">密&nbsp;&nbsp;&nbsp;码:</td>
+						<td><input type="password" class="in2" id="" maxlength="20"/></td>
+						<td class="tip">&nbsp;<span id="">长度6-20个字符</span></td>
+					</tr>
+					<tr>
+						<td class="tbtitle">确认密码:</td>
+						<td><input type="password" class="in2" id="" maxlength="20" /></td>
+						<td class="tip">&nbsp;<span id="">两次输入的密码请保持一致</span></td>
+					</tr>
+					<tr>
+						<td style="height: 30px;line-height: 30px;"></td>
+						<td colspan="2"  style="height: 30px;line-height: 30px;padding-left: 10px;font-size: 13px;">
+							<input type="checkbox" id="" checked="checked" /><label> 同意并接受</label><a href="http://account.7road.com//register_notice.html" title="" target="_blank">用户注册服务协议</a>
+							
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan="2">
+							<a href="javascript:void(0);" class="btn-reg" id=""></a><a href="#" title="" class="old-login">老用户登录</a>
+							<span id="reg_tip" class="reg_tip"></span>
+						</td>
+					</tr>
+				</table>
+               
+			</div>
+</body>
+
+
+<script type="text/javascript" src="http://static.7road.com/js/config.js?v=1352975329092"></script>
+	<script type="text/javascript" src="http://static.7road.com/js/jquery-1.7.1.js"  charset="UTF-8"></script>
+	<script type="text/javascript" src="http://static.7road.com/js/jquery.cookie.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://static.7road.com/js/global.js?v=1352975329092" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://static.7road.com/js/game.js?v=1352975329092" charset="UTF-8"></script>
+	<script type="text/javascript" src="http://static.7road.com/js/user.js?v=1352975329092" charset="UTF-8"></script>
+<script type="text/javascript">
+var loginVerifyFlag=false;
+// 推荐直接进入的游戏区ID
+function getNewGamezoneId(){
+	var newGamezoneId=getNewestGameServerId();
+	if(newGamezoneId)
+	{
+		return newGamezoneId;
+	}else{
+		//return 938;
+		//return 561;
+		//return 865;
+		return 942;
+	}
+}
+
+
+//登陆按钮函数
+function loginHandler()
+{
+	var uid=$("#uid"),pwd=$("#pwd"),verifyCode=$("#verifyCode"),flag=true;
+	$("#tab1_1,#tab1_2").empty();
+	$(".g-ipt-err").removeClass("g-ipt-err");
+	if(!uid.val())
+	{
+		uid.addClass("g-ipt-err");
+		$("#tab1_1").text("请输入帐号").removeClass('green').addClass('red');
+		//document.getElementById("verifyCodeImg").src=SERVER+'/captcha.do?'+(new Date().getTime());
+		flag=false;
+	}
+	if(!pwd.val())
+	{
+		$("#pwd").addClass("g-ipt-err");
+		$("#tab1_2").text("请输入密码").removeClass('green').addClass('red');
+		//document.getElementById("verifyCodeImg").src=SERVER+'/captcha.do?'+(new Date().getTime());
+		flag=false;
+		
+	}
+
+
+	if(!flag)
+	{
+		return;
+	}
+	$('#login_tip').html('正在登录...');
+	$.post(SERVER + "/loginSubmit.action", 
+	{
+		inName: $('#uid').val(),
+		password1: $('#pwd').val()
+	}, 
+	function(data)
+	{
+		if(data.result == 'false') {
+		//	if(data.showLoginVerifyFlag ==true){
+		//		loginVerifyFlag=true;
+		//	}
+			$('#login_tip').html(data.respMsg);
+			//document.getElementById("verifyCodeImg").src=SERVER+'/captcha.do?'+(new Date().getTime());
+		} else if(data.result == 'true') {
+			//getUserInfo(data);
+			location = HOST + '/serverList.html?site='+getSite();
+		} else {
+			$('#login_tip').html("连接服务器超时，请稍后再试。");
+			//document.getElementById("verifyCodeImg").src=SERVER+'/captcha.do?'+(new Date().getTime());
+		}
+	});
+	return false;
+}
+
+var regRepeat = /([a-z0-9A-Z_])\1{4,}/;  //5位重复字符
+var regLetterFirst = /^[a-zA-Z]{1}([a-zA-Z0-9]|[_]){5,19}$/; 
+var keyArray = new Array('GameMaster','gm','GM','shit','bitch','fvc','phuc','fuk','shenqu','fuck', 'FUCK', 'Fuck','admin','7road');
+
+//注册按钮函数
+function regHandler()
+{
+	var uid=$("#reg_uid"),pwd=$("#reg_pwd"),confirm_pwd=$("#reg_confirm_pwd"),verifyCode=$("#reg_verifyCode"),flag=true;
+	$("#tab2_1,#tab2_2,#tab2_3").empty();
+	$(".g-ipt-err").removeClass("g-ipt-err");
+
+	if(pwd.val().length<6 || pwd.val().length>20){
+		pwd.addClass("g-ipt-err");
+		$("#tab2_2").text("密码为6-20位长度").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();
+		flag=false;
+	}
+	if(!pwd.val())
+	{
+		pwd.addClass("g-ipt-err");
+		$("#tab2_2").text("请输入密码").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+		flag=false;
+		
+	}
+	if(!confirm_pwd.val())
+	{
+		confirm_pwd.addClass("g-ipt-err");
+		$("#tab2_3").text("请输入确认密码").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+		flag=false;
+	}
+	if(!regLetterFirst.test(uid.val())){
+		uid.addClass("g-ipt-err");
+		$("#tab2_1").html("字母开头，6~20个字母数字").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+		flag=false;
+	}
+	if(regRepeat.test(uid.val())){
+		uid.addClass("g-ipt-err");
+		$("#tab2_1").text("用户名已注册").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+		flag=false;
+	}
+	if(!checkKeyword(uid.val())){
+		uid.addClass("g-ipt-err");
+		$("#tab2_1").text("用户名已注册").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+		flag=false;
+	}
+	if(!uid.val())
+	{
+		uid.addClass("g-ipt-err");
+		$("#tab2_1").text("请输入帐号").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+		flag=false;
+	}
+	if(pwd.val()!=confirm_pwd.val()){
+		confirm_pwd.addClass("g-ipt-err");
+		$("#tab2_3").text("两次输入密码不一致").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+		flag=false;
+	}
+	
+	if(!$('#agreement').attr('checked')){
+		$("#reg_tip").text("请先阅读协议并同意后进行操作");
+		flag=false;
+	}
+	if(!flag)
+	{
+		return;
+	}
+	
+	$('#reg_tip').html('正在注册...');
+	var siteId = getSite();
+	var newGamezoneId = getNewGamezoneId();
+	$.ajax({
+		   type: "post",
+		   dataType: "json",
+		   url: SERVER + "/registrationSubmit.action",
+		   async: false,				   
+		   data: {
+			   inName: uid.val(),
+				password1: pwd.val(),
+				password2: confirm_pwd.val(),
+				site: siteId
+		   },
+		   success:function(data) {
+			   if(data.result == 'false') {
+					$('#reg_tip').html(data.data);
+				} else if(data.result == 'true') {
+					$('#reg_tip').html(data.bbsData);
+					var canLogGame = enterGame(LOGINGAME + newGamezoneId);
+					if(canLogGame == 0) {
+						setTimeout(function(){location = LOGINGAME + newGamezoneId + '&timestamp=' + Date.parse(new Date());	},1500);
+						return true;
+					}else {
+						window.location.href=HOST;
+//						return false;
+					}
+				} else {
+					$('#reg_tip').html("连接服务器超时...");
+					return false;
+				}	
+		   	}
+		 });
+	return false;
+}
+
+function logout(){
+	$.cookie('VVNFUklORk8%3D', null, { path: '/',domain: COOKIE_NAME});
+
+	$.get(SERVER + "/indexLogout.action?timestamp=a" + new Date().getTime(), {
+	}, function(data){    				
+		if(data.result == 'true') {
+			$('#login_tip').empty();
+			$('#uid, #pwd').val('');
+			$('#tabLogined').hide();
+			$('#login_panel').show();
+		}
+	});
+}
+
+//检查屏蔽关键字
+function checkKeyword(str){   		
+	for(i=0; i<keyArray.length; i++) {
+		if(str.indexOf(keyArray[i])!=-1) {
+			return false;
+		}
+	}
+	return true;
+}
+//注册时账号框焦点离开函数
+function uidOnBlur(){
+	var uid=$("#reg_uid"),pwd=$("#reg_pwd"),confirm_pwd=$("#reg_confirm_pwd");	
+	$("#tab2_1").empty();
+	if(!regLetterFirst.test(uid.val())) {
+		uid.addClass("g-ipt-err");
+		$("#tab2_1").html("字母开头，6-20个字母数字").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+	}else if(regRepeat.test(uid.val())){
+		uid.addClass("g-ipt-err");
+		$("#tab2_1").text("用户名已注册").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+	}else if(!checkKeyword(uid.val())){
+		uid.addClass("g-ipt-err");
+		$("#tab2_1").text("用户名已注册").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+	}else{
+		var url = SERVER + "/checkUserName.action?inName="+uid.val();
+		$.get(url,function(data){
+			if(data.result == "false"){
+				//alert('该用户名已被注册');
+				uid.addClass("g-ipt-err");
+				$("#tab2_1").text("该用户名已被注册").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;				
+			}else{
+				uid.removeClass("g-ipt-err");
+				$("#tab2_1").text("该账号可以使用").removeClass('red').addClass('green').next("div.errorImg").addClass("trueImg").show();
+			}
+		});
+	}
+}
+//登录时账号框焦点离开函数
+$("#uid").blur(function(){
+	var uid = $("#uid");
+	var url = SERVER + "/checkUserName.action?inName="+uid.val();
+		$.get(url,function(data){
+			if(data.result == "true"){
+				uid.addClass("g-ipt-err");
+				$("#tab1_1").text("用户名不存在").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;
+			}else{
+				uid.removeClass("g-ipt-err");
+				$("#tab1_1").text("").removeClass('red');
+			}
+		});
+});
+//注册时首次输入密码焦点离开函数
+function pwdOnBlur(){
+	var pwd=$("#reg_pwd");
+	if(!pwd.val()){
+		pwd.addClass("g-ipt-err");
+		$("#tab2_2").text("请输入密码").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();;		
+	}else if(pwd.val().length > 20 || pwd.val().length < 6){
+		pwd.addClass("g-ipt-err");
+		$("#tab2_2").text("密码为6-20位长度").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();
+	}else{
+		pwd.removeClass("g-ipt-err");
+		$("#tab2_2").text("密码正确").removeClass('red').addClass('green').next("div.errorImg").addClass("trueImg").show();
+	}
+}	
+
+//注册时再次输入密码焦点离开函数
+function confirmPwdOnBlur(){
+	var pwd=$("#reg_pwd"),confirm_pwd=$("#reg_confirm_pwd");
+	if(!confirm_pwd.val()){
+		confirm_pwd.addClass("g-ipt-err");
+		$("#tab2_3").text("请输入确认密码").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();
+	}else if(pwd.val() != confirm_pwd.val()){	
+		confirm_pwd.addClass("g-ipt-err");	
+		$("#tab2_3").text("两次密码不一致").removeClass('green').addClass('red').next("div.errorImg").removeClass("trueImg").show();
+	}else if(pwd.val() == confirm_pwd.val()){
+		confirm_pwd.removeClass("g-ipt-err");
+		$("#tab2_3").text("密码正确").removeClass('red').addClass('green').next("div.errorImg").addClass("trueImg").show();
+	}	
+}
+$(function(){
+
+	//验证是否登录
+	var logedFlag = checkLoged({func: adCheckReturnOfCheckLoged});
+	
+	
+
+    //焦点定位在账号框
+    $("#reg_uid").focus();
+
+    $("#reg_uid").blur(function(){
+    	uidOnBlur();
+    });
+    $("#reg_pwd").blur(function(){
+    	pwdOnBlur();
+    });
+    $("#reg_confirm_pwd").blur(function(){
+		confirmPwdOnBlur();
+    });
+
+	//登陆按钮点击事件和input回车事件
+	$("#btntoLogin").click(loginHandler);
+	$("#verifyCode").keydown(function(event)
+	{
+		if(event.keyCode==13)
+		{
+			loginHandler();
+		}
+	});
+	$("#pwd").keydown(function(event)
+	{
+		if(event.keyCode==13)
+		{
+			loginHandler();
+		}
+	});
+
+	//注册按钮点击事件和input回车事件
+	$("#btntoReg").click(regHandler);
+	$("#reg_confirm_pwd").keydown(function(event)
+	{
+		if(event.keyCode==13)
+			{
+				regHandler();
+			}
+	});
+
+
+	
+	$('#lastserver').click(function(){
+		var canLogGame = enterGame($(this).attr('href'));
+		if(canLogGame == 0) {
+			setTimeout(function(){location = $(this).attr('href');	},1500);
+			return true;
+		}else {
+			return false;
+		}
+	});
+
+
+
+	//切换
+	$(".old-login").click(function()
+	{
+		$("#login_panel").show();
+		$("span[id^='tab']").empty();
+		$("#reg_panel").hide();
+		$(".panel").addClass("login").removeClass("reg");
+		$("#uid").focus();				
+	});
+	
+	$(".quick-login").click(function()
+	{
+		$("#login_panel").hide();
+		$("span[id^='tab']").empty();
+		$("#reg_uid,#reg_pwd,#reg_confirm_pwd").removeClass("g-ipt-err");
+		$("#tab2_1").text("长度6-20,由字母数字组成.");
+		$("#tab2_2").text("长度6-20个字符");
+		$("#tab2_3").text("两次输入的密码请保持一致");
+		$("#reg_panel").show();
+		$(".panel").addClass("reg").removeClass("login");
+		$("#reg_uid").focus();
+	});
+	 //setInterval("flash_title()",500);
+});
+
+var adCheckReturnOfCheckLoged = function(logedFlag) {
+	if(logedFlag == 0) {
+		$(".panel").addClass("login").removeClass("reg");
+		$('#login_tip').append(bbsLoginMsg);
+		$("#login_panel, #reg_panel").hide();
+		$(".xf-tab-logined").show();
+		$('#username').text(logedName);
+		$('#lastserver').text(lastServerName).attr('href',lastServerUrl);	
+	}
+}
+
+// 标题闪动
+var SHOW1="第七大道神曲_全球首创QTE战斗游戏，超震撼体验！";
+var SHOW2=window.location.href;
+ SHOW2=SHOW2.replace("http://","");
+var i=0;
+function flash_title(){
+ 		if(i==0) {
+                $("title").text(SHOW1);
+                i = 1 ;
+        }
+        else {
+                $("title").text(SHOW2);
+                i = 0 ;
+        }
+}
+
+
+</script>
+
+</html>

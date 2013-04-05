@@ -1,0 +1,20 @@
+﻿h1{ font-size:22px; color:#9dceff; text-align:center;}
+h2{ margin:15px; background-color:#072e57; border:1px  solid #154e8c; height:40px;}
+h2 ul{ display:block; padding:0 0 0 12px;}
+h2 ul li{ float:left; width:145px; height:40px; line-height:40px; color:#9dceff; font-weight:normal;}
+h2 ul li a{ width:140px; height:40px; line-height:40px; color:#9dceff; font-weight:normal; text-decoration:none;}
+h2 ul li a:hover{ width:100px; height:40px; line-height:40px; color:#9dceff; font-weight:normal; text-decoration:underline; }
+h3{ }
+h4{ width:265px; margin:12px 0 0 0;}
+h4 ul{ display:block; }
+h4 ul li{ padding:8px 6px 8px 6px; display:block; float:left; font-size:14px; font-weight:bold; color:#179aff; height:20px; line-height:20px;}
+h4 ul li a{font-size:14px; font-weight:bold; color:#179aff; height:20px; line-height:20px; text-decoration:none;}
+h4 ul li a:hover{ font-size:14px; font-weight:bold; color:#179aff; height:20px; line-height:20px; text-decoration:underline;}
+p{}
+.pimg{ margin:12px  0 12px 0; padding:0 0 0 100px;}
+.dataDetail{background-color: #093461; border:1px solid #154576; margin:8px 0 0 0; padding:20px 20px 10px 10px;display: block;margin-bottom:10px;}
+.fnt_title{ text-align:center; color:#9dceff; font-weight:normal; font-size:18px; height:36px; line-height:36px;}
+
+.fnt_text{color:#e0f6ff;font-family:"微软雅黑"; font-size:13px; line-height:160%;text-align:justify;text-justify:inter-ideograph;letter-spacing:2px}
+
+.dataList{ margin:62px 0 0 0; display:block;}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminAdinfoQuery" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.adinfo.list"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/adInfo/admin_adinfoList.jsp" />
+	</definition>
+	
+	<definition name="adminReginfoQuery" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.adinfo.list"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/adInfo/admin_ReginfoList.jsp" />
+	</definition>
+</tiles-definitions>

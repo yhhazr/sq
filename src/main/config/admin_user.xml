@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="login" namespace="/" extends="default">
+
+		<action name="adminLogin">
+			<result name="success">/WEB-INF/web/admin/login/admin_login.jsp</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="adminLoginSubmit"
+			class="com.sz7road.web.action.admin.login.AdminLoginAction" method="adminLogin">
+			<result name="input">/WEB-INF/web/admin/login/admin_login.jsp</result>
+			<result name="success" type="tiles">adminHomePage</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="adminLogout" class="com.sz7road.web.action.admin.login.AdminLogoutAction">
+			<result name="success" type="redirectAction">adminLogin</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		
+	</package>
+
+	<package name="userManage" namespace="/userManage" extends="default">
+		<action name="queryUsers"
+			class="com.sz7road.web.action.admin.usermanage.UserManageAction" method="queryUserList">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">adminUserList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createUserForm" class="com.sz7road.web.action.admin.usermanage.UserManageAction" method="createUser">
+			<result name="input" type="redirectAction">queryUsers</result>
+			<result name="success" type="tiles">adminCreateUser</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createUserSubmit" class="com.sz7road.web.action.admin.usermanage.UserManageAction" method="createUserSubmit">
+			<result name="input" type="tiles">adminCreateUser</result>
+			 <result name="success" type="redirectAction">
+  				<param name="actionName">queryUsers</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editUserForm" class="com.sz7road.web.action.admin.usermanage.UserManageAction" method="editUser">
+			<result name="input" type="redirectAction">queryUsers</result>
+			<result name="success" type="tiles">adminEditUser</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editUserSubmit" class="com.sz7road.web.action.admin.usermanage.UserManageAction" method="editUserSubmit">
+			<result name="input" type="tiles">adminEditUser</result>
+			<result name="success" type="redirectAction">
+  				<param name="actionName">queryUsers</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteUser" class="com.sz7road.web.action.admin.usermanage.UserManageAction" method="deleteUser">
+			<result name="input" type="redirectAction">queryUsers</result>
+			<result name="success" type="redirectAction">
+  				<param name="actionName">queryUsers</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		
+
+	</package>
+	
+		<package name="gameEnterInfo" namespace="/" extends="json-default">
+		<action name="getGameEnterInfo" class="com.sz7road.web.action.admin.homepagemanage.GameEnterInfoStatisticsAction" method="getGameEnterInfo">
+			<result name="success" type="json">
+				<param name="root">json</param>
+			</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,p,iframe{font-family:"宋体",Tahoma,sans-serif;margin:0;padding:0;}
+img{border:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;}
+em{font-style:normal;}
+a:hover{text-decoration:underline;}
+input,img,button{vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+body{font-size:12px;}
+header,section,article,aside,footer,nav{display:block;}
+.screenCenter{width:962px;margin:0 auto;}
+
+.enterHome,.gift,.a1,.a2,.a3,.footer .footerLogo,.switch1 h3 span a{display:block;text-indent:-999em;overflow:hidden;}
+.f_l{float:left;display:inline;}
+.f_r{float:right;display:inline;}
+.hid{display:none;}
+.clearfix{overflow:hidden;zoom:1;}
+.blank60{height:60px;line-height:60px;overflow:hidden;clear:both;}
+.alignCenter{text-align:center;}
+
+.indexBgColor{background:#000;}
+.pageBgColor{background:#e5c9ab;}
+.mainWrap{background:url(../images/bg1.jpg) center top no-repeat;}
+.main{background:url(../images/bg2.jpg) center 400px no-repeat;}
+.content{min-height:957px;_height:957px;position:relative;}
+.enterHome,.enterGame,.gift{position:absolute;}
+.enterHome{top:0;right:140px;width:125px;height:52px;}
+.enterGame{top:130px;right:138px;width:203px;height:230px;}
+.gift{top:332px;left:313px;width:160px;height:46px;}
+.activity{margin:20px 0 0 9px;width:649px;height:238px;background:url(../images/activityBg.jpg) no-repeat;}
+.a1,.a2,.a3{position:absolute;top:409px;width:265px;height:325px;}
+.a1{left:0;}
+.a2{left:265px;}
+.a3{left:530px}
+
+.page{background:url(../images/pageBg.jpg) center top no-repeat;}
+.switch1{padding:328px 0 0 0;height:1%;}
+.switch1 h3{margin:0 0 20px 14px;height:70px;}
+.switch1 h3 span{float:left;width:144px;height:70px;}
+.switch1 h3 span a{display:block;width:144px;height:70px;background:url(../images/tabNav.jpg) no-repeat;}
+.switch1 h3 span a.tab1{background-position:0 0;}
+.switch1 h3 span a.tab2{background-position:-144px 0;}
+.switch1 h3 span a.tab3{background-position:-288px 0;}
+.switch1 h3 span a.tab4{background-position:-432px 0;}
+.switch1 h3 span.on a.tab1{background-position:0 -70px;}
+.switch1 h3 span.on a.tab2{background-position:-144px -70px;}
+.switch1 h3 span.on a.tab3{background-position:-288px -70px;}
+.switch1 h3 span.on a.tab4{background-position:-432px -70px;}
+.switch1 ul{display:none;height:1%;clear:both;}
+.introduce{margin:0 40px;line-height:25px;font-size:15px;font-weight:bold;color:#b5633e;font-family:'微软雅黑';text-indent:2em;}
+.introduce:first-letter{font-size:24px;}
+.activityListWrap{width:962px;padding:15px 0 16px;border-bottom:1px dashed #ddb186;}
+.activityListWrap .activityList{width:952px;height:1%;padding:5px 5px 0;background:#d6b99a;overflow:hidden;}
+.activityListWrap .activityList h3{width:932px;height:38px;margin:0;padding:0 10px;line-height:38px;color:#950808;font-size:24px;font-weight:bold;font-family:'微软雅黑';background:#ead9c6;overflow:hidden;}
+.activityListWrap .activityList h3 strong{float:left;padding-right:5px;font-family:"Times New Roman";font-size:30px;font-weight:bold;}
+.activityListWrap .activityList h3 a{float:left;color:#950808;}
+.activityListWrap .activityList h3 span{float:left;font-size:14px;padding-top:5px;}
+.activityListWrap .activityList .listDetail{margin:5px 0 0;border-top:1px solid #caa47c;padding:8px 10px;}
+.activityListWrap .activityList .listDetail p{height:19px;margin:0 0 6px;line-height:19px;color:#852e22;}
+.activityListWrap .activityList .listDetail p strong{float:left;width:61px;height:19px;color:#ffb400;text-align:center;font-size:12px;background:url(../images/dot.jpg) no-repeat;}
+.activityListWrap .activityList .listDetail p .detail{float:left;width:865px;padding:1px 0 0 3px;display:block;font-size:12px;font-weight:normal;}
+/*底部*/
+.footerWrap{height:152px;padding:76px 0 0;clear:both;background:url(../images/footerBg.jpg) center top no-repeat;}
+.indexFooter{height:132px;padding:825px 0 0;clear:both;background:none;}
+.footer{position:relative;height:132px;line-height:25px;}
+.footer .footerLogo{position:absolute;left:10px;top:17px;width:191px;height:60px;background:url(../images/footerLogo.jpg) no-repeat;}
+.footer .footerLogo1{left:96px;}
+.footer .footerNav{padding:10px 0 0 230px;color:#a05d41;}
+.footer .footerNav1{padding:10px 0 0 300px;}
+.footer .footerNav a{margin:0 8px;color:#a05d41;}
+.footer p{padding-left:238px;color:#a05d41;line-height:22px;}

@@ -1,0 +1,155 @@
+/*公用样式*/
+body{background:url(http://image.7road.com/serverList/bg.jpg) repeat;overflow-y:scroll;-webkit-background-size: 2056px 1058px;}
+ul{list-style:none;}
+tr,td{font-family:Arial,verdana,"宋体";}
+a{text-decoration:none;font-family:Arial,verdana,"宋体";}
+.f_l{float:left;}
+.f_r{float:right;}
+.clear{clear:both;}
+.blank20{height:20px;line-height:20px;clear:both;overflow:hidden;}
+.mainBg1{background:url(http://image.7road.com/serverList/bg-y.jpg) center top repeat-y;}
+.mainBg2{background:url(http://image.7road.com/serverList/mainBg.jpg) center 0 no-repeat;}
+.mainBg3{width:868px;padding-left:132px;margin:0 auto;position:relative;z-index:3;}
+
+.leftNav,.switchWrap1 .navTab,.rightNav,.switchWrap1 .switchMainWrap .switchMain a{background:url(http://image.7road.com/serverList/spritesBg-x.jpg) repeat-x;}
+.leftNav h3,.leftNav .navDot,.serverListNav .serverListEnter,.switchWrap1 .navTab a,.loginRegTab,.loginRegTab2,.modRight h3,.serviceCenter a,.header a,.loginBtn,.regBtn,.btn2{background:url(http://image.7road.com/serverList/spritesBg.jpg) no-repeat;}
+.hotIco0,.hotIco1,.hotIco2,.hotIco3,.hotIco4,.hotIco5,.hotIco6,.hotIco7,.hotIco8,.hotIco9,.hotIco10{background:url(http://image.7road.com/serverList/hotbg.png) no-repeat;width:55px;height:22px;}
+/*顶部导航条*/
+.sc{float:right;}
+.b_sc{height:23px;width:64px;background:url(http://image.7road.com/icon.png) 0 -28px no-repeat;display:inline-block;}
+/*头部*/
+.w868{width:868px;margin:0 auto;}
+.header{position:relative;height:145px;}
+.header a{position:absolute;top:10px;right:0;color:#054c8b;font-weight:bold;display:block;width:63px;height:26px;line-height:26px;padding-left:20px;overflow:hidden;background-position:-168px -316px;}
+.header a.home{right:90px;}
+.header a:hover{background-position:-168px -343px;}
+/*主体*/
+.contentWrap{}
+
+/*左边*/
+.leftContent{width:569px;min-height:836px;_height:844px;margin:0;border:1px solid #2c72b0;border-top:none;background:#a6cdf3;}
+.leftNav{height:37px;background-position:0 0;}
+.leftNav h3{width:113px;height:37px;}
+.leftNav h3.navTxt1{background-position:0 -571px;}
+.leftNav h3.navTxt2{background-position:0 -609px;}
+.leftNav .navDot{float:right;width:20px;height:37px;background-position:-168px -425px;}
+/*推荐服务器*/
+.recommendServer{margin:20px 0 20px 5px;height:66px;}
+.recommendServer a{float:left;position:relative;width:243px;height:44px;border:1px solid #71afe6;background:url("http://image.7road.com/serverList/spritesBg-x.jpg") repeat-x 0 -286px transparent;padding:10px 0 10px 12px;margin:0 0 0 150px;overflow:hidden;line-height:18px;cursor:pointer;}
+.recommendServer1{margin:0 0 0 5px;height:1%;}
+.recommendServer1 a{height:42px;padding:5px 0 5px 12px;margin:5px 0 0 15px;}
+.recommendServer a{color:#01457f;}
+.recommendServer a span,.recommendServer a strong{float:left;}
+.recommendServer a .serverName{width:160px;height:23px;font-size:14px;line-height:23px;overflow:hidden;}
+.hotDot{position:absolute;right:0px;top:0px;display:block;width:38px;height:32px;background:url(http://image.7road.com/serverList/hotDot.png) no-repeat;}
+.netDot{width:25px;height:10px;margin:5px 30px 0 3px;background:url(http://image.7road.com/serverList/newHot.gif) no-repeat;}
+.hotTxt{width:85px;font-size:12px;}
+.hotIco{width:55px;height:22px;background:url(http://image.7road.com/serverList/hotIco.gif) no-repeat;}
+.hotIco0{background-position:0 7px;}
+.hotIco1{background-position:0 -13px;}
+.hotIco2{background-position:0 -33px;}
+.hotIco3{background-position:0 -53px;}
+.hotIco4{background-position:0 -73px;}
+.hotIco5{background-position:0 -93px;}
+.hotIco6{background-position:0 -113px;}
+.hotIco7{background-position:0 -133px;}
+.hotIco8{background-position:0 -153px;}
+.hotIco9{background-position:0 -173px;}
+.hotIco10{background-position:0 -193px;}
+.degree{margin:0 2px;font-size:12px;}
+.red{width:60px;color:#f00000;font-size:12px;}
+.recommendServer_center{margin-left:130px}
+/*服务器列表*/
+.serverListNav{padding:6px 20px 4px 0;}
+.serverListNav a,.serverListNav span,.serverListNav input{float:left;}
+.serverListNav .txt{padding:0 3px 0 10px;color:#fff;line-height:24px;font-size:14px;}
+.serverListNav .serverListInput{width:48px;height:18px;line-height:18px;margin-top:2px;border:1px solid #093985;background:#fff;text-align:center;color:#4b4b4b;font-weight:bold;font-size:14px;}
+.serverListNav .serverListEnter{width:64px;height:24px;margin-left:5px;padding-left:2px;line-height:23px;line-height:25px\9;border:none;background-position:-168px -397px;text-align:center;color:#630000;font-weight:bold;cursor:pointer;overflow:hidden;}
+/*服务器列表切换*/
+.switchWrap1{}
+.switchWrap1 .navTabWrap{position:relative;top:-1px;height:35px;}
+.switchWrap1 .navTab{height:35px;background-position:0 -152px;}
+.switchWrap1 .navTab a{float:left;width:110px;height:35px;line-height:35px;background-position:0 -785px;text-align:center;color:#01457f;font-size:13px;font-weight:bold;}
+.switchWrap1 .navTab a.on{background-position:0 -749px;}
+.switchWrap1 .switchMainWrap{clear:both;}
+.switchWrap1 .switchMainWrap .switchMain{display:none;}
+.switchWrap1 .switchMainWrap .switchMain a{background-position:0 -90px;}
+.switchWrap1 .switchMainWrap .switchMain a.maintain{background-position:0 -197px;color:#2c2c2c;}
+.switchWrap1 .switchMainWrap .switchMain a.maintain .red{color:#2c2c2c;}
+a.maintain .hotIco0,a.maintain .hotIco1,a.maintain .hotIco2,a.maintain .hotIco3,a.maintain .hotIco4,a.maintain .hotIco5,a.maintain .hotIco6,a.maintain .hotIco7,a.maintain .hotIco8,a.maintain .hotIco9,a.maintain .hotIco10{background:url(http://image.7road.com/serverList/hotbg.png) 0 7px no-repeat;}
+
+.loginRegTxt{width:65px;font-size:16px;text-align:right;font-family:Arial,verdana,"宋体";}
+
+.in1{width:40px;text-align:center;margin-left:8px;margin-right:8px;margin-top:4px;font-weight:bold;}
+/*右边*/
+.rightContent{width:287px;overflow:hidden;}
+.loginRegTab{height:52px;overflow:hidden;background-position:0 0;}
+.loginRegTab2{background-position:0 -53px;}
+.loginRegTab a{height:50px;width:143px;display:block;float:left;}
+.loginRegContentWrap{width:283px;border:1px solid #024782;border-top:none;padding:0 1px 1px;background:#5fabed;}
+.loginRegContent{width:283px;overflow:hidden;}
+.login{padding-top:20px;color:#fff;background:url(http://image.7road.com/serverList/regLoginBg.jpg) no-repeat;}
+
+.modRight{width:285px;border:1px solid #6a98c2;margin-top:15px;border-top:none;background:#bedefd;clear:both;}
+.rightNav{height:33px;background-position:0 -47px;}
+.rightNav h3{width:113px;height:33px;}
+.rightNav h3.navTxt1{background-position:0 -647px;}
+.rightNav h3.navTxt2{background-position:0 -681px;}
+.rightNav h3.navTxt3{background-position:0 -715px;}
+.rightNav .moreNews{color:#fff;margin:8px 9px 0 0;}
+.serviceCenter{padding:5px 0 18px 17px;}
+.serviceCenter a{display:block;width:165px;height:46px;padding:5px 0 0 85px;margin:10px 0 0 0;line-height:20px;}
+.serviceCenter a.help1{background-position:0 -106px;}
+.serviceCenter a.help2{background-position:0 -158px;}
+.serviceCenter a.help3{background-position:0 -210px;}
+.serviceCenter a span{display:block;color:#204f87;}
+.serviceCenter a strong{color:#1c4a79;font-family:Verdana;font-size:14px;}
+.exchange{padding:5px 0 5px 20px;color:#013b75;line-height:30px;}
+.exchange p strong span{color:#d40133;}
+/*最新新闻*/
+.latestNews{width:285px;padding:10px 0 15px;color:#174471;overflow:hidden;}
+.latestNews ul li{padding:3px 0 3px 10px;margin:0 5px 0 15px;border-bottom:1px dashed #82a6ca;background:url(http://image.7road.com/serverList/dot.jpg) no-repeat 0px 11px;}
+.latestNews ul li span{float:right;color:#306397;}
+.latestNews ul li a{color:#174471;}
+.latestNews ul li a:hover{color:#c50101;}
+/*注册登录*/
+.loginBtn,.regBtn{display:block;width:167px;height:53px;margin-left:68px;margin-top:10px;}
+.loginBtn{background-position:0 -370px;}
+.loginBtn:hover{background-position:0 -316px;}
+.regBtn{background-position:0 -478px;}
+.regBtn:hover{background-position:0 -424px;}
+.inputTxt2{font-weight:bold;width:202px;height:24px;line-height:24px;font-size:14px;border:1px solid #015295;}
+.regForget{height:14px;padding:0 0 20px 30px;}
+.regForget a{float:left;margin:0 0 0 50px;color:#fff;}
+.regForget a:hover{text-decoration:underline;}
+.checkbox{margin-left:60px;margin-top:1px;margin-bottom:6px;}
+.serviceXie{color:#ffde01;font-size:12px;}
+.serviceXie:hover{text-decoration:underline;}
+.log_message{padding:5px 0 5px 30px;color:#ffde00;text-align:center;}
+.in2{width:82px;vertical-align:middle;height:24px;line-height:24px;border:1px solid #015295;}
+.changePic{color:#61cfff;}
+.changePic:hover{text-decoration:underline;}
+.height20{height:20px;}
+
+.msg_default{color:#ffde00;};
+.msg_red{color:#EE4D4D;};
+.msg_green{color:#65EC60;};
+
+.txt1{padding:6px 0 6px 20px;}
+.logined{height:240px;padding-top:20px;color:#fff;background:url(http://image.7road.com/serverList/regLoginBg.jpg) no-repeat;}
+.btn2{width:147px;height:38px;display:block;margin:0 0 0 19px;text-indent:-99em;overflow:hidden;background-position:0 -532px;}
+#bindEmail{color:#ffde00;}
+#bindEmail:hover,.btn2:hover{color:#ffde00;text-decoration:underline;}
+
+.lastserver_maintain{background-position:0 -197px;color:#2c2c2c;}
+
+.btn3{float:left;position:relative;width:230px;height:42px;padding:3px 0 3px 10px;border:1px solid #71afe6;background:#ebebeb url(http://image.7road.com/serverList/spritesBg-x.jpg) 0 -90px repeat-x;overflow:hidden;line-height:18px;cursor:pointer;color:#01457f;}
+.btn3 span,.btn3 strong{float:left;}
+.btn3 .serverName{width:150px;height:23px;font-size:14px;line-height:23px;overflow:hidden;}
+
+.btn3_stop{width:164px;height:39px;line-height:39px;overflow:hidden;background-position:0 -166px;color:#661b01;float:left;margin-top:10px;cursor:pointer;color:#fff;font-weight:bold;text-align:center;vertical-align:middle;}
+.btn3_stop:hover{background-position:0 -206px;color:#000;font-weight:bold;}
+.reg{padding-top:20px;color:#fff;background:url(http://image.7road.com/serverList/regLoginBg.jpg) -284px 0 repeat-y;}
+/*底部*/
+.footerWrap{height:300px;position:relative;margin-top:-150px;background:url(http://image.7road.com/serverList/footerBg.jpg) center top no-repeat;z-index:2;}
+.footer{width:868px;margin:0 auto 0;padding:190px 0 0;text-align:center;color:#3c3c3c;font-size:14px;}

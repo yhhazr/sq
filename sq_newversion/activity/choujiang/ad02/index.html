@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+*{ margin:0; padding: 0;}
+body{ font-family: 宋体; background:#000 url(http://image.7road.com/baidu/ad02/bodybg.jpg) no-repeat 50% 0;}
+.main{ width: 1000px; margin:0 auto; height: 600px; position: relative;}
+.regBox{ width: 426px; position: absolute; z-index: 120; top: 423px; left: 33px;  height: 150px;}
+.regList{ margin-top: 22px;width: 426px; float: left; position: relative;}
+.regTxt{ float: left; font-size: 14px; color: #000; font-weight: bold; width: 80px; text-align: right; line-height: 22px;}
+.regTxt4{ padding-left: 0;}
+.retInput{ float: left; margin-left: 8px;  outline: none; border:1px solid #000; height: 22px; line-height: 22px; width: 234px; font-size: 16px; font-weight: bold; padding:0 5px; }
+.regBtn{ float: left; width: 127px; height: 35px;  margin: 24px 0 0 135px; background: url(http://image.7road.com/baidu/ad02/aBtn.gif) no-repeat; outline: none; }
+.regBtn:hover{ background: url(http://image.7road.com/baidu/ad02/aBtnHover.png) no-repeat;}
+.oldPlayer{ color: #062b4a; font-size: 14px; float: left; margin:25px 0 0 300px; font-weight: bold;}
+.error{ color: #000; font-size: 12px; line-height:22px; height: 22px; left: 90px; top: 22px; position: absolute;}
+.red{ color: red;}
+.errorImg{ position: absolute; width: 11px; height: 11px;  top: 6px; left: 338px;display: none; }
+.trueImg{ }
+.serverError{ color: red; position: absolute; top: 62px; left: 160px; font-size: 12px; }
+.btnBox{ float: left; position: relative;}
+.tongyi{ float: left; margin: 40px 0 0 75px; color: #0E3B65; font-size: 12px; _margin-left: 38px;} 
+.tongyi a{ color: #0E3B65;}
+.ad01{  width: 1000px; height: 600px;}
+</style>
+<script type="text/javascript" src="http://static.7road.com/js/config.js?v=1352975329092"></script>
+<script type="text/javascript" src="http://static.7road.com/js/jquery-1.7.1.js"  charset="UTF-8"></script>
+<script type="text/javascript">
+$(function(){
+	$("#reg_pwd").live("keyup",function(){
+		$("#reg_confirm_pwd").val($(this).val());
+	})
+})
+var _hmt = _hmt || [];
+</script>
+<script type="text/javascript" src="http://static.7road.com/js/jquery.cookie.js" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/global.js?v=1352975329092" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/game.js?v=1352975329092" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/user.js?v=1352975329092" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.7road.com/js/reg7road.js?v=1352975329092" charset="UTF-8"></script>
+</head>
+
+<body>
+<div class="main">
+	<div class="ad01">
+		<embed  src='main.swf' type='application/x-shockwave-flash' width='1000' height='600' quality='high'  menu='false' pluginspage='http://www.macromedia.com/go/getflashplayer' wmode='transparent' play='true' loop='true' scale='showall' devicefont='false' allowScriptAccess='always'></embed>
+	</div>
+	
+	<div class="regBox">
+		
+		<div class="regList">
+			<div class="regTxt">用户名：</div>
+			<input type="text"  class="retInput" maxlength="20"  id="reg_uid"  />
+			<div class="error" id="tab2_1">6-20个英文字符、数字、下划线</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="regList">
+			<div class="regTxt">登录密码：</div>
+			<input type="test"  class="retInput" maxlength="20"  id="reg_pwd" style="height:21px;"  />
+			<div class="error" id="tab2_2">至少6位字符（字母、数字、下划线）</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="regList" style="display:none">
+			<div class="regTxt regTxt4">确认密码</div>
+			<input type="password"  class="retInput" maxlength="20" id="reg_confirm_pwd"  />
+			<div class="error" id="tab2_3">输入确认密码</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="tongyi" style="display:none"><input type="checkbox" checked="true"  name="checkbox" id="agreement" ><span>同意并接受</span><a target="_blank" href="http://account.7road.com//register_notice.html" class="popXieYi">《用户注册服务协议》</a></div>
+		<div class="btnBox">
+			<a class="regBtn" href="javascript:void(0)" id="btntoReg" hidefocus="true"></a>
+			
+			<div class="serverError" id="reg_tip"></div>
+		</div>
+		<a href="http://sq.7road.com/serverList.html" class="oldPlayer" target="_blank" style="display:none">老玩家登录 ></a>
+	</div>
+</div>
+
+
+
+<div class="xf-tab-login" style="display:none">
+<table border="0" id="login_panel" style="display: none;">
+<tr>
+<td class="tbtitle" style="width: 150px;">帐&nbsp;&nbsp;&nbsp;&nbsp;号：</td>
+<td><input type="text" class="in2" id="uid" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="tab1_1"></span></td>
+</tr>
+
+<tr>
+<td class="tbtitle" style="width: 150px;">密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+<td><input type="password" class="in2" id="pwd" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="tab1_2"></span></td>
+</tr>
+<tr id="log_verifyTr" style="display:none">
+<td class="tbtitle" style="width: 150px;">验证码：</td>
+<td><input type="text" class="in2" id="verifyCode" maxlength="4" style="width:120px;vertical-align:middle;"/><img id="verifyCodeImg" style="vertical-align:middle;cursor:pointer;" src="http://sq.7road.com/game7road/captcha.do" width="58px" height="27px"  class="logpic" onClick="javascript:this.src='http://sq.7road.com/game7road/captcha.do?'+(new Date().getTime());"></td>
+<td class="tip"><span id="tab1_3" style="height:15px;line-height:15px;overflow:hidden;display:block;"></span><a style="height:15px;line-height:15px;overflow:hidden;display:block;" href="javascript:refleshVerifyCode('verifyCodeImg')">看不清，换一张</a></td>
+</tr>
+<!-- <tr>
+<td></td>
+<td colspan="2" style="font-size: 13px; color: #f7c500;">&nbsp;<span id="login_tip" style="margin-left: 12px;"></span></td>
+</tr> -->
+
+<tr>
+<td></td>
+<td >
+<div><span id="login_tip" style="margin-left: 12px;font-size: 13px; color: #f7c500;"></span></div>
+<a href="javascript:void(0);" class="btn-login" id="btntoLogin"></a>
+</td>
+<td></td>	
+</tr>
+<tr>
+<td style="height:14px;line-height:14px;padding:10px 0 0;"></td>
+<td colspan="2" style="height:14px;line-height:14px;padding:10px 0 0;"><a href="javascript:void(0);" title="" class="quick-login">快速注册</a><a href="http://account.7road.com//forgetpwd.html" target="_blank" title="" class="quick-login">忘记密码</a></td>
+</tr>
+
+
+</table>
+
+<div id="tabLogined" class="xf-tab-logined" style="display: none;">
+<div class="blank20"></div>
+<div style="padding-left:50px;">
+<div class="txtlogin_info">
+<span style="font-size: 13px; color: #f7c500;font-weight: bold;" id="username">XXXXXX</span>, 您好！
+[<a style="font-size: 13px; color: #f7c500;font-weight: bold;" href="javascript:logout();">退出</a>]
+</div>
+<div class="txtsafe_info" >
+<a href="http://account.7road.com/" class="btn2" >完善密保资料</a>
+请绑定邮箱确保帐号安全！
+</div>
+<div class="txtlastlogin_info" style="margin-top:20px;" >您上次登陆的服务器是：</div>
+<div class="txtserver_info" >
+<a href="javascript:void(0);" class="btn3" id="lastserver">【服务器】</a>
+
+</div>
+</div>
+</div> 
+
+<table border="0" id="reg_panel" >
+<tr>
+<td class="tbtitle">帐&nbsp;&nbsp;&nbsp;号:</td>
+<td><input type="text" class="in2" id="" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="">长度6-20,由字母数字组成.</span></td>
+</tr>
+
+<tr>
+<td class="tbtitle">密&nbsp;&nbsp;&nbsp;码:</td>
+<td><input type="password" class="in2" id="" maxlength="20"/></td>
+<td class="tip">&nbsp;<span id="">长度6-20个字符</span></td>
+</tr>
+<tr>
+<td class="tbtitle">确认密码:</td>
+<td><input type="password" class="in2" id="" maxlength="20" /></td>
+<td class="tip">&nbsp;<span id="">两次输入的密码请保持一致</span></td>
+</tr>
+<tr>
+<td style="height: 30px;line-height: 30px;"></td>
+<td colspan="2"  style="height: 30px;line-height: 30px;padding-left: 10px;font-size: 13px;">
+<input type="checkbox" id="" checked="checked" /><label> 同意并接受</label><a href="http://account.7road.com//register_notice.html" title="" target="_blank">用户注册服务协议</a>
+
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<a href="javascript:void(0);" class="btn-reg" id=""></a><a href="#" title="" class="old-login">老用户登录</a>
+<span id="" class="reg_tip"></span>
+</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+
+
+<!--站长统计代码-->
+<div style="display:none"><script src="http://s15.cnzz.com/stat.php?id=4167865&web_id=4167865" language="JavaScript"></script></div>
+<!--百度统计代码-->
+<div style="display:none"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F74a586d333946b764ec92cc4cb49374a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+
+
+</html>

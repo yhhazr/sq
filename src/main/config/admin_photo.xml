@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="photoManage" namespace="/photoManage" extends="default">
+	
+		
+	
+		<action name="deletePhoto" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="deletePhoto">			
+			<result name="success" type="redirectAction">
+				uploadPhoto?catId=${catId}
+			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editPhotoCatSubmit" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="editPhotoCatSubmit">			
+			<result name="input" type="tiles">adminPhotoCatEdit</result>
+			<result name="success" type="redirectAction">queryPhotoCatList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                     image/x-ms-bmp,image/png,image/gif,image/jpeg
+                  </param>
+                  <param name="maximumSize">2048000</param>
+                </interceptor-ref>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editPhotoCat" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="editPhotoCat">			
+			<result name="success" type="tiles">adminPhotoCatEdit</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deletePhotoCat" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="deletePhotoCat">			
+			<result name="success" type="redirectAction">queryPhotoCatList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createPhotoCat" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="createPhotoCat">			
+			<result name="success" type="tiles">adminPhotoCatCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryPhotoCatList" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="queryPhotoCatList">			
+			<result name="success" type="tiles">adminPhotoCatList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createPhotoCatSubmit" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="createPhotoCatSubmit">			
+			<result name="input" type="tiles">adminPhotoCatCreate</result>
+			<result name="success" type="redirectAction">queryPhotoCatList</result>
+			<interceptor-ref name="fileUpload">
+                  <param name="allowedTypes">
+                     image/x-ms-bmp,image/png,image/gif,image/jpeg
+                  </param>
+                  <param name="maximumSize">2048000</param>
+                </interceptor-ref>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="uploadPhoto" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="uploadPhoto">			
+			<result name="success" type="tiles">adminPhotoCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="upload" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="upload">			
+			<result name="success" type="redirectAction">uploadPhoto</result>
+		</action>
+		<action name="editPhoto" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="editPhoto">			
+			<result name="success" type="tiles">adminEditPhoto</result>
+		</action>
+		<action name="editPhotoSubmit" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="editPhotoSubmit">			
+			<result name="success" type="redirectAction">uploadPhoto?catId=${catId}</result>
+		</action>
+		
+	</package>	
+		<package name="thumbnailManage" namespace="/thumbnailManage" extends="default,json-default">
+			<action name="saveThumbnail" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="saveThumbnail">			
+			<result name="success" type="json"></result>
+			</action>
+			<action name="deleteThumbnail" class="com.sz7road.web.action.admin.photomanage.PhotoManageAction" method="deleteThumbnail">			
+			<result name="success" type="json"></result>
+			</action>
+		
+		</package>
+	
+</struts>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<Stage Scale="noScale">
+</Stage>
+<Buttons count="1">
+		<Btn id="btn1"  movieclip="mc1"   out=""     over="">jmp:beginDraw</Btn>
+</Buttons>
+<swfs>
+		
+</swfs>
+</data>

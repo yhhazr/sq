@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="roleManage" namespace="/roleManage" extends="default">
+		<action name="queryRoles"
+			class="com.sz7road.web.action.admin.permission.RoleManageAction" method="queryRoleList">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">adminRoleList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createRoleForm">
+			<result name="input" type="tiles">adminRoleList</result>
+			<result name="success" type="tiles">adminCreateRole</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createRoleSubmit" class="com.sz7road.web.action.admin.permission.RoleManageAction" method="createRoleSubmit">
+			<result name="input" type="tiles">adminCreateRole</result>
+			 <result name="success" type="redirectAction">
+  				<param name="actionName">queryRoles</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editRoleForm" class="com.sz7road.web.action.admin.permission.RoleManageAction" method="editRole">
+			<result name="input" type="tiles">adminRoleList</result>
+			<result name="success" type="tiles">adminEditRole</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editRoleSubmit" class="com.sz7road.web.action.admin.permission.RoleManageAction" method="editRoleSubmit">
+			<result name="input" type="tiles">adminEditRole</result>
+			<result name="success" type="redirectAction">
+  				<param name="actionName">queryRoles</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="assignPermissionForm" class="com.sz7road.web.action.admin.permission.RoleManageAction" method="assignPermission">
+			<result name="input" type="tiles">adminRoleList</result>
+			<result name="success" type="tiles">adminAssignPermission</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="assignPermissionSubmit" class="com.sz7road.web.action.admin.permission.RoleManageAction" method="assignPermissionSubmit">
+			<result name="input" type="tiles">adminAssignPermission</result>
+			<result name="success" type="redirectAction">
+  				<param name="actionName">queryRoles</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteRole" class="com.sz7road.web.action.admin.permission.RoleManageAction" method="deleteRole">
+			<result name="input" type="redirectAction">
+  				<param name="actionName">queryRoles</param>
+  			</result>
+			<result name="success" type="redirectAction">
+  				<param name="actionName">queryRoles</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+	<package name="permManage" namespace="/permManage" extends="default">
+		<action name="queryPermissions"
+			class="com.sz7road.web.action.admin.permission.PermissionManageAction" method="queryPermissions">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">adminPermissionList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editPermissionForm" class="com.sz7road.web.action.admin.permission.PermissionManageAction" method="editPermission">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">adminEditPermission</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editPermissionSubmit" class="com.sz7road.web.action.admin.permission.PermissionManageAction" method="editPermissionSubmit">
+			<result name="input" type="tiles">adminEditPermission</result>
+			 <result name="success" type="redirectAction">
+  				<param name="actionName">queryPermissions</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createPermissionForm" class="com.sz7road.web.action.admin.permission.PermissionManageAction" method="createPermission">
+			<result name="input" type="tiles">adminUserList</result>
+			<result name="success" type="tiles">adminCreatePermission</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createPermissionSubmit" class="com.sz7road.web.action.admin.permission.PermissionManageAction" method="createPermissionSubmit">
+			<result name="input" type="tiles">adminCreatePermission</result>
+			 <result name="success" type="redirectAction">
+  				<param name="actionName">queryPermissions</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deletePermission" class="com.sz7road.web.action.admin.permission.PermissionManageAction" method="deletePermission">
+			<result name="input" type="redirectAction">
+  				<param name="actionName">queryPermissions</param>
+  			</result>
+			<result name="success" type="redirectAction">
+  				<param name="actionName">queryPermissions</param>
+  			</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>

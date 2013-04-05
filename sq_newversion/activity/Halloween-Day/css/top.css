@@ -1,0 +1,72 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,p,iframe{font-family:"微软雅黑","宋体",Tahoma,sans-serif;margin:0;padding:0;}
+img{border:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none; outline:none;  _outline:expression(this.hideFocus=true); }
+em{font-style:normal;}
+a:hover{text-decoration:underline;}
+input,img,button{vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+body{font-size:12px;}
+
+/*顶部导航*/
+.f_l{float:left;display:inline;}
+.f_r{float:right;display:inline;}
+
+.topNavWrap{min-width:1040px;height:40px;background:url(../img/topSprites.png) repeat-x 0 -33px;position:relative;z-index:1;}
+.topNav{margin:0 auto;width:1000px;}
+/*顶部LOGO*/
+.navLogo{position:relative;z-index:2;height:30px;margin:3px 5px 0 0;width:113px;background:url(../img/topSprites.png) 0 0 no-repeat;overflow:hidden;text-indent:-999em;}
+
+
+/*弹出层的提示图片*/
+.leftmargin{margin-left: 5px;width:14px;height: 14px;display: inline-block;margin-bottom: -4px;}
+.yesTip{background-image: url(../img/okDot.jpg); background-repeat: no-repeat;}
+.noTip{background-image: url(../img/noDot.jpg);background-repeat: no-repeat;}
+
+/* 设置占位符提示文字颜色 */  
+
+::-webkit-input-placeholder {  
+color: #1F1D16;  
+}  
+input:-moz-placeholder {  
+color: #1F1D16;  
+}  
+.placeholder {  
+color: #1F1D16;  
+} 
+
+/*弹出图片*/
+#sqPop{float:left;width:150px;height:40px;margin-left:50px;}
+#sqPop span{position:relative;width:150px;height:40px;cursor:pointer;display:block;}
+.dBox{display:none;position:absolute;top:0px;left:-170px;z-index:1;}
+.sfhover .dBox{display:block;}
+
+.topRight{height:32px;margin-top:8px;position:relative;z-index:2;font-size:12px;}
+/*收藏夹*/
+.navFavorites a{float:left;height:23px;width:64px;background:url(../img/topSprites.png) no-repeat -114px 0;overflow:hidden;text-indent:-999em;}
+/*未登录*/
+.topReg{margin:0 15px;line-height:22px;color:#333;}
+.topLoginInfo{width:120px;}
+.topLogin{width:52px;height:23px;margin:0 5px;line-height:22px;color:#fff;font-weight:bold;text-align:center;background:url(../img/topSprites.png) no-repeat -179px 0;}
+.topLogin:hover{text-decoration:none;color:#fff;}
+/*已登录*/
+.idx_name,.indexLogout{line-height:22px;color:#333;font-weight:bold;}
+.indexLogout{margin:0 5px;}
+/*第七大道游戏、客服中心*/
+#navCon li{float:left;position:relative;height:28px;padding:4px 5px 0 5px;line-height:18px;}
+#navCon li a{float:left;height:28px;display:block;color:#333;}
+#navCon li.topGame i{float:left;width:15px;height:15px;margin-right:5px;background:url(../img/topSprites.png) no-repeat -232px 0;}
+#navCon li.topService i{float:left;width:16px;height:16px;margin-right:5px;background:url(../img/topSprites.png) no-repeat -248px 0;}
+#navCon li.topLine{width:1px;height:20px;margin:0 0 0 6px;background:url(../img/topSprites.png) no-repeat -299px 0;overflow:hidden;}
+#navCon li .navSelectCon{display:none;position:absolute;left:-130px;top:31px;width:440px;}
+#navCon li .navSelectCon a{float:left;width:80px;padding-left:65px;height:39px;line-height:44px;background:url(../img/allGame.jpg) no-repeat;font-size:14px;font-weight:bold;color:#333;overflow:hidden;}
+#navCon li .navSelectCon a:hover{text-decoration:none;color:#FF9307;}
+#navCon li .navSelectCon a.g01{background-position:0 0;}
+#navCon li .navSelectCon a.g02{background-position:0 -40px;}
+#navCon li .navSelectCon a.g03{background-position:0 -80px;}
+#navCon li .navSelectCon a.g04{background-position:0 -120px;}
+#navCon li .navSelectCon a.g05{background-position:0 -160px;}
+#navCon li .navSelectCon a.g06{background-position:0 -200px;}
+#navCon li .navSelectCon a.g07{background-position:0 -240px;color:#eaeaea;}
+#navCon li .navSelectCon a.g08{background-position:0 -280px;color:#666;font-size:12px;width:125px;padding-left:20px;font-weight:normal;}

@@ -1,0 +1,800 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>岁末狂欢 回馈抽奖_第七大道《神曲》官方网站</title>
+<link rel="stylesheet" href="http://static.7road.com/css/top.css?v=2.5" type="text/css" />
+<style type="text/css">
+html{ overflow-x:hidden;  }
+.topNavWrap{ z-index: 2;}
+body{ min-width: 1000px;}
+ul,li{ list-style: none;}
+strong,b{ font-style: normal; cursor: pointer;}
+em{ font-style: normal;}
+input{ border: 0; background: none; outline: none; width: 176px; height: 30px; margin-left: 5px; line-height: 30px; color: #fddaa5; font-size: 14px;}
+.blank{ font-size: 0; height: 0; overflow: hidden; clear: both;}
+.lockScreen{width:100%; position:absolute; top:0; left:0; background-color:#000; display:none; z-index:100;}
+.winLogin{ width: 495px; height: 396px; margin: -198px 0 0 -248px; background: url(static/bg01.png?v=2.5) no-repeat; _background: url(static/bg01_ie6.png?v=2.5) no-repeat; }
+.rewardAdd{ width: 498px; height: 546px; margin: -273px 0 0 -249px; background: url(static/bg02.png?v=2.5) no-repeat; _background: url(static/bg02_ie6.png?v=2.5) no-repeat;}
+.rewardCode{ width: 500px; height: 182px; margin: -91px 0 0 -250px; background: url(static/bg03.png?v=2.5) no-repeat; _background: url(static/bg03_ie6.png?v=2.5) no-repeat;} 
+.lockdraw{ width: 688px; height: 435px; margin: -218px 0 0 -344px;background: url(static/bg04.png?v=2.5) no-repeat; _background: url(static/bg04_ie6.png?v=2.5) no-repeat; }
+.winLogin,.rewardAdd,.rewardCode,.lockdraw{ position: fixed; _position: absolute; z-index: 101; top:50%; left: 50%; _margin-top: 0; display:none; 
+_top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);}
+.closeWin{ width: 45px; height: 45px; cursor: pointer; float: left; margin: 23px 0 0 435px; _display: inline;}
+.loginBox{ width: 260px; height: 150px; float: left; margin: 57px 0 0 100px; _display: inline; color: #fddaa5; font: bold 14px/26px 宋体;}
+.lockdraw .closeWin{ margin: 8px 0 0 640px;}
+.hasNoDraw{ float: left; margin: 80px 0 0 60px; font-size: 14px; color: #fddaa5; display: none;}
+.drawList{ width: 627px; height: 275px; overflow: auto; float: left; margin: 65px 0 0 35px; _display: inline;}
+.drawList li{ width: 600px; height: 30px; line-height: 30px;color: #fddaa5; font-size: 14px; font-weight: ; margin-left: 10px; _margin-left: 5px;}
+.drawList li span{ margin-right: 10px; float: left;}
+.drawList li span.lastspan{ margin-right: 0; color: #f09e55; cursor: pointer;}
+.drawList li span.d{ width: 134px;}
+.drawList li span.a{ width: 162px;}
+.drawList li span.b{ width: 58px;}
+.drawList li span.c{ margin-right: 5px;}
+.inputList{ height: 30px; overflow: hidden; float: left; margin-top: 13px; width: 240px;}
+.forget a{ color:#fddaa5; font-size: 12px; font-weight: bold; font-size: 宋体;  margin-left: 50px;}
+.toGame{ float: left; width: 135px; height: 42px; background: url(static/icon.png?v=2.5) no-repeat 0 -165px; margin:20px 0 0 78px; }
+.toGame:hover{ background-position: 0 -215px;}
+.forget{ float: left; width: 230px; margin: 21px 0 0 115px; _display: inline;;}
+
+.warpperTop{ width: 100%;  background:url(static/topBgbegin.jpg?v=2.5) no-repeat 50% 0; }
+.warpperBottom{ width: 100%;  background: url(static/bottomBg.jpg?v=2.5) no-repeat 50% 0;}
+.topMain,.bottomMain{position: relative; width: 1000px; margin:0 auto; height: 723px;z-index: 1;}
+.flashBox{ position: absolute; z-index: 10; width: 1500px; height: 800px;  left: -223px; top: 3px;}
+.goIndex{ position: absolute; height: 30px; width: 220px; top: 0; right:-20px; z-index: 20;}
+.goIndex a{ width: 90px; height: 30px; float: left; background: url(static/icon.png?v=2.5) no-repeat 0 0; margin-right: 20px;}
+.goIndex a.b{ background-position: -95px 0;}
+.goIndex a.b:hover{ background-position: -95px -35px;}
+.goIndex a.a:hover{ background-position: 0 -35px;}
+.pleLogin{ width: 540px; position: absolute; height: 32px; top: 83px; left: 334px;z-index: 20;}
+.pleLogin strong{color: #ffaa61; font-weight: normal;}
+.pleLogin b{ color: #ffaa61;font-weight: normal;}
+.pleLogin b:hover{ text-decoration: underline;}
+.pleLogin p{ line-height: 30px; color: #731e13;}
+.pleLogin select{ float: right; margin-top: 6px;}
+.testPlayGame{ width: 200px; height: 55px; background: red; position: absolute; top: 490px; left: 405px;z-index: 20;}
+.countDownTime{ position: absolute; width: 216px; height: 24px; line-height: 24px; font-family: 微软雅黑,宋体; z-index: 20; top: 403px; left: 544px; display: none;font-weight: bold; color: #fff; font-size: 18px;} 
+.countDownTime b{  margin:0 5px;font-size: 14px; color: #b36e22;}
+.hasNum{ position: absolute; z-index: 20; left: 539px; bottom: 202px; width: 200px; height: 24px; line-height: 24px; color: #e4a65d; font-size: 16px; font-family: 微软雅黑; display: none;}
+.drawNum{ color: #ffe9d0; font-size: 18px; margin:0 5px;}
+.drawInfo{ width: 286px; height: 26px; line-height: 26px; position: absolute; z-index: 20; left: 453px; bottom: 23px; color: #c8882d; font-size: 14px; font-family: 宋体; overflow: hidden;}
+.drawInfo span{ margin:0 5px; color: #ffc528;}
+.scrollBox{ position: absolute; left: 0;}
+.scrollBox p{ height: 26px;}
+.bottomMain{ height: 1270px; }
+.smText{ position: absolute; left: 130px; bottom: 15px; color: #6a4731; font-size: 12px; font-family: 宋体; line-height: 28px;}
+.subGoodsName,.goodsObj{ color: red;}
+
+.CodeText{ float: left; font-size: 14px; font-family: 宋体; color: #fddaa5; font-weight: bold; margin:10px 0 0 80px; line-height: 28px; _margin-left: 40px; }
+.codeObj{ color: red; margin: 0 5px;}
+.copyCode{ font-weight: normal; cursor: pointer;}
+.rewarText{font-size: 14px; font-family: 宋体; color: #ffa85a; font-weight: bold; width: 366px; line-height: 24px; float: left; margin:10px 0 0 60px; _margin-left: 30px;}
+.rewardAdd .loginBox{ margin: 63px 0 0 96px;}
+.rewardAdd .inputList { margin-top: 16px; width: 280px;}
+.rewardAdd input{ font-size: 16px; font-weight: bold;}
+.rewardAdd em{ font-style: normal; margin-left: 5px; color: red;}
+.rewardAdd .toGame{ margin: 25px 0 0 73px; background-position: 0 -70px;}
+.rewardAdd .toGame:hover{ background-position: 0 -116px;}
+.text01{color:red; font-size:12px; position: absolute;z-index: 20;left:552px;bottom:205px; }
+#activityTxt{ position: absolute; width: 200px; height: 160px;  z-index: 12; top: 260px; left: 32px; font-size: 14px; font-family: 微软雅黑; color: #bc7e56; overflow: hidden;}
+#activityTxt strong{ color: #fff;}
+#activityTxt p{ padding-bottom: 8px; line-height: 20px;}
+/*底部*/
+.footerWrap{min-width:1040px;clear:both;height:150px;margin-top:30px;background:url(http://image2.7road.com/footerBg-x.jpg?v=2.5) repeat-x;}
+.footer{width:1000px;padding-top:25px;margin:0 auto;line-height:18px;}
+.footer .footerLogo{float:left;width:205px;height:63px;margin:0 0 0 100px;display:inline;}
+.footer .footerLogo a{display:block;width:205px;height:63px;background:url(http://image3.7road.com/footerLogo.jpg?v=2.5) no-repeat;text-indent:-999em;overflow:hidden;}
+.footer .footerNav{float:left;padding:0 0 0 30px;color:#b8b8b8;overflow:hidden;font-size:12px;border-left:1px solid #e8e8e8;}
+.footer .footerNav a{margin:0 6px;color:#212121;font-family:Arial,'微软雅黑';}
+.footer .footerNav p{padding-left:5px;color:#646464;font-family:Arial,'微软雅黑';}
+.helpInfo{padding:10px 0 0 0px;}
+.helpInfo a{float:left;margin:0 10px 0 0;}
+</style>
+</head>
+
+<body>
+<div id="header" class="topNavWrap">
+	<div class="topNav">
+		<div class="f_l">
+			<a target="_blank" title="" href="http://www.7road.com" class="navLogo f_l">第七大道</a>
+		</div>
+		<div id="sqPop">
+			<span>
+				<a target="_parent" href="main/sed_games.html"><img alt="神曲" src="http://image.7road.com/sqDot.jpg?v=2.6"></a>
+				<div class="dBox">
+					<a title="神曲" target="_blank" href="http://sq.7road.com/activity/yearCelebrate/index.html"><img alt="神曲" src="http://image.7road.com/sqBig.jpg?v=2.6"></a>
+				</div>
+			</span>
+		</div>
+		<div class="topRight f_r">
+			<!--未登录状态start-->
+			<div class="topLoginInfo f_r">
+				<a class="topReg f_r" href="http://account.7road.com/register.html" target="_blank" title="注册">注册</a>
+				<a class="topLogin f_r" href="javascript:void(0);" title="登录">登录</a>
+			</div>
+			<!--未登录状态end-->
+			<!--已登录状态start-->
+			<div class="topLoginedInfo f_r" style="display:none">
+				<a target="_blank" class="idx_name" href="http://account.7road.com">欢迎您, <span class="loginOkName"></span></a>
+				<a class="indexLogout" title="退出" href="javascript:void(0);">退出</a>
+			</div>
+			<!--已登录状态end-->         
+			<div class="f_r">
+				<ul id="navCon">
+					<li class="topGame nList"><i></i><a href="javascript:void(0);" title="第七大道游戏">第七大道游戏</a>
+						<div class="navSelectCon" style="display:none;">
+							<table border="0" cellpadding="0" cellspacing="1" width="440" bgcolor="#d9d9d9">
+								<tbody>
+								<tr>
+									<td bgcolor="#ffffff"><a class="g01" target="_blank" href="http://sq.7road.com/">神曲</a></td>
+									<td bgcolor="#ffffff"><a class="g02" href="javascript:void(0);">疯狂弹弹堂</a></td>
+									<td bgcolor="#ffffff"><a class="g03" target="_blank" href="http://h.7road.com/">海神</a></td>
+								</tr>
+								<tr>
+									<td bgcolor="#ffffff"><a class="g04" target="_blank" href="javascript:void(0);">弹弹堂</a></td>
+									<td bgcolor="#ffffff"><a class="g05" href="javascript:void(0);">捕鱼日志</a></td>
+									<td bgcolor="#ffffff"><a class="g06" href="javascript:void(0);">精灵猎手</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li class="topLine"></li>
+					<li class="topService"><i></i><a href="http://account.7road.com/forget.html" title="客服中心" target="_blank">客服中心</a></li>
+					<li class="topLine"></li>
+				</ul>
+			</div> 
+		</div>
+	</div>
+
+	<div class="popLock"></div>
+</div>
+
+
+
+<div class="warpperTop">
+	<div class="topMain">
+		<div class="flashBox" style="display:">
+			<object data="index.swf?v=2.5" type="application/x-shockwave-flash" width="1500" height="800" id="a">
+				<param name="movie" value="index.swf?v=2.5" />
+				<param name="wmode" value="transparent" />
+			</object>
+		</div>
+		<div id="activityTxt">
+			<div id="activityTxt1">
+				<p>1.活动期间，有效消费达到<strong>1000</strong>钻石，即可获得1次抽奖机会；</p>
+				<p>2.活动期间，有效消费钻石数必须为<strong>1000钻石的整数倍</strong>才可获得抽奖机会；（例如：有效消费1900钻石只可获得1次抽奖机会）；</p>
+				<p>3.活动期间，有效消耗钻石数量可以累积；</p>
+				<p>4.活动于2013年1月30日23：59：59结束，活动结束后，再消耗的钻石，将无法获得抽奖机会，并且，抽奖次数会清空，请您务必在此之前使用完抽奖次数；</p>
+				<p>5.每个账号每天限制抽奖20次。</p>
+			</div>
+			<div id="activityTxt2"></div>
+		</div>
+		<div class="goIndex">
+			<a href="http://pay.7road.com/?gameid=1&type=game" target="_blank" class="a"></a>
+			<a href="http://sq.7road.com/" target="_blank" class="b"></a>
+		</div>
+		<div class="pleLogin">
+			<select name="" id="serverList">
+				<option value="0">请选择您账户所在服务器</option>
+				
+				
+			</select>
+			<p><span class="loginSpan">请先<strong>【登陆】</strong>，再进行抽奖！</span> <b class="editData" style="display:none">【完善资料】</b> <b class="lockdrawBtn" style="display:none">【查看奖励】</b></p>
+		</div>
+		
+		<div class="countDownTime">3<b>天</b>16<b>小时</b>12<b>分</b>19<b>秒</b></div>
+		<div class="hasNum">您还剩下<span class="drawNum">0</span>次抽奖机会</div>
+		<span class="text01">请先选择您所在的服务器</span>
+		<div class="drawInfo" id="colee_bottom">
+			<div class="hasNoBeginDraw" id="colee_bottom1">
+			</div>
+			<div class="scrollBox" id="colee_bottom2">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="warpperBottom">
+	<div class="bottomMain">
+		
+	</div>
+</div>
+
+<!--登录-->
+<div class="winLogin">
+	<div class="closeWin"></div>
+	<div class="loginBox">
+		<div class="inputList"><label>账 号：</label><input type="text" maxlength="20" class="userName" /></div>
+		<div class="inputList"><label>密 码：</label><input type="password"  maxlength="20" class="userPass" /></div>
+		<a href="javascript:void(0)" class="toGame toGame1"></a>
+	</div>
+	
+	<div class="forget">
+		<a href="http://account.7road.com/forget.html" target="_blank" >忘记密码?</a>
+		<a href="http://account.7road.com/register.html"  target="_blank">快速注册</a>
+	</div>
+</div>
+
+<!--获得游戏内东东-->
+<div class="rewardCode" >
+	<div class="closeWin"></div>
+	<div class="CodeText">
+		恭喜您获得<span class="goodsObj">xxxx</span>奖励，<br />
+		您的兑换激活码为<span class="codeObj">xxxxxx</span><span class="copyCode">【复制激活码】</span>
+	</div>	
+</div>
+
+<!--获得现实中东东-->
+<div class="rewardAdd" style="display:">
+	<div class="closeWin"></div>
+	<div class="rewarText"><span class="goodsName">恭喜您获得<span class="subGoodsName">xxxx</span>奖励，</span>请填写您的详细信息，以便官方及时将实物奖励寄出给您！<span>（* 为必填内容）</span></div>
+	<div class="loginBox">
+		<div class="inputList"><label>真实姓名：</label><input type="text" maxlength="6" class="realName"  /><em>*</em></div>
+		<div class="inputList"><label>联系电话：</label><input type="text"  maxlength="20" class="mobile"  /><em>*</em></div>
+		<div class="inputList"><label>收件地址：</label><input type="text"  maxlength="50" class="realAdd" /><em>*</em></div>
+		<div class="inputList"><label>邮政编码：</label><input type="text"  maxlength="6" class="postal" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g))" /></div>
+		<div class="inputList"><label>QQ 号 码：</label><input type="text"  maxlength="10" class="qq" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g))" /></div>
+		<a href="javascript:void(0)" class="toGame toGame2"></a>
+	</div>
+</div>
+
+<!--获奖物品列表-->
+<div class="lockdraw" >
+	<div class="closeWin"></div>
+	<span class="hasNoDraw">您还没抽到奖品哦！</span>
+	<ul class="drawList">
+		
+		
+	</ul>
+</div>
+
+
+<div class="footerWrap">
+    <div class="footer">
+        <div class="footerLogo"><a href="http://my.7road.com/" title="第七大道" target="_blank">第七大道</a></div>
+        <div class="footerNav">
+            <a href="http://my.7road.com/" title="第七大道" target="_blank">第七大道</a> |
+            <a href="http://my.7road.com/links.asp" title="合作伙伴" target="_blank">合作伙伴</a> |
+            <a href="http://my.7road.com/Welfare.asp" title="成员福利" target="_blank">成员福利</a> |
+            <a href="http://my.7road.com/Contact.asp" title="联系方式" target="_blank">联系方式</a> |
+            <a href="http://my.7road.com/View.asp" title="意见反馈" target="_blank">意见反馈</a> |
+            <a href="http://my.7road.com/Legal.asp" title="法律声明" target="_blank">法律声明</a> |
+            <a href="http://my.7road.com/jh/index.html" title="父母须知" target="_blank">父母须知</a>
+            <p>Copyright© 2009 www.7road.com All rights reserved</p>
+            <p>文网文[2010]207号 | 增值电信业务经营许可证：粤B2-20100091</p>
+            <div class="helpInfo">
+                <a href="http://www.ebs.gov.cn/EntCertificate.aspx?domainId=ce398cfb-67f0-48ad-bcbe-06cc1729c187" title="经营性网站备案信息" target="_blank"><img src="http://image4.7road.com/h01.jpg" alt="pic"></a>
+                <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" title="深圳网络警察报警平台" target="_blank"><img src="http://image4.7road.com/h02.jpg" alt="pic"></a>
+                <a href="http://help.5173.com/cxlm/01.html?rcc_id=a5e542ca515c6c90722d0233f3efe9b9" title="反盗窃案号绿色联盟" target="_blank"><img src="http://image4.7road.com/h03.jpg" alt="pic"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="lockScreen"></div>
+</body>
+<script type="text/javascript" src="http://static.7road.com/js/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+var global={
+	"registerData":{},
+	"loginUrl":"http://sq.7road.com/game7road/loginSubmit.action",
+	"logoutUrl":"http://sq.7road.com/game7road/indexLogout.action",
+	"checkUserNameUrl":"http://sq.7road.com/game7road/checkUserName.action",
+	"serverList":"http://sq.7road.com/sqLucky/getServerList.action",
+	"drawGoods":"http://sq.7road.com/sqLucky/getGiftInfo.action",
+	"checkLogin":"http://sq.7road.com/game7road/checkLogin.action"//检测是否已经登陆
+};
+var drawListLength;
+var hasBeginDraw = true;
+if(navigator.userAgent.toLowerCase().indexOf("applewebkit") > -1){
+	$(".flashBox").css("left","-224px");
+}
+var thisTime;
+$(function(){
+	$("#sqPop").hover(function(){
+		$(".dBox").show();
+		$("#serverList").hide();
+	},function(){
+		$(".dBox").hide();
+		$("#serverList").show();
+	});
+	$(".topGame").hover(function(){
+		$(".navSelectCon").show();
+	},function(){
+		$(".navSelectCon").hide();
+	});
+	$(".topLogin").click(function(){
+		lockScreen(true);
+		$(".winLogin").show();
+	});
+	$(".lockdrawBtn").live("click",function(){
+		//获奖List
+		$.get(global.drawGoods+"?"+new Date().getTime(),function(data){
+				if(Number(data.code)==1){
+					var goodsData = data.object;
+					if(goodsData.length==0){
+						$(".hasNoDraw").show();
+						$(".drawList").empty();
+					}else{
+						$(".hasNoDraw").hide();
+						$(".drawList").empty();
+						for(i=0;i<goodsData.length;i++){
+							if(goodsData[i].code==""){
+								$(".drawList").append('<li><span class="a">'+goodsData[i].time+'</span><span class="c">获得</span><span class="d">'+goodsData[i].giftname+'['+goodsData[i].serverid+'区]</span></li>')
+							}else{
+								$(".drawList").append('<li><span class="a">'+goodsData[i].time+'</span><span class="c">获得</span><span class="d">'+goodsData[i].giftname+'['+goodsData[i].serverid+'区]</span><span class="e">激活码：<em>'+goodsData[i].code+'</em></span><span class="lastspan">【复制】</span></li>')
+							}
+							
+						}
+					}
+				}
+			});
+		$(".lockdraw").show();
+		lockScreen(true);
+	});
+	$(".closeWin").click(function(){
+		hasBeginDraw = true;
+		if($(this).parent().hasClass("rewardCode")){
+			if(confirm("您已经存好激活码了，确认要关闭吗？")){
+				$(".rewardCode").hide();
+				lockScreen(false);
+			}
+		}else{
+			$(this).parent().hide();
+			lockScreen(false);
+		}
+		
+	});
+	//页面载入刷新检测登录
+	$.post(global.checkLogin,function(data){
+		if(data.result==="true"){
+			loginSuccess(data);
+		}
+	});
+	//option lsit
+	$.get(global.serverList+"?"+new Date().getTime(),function(data){
+		if(Number(data.code)==1){
+			var dataObj = data.object;
+			for(i=0;i<dataObj.length;i++){
+				$("#serverList").append('<option value="'+dataObj[i].mainServerNo+'" serverNo="'+dataObj[i].serverNo+'">'+dataObj[i].serverName+'</option>');
+			}
+		}else{
+			//错误。。。
+		}
+	});
+
+	$("#serverList").live("change",function(){
+		var thisVal = $("#serverList").val();
+		var userserverNo1 = $("#serverList").find("option:selected").attr("serverNo")
+		if(thisVal==0){
+			$(".text01").show();
+			$(".hasNum").hide();
+		}else{
+			$(".text01").hide();
+		}
+		if($(".topLoginedInfo").is(":visible")){
+			$.get("http://sq.7road.com/sqLucky/getCount.action?serverId="+thisVal+"&serverNo="+userserverNo1 +"",function(data){
+				if(data.code==1){
+					$(".drawNum").empty().text(data.msg);
+					$(".hasNum").show();
+				}
+			});
+		}
+	});
+
+	//页面载入获取服务器最新时间和抽奖次数
+	$.get("http://sq.7road.com/sqLucky/getCount.action",function(data){
+		if(Number(data.msg)>=0){
+			if(Number(data.object.nowTime) < Number(data.object.startTime)){
+				$(".countDownTime").css("font-size","14px").html("活动尚未开始，敬请期待！").show();
+				return false;
+			}else if(Number(data.object.remainingTime)<=0){
+				$(".countDownTime").css("font-size","12px").html("活动已结束！请等待下次活动开启").show();
+				return false;
+			}else if(data.object.remainingTime>0){//时间差大于0活动是否开始
+				//$(".warpperTop").css("background","url(static/topBgbegin.jpg) no-repeat 50% 0");
+				$(".countDownTime").show();
+				$(".hasNoBeginDraw").hide();
+				thisTime = data.object.remainingTime;
+				$(".drawNum").empty().text(data.msg);
+				thisTime = parseInt(thisTime/1000);
+				hasTime();
+				var forHasTime;
+				forHasTime = setInterval(hasTime,1000);
+				//取滚动获奖信息
+				$.get("http://sq.7road.com/sqLucky/getInfo.action",function(data){
+					if(data.code==0){
+						var drawList = data.object;
+						drawListLength = drawList.length;
+						for(i=0; i<drawList.length; i++){
+							var drawListIndex = parseInt(drawList.length*Math.random());
+							var drawListContent = "<p>恭喜<span class='info_1'>"+drawList[drawListIndex].username+"</span>获得<span class='info_2'>"+drawList[drawListIndex].giftName+"</span>奖励！</p>";
+							$(".scrollBox").append(drawListContent);
+						}
+					}
+				});
+			}
+		}
+	});
+
+	$(".toGame1").click(function(){
+		var userVal = $(".userName").val(),userPas = $(".userPass").val();
+		if(!userVal || !userPas){
+			alert("账号或密码不能为空!");
+			return false;
+		}else{
+			loginSubmit(userVal,userPas);
+		}
+	});
+	$(".userPass").bind("keydown",function(event){
+		if(event.keyCode=="13"){
+			event.preventDefault();
+			$(".toGame1").click();
+		}
+	});
+	$(".pleLogin strong").live("click",function(){
+		$(".topLogin").click();
+	});
+	//完善资料按钮
+	$(".editData").live("click",function(){
+		$(".rewardAdd").show();
+		$(".goodsName").hide();
+		lockScreen(true);
+		$.get("http://sq.7road.com/sqLucky/getUserInfo.action?"+new Date().getTime(), function(data){
+			if(data.code==1){//已填写
+				$(".realName").val(data.object.realname);
+				$(".mobile").val(data.object.cellphonenumber);
+				$(".realAdd").val(data.object.address);
+				$(".postal").val(data.object.postcode);
+				$(".qq").val(data.object.qq);
+			}else{
+				$(".loginBox input").attr("value","");//没填写就清空缓存表单数据
+			}
+		});
+	});
+
+	//退出登录
+	$(".indexLogout").click(function(){
+		$.post(global.logoutUrl,function(data){
+			if(data.result==="true"){
+				$(".topLoginedInfo,.editData,.hasNum,.lockdrawBtn").hide();
+				$(".topLoginInfo").show();
+				$(".loginSpan").html('请先<strong>【登陆】</strong>，再进行抽奖！');
+				$("body").append(data.bbsData);//同步论坛
+			}else{
+				alert("服务器繁忙，请稍后在试！")
+			}
+		})
+	});
+	/*滚动获奖信息
+	var scrollDiv,scrollDivNum=0;//后端给出获奖信息总数
+	$(".scrollBox").hover(function(){
+		clearInterval(scrollDiv);
+	},function(){
+		scrollDiv = setInterval(function(){
+			scrollDivNum++;
+			if(scrollDivNum==drawListLength){
+				scrollDivNum=0;
+			}
+			$(".scrollBox").animate({top: -scrollDivNum*26+"px"}, "slow");
+		},2000); 
+	}).trigger("mouseleave");*/
+
+	$(".copyCode").click(function(){
+		try{
+			window.clipboardData.setData("Text",$(".codeObj").text());
+			alert("复制成功!");
+		}
+		catch(e){
+			alert("当前浏览器不支持此功能，请更换IE浏览器或手动复制！");
+		}
+	});
+	$(".lastspan").live("click",function(){
+		try{
+			window.clipboardData.setData("Text",$(this).siblings(".e").children("em").text());
+			alert("复制成功!");
+		}
+		catch(e){
+			alert("当前浏览器不支持此功能，请更换IE浏览器或手动复制！");
+		}
+	});
+	
+
+	//保存资料
+	$(".toGame2").live("click",function(){
+		var realName=$.trim($(".realName").val()),mobile = $.trim($(".mobile").val()),realAdd = $.trim($(".realAdd").val()),postal =$.trim($(".postal").val()),qq = $.trim($(".qq").val());
+		if(checkData(realName,mobile,realAdd,postal,qq)){
+			//不管是否已填写资料，以最新填写的资料提交至后端
+			$.ajax({
+				type:"POST",
+				url:"http://sq.7road.com/sqLucky/userPreserve.action",
+				data:{
+					"add":realAdd,
+					"phone":mobile,
+					"post":postal,
+					"qq":qq,
+					"realname":realName
+				},
+				success:function(data){
+					if(data.code==1){//保存资料成功
+						alert("您的资料已提交成功!");
+						setTimeout(function(){
+							$(".rewardAdd").hide();
+							lockScreen(false);
+						},1500)
+					}
+				},
+				error:function(data){
+					alert(data.msg)
+				}
+			});
+		};
+		
+	});
+
+	if($("#serverList").find("option:selected").val()>0){$(".text01").hide();}
+});
+
+function lockScreen(boolean){
+	if(boolean){
+		$(".lockScreen").height($(document).height()).show();
+		$(".lockScreen").css("opacity","0.6");
+		$("#serverList").hide();
+		$("html").css("overflow-y","hidden");
+	}else{
+		$(".lockScreen").hide();	
+		$("#serverList").show();
+		$("html").css("overflow-y","auto");
+	}
+}
+function loginSuccess(data){
+	hasBeginDraw = true;
+	$(".topLoginInfo").hide();
+	$(".topLoginedInfo,.editData,.lockdrawBtn").show();
+	$(".winLogin").hide();
+	$(".idx_name,.loginSpan").text("欢迎您，"+data.outName);
+	lockScreen(false);
+	$("body").append(data.bbsData);//同步论坛
+	var userServerId_1 = $("#serverList").find("option:selected").val();
+	var userServerNo_2 = $("#serverList").find("option:selected").attr("serverNo");
+	if(userServerId_1>0){
+		$(".text01").hide();
+		$.get("http://sq.7road.com/sqLucky/getCount.action?serverId="+userServerId_1+"&serverNo="+userServerNo_2+"",function(data){
+			if(data.code==1){
+				$(".hasNum").show();
+				$(".drawNum").empty().text(data.msg);
+			}
+		});
+	};
+	
+
+}
+function loginSubmit(userVal,userPas){
+	$.post(global.loginUrl,{"inName":userVal,"password1":userPas},function(data){
+		if(data.result==="true"){
+			loginSuccess(data);
+		}else{
+			alert(data.respMsg)
+		}
+	})
+}
+
+//开始抽奖按钮
+function beginDraw(){
+	
+	
+	$.get("http://sq.7road.com/sqLucky/getCount.action",function(data){
+		if(Number(data.msg)>=0){
+			if(Number(data.object.nowTime) < Number(data.object.startTime)){
+				alert("活动尚未开始，敬请期待！");
+				return false;
+			}else if(Number(data.object.nowTime) > Number(data.object.endTime)){
+				alert("活动已结束！请等待下次活动开启");
+				return false;
+			}else{
+				$.get(global.checkLogin+"?timestamp="+(+new Date()),function(data){
+					if(data.result!="true"){
+						alert("还没有登录哦！");
+						return false;
+					}
+					if(data.result==="true"){
+						if($("#serverList").find("option:selected").text() == "请选择您账户所在服务器"){
+							alert("请先选择您账户所在的服务器！");
+							return false;
+						}else if(Number($(".drawNum").text())==0){
+							alert("抽奖次数已用完！");
+							return false;
+						}
+					}
+				});
+			}
+		}
+	});
+	if(hasBeginDraw){
+		hasBeginDraw = false;
+		var userServerId = $("#serverList").find("option:selected").val(),userserverNo = $("#serverList").find("option:selected").attr("serverNo");
+		$.ajax({
+			type:"POST",
+			url:"http://sq.7road.com/sqLucky/luckyDraw.action",
+			data:{"serverId":userServerId,"serverNo":userserverNo},
+			success:function(data){
+				if(data.code==1){//获得虚拟物品
+					$(".codeObj").text(data.msg);//激活码
+					$(".goodsObj").text(data.object);
+					$(".rewardCode").show();
+					lockScreen(true);
+					$.get("http://sq.7road.com/sqLucky/getCount.action?serverId="+userServerId+"&serverNo="+userserverNo+"",function(data){
+						if(data.code==1){
+							$(".drawNum").empty().text(data.msg);
+						}
+					});
+				}else if(data.code==2){//获得实物物品
+					//检测玩家是否已填写资料
+					$.get("http://sq.7road.com/sqLucky/getUserInfo.action?"+new Date().getTime()+"", function(data){
+						if(data.code==1){//已填写
+							$(".realName").val(data.object.realname);
+							$(".mobile").val(data.object.cellphonenumber);
+							$(".realAdd").val(data.object.address);
+							$(".postal").val(data.object.postcode);
+							$(".qq").val(data.object.qq);
+						}
+					});
+					$(".subGoodsName").text(data.object);
+					$(".goodsName").show();
+					$(".rewardAdd").show();
+					lockScreen(true);
+					$.get("http://sq.7road.com/sqLucky/getCount.action?serverId="+userServerId+"&serverNo="+userserverNo+"",function(data){
+						if(data.code==1){
+							$(".drawNum").empty().text(data.msg);
+						}
+					});
+				}else if(data.code==3 || data.code==4 || data.code==8){
+					//未登录||次数用完||未选择服务器
+				}else{
+					alert(data.msg);
+				}
+				
+			}
+		});
+	}else{
+		return hasBeginDraw = false;
+	}
+
+}
+function checkData(realName,mobile,realAdd,postal,qq){
+	for(i=0;i<realName.length;i++){
+		if(realName.charCodeAt(i)<=255){
+			alert("请填写您的真实名字！");
+			return false;
+		}
+	};
+	if(realName.length<2 || realName>6 ){
+		alert("请填写您的真实名字！");
+		return false;
+	}else if(!CheckMobile()){
+		alert("请输入正确的联系方式，如13688889999,0755-88889999");
+		return false;
+	}else if(!realAdd){
+		alert("请填写您的真实收件地址！");
+		return false;
+	}else if( postal.length<6 && postal.length > 0 ){
+		alert("请填写您真实的邮政编码！");
+		return false;
+	}else if((qq.length<5 || qq.length>11 )&& qq.length>0){
+		alert("请填写您真实的QQ号码！");
+		return false;
+	}
+	return true;
+
+}
+
+//倒计时
+
+function hasTime(){
+	if(thisTime){
+		d=parseInt(thisTime/3600/24);  
+		h=parseInt((thisTime/3600)%24);  
+		m=parseInt((thisTime/60)%60);  
+		s=parseInt(thisTime%60);  
+		thisTime--;
+		$(".countDownTime").html(""+d+"<b>天</b>"+h+"<b>小时</b>"+m+"<b>分</b>"+s+"<b>秒</b>");
+		if(thisTime<=0){  
+			$(".countDownTime").html("活动已结束！");
+			clearInterval(forHasTime);  
+		}
+	}
+}
+
+//滚动信息
+var speed=40,lineSize = 26,size = 364,line = 0;
+if(size % 5 == 0){
+    line = parseInt(size / 5);
+}else{
+    line = parseInt(size/5 + 1);
+}
+var height = 338,colee2=document.getElementById("colee_bottom2"),colee1=document.getElementById("colee_bottom1"),colee=document.getElementById("colee_bottom");
+if(line <= 2){
+    colee2.style.display = "none";  
+}
+colee2.innerHTML=colee1.innerHTML; 
+function Marquee1(){
+if(height-colee.scrollTop<=0){
+  colee.scrollTop=0; 
+ }else{
+ colee.scrollTop++
+}
+}
+var MyMar1=setInterval(Marquee1,speed);
+colee.onmouseover=function() {clearInterval(MyMar1)};
+colee.onmouseout=function(){MyMar1=setInterval(Marquee1,speed)};
+
+var stopscroll = false,scrollElem = document.getElementById("activityTxt"),marqueesHeight = scrollElem.style.height;
+scrollElem.onmouseover = new Function('stopscroll = true');
+scrollElem.onmouseout = new Function('stopscroll = false');
+var preTop = 0,currentTop = 0,stoptime = 0,leftElem = document.getElementById("activityTxt1");
+document.getElementById("activityTxt2").innerHTML = document.getElementById("activityTxt1").innerHTML
+init_srolltext();
+function init_srolltext(){
+scrollElem.scrollTop = 0;
+setInterval('scrollUp()', 60);
+}
+function scrollUp(){
+if(stopscroll) return;
+currentTop += 2; 
+if(currentTop == 19) {
+stoptime += 1;
+currentTop -= 1;
+if(stoptime == 10) {
+   currentTop = 0;
+   stoptime = 0;
+}
+}else{
+preTop = scrollElem.scrollTop;
+scrollElem.scrollTop += 1;
+if(preTop == scrollElem.scrollTop){
+   scrollElem.scrollTop = 0;
+   scrollElem.scrollTop += 1;
+}
+}
+}
+
+
+
+
+String.prototype.Trim = function() { 
+	var m = this.match(/^\s*(\S+(\s+\S+)*)\s*$/); 
+	return (m == null) ? "" : m[1]; 
+}
+//验证手机号
+String.prototype.isMobile = function() { 
+	return (/^(?:13\d|15[0-9]|18[0-9]|14[0-9])-?\d{5}(\d{3}|\*{3})$/.test(this.Trim())); 
+}
+//验证电话
+String.prototype.isTel = function(){
+	return (/^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/.test(this.Trim()));
+}
+
+function CheckMobile(){
+	var MobileValue=$(".mobile").val();
+	if(MobileValue.length>0){
+		if (MobileValue.isMobile()||MobileValue.isTel()) {
+			return true;
+		}else{
+			return false;
+		}         
+	}else{
+		return false;
+	}
+};
+</script>
+
+
+
+
+</html>

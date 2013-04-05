@@ -1,0 +1,130 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+html{ overflow-x: hidden;}
+body {
+	background:url(http://image.7road.com/newbGift/bodyBg.jpg) no-repeat 50% 40px;/*用刚才PS导出的图片做网页背景*/
+}
+.content{
+	width:1000px;
+	margin:0 auto;
+	height:1000px;
+	position: relative;
+	*overflow: hidden;
+	_overflow: hidden;
+}
+.newGiftBg{ overflow: hidden; position: absolute; width: 998px; height:477px; left: 59px;top: 1px;}
+.newGiftLogo{ position: absolute; width: 265px; height: 155px; z-index: 20; top: -8px;left: -18px;}
+.newGiftBtn{ position: absolute; width: 500px; height: 299px; z-index: 30; top: 51px;left: 436px;}
+.libaoBox{
+	width:512px;
+	height:214px;
+	position: absolute;
+	top: 430px;
+	left: 305px;
+	z-index: 40;
+}
+.libaoBox p{ line-height: 14px; overflow: hidden; _float: left; height: 14px;}
+.libaoBox img{ overflow: auto; zoom:1; }
+.beizhuBox{
+	width:290px;
+	height:106px;
+	font-size:12px;
+	font-family:宋体;
+	color:#c96e0d;
+	position: absolute;
+	left: 285px;
+	top: 698px;
+	z-index: 40;
+	line-height:32px;
+}
+.clear{ 
+	clear:both;
+	height:0;
+	font-size:0;
+	overflow:hidden;
+}
+.imgDiv{
+	float:left;
+	font-size:12px;
+	font-family:微软雅黑,宋体;
+	color:#f58914;
+	text-align:left;
+	margin:10px 38px 0 0;
+	display:inline;
+}
+.imgDiv_1{
+	text-align:right;
+}
+.imgDiv_2{
+	margin-right:20px;
+}
+.chakan{
+	float:left;
+	text-indent:-9999px;
+	width:120px;
+	height:36px;
+	background:url(http://image.7road.com/newbGift/btnBg.jpg) no-repeat;
+	margin:50px 0 0 0;
+}
+.newbieLogin,.newbieReg,.newbieSelectServer,.newbieConvertCode,.newbieMyCode{position: fixed;_position: absolute;top: 50%;left: 50%;z-index: 1001;
+ background: url(http://image.7road.com/newbGift/newBieWinBg.jpg) no-repeat; display: none;
+_top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}
+.newbieLogin{ width: 415px; height: 330px; margin:-165px 0 0 -208px; _margin-top: 0; background-position: 0 0;}
+.newbieReg{ width: 415px; height: 400px; margin: -200px 0 0 -208px; _margin-top: 0; background-position: 0 -330px;}
+.newbieSelectServer{ width: 509px; height: 142px; margin: -91px 0 0 -275px; _margin-top: 0; background-position: 0 -730px; padding:40px 0 0 40px; }
+.newbieConvertCode{ width: 509px; height: 157px; margin: -128px 0 0 -275px; _margin-top: 0; background-position: 0 -912px; padding: 100px 0 0 40px; font-size: 16px; font-family: 微软雅黑; color: #871c07;}
+.newbieMyCode{ width: 551px; height: 400px; margin: -200px 0 0 -275px; _margin-top: 0; background-position: 0 -1169px;}
+.newbieMenu{ width: 392px; height: 53px;  padding: 12px 0 0 12px;  zoom:1;}
+.newbieMenu span{ width: 196px; height: 53px; cursor: pointer; display: inline-block;}
+
+/*重置登录*/
+.popMain1{ background: none; padding: 0; margin:23px 0 0 44px; display: inline; float: left; position: relative;}
+.h20{ height: 28px;}
+.msg_default{ color: #941d06;}
+.loginRegTxt{ color: #871c07; font-size: 18px;}
+.popInput1{ width: 232px; background-color: #fff5d7;}
+.popLoginBtn,.popRegBtn{ width: 175px; height: 48px; background: url(http://image2.7road.com/newbGift/newBieBtnBg.png) no-repeat; text-indent: -9999px; margin-top: 8px;_margin-top: 6px;}
+.popLoginBtn,.popLoginBtn:hover{ background-position: 0 0;}
+.popRegBtn,.popRegBtn:hover{ background-position: 0 -48px;}
+.popLink{ padding: 25px 0 0 50px;}
+.popLink a{ color: #f72d05; background: url(http://image2.7road.com/newbGift/newbieIcon.jpg) no-repeat 0 7px; padding-left: 15px; margin-right: 60px;}
+.error-msg {position: absolute;top: 166px;left: 69px;}
+
+/*重置注册*/
+.popMain2{ background: none; padding: 0; margin:20px 0 0 44px; width: 340px; }
+.popMain2 .h20{ height: 26px;}
+.popXieYi{ color: #f72d05;}
+
+.newbieSelectServer *{ float: left;}
+.newbieSelectServer .a{ color:#8c2814; font-size: 18px;font-family: 微软雅黑,宋体; line-height: 24px; }
+.newbieSelectServer .b{ color:#ff0a0a; font-size: 14px; font-family: 新宋体,宋体; line-height: 24px;}
+.newbieSelectServer select{ margin: 2px 10px 0 5px;}
+.applyBtn,.convertBtn{ width: 190px; height: 51px; background: url(http://image2.7road.com/newbGift/newBieBtnBg.png) no-repeat; text-indent: -9999px; margin: 22px 0 0 110px;}
+.applyBtn{ background-position: 0 -96px;}
+.convertBtn{ background-position: 0 -147px;}
+
+.newbieConvertCode *{ float: left;}
+.newbieConvertCode .codeSpan{ color: #ff2a00; font-size: 18px; font-weight: bold;}
+.newbieConvertCode .copySpan{ width: 74px; height: 30px; background: url(http://image2.7road.com/newbGift/newBieBtnBg.png) no-repeat 0 -198px; margin-left: 10px;cursor: pointer; }
+
+.myCodeList{ float: left; margin: 105px 0 0 50px; display: inline; color: #871c07; font-size: 14px; font-weight: bold;}
+.myCodeList div{ height: 30px; line-height: 30px; float: left;}
+.codeTxt,.codeCopy{ color: #f82b03;}
+.newbieClose{ position: absolute; width: 42px; height: 42px; display: block; background:url(http://image2.7road.com/newbGift/newBieCloseBg.png) no-repeat; margin: 0; padding: 0; overflow: hidden; right: -10px; top: -10px; cursor: pointer; z-index: 1002;}
+.getNewbieBtn{ width: 240px; height: 90px; float: left; background: red; margin: 200px 0 0 480px; cursor: pointer;}
+.lockScreen{width:100%; position:absolute; top:0; left:0; background-color:#000; display:none; z-index:1000;}
+
+/*底部*/
+.footerWrap{min-width:1040px;clear:both;height:150px;margin-top:30px;background:url(http://image2.7road.com/footerBg-x.jpg) repeat-x;}
+.footer{width:1000px;padding-top:25px;margin:0 auto;line-height:18px;}
+.footer .footerLogo{float:left;width:205px;height:63px;margin:0 0 0 100px;display:inline;}
+.footer .footerLogo a{display:block;width:205px;height:63px;background:url(http://image3.7road.com/footerLogo.jpg) no-repeat;text-indent:-999em;overflow:hidden;}
+.footer .footerNav{float:left;padding:0 0 0 30px;color:#b8b8b8;overflow:hidden;font-size:12px;border-left:1px solid #e8e8e8;}
+.footer .footerNav a{margin:0 6px;color:#212121;font-family:Arial,'微软雅黑';}
+.footer .footerNav p{padding-left:5px;color:#646464;font-family:Arial,'微软雅黑';}
+.helpInfo{padding:10px 0 0 0px;}
+.helpInfo a{float:left;margin:0 10px 0 0;}

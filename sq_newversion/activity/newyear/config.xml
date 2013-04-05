@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<Stage Scale="noScale">
+</Stage>
+<Buttons count="7">
+		<Btn id="Select01_btn"  movieclip="Select01_mc"   out=""     over="">jmp:showContent</Btn>
+		<Btn id="Select02_btn"  movieclip="Select02_mc"   out=""     over="">jmp:showContent</Btn>
+		<Btn id="Select03_btn"  movieclip="Select03_mc"   out=""     over="">jmp:showContent</Btn>
+		<Btn id="Select04_btn"  movieclip="Select04_mc"   out=""     over="">jmp:showContent</Btn>
+		<Btn id="Select05_btn"  movieclip="Select05_mc"   out=""     over="">jmp:showContent</Btn>
+		<Btn id="gamestart_btn" movieclip="gamestart_mc"  out=""     over="">http://sq.7road.com/serverList.html</Btn>
+		<Btn id="homepage_btn"  movieclip="homepage_mc"   out=""     over="">http://sq.7road.com/</Btn>
+		<Btn id="Backhomepage_btn" movieclip="Backhomepage_mc" out="" over="">jmp:backHomepage</Btn>
+</Buttons>
+<swfs>
+		
+</swfs>
+</data>

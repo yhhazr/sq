@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!--首页-->
+	<definition name="adminDefaultLayout" template="/WEB-INF/web/common/admin/admin_layout.jsp">
+		<put-attribute name="titleKey" value="PageTitle" type="string"/>
+		<put-attribute name="header" value="/WEB-INF/web/common/admin/admin_header.jsp"/>
+		<put-attribute name="leftbar" value="/WEB-INF/web/common/admin/admin_left.jsp"/>
+		<put-attribute name="content" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/web/common/admin/admin_footer.jsp"/>
+	</definition>
+</tiles-definitions>

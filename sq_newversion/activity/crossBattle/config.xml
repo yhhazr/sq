@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<Stage Scale="noScale">
+</Stage>
+<Buttons count="1">
+		<Btn id="startgame_btn"  movieclip="startgame_mc"   out=""     over="">http://sq.7road.com/serverList.html</Btn>
+</Buttons>
+<swfs>
+		
+</swfs>
+</data>

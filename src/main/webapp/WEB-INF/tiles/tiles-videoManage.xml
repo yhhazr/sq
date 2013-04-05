@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="viewVideoList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.videoManage.videoList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/video/admin_videoList.jsp" />
+	</definition>
+	
+	<definition name="addVideoPage" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.videoManage.addVideo"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/video/admin_createVideo.jsp" />
+	</definition>
+	
+	<definition name="editVideoPage" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.videoManage.editVideo"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/video/admin_editVideo.jsp" />
+	</definition>
+	
+</tiles-definitions>

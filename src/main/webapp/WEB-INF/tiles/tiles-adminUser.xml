@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminUserList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.userManage.userList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/user/admin_userlist.jsp" />
+	</definition>
+	<definition name="adminCreateUser" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.userManage.createUser"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/user/admin_createUser.jsp" />
+	</definition>
+	<definition name="adminEditUser" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.userManage.editUser"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/user/admin_editUser.jsp" />
+	</definition>
+</tiles-definitions>

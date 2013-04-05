@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="queryIndexFlashList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.serverResource.queryIndexFlashList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/serverResource/admin_indexFlashList.jsp" />
+	</definition>
+	
+	<definition name="createIndexFlash" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.serverResource.createIndexFlash"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/serverResource/admin_createIndexFlash.jsp" />
+	</definition>
+
+	<definition name="editIndexFlash" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.serverResource.editIndexFlash"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/serverResource/admin_editIndexFlash.jsp" />
+	</definition>
+
+	<definition name="queryLogexeImageList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.serverResource.queryLogexeImageList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/serverResource/admin_logExeImageList.jsp" />
+	</definition>
+	
+	<definition name="createLogexeImage" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.serverResource.createLogexeImage"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/serverResource/admin_createLogexeImage.jsp" />
+	</definition>
+
+	<definition name="editLogexeImage" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.serverResource.editLogexeImage"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/serverResource/admin_editLogexeImage.jsp" />
+	</definition>
+
+</tiles-definitions>

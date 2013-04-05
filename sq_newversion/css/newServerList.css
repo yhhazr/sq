@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+.main{ width:100%; background:#1b120d url(http://image.7road.com/serverMainbg.jpg) no-repeat 50% 0;}
+.serverContent{ width:905px; margin:0 auto; padding-top:130px; }
+.backIndex{ position:absolute; width:168px; height:24px; background:url(http://image.7road.com/icon.png) no-repeat 0 -290px;top: 10px;right: -34px;}
+.backIndex a{ float:left; width:64px; height:24px; color:#e68c2b; line-height:22px;font-size:12px; font-weight:bold; padding-left:16px;}
+.backIndex a.a{ margin-right:8px;}
+.backIndex a.a:hover{ background:url(http://image.7road.com/icon.png) no-repeat -168px -290px; color:#ffe078; text-decoration:none;}
+.backIndex a.b:hover{ background:url(http://image.7road.com/icon.png) no-repeat -256px -290px; color:#ffe078; text-decoration:none;}
+.serverLeft{  width:610px; background:url(http://image.7road.com/serverLeftbg.png) repeat-y; margin:55px 0 0 71px; _display:inline;*float:left; _float:none;}
+.recommendServer{ float:left; border:1px solid #5e4830; background-color:#7c5f45; position:relative; margin:25px 0 0 165px; width:252px; height:62px;_display:inline;}
+.recommendServer a.serverBox_a{ width:240px; margin:10px 0 0 10px; cursor:pointer; color:#ffcf94; height:46px; overflow:hidden;}
+.recommendServer a.serverBox_a .degree{ color:red;}
+.serverBox_a:hover,.serverListEnter:hover,.switchWrap1 .navTab a:hover,.switchWrap1 .switchMain a:hover{ text-decoration:none;}
+.recommendServer a span,.recommendServer a strong{float:left;}
+.recommendServer a .serverName{width:160px;height:22px;font-size:14px;line-height:22px;overflow:hidden;}
+.recommendServer1{margin:0 0 0 5px; float:left;width:auto; height:auto;}
+.recommendServer1 a{height:42px;padding:5px 0 5px 12px;margin:5px 0 0 15px;}
+.recommendServer a{color:#01457f;}
+.recommendServer a span,.recommendServer a strong{float:left;}
+.recommendServer a .serverName{width:160px;height:23px;font-size:14px;line-height:23px;overflow:hidden;}
+.hotIco0, .hotIco1, .hotIco2, .hotIco3, .hotIco4, .hotIco5, .hotIco6, .hotIco7, .hotIco8, .hotIco9, .hotIco10 {
+background: url(http://image.7road.com/serverList/hotbg.png) no-repeat;width: 55px;height: 22px;}
+.hotDot{position:absolute;right:-1px;top:0px;display:block;width:41px;height:34px;background:url(http://image.7road.com/hotImg.png) no-repeat;}
+.netDot{width:25px;height:10px;margin:5px 30px 0 3px;background:url(http://image.7road.com/newHot.gif) no-repeat; }
+.hotTxt{width:85px;font-size:12px; }
+.hotIco{width:55px;height:22px;background:url(http://image.7road.com/hotIco.gif) no-repeat;}
+.hotIco0{background-position:0 7px;}
+.hotIco1{background-position:0 -13px;}
+.hotIco2{background-position:0 -33px;}
+.hotIco3{background-position:0 -53px;}
+.hotIco4{background-position:0 -73px;}
+.hotIco5{background-position:0 -93px;}
+.hotIco6{background-position:0 -113px;}
+.hotIco7{background-position:0 -133px;}
+.hotIco8{background-position:0 -153px;}
+.hotIco9{background-position:0 -173px;}
+.hotIco10{background-position:0 -193px;}
+.degree{margin:0 2px;font-size:12px;}
+.red_1{width:60px;color:#f00000;font-size:12px;}
+.serverListNav{ margin:28px 45px 0 0; _display:inline;}
+.serverListNav a,.serverListNav span,.serverListNav input{float:left;}
+.serverListNav .txt{padding:0 3px 0 10px;color:#fff;line-height:24px;font-size:14px;}
+.serverListNav .serverListInput{width:48px;height:18px;line-height:18px;margin-top:2px;border:1px solid #093985;background:#fff;text-align:center;color:#4b4b4b;font-weight:bold;font-size:14px;}
+.serverListNav .serverListEnter{width:65px;height:24px;margin-left:5px;line-height:24px;text-align:center;color:#422805;cursor:pointer; background:url(http://image.7road.com/icon.png) no-repeat -144px -166px; font-weight:bold;}
+.switchWrap1{ margin:7px 0 0 10px; _margin-left:5px; background-color:#251b11; width:576px; }
+.switchWrap1 .navTab{height:32px; background:url(http://image.7road.com/servertabnav_1.png) no-repeat -4px 0; width:574px; }
+.switchWrap1 .navTab a{float:left;width:112px;height:32px;line-height:32px;text-align:center;color:#c89c66;font-size:12px;font-weight:bold;}
+.switchWrap1 .navTab a.on{ background-color:#271c12;}
+.switchMain{ width:564px; float:left; margin:15px 0 0 0px; _margin-left:10px; min-height:800px; _height:800px; }
+.switchMain a{ float:left; margin:10px 0 0 16px; border:1px solid #3e2e1e; background-color:#3b2b1b; padding:8px 0 8px 10px; width:245px; color:#c89c66; cursor:pointer; height: 45px; overflow:hidden; }
+.switchMain a.serverStop{ border-color:#463f39; color:#716e6c; background-color:#383127;}
+.switchMain a.serverStop .red_1{color:#716e6c; }
+.switchMain .serverName{width:164px;height:23px;font-size:14px;line-height:23px;overflow:hidden; float:left;}
+.switchMain a span,.switchMain a strong{ float:left;}
+.switchMain .netDot{  height:18px;} 
+a.maintain .hotIco0,a.maintain .hotIco1,a.maintain .hotIco2,a.maintain .hotIco3,a.maintain .hotIco4,a.maintain .hotIco5,a.maintain .hotIco6,a.maintain .hotIco7,a.maintain .hotIco8,a.maintain .hotIco9,a.maintain .hotIco10{background:url(http://image.7road.com/serverList/hotbg.png) 0 7px no-repeat;}
+.loginRegTxt{width:65px;font-size:16px;text-align:right;font-family:Arial,verdana,"宋体";}
+.in1{width:40px;text-align:center;margin-left:8px;margin-right:8px;margin-top:4px;font-weight:bold;}
+.leftBtmBack{ width:610px; height:64px; background:url(http://image.7road.com/leftBottombg.png) no-repeat; margin-left:63px;}
+
+
+
+.serverRight{ position:absolute; width:315px; height:600px; top:114px; right:-48px}
+.loginRegTab{height:83px;overflow:hidden; background:url(http://image.7road.com/icon.png) no-repeat 0 0;}
+.loginRegTab2{background-position:0 -83px;}
+.loginRegTab a{height:50px;width:156px;display:block;float:left; margin-top:33px; }
+.loginRegContentWrap{width:288px; margin-left:12px;}
+.loginRegContent{ width:288px; overflow:hidden; background:url(http://image.7road.com/loginbg.png) repeat-y; }
+.login{padding-top:20px;color:#fff;}
+/*注册登录*/
+.loginBtn,.regBtn{display:block;width:134px; height:40px; margin-left:68px; margin-top:10px; background-image:url(http://image.7road.com/icon.png); background-repeat:no-repeat;}
+.loginBtn{ background-position:0 -200px;}
+.regBtn{ background-position:0 -240px;}
+.loginBoxBtm{ margin-left: 12px;height:9px; overflow:hidden; width:288px; background:url(http://image.7road.com/max_icon.png) no-repeat 0 0;}
+.loginBtn:hover{background-position:-134px -200px;}
+.regBtn:hover{background-position:-134px -240px;}
+.inputTxt2{font-weight:bold;width:202px;height:24px;line-height:24px;font-size:14px;border:1px solid #015295; font-size: 20px; font-family: "Arial";}
+.regForget{height:26px; width:248px; background-color:#1b0000; margin:0 0 10px 20px; line-height:26px;}
+.regForget a{float:left;margin:0 0 0 40px;color:#ED9600; background:url(http://image.7road.com/icon.png) no-repeat -390px 10px; padding-left:14px; _background: url(http://image.7road.com/icon_ie6.png) no-repeat -390px 10px;}
+.regForget a:hover{text-decoration:underline; color: #FF1E07;}
+.checkbox{margin-left:60px;margin-top:1px;margin-bottom:6px;}
+.serviceXie{color:#ffde01;font-size:12px;}
+.serviceXie:hover{text-decoration:underline;}
+.log_message{padding:5px 0 5px 30px;color:#EE4D4D;text-align:center;}
+.in2{width:82px;vertical-align:middle;height:24px;line-height:24px;border:1px solid #015295;font-size: 20px; font-family: "Arial";}}
+.changePic{color:#61cfff;}
+.changePic:hover{text-decoration:underline;}
+.height20{height:20px;}
+
+.msg_default{color:#9b6e2e; font-size:12px;};
+.msg_red{color:#EE4D4D; font-size:12px;};
+.msg_green{color:#65EC60; font-size:12px;};
+
+.txt1{padding:6px 0 6px 20px;}
+.logined{height:195px; padding:10px 0; color:#c89b65; margin-left:22px;}
+.btn2{width:144px; height:34px; display:block; margin:5px 0; text-indent:-99em;overflow:hidden; background:url(http://image.7road.com/icon.png) no-repeat 0 -166px;}
+#bindEmail{color:#c89b65;}
+#bindEmail:hover,.btn2:hover{color:#ffde00;text-decoration:underline;}
+
+.lastserver_maintain{background-position:0 -197px;color:#2c2c2c;}
+
+.btn3{float:left;position:relative;width:230px;height:42px;padding:3px 0 3px 10px; overflow:hidden; line-height:18px; cursor:pointer; color:#01457f;}
+.btn3 span,.btn3 strong{float:left;}
+.btn3 .serverName{width:150px;height:23px;font-size:14px;line-height:23px;overflow:hidden;}
+
+.btn3_stop{width:164px;height:39px;line-height:39px;overflow:hidden;background-position:0 -166px;color:#661b01;float:left;margin-top:10px;cursor:pointer;color:#fff;font-weight:bold;text-align:center;vertical-align:middle;}
+.btn3_stop:hover{background-position:0 -206px;color:#000;font-weight:bold;}
+.reg{padding-top:20px;color:#fff;}
+
+
+
+
+.rightMiddle{ width:312px; height:685px;  margin-left:4px; background: url(http://image.7road.com/server_rgtbg.png) repeat-y;}
+.rightBtm{ height:45px; width:312px; background:url(http://image.7road.com/max_icon.png) no-repeat 0 -9px; margin-left:4px;}
+.latestNews{ width:266px; padding-top:5px; margin-left:28px; float:left; display:inline;}
+.latestNews h2{ height:50px; width:100%;}
+.latestNews h2 a{ font-size:14px; float:right;font-family:Microsoft YaHei; line-height:55px; color:#7E4B01; margin-right:10px;font-weight:bold;}
+.latestNews ul.zoom{ height:120px;}
+.latestNews ul li{ float:left;border-bottom: 1px dashed #4e341d; background:url(http://image.7road.com/newliBg.png) no-repeat 0 10px; height:23px; line-height:24px; padding-left:10px; width:245px; font-size:12px; overflow:hidden;}
+.latestNews ul li span{ float:right; margin-right:5px; color:#c89b65;}
+.latestNews ul li a{ color:#c89b65;}
+.latestNews ul li a:hover{ text-decoration:none; color:#ff9507;}
+.serviceTel{ padding:80px 0 0 30px; float:left;}
+.serviceTel a{ color:#d9ac67; float:left; width:148px; height:47px; margin-bottom:10px;   padding:2px 0 0 100px;}
+.serviceTel a strong{ color:#e4c390;}
+.serviceTel a:hover{ text-decoration:none;}
+.serviceTel a:hover strong{ color:#FF1E07;}
+.playerQQ{ color:#c89c66; font-size:12px; font-weight:bold; float:left; margin:60px 0 0 32px; display:inline;}
+.playerQQ span{ color:#df5b13}
+.therrBtn{ margin-top: 3px; float: left; width: 312px;}
+.therrBtn a{ float: left; width: 242px; height: 54px; margin: 17px 0 0 34px;  background: url(http://image.7road.com/serThreeBtn.png) no-repeat 0 0;}
+.therrBtn a.a{ background-position: 0 0;}
+.therrBtn a.a:hover{ background-position: 0 -54px;}
+.therrBtn a.b{ background-position: 0 -108px;}
+.therrBtn a.b:hover{ background-position: 0 -162px;}
+.therrBtn a.c{ background-position: 0 -216px;}
+.therrBtn a.c:hover{ background-position: 0 -270px;}
+
+/*底部*/
+.footerWrap{clear:both;height:150px;background:url(http://image.7road.com/footerBg-x.jpg) repeat-x;}
+.footer{width:1000px;padding-top:25px;margin:0 auto;line-height:18px;}
+.footer .footerLogo{float:left;width:205px;height:63px;margin:0 0 0 100px;display:inline;}
+.footer .footerLogo a{display:block;width:205px;height:63px;background:url(http://image.7road.com/footerLogo.jpg) no-repeat;text-indent:-999em;overflow:hidden;}
+.footer .footerNav{float:left;padding:0 0 0 30px;color:#b8b8b8;overflow:hidden;font-size:12px;border-left:1px solid #e8e8e8;}
+.footer .footerNav a{margin:0 6px;color:#212121;font-family:Arial,'微软雅黑';}
+.footer .footerNav p{padding-left:5px;color:#646464;font-family:Arial,'微软雅黑';}
+.helpInfo{padding:10px 0 0 0px;}
+.helpInfo a{float:left;margin:0 10px 0 0;}
+
+
+
+

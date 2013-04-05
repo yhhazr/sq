@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xml>
+	<config>
+		<swfurl>sound.swf</swfurl>
+		<swfurl>bg1.swf</swfurl>
+		<swfurl>bg2.swf</swfurl>
+		<swfurl>ren1.swf</swfurl>
+		<swfurl>ren2.swf</swfurl>
+	</config>
+</xml>

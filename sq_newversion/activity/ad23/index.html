@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>7road神曲带你去狂欢 末日后第一个圣诞节</title>
+<style type="text/css">
+*{ margin:0; padding: 0;}
+body{ font-family: 宋体;  background:#000;}
+.main{ width: 1000px; margin:0 auto; height: 600px; position: relative; }
+.regBox{ width: 510px; height:240px; position: absolute; z-index: 120; top: 282px; left: 158px;   }
+.regList{ margin-top:44px;width: 426px; float: left; position: relative;}
+.regTxt{ float: left; font-size: 16px; color: #936; height: 22px; width:110px; text-align: right; line-height: 22px; color: #eaffff;font-weight: bold;}
+.regTxt4{ padding-left: 0;}
+.retInput{ float: left; margin-left: 8px;  outline: none;  height: 24px; border:1px solid #746F75; line-height: 24px; width: 214px; font-size: 16px; font-weight: bold; padding:0 5px; background: #fff;}
+.regBtn{ float: left; width: 182px;height:139px; margin: 22px 0 0 0px;outline: none; background: url(http://image.7road.com/baidu/ad23/btnbg.png) no-repeat; _background: url(http://image.7road.com/baidu/ad23/btnbg_ie6.png) no-repeat; }
+.regBtn:hover{ background-position: 0 -140px;}
+.oldPlayer{ color: #062b4a; font-size: 14px; float: left; margin:25px 0 0 300px; font-weight: bold;}
+.error,.errorClass,.trueClass{ color: #560702; font-size: 14px; line-height:22px; height: 22px; left: 120px; top: 34px; position: absolute; font-family:微软雅黑,宋体; font-weight: bold;}
+.errorClass,.red{ color: #FFE400;}
+.errorImg{ position: absolute; width: 11px; height: 11px;  top: 6px; left: 338px;display: none; }
+.trueImg{ }
+.serverError{ color: #FFE400; position: absolute; top:54px; left: 210px; font-size: 14px; }
+.btnBox{ position: absolute; width: 400px; top: 136px; left:-44px;}
+.tongyi{ float: left; margin: 40px 0 0 75px; color: #560702; font-size: 12px; _margin-left: 38px;} 
+.tongyi a{ color: #560702;}
+.ad01{  width: 1000px; height: 600px;}
+.drawTxt{ position: absolute;  font-family: 微软雅黑,Arial, Helvetica, sans-serif;font-size: 22px;color: #FDFF3B;line-height: 28px;right: 0;bottom: -30px;}
+.romNum{ position: absolute; font-size: 18px; color: #fdff3b; top: 82px; right: 34px;font-family: 微软雅黑,Arial, Helvetica, sans-serif;}
+</style>
+<script type="text/javascript">
+var _hmt = _hmt || [];
+</script>
+</head>
+
+<body>
+<div class="main">
+	
+	<div class="ad01">
+		<embed allowfullscreen="true" allowscriptaccess="always" height="100%" width="100%" src="http://image.7road.com/baidu/ad23/index.swf" type="application/x-shockwave-flash" wmode="transparent"></embed>
+	</div>
+	<div class="regBox">
+		<div class="drawTxt" id="drawTxt"></div>
+		<div class="regList">
+			<div class="regTxt"></div>
+			<input type="text"  class="retInput" maxlength="20"  id="reg_uid"  />
+			<div class="error" id="tab2_1" errormsg="字母开头，6-20个字母数字" truemsg="该用户名可以使用" nullmsg="用户名不能为空" fiveerrormsg="用户名不能有5个重复字符" unrulemsg="该用户名不合法">字母开头，6-20个字母数字</div>
+			<div class="errorImg"></div>
+		</div>
+		<div class="regList" >
+			<div class="regTxt"></div>
+			<input type="type"  class="retInput" maxlength="20"  id="reg_pwd"   />
+			<div class="error" id="tab2_2" errormsg="6-20个英文字符、数字、下划线" truemsg="密码正确" nullmsg="密码不能为空" >至少6位字符（字母、数字、下划线）</div>
+			<div class="errorImg"></div>
+		</div>
+		<!--div class="regList">
+			<div class="regTxt">确认密码：</div>
+			<input type="password"  class="retInput" maxlength="20"  id="reg_confirm_pwd"  />
+			<div class="error" id="tab2_3" unequallymsg="两次输入密码不一致" truemsg="密码正确" errormsg="6-20个英文字符、数字、下划线">输入确认密码</div>
+			<div class="errorImg"></div>
+		</div-->
+		<div class="tongyi" style="display:none"><input type="checkbox" checked="true"  name="checkbox" id="agreement" ><span>同意并接受</span><a target="_blank" href="http://account.7road.com//register_notice.html" class="popXieYi">《用户注册服务协议》</a></div>
+		<div class="btnBox">
+			<a class="regBtn" href="javascript:void(0)" id="btntoReg" hidefocus="true"></a>
+			<div class="serverError" id="reg_tip"></div>
+		</div>
+		
+		<a href="http://sq.7road.com/serverList.html" class="oldPlayer" target="_blank" style="display:none">老玩家登录 ></a>
+	</div>
+</div>
+
+
+
+<div id="syncBbs"></div>
+
+
+
+<script type="text/javascript" src="http://static.7road.com/js/lodingRegister.js"></script>
+
+<!--百度统计代码-->
+<div style="display:none"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F74a586d333946b764ec92cc4cb49374a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+
+</html>

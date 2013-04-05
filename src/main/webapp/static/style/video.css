@@ -1,0 +1,94 @@
+#wrapper {border:1px #ccc solid;
+overflow:hidden;
+	width:450px;
+	margin:0px;
+	float:left;
+	font-size:14px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p, th, td {
+	padding: 0;
+	margin: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img {
+	border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+
+#up {
+	padding-left:10px;
+	width:440px;
+	height:35px;
+	float:left;
+	color:#FFF;
+	line-height:35px;
+	font:18px/ Tahoma, Geneva, sans-serif;
+	background:url(images/up_middle.gif) repeat-x;
+}
+#up_left {
+	width:3px;
+	float:left;
+	height:35px;
+	background:url(images/up_left.gif) no-repeat;
+}
+#up_right {
+	width:3px;
+	float:left;
+	height:35px;
+	background:url(images/up_right.gif) no-repeat;
+}
+.words {
+	float:left;
+	margin-right:30px;
+}
+#up ul li {
+	float:left;
+	width:10px;
+	font-size:22px;
+}
+#buttom {
+	width:67px;
+	float:left;
+	height:20px;
+	margin-top:8px;
+}
+#buttom_left {
+	width:33px;
+	float:left;
+	height:20px;
+	background:url(images/but.gif) no-repeat
+}
+#buttom_right {
+	width:34px;
+	float:left;
+	height:20px;
+	background:url(images/but.gif) no-repeat -33px 0
+}
+/*Download by http://www.jb51.net*/
+#down {
+	position:relative;
+	width:400px;
+	height:137px;
+	float:left;
+	overflow:hidden;
+}
+#downContent {
+	position:absolute;
+	width:2500px;
+	height:137px;
+	top:0px;
+	left:0px;
+}
+#downContent ul li{display:inline;float:left;
+	list-style: none;margin:10px 2px;overflow:hidden;
+}
+#downContent ul li img {  width:133px; height:117px; }

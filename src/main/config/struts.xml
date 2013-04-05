@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="message"></constant>
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.ui.templateDir" value="template" />
+	<constant name="struts.ui.templateSuffix" value="ftl" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+
+  
+    <constant name= "struts.multipart.maxSize" value="1073741824" />  
+    <constant name="struts.action.extension" value="action,do,webwork" /> 
+    
+	<package name="default" extends="struts-default,tiles-default">
+		<interceptors>
+			<interceptor name="globalInterceptor" class="com.sz7road.web.interceptor.GlobalInterceptor"></interceptor>
+
+			<interceptor-stack name="globalInterceptorStack">
+				<interceptor-ref name="globalInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!-- <default-action-ref name="index" /> -->
+		<global-results>
+			<result name="login" type="redirect">/adminLogin.action</result>
+			<result name="error" type="tiles">adminErrorPage</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>
+	</package>
+	<package name="json-7road" extends="json-default">
+		<interceptors>
+			<interceptor name="globalInterceptor" class="com.sz7road.web.interceptor.GlobalInterceptor"></interceptor>
+
+			<interceptor-stack name="globalJsonInterceptorStack">
+				<interceptor-ref name="globalInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="success" type="json"></result>
+			<result name="login" type="redirect">/adminLogin.action</result>
+		</global-results>
+	</package>
+
+	<include file="admin_user.xml" />
+	<include file="admin_permission.xml" />
+	<include file="admin_video.xml" />
+	<include file="admin_news.xml" />
+	<include file="admin_homepage.xml" />
+	<include file="admin_dirty.xml" />
+	<include file="admin_photo.xml" />
+	<include file="admin_message.xml" />
+	<include file="admin_title.xml" />
+	<include file="online_message.xml"/>
+	<include file="online_user.xml"/>
+	<include file="admin_game.xml"/>
+	<include file="online_game.xml"/>
+	<include file="admin_gameDate.xml"/>
+	<include file="online_card.xml"/>
+	<include file="online_skillTemplate.xml"/>
+	<include file="admin_gameServer.xml"/>
+	<include file="admin_serverResource.xml"/>
+	<include file="admin_topPlayers.xml"/>
+	<include file="admin_autoGeneHtml.xml"/>
+	<include file="admin_testing.xml"/>
+	<include file="admin_executeFtl.xml"/>
+	<include file="admin_adIfo.xml" />
+	<include file="admin_activityInc.xml" />
+	<include file="online_newserverReservation.xml" />
+
+	<!-- Add packages here -->
+
+</struts>

@@ -1,0 +1,290 @@
+/* Document styles */
+body {
+	font:12px/22px "微软雅黑";
+}
+.doc {
+	background:url("../img/bg.jpg") no-repeat top center transparent;
+	width:100%;
+	min-width:1040px;
+	height:918px;
+	margin:0 auto;
+}
+.container {
+	width:960px;
+	margin:0 auto;
+}
+
+/* Header styles */
+.header h1 {
+	display:inline;
+	float:left;
+	margin-top:10px;
+	overflow:hidden;
+}
+.header h1 .logo {
+	display:block;
+	width:225px;
+	height:136px;
+	overflow:hidden;
+}
+.header .nav {
+	display:inline;
+	float:right;
+	width:227px;
+	height:28px;
+	margin-right:180px;
+	overflow:hidden;
+}
+.header .nav li {
+	display:block;
+	float:left;
+	height:28px;
+}
+.header .nav a {
+	background-image:url("../img/nav.png");
+	background-repeat:no-repeat; 
+	display:block;
+	height:28px;
+}
+.header .nav .game a {
+	width:81px;
+	background-position:0 0;
+}
+.header .nav .homepage a {
+	width:66px;
+	background-position:-81px 0;
+}
+.header .nav .forum a {
+	width:80px;
+	background-position:-147px 0;
+}
+
+/* Content styles */
+.content {
+	position:relative;
+	top:401px;
+}
+.content .select {
+	width:208px;
+	height:26px;
+	left:100px;
+	top:26px;
+	position:absolute;
+}
+.content .select select {
+	width:206px;
+	height:24px;
+	border:1px #e3d5bf solid;
+	color:#8e4327;
+	padding:3px;
+}
+.content .reserve-btn {
+	width:208px;
+	height:62px;
+	position:relative;
+	left:365px;
+	top:3px;
+}
+.reserve-btn a {
+	background: url("../img/btn.png") 0 0;
+	width:205px;
+	height:58px;
+	display:block;
+	text-indent:-9999px;
+}
+.slide {
+	width:296px;
+	height:137px;
+	left:5px;
+	top:152px;
+	position:absolute;
+	border:1px #624135 solid;
+}
+.slide a {
+	cursor:pointer;
+	outline:none;
+	color:#163f5c;
+	text-decoration:none;
+	color:#d6d4d4;
+}
+
+/* Dialog styles */
+.jqmOverlay {
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0px;
+	top:0px;
+	z-index:2999;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	_position:absolute;
+	_height:1150px;
+}
+#dialog {z-index:3000;}
+.msg {
+	overflow:hidden;
+}
+.msg .close {
+	width:55px;
+	height:55px;
+	cursor:pointer;
+	position:absolute;
+	right:-57px;
+	top:1px;
+	font:normal 60px/40px Verdana, Geneva, sans-serif;
+	color:#fff;
+	text-align:center;
+	background:#542614;
+}
+.msg .close:hover {text-decoration:none;}
+.msg .reserve {
+	background:url("../img/reserve.png");
+	margin:0 auto;
+	height:260px;
+	width:392px;
+}
+.msg .reserve h3 {
+	overflow:hidden;
+}
+.msg .reserve h3 .titles {
+	color:#fff;
+	display:block;
+	font-size:20px;
+	margin-top:35px;
+	text-align:center;
+}
+.msg .reserve .tips {
+	color:#fff;
+	font-size:14px;
+	margin-top:12px;
+	text-align:center;
+}
+.msg .reserve .error {
+	position:absolute;
+	color:red;
+	font-size:12px;
+	left:90px;
+	bottom:-20px;
+}
+.msg .reserve .field {
+	color:#fff;
+	font-size:14px;
+	height:25px;
+	margin:20px auto 0;
+	width:305px;
+	position:relative;
+}
+.msg .field .inside {
+	color:#999;
+	font-size:12px;
+	left:90px;
+	line-height:25px;
+	position:absolute;
+	top:0;
+	_line-height:30px;
+}
+.msg .reserve .phone-field .get-captcha {
+	color:#fff;
+	font-size:12px;
+}
+.msg .field input {
+	background-color:#462016;
+	border-top:2px solid #30150f;
+	border-left:2px solid #30150f;
+	border-right:none medium;
+	border-bottom:none medium;
+	color:#fff; 
+	width:130px;
+	height:23px;
+	text-indent:3px;
+	line-height:23px;
+}
+.msg .reserve .phone-field .title, .msg .reserve .captcha-field .title {
+	display:inline-block;
+	text-align:right;
+	width:80px;
+}
+
+.msg .reserve .phone-field {
+	margin-top:30px;
+}
+.msg .reserve .submit-field {
+	margin-top:20px;
+}
+.msg .reserve .submit-field input {
+	background:url("../img/btn.png") -3px -60px transparent;
+	border:2px solid #34150d;
+	display:block;
+	width:132px;
+	height:38px;
+	margin:0 auto;
+	_border:none medium; /* for IE6 */
+}
+.msg .success {
+	background:url("../img/success.png");
+	margin:0 auto;
+	height:360px;
+	width:560px;
+}
+.msg .success .single{
+	color:#fff;
+	font-size:21px;
+	text-align:center;
+	font-weight:bold;
+	position:relative;
+	top:130px;
+	line-height:30px;
+	margin:0 auto;
+	width:360px;
+}
+.msg .success .single .copy {
+	background:#d8d6d7;
+	border-radius:3px;
+	color:#612e1b; 
+	font-size:12px;
+	position:absolute;
+	bottom:5px;
+	right:0;
+	width:45px;
+	height:20px;
+	line-height:20px;
+}
+.msg .success .double {
+	color:#fff;
+	font-size:18px;
+	text-align:left;
+	font-weight:bold;
+	position:relative;
+	top:130px;
+	line-height:30px;
+	margin:0 auto;
+	width:480px;	
+}
+.msg .success .double p {position:relative;overflow:hidden;width:480px;height:30px;text-align:center;}
+.msg .success .double .copy {
+	background:#d8d6d7;
+	border-radius:3px;
+	color:#612e1b;
+	display:inline-block; 
+	font-size:12px;
+	margin:5px 0 0 10px;
+	width:45px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+}
+#bdshare {
+	bottom:25px;
+	right:33%;
+	position:absolute;
+}
+#platformFooter .footerWrap {
+	margin-top:0;
+}
+
+/* Let's clear some floats */
+.clearfix:before, .clearfix:after {content:"\0020";display:block;height:0;overflow:hidden;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}

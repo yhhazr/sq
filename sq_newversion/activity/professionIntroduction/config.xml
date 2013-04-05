@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CONFIGLIST>
+	<URLS ID="返回官网">http://sq.7road.com/</URLS>
+	<URLS ID="男战士">profession1.html</URLS>
+	<URLS ID="女战士">profession2.html</URLS>
+	<URLS ID="男射手">profession3.html</URLS>
+	<URLS ID="女射手">profession4.html</URLS>
+	<URLS ID="男法师">profession5.html</URLS>
+	<URLS ID="女法师">profession6.html</URLS>
+	<URLS ID="开始游戏">http://sq.7road.com/serverList.html</URLS>
+</CONFIGLIST>

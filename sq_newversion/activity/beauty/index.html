@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="7大道,美女认证,神曲活动">
+<title>神曲美女认证</title>
+<link href="styles/validateCss.css" rel="stylesheet" />
+<link href="http://static.7road.com/platform/css/platformCommon.css" type="text/css" rel="stylesheet">
+<!--[if IE 6]>
+<script type="text/javascript" src="jscript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  DD_belatedPNG.fix('.titHd h2,.popCt .orderDv a,.deletBt');
+</script>
+<![endif]-->
+</head>
+
+<body>
+<div id="platformHead"></div>
+<iframe src="#" id="platIframeHead" style="display:none"></iframe>
+<script type="text/javascript" src="http://static.7road.com/platform/js/src/platformCommonHead.js"></script>
+
+<div class="wrap">
+<embed id="video_emb" src="images/index.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="1920" height="720" quality="High" wmode="transparent" allowscriptaccess="always"></embed>
+</div>
+<!--活动规则-->
+   <div class="popCt" id="dataRule">
+       <p class="desc">1、只要是人都能参加；</p>
+       <p class="desc">2、美女上传照片；</p>
+       <p class="desc">2、帅哥为美女送花；</p>
+       <p class="orderDv"><a href="#">确 定</a></p>
+   </div>
+<!--活动奖励-->
+   <div class="popCt" id="dataReward">
+       <p class="desc">1、送美女10个；</p>
+       <p class="desc">2、夏威夷10年游；</p>
+       <p class="desc">2、当国家领导人5届；</p>
+       <p class="orderDv"><a href="#">确 定</a></p>
+   </div>
+
+<!--温馨提示-->
+   <div class="popCt" id="dataTip">
+       <p class="desc">您好，<em>9527</em> 您的资料正在审核中，请耐心等待。</p>
+       <p class="orderDv"><a href="#">确 定</a><a href="#">取 消</a></p>
+       <p class="tips">点击<em>"确定"</em>去完善个人资料，点击<em>"取消"</em>返回当前页</p>
+   </div>
+
+<!--美女登录-->
+   <div class="popCt login" id="loginPo">
+       <ul class="formList">
+            <li>
+              <label>用户名：</label>
+              <input type="text" class="userName" />
+            </li>
+            <li class="noMarg">
+              <label>密 码：</label>
+              <input type="password" class="userPass" />
+            </li>
+       </ul>
+       <p class="orderDv"><a href="javascript:void(0)" class="loginBtn">登 录</a></p>
+   </div>
+
+<!--我要参加-->
+   <div class="popCt" id="joinPop">
+       <ul class="formList form-add">
+            <li>
+                <label>账 号：</label>
+                <p><em class="showName"></em><a class="seePro" href="#" title="查看进度">查看进度</a></p>
+            </li>
+            <li>
+                <label>所在区服：</label>
+                <select id="serverList1">
+                    <option value="0">请选择您账户所在服务器</option>
+                </select>
+            </li>
+            <li>
+                <label>昵称：</label>
+                <input type="text" readonly="readonly" class="nikeName" />
+                <!--<input readonly="readonly" type="text" />-->
+            </li>
+            <li>
+                <label>真实姓名：</label>
+                <input type="text" class="realName" />
+                <span class="t">*</span>
+            </li>
+            <li>
+                <label>年 龄：</label>
+                <input type="text" class="age" />
+                <span class="t">*</span>
+            </li>
+            <li>
+                <label>手机号码：</label>
+                <input type="text" class="mobile" />
+                <span class="t">*</span>
+            </li>
+            <li class="realAdd">
+                <label>目前所在地：</label>
+                <select name="province" id="province"><option></option></select>省/市<br />
+                <select name="city" id="city"><option></option></select>市/地区<span class="t">*</span>
+            </li>
+           <!-- <li class="noMarg"><label>参赛照片：</label><input class="noBor" type="file"  id="fileD" onchange="setImage.addPre(this)" /></li>
+            <li id="localImag"></li>
+            <li class="noBold">参赛照片最少上传三张！</li>-->
+            <li>
+                <label>联系QQ：</label>
+                <input type="text" class="qq" />
+            </li>
+            <li>
+                <label>参赛口号：</label>
+                <textarea cols="30" rows="5" class="slogan"></textarea>
+            </li>
+            <li class="noBold noMarg">
+                <label>[友情提示]：</label>
+                <p>所有资料提交后，都不可修改。因为奖励涉及到实物奖励，所以请务必填写真实信息，以便奖励的领取！<br /><em>(您的个人信息，我们将会保密！)</em></p>
+            </li>
+       </ul>
+       <p class="orderDv"><a href="javascript:void(0)" class="submitInfo1">提 交</a></p>
+   </div>  
+
+<script type="text/javascript" src="http://static.7road.com/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="jscript/comdom.js"></script>
+<script type="text/javascript" src="jscript/videoIndex.js"></script>
+<script type="text/javascript" src="jscript/main.js"></script>
+<script type="text/javascript">
+window.onload=window.onresize=function(){Dom.pageCenter("video_emb");}
+</script>
+
+</body>
+</html>

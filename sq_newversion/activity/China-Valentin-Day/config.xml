@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<Stage Scale="noScale">
+</Stage>
+<Buttons count="2">
+		<Btn id="btn1" movieclip= "mc1" out="" over="">http://sq.7road.com/serverList.html</Btn>
+		<Btn id="btn2" movieclip= "mc2" out="" over="">http://sq.7road.com/</Btn>
+		<Btn id="btn3" movieclip= "mc3" out="" over="">http://www.7road.com/</Btn>
+		<Btn id="btn4" movieclip= "mc4" out="" over="">http://www.7road.com/</Btn>
+</Buttons>
+<swfs layer="0">
+	<swf count="2">
+		<path layer=""    container=""    x=""    y="">swf/1.swf</path>
+		<path layer=""    container=""    x=""       y="">swf/2.swf</path>
+	</swf>
+	<swf count="1">
+		<path layer=""    container=""     x=""    y="">swf/3.swf</path>
+		<path layer=""   container=""       x=""    y="">swf/4.png</path>
+	</swf>
+	<swf count="1">
+		<path layer=""   container=""       x=""    y="">swf/4.png</path>
+	</swf>
+</swfs>
+</data>

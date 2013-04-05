@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="newServerReservation" namespace="/reservation" extends="json-default,default">
+		<action name="addUserToNewServerReservation" class="com.sz7road.web.action.online.newServerReservation.NewServerReservationAction" method="addUserToNewServerReservation">
+			<result name="success" type="json">
+			</result>
+		</action>
+		
+		<action name="validatorUserVerifyCode" class="com.sz7road.web.action.online.newServerReservation.NewServerReservationAction" method="validatorUserVerifyCode">
+			<result name="success" type="json">
+			</result>
+		</action>
+		
+		<action name="myToken" class="com.sz7road.web.action.online.newServerReservation.NewServerReservationAction" method="myToken">
+			<result name="success" type="json">
+				<param name="includeProperties">
+					token
+				</param>
+			</result>
+		</action>
+		
+		<action name="queryUserIsSignUp" class="com.sz7road.web.action.online.newServerReservation.NewServerReservationAction" method="queryUserIsSignUp">
+			<result name="success" type="json">
+			</result>
+		</action>
+
+	</package>
+</struts>

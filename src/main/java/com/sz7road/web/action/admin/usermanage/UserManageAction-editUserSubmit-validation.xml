@@ -1,0 +1,48 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="user.userName">
+		<field-validator type="requiredstring">
+			<message key="admin.user.validate.userName.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">5</param>
+			<param name="maxLength">10</param>
+			<message key="admin.user.validate.userName.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="user.oldPassWord">
+		<field-validator type="requiredstring">
+			<message key="admin.user.validate.passWord.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">5</param>
+			<param name="maxLength">10</param>
+			<message key="admin.user.validate.passWord.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="user.passWord">
+		<field-validator type="requiredstring">
+			<message key="admin.user.validate.passWord.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">5</param>
+			<param name="maxLength">10</param>
+			<message key="admin.user.validate.passWord.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="user.rePassWord">
+		<field-validator type="fieldexpression">
+			<!--指定逻辑表达式 -->
+			<param name="expression">(user.passWord eq user.rePassWord)</param>
+			<message>密码必须和确认密码相等</message>
+		</field-validator>
+	</field>
+	<field name="user.emailAddr">
+		<field-validator type="requiredstring">
+			<message key="admin.user.validate.emailAddr.null.error"></message>
+		</field-validator>
+		<field-validator type="email">
+			<message key="admin.user.validate.emailAddr.format.error"></message>
+		</field-validator>
+	</field>
+</validators>

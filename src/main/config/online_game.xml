@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="onlineGame" namespace="/onlineGame" extends="default,json-default">
+		
+		<action name="acquireId" class="com.sz7road.web.action.online.gamemanage.GameAction" method="acquireRecommendServerId">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="acquireNowTime" class="com.sz7road.web.action.online.gamemanage.GameAction" method="acquireNowTime">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="checkLoginGame" class="com.sz7road.web.action.online.gamemanage.GameAction" method="checkLoginGame">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="getGameInfo" class="com.sz7road.web.action.online.gamemanage.GameAction" method="getGameNameById">
+			<result name="success" type="json">
+				<param name="propertyName">serverName</param>
+			</result>
+		</action>
+	</package>
+</struts>

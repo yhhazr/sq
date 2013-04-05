@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+	<package name="gameDate" namespace="/gameDate" extends="default">
+		
+		<action name="queryGameList" class="com.sz7road.web.action.admin.gamedate.GameDateAction" method="queryList">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">gameDateList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="editGameDate" class="com.sz7road.web.action.admin.gamedate.GameDateAction" method="editGameDate">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">editGameDate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="editGameDateSubmit" class="com.sz7road.web.action.admin.gamedate.GameDateAction" method="editGameDateSubmit">
+			<result name="input" type="tiles">editGameDate</result>
+			<result name="success" type="redirectAction">queryGameList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="createGameDate" class="com.sz7road.web.action.admin.gamedate.GameDateAction" method="createGameDate">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">createGameDate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="createGameDateSubmit" class="com.sz7road.web.action.admin.gamedate.GameDateAction" method="createGameDateSubmit">
+			<result name="input" type="tiles">createGameDate</result>
+			<result name="success" type="redirectAction">queryGameList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="deleteGameDateSubmit" class="com.sz7road.web.action.admin.gamedate.GameDateAction" method="deleteGameDateSubmit">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="redirectAction">queryGameList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="upload" class="com.sz7road.web.action.admin.gamedate.GameDateAction" method="upload">
+			<result name="input" type="redirectAction">queryGameList</result>
+			<result name="success">/WEB-INF/web/admin/news/adminNewsUpload.jsp</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+	
+	
+	<package name="gameDateType" namespace="/gameDataType" extends="default">
+		
+		<action name="queryGameDataTypeList" class="com.sz7road.web.action.admin.gamedate.GameDateTypeAction" method="queryGameDataTypes">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">gameDataTypeList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="editGameDataType" class="com.sz7road.web.action.admin.gamedate.GameDateTypeAction" method="editGameDataType">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">editGameDataType</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="editGameDataTypeSubmit" class="com.sz7road.web.action.admin.gamedate.GameDateTypeAction" method="editGameDataTypeSubmit">
+			<result name="input" type="tiles">editGameDataType</result>
+			<result name="success" type="redirectAction">queryGameDataTypeList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="addGameDataType" class="com.sz7road.web.action.admin.gamedate.GameDateTypeAction" method="addGameDataType">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">createGameDataType</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="addGameDataTypeSubmit" class="com.sz7road.web.action.admin.gamedate.GameDateTypeAction" method="addGameDataTypeSubmit">
+			<result name="input" type="tiles">createGameDataType</result>
+			<result name="success" type="redirectAction">queryGameDataTypeList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		
+		<action name="deleteGameDataType" class="com.sz7road.web.action.admin.gamedate.GameDateTypeAction" method="deleteGameDataType">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="redirectAction">queryGameDataTypeList</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>

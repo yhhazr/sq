@@ -1,0 +1,277 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,p,iframe{font-family:"宋体",Tahoma,sans-serif;margin:0;padding:0;}
+body{color:#c89b65;}
+img{border:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;color:#c89b65;}
+em{font-style:normal;}
+a:hover{text-decoration:underline;color:#ff9307;}
+input,img,button{vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+body{font-size:12px;background:url(http://image.7road.com/repeatBg.jpg) repeat;}
+header,section,article,aside,footer,nav{display:block;}
+.screenCenter{width:1040px;margin:0 auto;}
+
+.menu ul li a,.menu ul li h1,.loginInfo .loginBtn,.guide a,.latestService ul li i,.latestService .moreService,.attention ul li .weiboInfo .weiboAttention,.attention ul li .weiboInfo .qqAttention,.gamePic h3 span a,.weiboIframe h3 span a,#banner ul li,.btn3{display:block;text-indent:-999em;overflow:hidden;}
+
+.loginInfo .loginBtn,.guide a,.latestService .moreService,.attention ul li .weiboInfo .weiboAttention,.attention ul li .weiboInfo .qqAttention,.attention ul li .weiboTips,.news h3 span.on a,.latestNews h4 .latestNewsDot,.gamePic h3 span a,.weiboIframe h3 span a,.loginInfo .loginLink a em,.rankingList ul li em,.btn3,.safeLevel em{background:url(http://image.7road.com/spriesBg.jpg) no-repeat;}
+
+.f_l{float:left;display:inline;}
+.f_r{float:right;display:inline;}
+.hid{display:none;}
+.clearfix{overflow:hidden;zoom:1;}
+.blank5{height:5px;line-height:5px;overflow:hidden;clear:both;}
+.blank10{height:10px;line-height:10px;overflow:hidden;clear:both;}
+.blank20{height:20px;line-height:20px;overflow:hidden;clear:both;}
+.blank30{height:30px;line-height:30px;overflow:hidden;clear:both;}
+.blank40{height:40px;line-height:40px;overflow:hidden;clear:both;}
+.clear{clear:both;}
+
+/*布局*/
+.mainWrap{height:1%;background:url(http://image.7road.com/bg.jpg) center top no-repeat;overflow:hidden;}/*IE6下顶部菜单往下沉BUG：没有height:1%;*/
+.header{position:relative;height:400px;}
+.main{margin:0 auto;width:986px;height:1860px;padding:0 29px 0 25px;background:url(http://image.7road.com/mainBg.jpg) no-repeat;}
+.modRight{width:733px;overflow:hidden;position:relative;}
+.modLeft{width:250px;margin:60px 0 0 0;}
+/*菜单*/
+.menu{padding:25px 0 0 23px;}
+.menu ul li{float:left;}
+.menu ul li a{width:90px;height:30px;margin:0 16px 0 22px;background:url(http://image.7road.com/menuBg.png) no-repeat;_background:none;_text-indent:0;_text-align:center;_font-family:Microsoft YaHei;_font-size:18px;_font-weight:bold;_color:#211a03;}
+.menu ul li a:hover{_color:#850111;text-decoration:none;}
+.menu ul li a.home{background-position:-67px -50px;}
+.menu ul li a.home:hover{background-position:-67px -99px;}
+.menu ul li a.newPlayerGuide{background-position:-201px -50px;}
+.menu ul li a.newPlayerGuide:hover{background-position:-201px -99px;}
+.menu ul li a.gameMaterial{background-position:-333px -50px;}
+.menu ul li a.gameMaterial:hover{background-position:-333px -99px;}
+.menu ul li a.activity{background-position:-684px -50px;}
+.menu ul li a.activity:hover{background-position:-684px -99px;}
+.menu ul li a.pay{background-position:-822px -50px;}
+.menu ul li a.pay:hover{background-position:-822px -99px;}
+.menu ul li a.forum{background-position:-955px -50px;}
+.menu ul li a.forum:hover{background-position:-955px -99px;}
+.menu ul li.nothing{width:230px;}
+.menu ul li h1{width:230px;height:30px;}
+/*LOGO*/
+.headerLogo{position:absolute;left:382px;top:0;width:276px;height:162px;}
+/*开始游戏*/
+.startGame{position:absolute;left:-43px;top:228px;width:337px;height:238px;}
+
+/*登录*/
+.loginWrap{height:157px;overflow:hidden;}
+.loginTxt{padding-left:9px;height:30px;line-height:30px;font-size:16px;color:#bf9a56;font-weight:bold;font-family:Microsoft YaHei;}
+.loginTxt em{padding-left:5px;font-weight:normal;font-size:10px;color:#786640;font-family:Tahoma;}
+.loginInfo{padding:14px 0 0 10px;*padding:14px 0 0 10px;overflow:hidden;}
+.loginInfo p{overflow:hidden;}
+.loginInfo .loginInput{float:left;width:147px;}
+.loginInfo .loginInput input{display:block;width:145px;height:26px;line-height:26px;margin-bottom:10px;border:1px solid #232118;background:#e4c987;color:#1f1d16;font-size:14px;font-weight:bold;}
+.loginInfo .loginBtn{float:left;width:76px;height:72px;margin:0 0 0 6px;background-position:-521px -187px;}
+.loginInfo .loginBtn:hover{background-position:-598px -187px;}
+.loginInfo .loginLink{margin-top:6px;clear:both;}
+.loginInfo .loginLink a{float:left;margin:0 36px 0 15px;padding-leftheight:26px;line-height:26px;color:#ed9600;font-size:14px;}
+.loginInfo .loginLink a em{float:left;width:5px;height:6px;margin:9px 10px 0 0;background-position:-693px -445px;overflow:hidden;}
+.loginInfo .loginLink a em.noBg{background-position:-9999px -9999px;}
+.loginInfo .loginLink a:hover{color:#FF1E07;}
+/*已登录*/
+.logined{padding:0 0 0 17px;color:#c89b65;line-height:25px;}
+.loginedInfo{height:25px;}
+.loginedInfo span,.loginedInfo a{color:#ff9607;}
+.loginedInfo a{font-weight:bold;}
+.btn3{float:left;width:102px;height:22px;background-position:-498px -472px;}
+.safeLevel{width:115px;height:22px;padding-left:10px;overflow:hidden;}
+.safeLevel span,.safeLevel i,.safeLevel em{float:left;}
+.safeLevel i{color:#ff9307;font-style:normal;}
+.safeLevel em{width:35px;height:10px;margin:7px 0 0 8px;overflow:hidden;}
+.safeLevel em.s1{background-position:-675px -187px;}
+.safeLevel em.s2{background-position:-675px -197px;}
+.safeLevel em.s3{background-position:-675px -207px;}
+.safeLevel em.s4{background-position:-675px -217px;}
+.safeLevel em.s5{background-position:-675px -227px;}
+.safeLevel em.s6{background-position:-675px -237px;}
+.safeLevel em.s7{background-position:-675px -247px;}
+.recentService{clear:both;}
+.recentService a{color:#ff9307;font-size:14px;}
+/*导航*/
+.guide{height:220px;padding:5px 0 0;*margin:5px 0 0;}
+.guide a{display:block;width:248px;height:55px;}
+.guide a.download{background-position:0 -288px;}
+.guide a.download:hover{background-position:-249px -288px;}
+.guide a.gift{background-position:0 -343px;}
+.guide a.gift:hover{background-position:-249px -343px;}
+.guide a.quickPay{background-position:0 -398px;}
+.guide a.quickPay:hover{background-position:-249px -398px;}
+.guide a.tool{background-position:0 -453px;}
+.guide a.tool:hover{background-position:-249px -453px;}
+/*服务器列表*/
+.latestService{padding:88px 0 0;*padding:83px 0 0;}
+.latestService ul{height:130px;overflow:hidden;}
+.latestService ul li{height:20px;margin:5px 10px 0 15px;*margin-top:3px;border-bottom:1px dotted #3a2b1a;line-height:20px;overflow:hidden;}
+.latestService ul li span{float:left;width:15px;color:#b9ad8f;font-size:8px;font-weight:bold;}
+.latestService ul li a{float:left;width:200px;height:20px;}
+.latestService ul li a:hover{text-decoration:none;}
+.latestService ul li a em{margin:0 8px 0 0;}
+.latestService ul li i{float:left;width:8px;height:10px;margin-top:4px;text-indent:-999px;background:url(http://image.7road.com/status1.gif) -999px -999px no-repeat;}
+.latestService ul li.latest a{color:#ff1e07;}
+.latestService ul li.latest a:hover{color:#ff9307;}
+.latestService ul li.latest i{background-position:0 0}
+.latestService ul li.latest:hover i{background:url(http://image.7road.com/status2.gif) no-repeat;}
+.latestService .moreService{margin:8px auto 0;display:block;width:199px;height:31px;background-position:-498px -409px;}
+.latestService .moreService:hover{background-position:-498px -373px;}
+/*排行榜*/
+.ranking{height:420px;padding:10px 0 0;}
+.ranking h3{height:50px;background-position:0 -662px;}
+.rankingSelect{height:20px;padding-top:5px;}
+.gameArea{float:left;width:148px;margin:0 5px 0 10px;}
+.gameRank{float:left;width:78px;}
+.rankingNav{margin:13px auto 8px;width:237px;height:15px;}
+.rankingNav span{float:left;width:40px;margin-left:5px;font-weight:bold;text-align:center;}
+.rankingNav span.w90{width:90px;}
+.rankingNav span.role{width:125px;margin:0;padding-right:10px;}
+.rankingList{margin:0 auto;width:227px;height:299px;overflow:hidden;}
+.rankingList ul li{*float:left;height:15px;line-height:15px;padding:6px 0;margin:0 0 0 10px;_display:inline;}
+.rankingList ul li em{float:left;width:15px;height:14px;line-height:14px;color:#bea472;list-style:none;text-align:center;background-position:-659px -445px;overflow:hidden;}
+.rankingList ul li span{float:left;width:30px;text-align:center;color:#c89b65;}
+.rankingList ul li i{float:left;width:115px;height:15px;margin-left:40px;color:#c89b65;overflow:hidden;cursor:text;font-style:normal;}
+.rankingList ul li.topRank i,.rankingList ul li.topRank span,.rankingList ul li.topRank em{color:#ff9307;}
+.rankingList ul li.topRank em{background-position:-639px -445px;color:#f4daa7;}
+/*客服中心*/
+.serviceCenter{height:150px;padding:10px 13px 0 80px;}
+.serviceCenter a{float:left;width:150px;height:40px;padding:5px 0;font-family:Microsoft YaHei;cursor:pointer;}
+.serviceCenter a:hover{text-decoration:none;}
+.serviceCenter a span{display:block;height:16px;font-weight:bold;color:#855c33;}
+.serviceCenter a em{color:#ffa10f;font-size:14px;font-weight:bold;}
+.serviceCenter a:hover em{color:#FF1E07;}
+.serviceCenter a .email{color:#e2f5ff;font-size:14px;font-weight:bold;font-family:Arial;}
+/*微博*/
+.attention{padding:100px 5px 0 15px;}
+.attention ul li{padding:0 0 15px;margin:0 0 15px 0;clear:both;border-bottom:1px dotted #271e15;overflow:hidden;}
+.attention ul li .weiboPic{float:left;width:46px;height:46px;border:2px solid #87642c;overflow:hidden;}
+.attention ul li .weiboInfo{float:left;width:170px;padding:0 0 0 10px;}
+.attention ul li .weiboInfo h4{height:16px;line-height:16px;padding-bottom:9px;font-size:14px;overflow:hidden;}
+.attention ul li .weiboInfo h4 a{padding-right:18px;}
+.attention ul li .weiboInfo h4 .dot3{background:url(http://image.7road.com/dot3.jpg) right 0 no-repeat;font-weight:bold;}
+.attention ul li .weiboInfo h4 .dot4{background:url(http://image.7road.com/dot4.jpg) right 0 no-repeat;}
+.attention ul li .weiboInfo .weiboAttention,.attention ul li .weiboInfo .qqAttention{float:left;width:66px;height:26px;margin:0 7px 0 0;}
+.attention ul li .weiboInfo .weiboAttention{background-position:-498px -445px;}
+.attention ul li .weiboInfo .qqAttention{background-position:-570px -445px;}
+.attention ul li .weiboTips{width:185px;height:20px;padding:14px 0 0 10px;background-position:-521px -152px;clear:both;}
+/*幻灯*/
+#banner{width:715px;height:220px;margin:16px 0 0 13px;border:1px solid #191919;overflow:hidden;}
+#banner ul{position:absolute;top:200px;left:300px;z-index:2;}
+#banner ul li{float:left;width:13px;height:13px;margin-right:8px;display:inline;background:url(http://image.7road.com/bannerDot.png) -20px 0 no-repeat;_background:url(http://image.7road.com/bannerDot8.png) -20px 0 no-repeat;cursor:pointer;}
+#banner ul li.on{color:#ff5801;background-position:0 0;}
+#banner_list a{position:absolute;}
+
+/*新闻*/
+.newsWrap{height:297px;padding:18px 0 0;}
+.news{width:518px;}
+.news h3{height:50px;}
+.news h3 span{float:left;}
+.news h3 span a{float:left;width:78px;height:50px;line-height:40px;font-family:Microsoft YaHei;text-align:center;font-size:16px;color:#c79b67;}
+.news h3 span a:hover{text-decoration:none;}
+.news h3 span.on a{color:#f0cc8b;}
+.news h3 span.on a.n1{background-position:-1px -216px;}
+.news h3 span.on a.n2{background-position:-79px -216px;}
+.news h3 span.on a.n3{background-position:-157px -216px;}
+.news h3 span.on a.n4{background-position:-235px -216px;}
+.news h3 span.on a.n5{background-position:-313px -216px;}
+.news h3 span a.n5{color:#39e1ff;}
+
+.more1{float:right;margin-right:10px;line-height:40px;color:#7e4b01;font-weight:bold;font-family:Microsoft YaHei;}
+.more1:hover{text-decoration:none;}
+.switchMain{display:none;}
+.latestNews{padding:8px 18px 0 20px;background-position:0 -234px;}
+.latestNews h4{width:480px;height:30px;overflow:hidden;line-height:30px;font-weight:bold;text-align:center;}
+.latestNews h4 .latestNewsDot{width:5px;padding:2px 2px 0;margin:0 5px 0 0;background-position:-680px -445px;}
+.latestNews h4 a{height:30px;padding-right:25px;font-size:19px;color:#ffba00;background:url(http://image.7road.com/hotDot.png) right top no-repeat;font-family:Microsoft YaHei;}
+.latestNews p{width:480px;height:44px;padding-top:4px;line-height:22px;overflow:hidden;}
+.latestNews p a{margin-left:5px;color:#fa9c09;}
+.newsList{padding:18px 20px 0 25px;}
+.newsListTit{height:112px;overflow:hidden;}
+.newsListTit ul li{height:14px;padding:7px 0 6px;line-height:14px;border-bottom:1px dotted #4a3621;overflow:hidden;}
+.newsListTit ul li .newsListDate{float:right;text-align:right;}
+.newsListTit ul li strong{font-size:8px;}
+.newsListTit ul li a:hover{color:#ff9307;}
+.newsList1{padding:18px 14px 0 16px;}
+.newsListTit1{height:200px;padding:2px 6px 0 9px;background:#312414;overflow:hidden;}
+.newsListTit1 ul li{height:14px;padding:7px 0 6px;line-height:14px;border-bottom:1px dotted #4a3621;overflow:hidden;}
+.newsListTit1 ul li .newsListDate{float:right;text-align:right;}
+.newsListTit1 ul li strong{font-size:8px;}
+.newsListTit1 ul li a:hover{color:#ff9307;}
+
+.newsListPic{width:186px;}
+.newsListPic a{float:left;display:block;width:184px;height:82px;border:1px solid #9e8060;margin:0 0 15px;}
+.newsListPic a:hover{border:1px solid #FF9307;}
+/*新手入门*/
+.newPlayer{height:220px;padding:18px 0 0;clear:both;}
+.h40{height:40px;}
+.newPlayerTab{width:105px;padding:0 0 0 30px;}
+.newPlayerTab span{display:block;height:36px;line-height:36px;color:#e5a10b;font-size:14px;font-weight:bold;font-family:Microsoft YaHei;}
+.newPlayerTab span em{padding-left:20px;font-size:10px;color:#6c4e2a;font-family:"宋体";}
+.newPlayerMain{width:540px;padding:0px 0 0 30px;}
+.newPlayerMain p{width:540px;height:36px;line-height:36px;overflow:hidden;}
+.newPlayerMain p a{margin:0 5px;}
+/*4张图片*/
+.movePic{width:718px;height:178px;padding:13px 0 30px;overflow:hidden;}
+.movePic p{padding:20px 0 0;}
+.movePic p a{float:left;width:162px;height:136px;border:1px solid #644f37;margin:0 0 0 11px;}
+.movePic p a:hover{border:1px solid #FF9307;}
+.movePic p a img{width:162px;height:136px;cursor:pointer;}
+/*首页相册*/
+.gamePic{position:relative;height:240px;padding:21px 0 0;zoom:1;}
+.gamePic h3{height:52px;background:url(http://image.7road.com/tt.jpg) 414px 0 no-repeat;}
+.gamePic h3 span{}
+.gamePic h3 span a{float:left;width:112px;height:52px;}
+.gamePic h3 span a.g1{background-position:-1px 0}
+.gamePic h3 span.on a.g1{background-position:-1px -78px;}
+.gamePic h3 span a.g2{background-position:-113px 0;}
+.gamePic h3 span.on a.g2{background-position:-113px -78px;}
+.gamePic h3 span a.g3{background-position:-225px 0;width:123px;}
+.gamePic h3 span.on a.g3{background-position:-225px -78px;}
+.gamePic h3 span a.g4{background-position:-348px 0;}
+.gamePic h3 span.on a.g4{background-position:-348px -78px;}
+.gamePic h3 span a:hover{text-decoration:none;}
+.gamePicList{height:138px;padding:20px 0 0 0;overflow:hidden;}
+.gamePicList ul li{float:left;margin:0 0 0 11px;display:inline;}
+.gamePicList ul li a{display:block;width:162px;height:136px;border:1px solid #644f37;overflow:hidden;}
+.gamePicList ul li a img{width:162px;height:136px;}
+.gamePicList ul li a:hover{border:1px solid #FF9307;}
+/*weiboIframe*/
+.weiboIframe{padding:53px 0 0;width:733px;}
+.weiboIframe h3{height:42px;}
+.weiboIframe h3 span{}
+.weiboIframe h3 span a{float:left;width:125px;height:42px;}
+.weiboIframe h3 span a.w1{background-position:-498px -326px;}
+.weiboIframe h3 span.on a.w1{background-position:-498px -279px;}
+.weiboIframe h3 span a.w2{background-position:-623px -326px;}
+.weiboIframe h3 span.on a.w2{background-position:-623px -279px;}
+.weiboIframe .weiboIframeMain{width:720px;padding:0 0 0 10px;}
+
+.p12{padding-left:13px;}
+/*合作媒体*/
+.media{margin:0 auto;width:880px;height:94px;padding:0 0 0 110px;}
+.mediaPic{width:880px;height:50px;overflow:hidden;}
+.mediaPic ul li{float:left;width:128px;height:30px;margin:0 18px 20px 0;}
+.mediaPic ul li a{display:block;width:81px;height:28px;padding:0 0 0 45px;border:1px solid #2b1d11;line-height:28px;color:#8a6233;}
+.mediaPic ul li a.m01{background:url(http://image.7road.com/media/m01.jpg) no-repeat;}
+.mediaPic ul li a.m02{background:url(http://image.7road.com/media/m02.jpg) no-repeat;}
+.mediaPic ul li a.m03{background:url(http://image.7road.com/media/m03.jpg) no-repeat;}
+.mediaPic ul li a.m04{background:url(http://image.7road.com/media/m04.jpg) no-repeat;}
+.mediaPic ul li a.m05{background:url(http://image.7road.com/media/m05.jpg) no-repeat;}
+.mediaPic ul li a.m06{background:url(http://image.7road.com/media/m06.jpg) no-repeat;}
+.mediaPic ul li a.m07{background:url(http://image.7road.com/media/m07.jpg) no-repeat;}
+.mediaPic ul li a.m08{background:url(http://image.7road.com/media/m08.jpg) no-repeat;}
+.mediaPic ul li a.m09{background:url(http://image.7road.com/media/m09.jpg) no-repeat;}
+.mediaPic ul li a.m10{background:url(http://image.7road.com/media/m10.jpg) no-repeat;}
+.mediaPic ul li a.m11{background:url(http://image.7road.com/media/m11.jpg) no-repeat;}
+.mediaPic ul li a.m12{background:url(http://image.7road.com/media/m12.jpg) no-repeat;}
+/*底部*/
+.footerWrap{clear:both;height:150px;margin-top:30px;background:url(http://image.7road.com/footerBg-x.jpg) repeat-x;}
+.footer{width:1000px;padding-top:25px;margin:0 auto;line-height:18px;}
+.footer .footerLogo{float:left;width:205px;height:63px;margin:0 0 0 100px;display:inline;}
+.footer .footerLogo a{display:block;width:205px;height:63px;background:url(http://image.7road.com/footerLogo.jpg) no-repeat;text-indent:-999em;overflow:hidden;}
+.footer .footerNav{float:left;padding:0 0 0 30px;color:#b8b8b8;overflow:hidden;font-size:12px;border-left:1px solid #e8e8e8;}
+.footer .footerNav a{margin:0 6px;color:#212121;font-family:Arial,'微软雅黑';}
+.footer .footerNav p{padding-left:5px;color:#646464;font-family:Arial,'微软雅黑';}
+.helpInfo{padding:10px 0 0 0px;}
+.helpInfo a{float:left;margin:0 10px 0 0;}

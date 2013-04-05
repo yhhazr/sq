@@ -1,0 +1,47 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="permission.parentPermId">
+		<field-validator type="fieldexpression">
+			<param name="expression">(permission.parentPermId != "0")</param>
+			<message key="admin.permission.selectPermission"/>
+		</field-validator>
+	</field>
+	<field name="permission.permName">
+		<field-validator type="requiredstring">
+			<message key="admin.permission.validate.permName.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">20</param>
+			<message key="admin.permission.validate.permName.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="permission.permDesc">
+		<field-validator type="requiredstring">
+			<message key="admin.permission.validate.permDesc.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">30</param>
+			<message key="admin.permission.validate.permDesc.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="permission.permUrl">
+		<field-validator type="requiredstring">
+			<message key="admin.permission.validate.permUrl.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">50</param>
+			<message key="admin.permission.validate.permUrl.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="permission.orderId">
+		<field-validator type="requiredstring">
+			<message key="admin.permission.validate.orderId.null.error"></message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="trim">true</param>
+			<param name="expression"><![CDATA[(\d{1,4})]]></param>
+			<message key="admin.permission.validate.orderId.type.error"></message>
+		</field-validator>
+
+	</field>
+</validators>

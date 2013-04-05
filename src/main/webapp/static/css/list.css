@@ -1,0 +1,33 @@
+﻿a.nav_on{display:block; background:url(http://image.7road.com/list_menu_on.jpg) no-repeat; float:left; width:131px; height:43px; text-align:center; line-height:43px; font-size:14px; color:#ffffff; text-decoration:none;}
+
+.list-nav-1,.list-nav-2,.list-nav-3,.list-nav-4,.list-nav-5,.pager{background:url(http://image.7road.com/list.png) no-repeat 0 0;}
+.list-nav-1,.list-nav-2,.list-nav-3,.list-nav-4,.list-nav-5{display: inline-block;}
+.list-nav-1{width:131px;height:43px;background-position:0 0;}
+.list-nav-2{width:131px;height:43px;background-position:-131px 0;}
+.list-nav-3{width:132px;height:43px;background-position:-262px 0;}
+.list-nav-4{width:131px;height:43px;background-position:-394px 0;}
+.list-nav-5{width:130px;height:43px;background-position:-525px 0;}
+.listNav{margin-bottom:10px;}
+.list{background-color: #093461; border:1px solid #154576;padding:20px 20px 10px 10px;display: block;margin-bottom:10px;}
+.list li{margin-bottom:20px;display: block; }
+.list li,.list li a{color:#e0f6ff; font-size:13px;text-decoration:none;}
+.list li .pager{width:105px;height:38px;background-position:0 -92px; display: inline-block; line-height:38px;color: #fff;font-size:14px; text-decoration:none; }
+
+.list_menu{ background:url(http://image.7road.com/list_menu.jpg) no-repeat; width:655px; height:43px;}
+.list_menu ul{ display:block;}
+.list_menu ul li{ display:block;float:left; width:109px; height:43px; text-align:center; line-height:43px; font-size:14px; color:#00162c;}
+.list_menu ul li a{ display:block;float:left; width:109px; height:43px; text-align:center; line-height:43px; font-size:14px; color:#00162c; text-decoration:none; }
+
+.li-title{float: left;letter-spacing: 2px;}
+.li-time{float: right;}
+.page-tool{padding-top:15px; text-align:center;}
+
+/*蓝贴*/
+.list_lantie{ width:262px;}
+.list_lantie h2{ height:30px; background:url(http://image.7road.com/list_lantie.jpg) no-repeat;}
+.list_lantie h2 a{ float:right; width:50px; height:12px; margin:9px 10px 0 0;}
+.list_lantie ul{border:1px solid #024488; border-top:none; background-color:#012244; width:260px; float:left; font-size:14px; padding-bottom:3px;}
+.list_lantie ul li{ float:left; background:url(http://image.7road.com/list_lantiebg.jpg) no-repeat 0 12px; height:26px; line-height:26px; border-bottom:1px dashed #114a83; margin-left:10px; padding-left:5px; width:235px; overflow:hidden; display:inline;}
+.list_lantie ul li a{ color:#007EFF;}
+.list_lantie ul li a:hover{color:#ffea01; text-decoration:none;}
+.list_lantie ul li span{ float:right; color: #007EFF;}

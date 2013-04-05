@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminQueryActivityInc" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.activityInc.list"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/activtyInc/admin_activityIncList.jsp" />
+	</definition>
+	
+	<definition name="adminAddActivityInc" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.activityInc.add"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/activtyInc/admin_createActivityInc.jsp" />
+	</definition>
+	
+	<definition name="adminEditActivityInc" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.activityInc.edit"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/activtyInc/admin_editActivityInc.jsp" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,190 @@
+body{
+	margin:0; padding:0; font-family:"微软雅黑";
+	background-color: #000;
+}
+,button,input{
+	margin:0; padding:0; font-family:"微软雅黑";
+}
+.ads3bg{
+	background-repeat: no-repeat;
+	background-image: url(http://image.7road.com/ads3_bg.jpg);
+	width:1000px;
+	height:600px;
+}
+.dvflash{
+	margin-left: auto;
+	margin-right: auto;
+	width:1000px;
+	height:600px;
+	position: relative;
+}
+.panel{
+	width: 504px;
+	background-repeat: no-repeat;
+	z-index: 999999;
+	position: absolute;
+	margin-top: 390px;
+	margin-left:50%;
+	left:-400px;
+	top:-167px;
+
+/*	left:500px;
+	top:200px;*/
+}
+.login{
+	height:355px;
+	background-image: url(http://image.7road.com/p_login.png);
+}
+.reg{
+	height:378px;
+	background-image: url(http://image.7road.com/p_regist.png);
+}
+#reg_panel td{
+	height:36px;
+	line-height:36px;
+}
+
+.xf-tab-login{
+	margin-top: 96px;
+	height:235px;
+	padding-top: 20px;
+	color: #fff;
+}
+.xf-tab-login table td{
+	padding: 0;
+	margin: 0;
+	height:45px;
+	line-height:45px;
+}
+/*表单左部标签*/
+.tbtitle{
+	width:120px; 
+	text-align: right;
+	font-weight: bold;
+}
+.in2{
+	font-weight: bold;
+	height:25px;
+	line-height:25px;
+	font-size: 14px;
+	text-indent: 7px;
+	width: 180px;
+	margin-left: 10px;
+}
+.tip{
+	font-size: 13px; 
+	color:white;
+/*	color: #f7c500;*/
+	overflow: hidden;
+	text-indent:10px;
+}
+.tip_tr{
+	height:10px;
+	margin: 0;
+	padding: 0;
+	line-height:10px;
+}
+
+/*登陆按钮链接样式*/
+.btn-login
+{
+
+	background-image: url(http://image.7road.com/login_off.png);
+	background-position: top left;
+	width: 152px;
+	height:46px;
+	display: inline-block;
+	margin-left: 10px;
+}
+.btn-login:hover
+{
+	background-image: url(http://image.7road.com/login_on.png);
+}
+.old-login
+{
+	margin-left:10px;
+	margin-top: 10px;
+    position: absolute;
+}
+.quick-login
+{
+	margin-left:10px;
+    position: absolute;
+}
+.xf-tab-logined
+{
+	display: none;
+}
+
+.txtlogin_info
+{
+	text-align:left;
+}
+
+.txtsafe_info
+{
+	font-size: 16px; color: #f7c500;
+	text-align: left;
+}
+
+.txtlastlogin_info
+{
+	text-align:left;
+	margin-top:10px;
+}
+
+.txtserver_info
+{
+	text-align: left;
+	margin-top: 10px;
+}
+
+/*注册按钮样式*/
+.btn-reg
+{
+	background-image: url(http://image.7road.com/reg_off.png);
+	background-position: top left;
+	width: 152px;
+	height:46px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.btn-reg:hover
+{
+	background-image: url(http://image.7road.com/reg_on.png);
+}
+
+/*输入框错误样式*/
+.g-ipt-err {
+background-color: #FBE2E2;
+color: #A63B3B;
+}
+
+
+input {
+border: 1px solid #0E0F10;
+}
+a
+{
+	color: #10D5F2;
+}
+
+.btn2 {
+width: 126px;
+height: 39px;
+line-height: 39px;
+text-decoration: none;
+color: #7F2400;
+font-weight: bold;
+background-repeat: no-repeat;
+background-image: url(http://image.7road.com/btn_bg.png);
+display: inline-block;
+text-align: center;
+margin-top:20px;
+}
+.btn3
+{
+	text-decoration:none;
+}

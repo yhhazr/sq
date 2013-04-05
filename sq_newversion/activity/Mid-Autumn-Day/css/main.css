@@ -1,0 +1,77 @@
+@charset "utf-8";
+html, body, div, h1, h2, h3, h4, h5, h6, p,img,ol, ul, li{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}
+body{font-size:14px;background:#000;font-family:"微软雅黑","宋体",Tahoma,sans-serif;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}
+nav ul,ol{list-style:none;}
+a{outline:none;text-decoration:none;}
+img{border:none;}
+html{overflow-x:hidden;}
+embed{outline:none;}
+
+.topNavWrap{width:100%;height:40px;min-width:1000px;background:url(../img/topSprites.png) repeat-x 0 -40px;}
+.navLogo,.navRegLogin{position:relative;z-index:2;}
+.topNav{width:1000px;margin:0 auto;}
+.f_l{float:left;display:inline;}
+.f_r{float:right;display:inline;}
+.navLogo{height:30px;margin:3px 5px 0 0;width:113px;overflow:hidden;text-indent:-999em;background:url(../img/topSprites.png) no-repeat 0 0;}
+.navRegLogin{margin-top:8px;}
+.navFavorites a{float:left;height:23px;width:64px;background:url(../img/topSprites.png) no-repeat -114px 0;text-indent:-999em;overflow:hidden;}
+
+.screenCenter{width:1000px;margin:0 auto;position:relative;}
+
+.flash1,.flash2,.flash3,.flash4,.flash5,.flash6,.startGame{position:absolute;}
+.flash1{left:-65px;top:15px;width:1120px;height:609px;}
+.flash2{left:242px;top:0;width:820px;height:500px;}
+.flash3{left:245px;top:35px;width:650px;height:400px;}
+.flash4{left:345px;top:355px;width:760px;height:460px;}
+.flash5{left:-175px;top:105px;width:800px;height:400px;}
+.flash6{left:40px;top:70px;width:900px;height:350px;}
+.startGame{display:block;top:513px;right:110px;z-index:3;width:265px;height:100px;text-indent:-999em;overflow:hidden;}
+select{position:absolute;right:285px;top:390px;background:#300101;border:1px solid #90766b;color:#f1d18b;height:20px;line-height:20px;width:160px;z-index:4;margin:0;padding:0;}
+
+.b1{height:615px;}
+.b2{height:950px;}
+.b3{height:923px;}
+.b4{height:925px;}
+.b5{height:977px;}
+.b6{height:1422px;}
+
+.block1_1{background:url(../img/bg01_1.jpg) center top no-repeat;}
+.block1_2{height:615px;background:url(../img/bg01_2.jpg) center 100px no-repeat;}
+.block2{height:950px;background:url(../img/bg02.jpg) center top no-repeat;}
+.block3{height:923px;background:url(../img/bg03.jpg) center top no-repeat;}
+.block4{height:925px;background:url(../img/bg04.jpg) center top no-repeat;}
+.block5{height:977px;background:url(../img/bg05.jpg) center top no-repeat;}
+.block6{height:1500px;background:url(../img/bg06.jpg) center top no-repeat;}
+
+.navLeft,.navRight,nav a,.enterHome a:hover,.backTop a:hover,.startGame1 a:hover{background:url(../img/nav.png) no-repeat;}
+.navLeft,nav a,.enterHome a,.startGame1 a,.backTop a{display:block;text-indent:-999em;cursor:pointer;overflow:hidden;}
+.nav{position:absolute;top:40px;right:0;width:146px;overflow:hidden;z-index:5;}
+.navLeft{float:right;width:30px;height:30px;background-position:-158px 0;}
+.navRight{float:right;width:108px;height:388px;padding:1px 4px;background-position:-188px 0;}
+
+nav{width:108px;height:49px;margin-top:3px;}
+nav a{width:108px;height:49px;background-position:-999px -999px;}
+#nav1.on a,#nav1 a:hover{background-position:-34px -4px;}
+#nav2.on a,#nav2 a:hover{background-position:-34px -56px;}
+#nav3.on a,#nav3 a:hover{background-position:-34px -108px;}
+#nav4.on a,#nav4 a:hover{background-position:-34px -160px;}
+#nav5.on a,#nav5 a:hover{background-position:-34px -212px;}
+.enterHome{height:40px;margin-bottom:3px;}
+.enterHome a{width:108px;height:40px;}
+.enterHome a:hover{background-position:-34px -261px;}
+.startGame1{height:55px;margin-bottom:3px;}
+.startGame1 a{width:108px;height:55px;}
+.startGame1 a:hover{background-position:-34px -304px;}
+.backTop{height:21px;}
+.backTop a{width:108px;height:21px;}
+.backTop a:hover{background-position:-34px -365px;}
+/*底部*/
+.footerWrap{clear:both;height:128px;background:url(../img/footerBg-x.jpg) repeat-x;}
+.footer{width:1000px;padding-top:36px;margin:0 auto;line-height:18px;}
+.footer .footerLogo{float:left;width:205px;height:63px;margin:0 10px 0 150px;display:inline;}
+.footer .footerLogo a{display:block;width:205px;height:63px;background:url(../img/footerLogo.jpg) no-repeat;text-indent:-999em;overflow:hidden;}
+.footer .footerNav{float:left;padding-top:8px;color:#b8b8b8;overflow:hidden;font-size:12px;}
+.footer .footerNav a{margin:0 6px;color:#212121;font-family:Arial;}
+.footer .footerNav p{padding-left:5px;color:#646464;font-family:Arial;}
+

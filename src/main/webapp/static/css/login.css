@@ -1,0 +1,21 @@
+.page{background:url(http://image.7road.com/login.jpg) no-repeat; overflow:hidden;}
+.main-contant{width:834px; height:465px; position:relative;}
+.login-area{ padding:140px 0 0 60px; width:420px; height:300px; position:relative;}
+.login-area ul{}
+.login-area ul li{ padding:15px 0 0 20px; list-style-type:none; font-size:14px; color:#ffffff;}
+input{ border:1px solid #0e0f10; height:32px; line-height:32px; width:180px; text-indent:4px;}
+.ties{ font-size:12px; color:#8ac0cd; padding-left:8px;}
+p{ margin:0px 0 0 90px;}
+legend{display: none;}
+fieldset {border: 0;}
+.login_error{color: #C2AA25;padding-left: 80px;}
+.loged {display:none;margin: 0px;padding: 0px;}	
+.username { font-size:14px; color:#ffb709;font-weight: bold;}
+span .no_email  {margin-left: 10px;color:  #d9b815;}
+.lastserver {font-size: 1.2em; color:#f0aa01;}
+.login_game_div {display:none;}
+.otherservers {color:#0ecefe;text-decoration:none;}
+.otherservers:hover{color:#0ecefe;text-decoration:underline;}
+.logout{margin-right:20px;color:#0ecefe; text-decoration:underline;}
+.myA{ color:#0ecefe; text-decoration:underline;}
+#submit{position:relative; left:3px;}

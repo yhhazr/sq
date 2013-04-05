@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="photoCat.catName">
+		<field-validator type="requiredstring">
+			<message key="admin.news.validate.photoCatTitle.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">50</param>
+			<message key="admin.news.validate.photoCatTitle.length.error"></message>
+		</field-validator>
+	</field>	
+	<field name="photoCat.catDesc">
+		<field-validator type="requiredstring">
+			<message key="admin.news.validate.photoCatDesc.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">100</param>
+			<message key="admin.news.validate.photoCatDesc.length.error"></message>
+		</field-validator>
+	</field>
+</validators>

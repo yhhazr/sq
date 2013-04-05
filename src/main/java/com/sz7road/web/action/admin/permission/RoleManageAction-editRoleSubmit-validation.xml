@@ -1,0 +1,21 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="role.roleName">
+		<field-validator type="requiredstring">
+			<message key="admin.role.validate.roleName.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">20</param>
+			<message key="admin.role.validate.roleName.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="role.roleDesc">
+		<field-validator type="requiredstring">
+			<message key="admin.role.validate.roleDesc.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">30</param>
+			<message key="admin.role.validate.roleDesc.length.error"></message>
+		</field-validator>
+	</field>
+</validators>

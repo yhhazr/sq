@@ -1,0 +1,199 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;padding:0;
+}
+
+.main { margin:0px auto; width:678px; height:364px;overflow:hidden; background:url(http://image.7road.com/loginexe/bj.jpg?timestamp=201212211030) 0 0 no-repeat;}
+
+.news {  width:678px; height:198px;}
+.news .lbpic { margin:0px; float:left; padding-left:19px; padding-top:4px; width:325px; height:175px;}
+
+.news .list {float:right; width:315px; padding-top:35px; height:140px; font-size:12px; color:#c7892c; line-height:25px; }
+.news .list ul {width:315px; margin:0px; padding:0px; list-style-position: inside; list-style-type: square;}
+.news .list ul li{width:315px; margin:0px; padding:0px; }
+.news .list ul li a{ color:#c7892c; text-decoration:none; }
+.news .list ul li a:hover{ color:#ff0000; text-decoration:none;}
+
+.login {margin:0px auto; width:678px; height:166px;}
+.login .login_l {float:left; width:167px; height:134px; padding-left:29px; padding-top:32px;}
+.login .login_c { float:left; width:262px; font-size:12px; color:#d39942;margin: 20px 0 0 150px;display: inline;}
+.login .login_c p { margin:0px; }
+.login .login_c p.id { width:228px;   height:38px;  background:none; }
+.login .login_c p.pass { width:228px;  height:38px;padding-top: 5px;  background:none; }
+.login .login_c p.verify { width:191px; padding-left:71px; height:34px; padding-top:4px; background:url(http://image.7road.com/loginexe/code.png) top left no-repeat; }
+.login .login_c p .input1 { margin-left:20px;width:228px; height:38px; font-size:14px; color:#aba49f;line-height:38px; border:0px; font-weight: bold; text-indent:10px;background: url(http://image.7road.com/loginexe/input_bg_off.jpg) top left no-repeat;}
+.login .login_c p .input-on {margin-left:20px; width:228px; height:38px; font-size:16px; font-weight:bold; line-height:38px; background:url(http://image.7road.com/loginexe/input_bg_on.jpg) top left no-repeat;  border:0px; color:#000000; text-indent:10px;}
+
+
+.login .login_r { float:left; padding-top:10px;  font-size:12px; line-height:30px; color:#daa236;margin-left:50px;margin-right:20px;display: inline;}
+.login .login_r a {color:#daa236; text-decoration:none;font-size: 14px;}
+.login .login_r a:hover { color:#F00; text-decoration:underline;}
+
+
+.logpic {padding: 0 0 5px 4px;}
+#banner {position:relative; width:325px; height:175px; border:1px solid #666; overflow:hidden;}
+#banner_list img {border:0px;}
+#banner_bg {position:absolute; bottom:0;background-color:#000;height:25px;filter: Alpha(Opacity=30);opacity:0.3;z-index:1000;
+cursor:pointer; width:478px; }
+#banner_info{position:absolute; bottom:0; left:5px;height:22px;color:#fff;z-index:1001;cursor:pointer}
+#banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;}
+#banner ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8;z-index:1002;
+            margin:0; padding:0; bottom:3px; right:5px;}
+#banner ul li { padding:0px 6px;float:left;display:block;color:#FFF;cursor:pointer;margin-left:8px;}
+#banner ul li.on { background:#F68336}
+#banner_list a{position:absolute;} 
+/*左侧快速游戏开始*/
+.quicklogin{
+	float: left;
+	margin-left: 180px;
+	height: 32px;
+	line-height: 32px;
+	display: inline;
+	_margin-top:5px;
+}
+.inputbg{
+	background: url("http://image.7road.com/loginexe/input_server_bg.jpg?timestamp=20130115") no-repeat;
+	width: 53px;
+	height: 18px;
+	line-height: 18px;
+	border:none;
+	color: #ecd9b0;
+	vertical-align: middle;
+	text-align : center;
+}
+a.quickenter{	
+	display: inline-block;
+	margin-left: 10px;
+	background:url("http://image.7road.com/loginexe/quickgame.jpg") no-repeat;
+	width: 108px;
+	height: 32px;
+}
+/*左侧快速游戏结束*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.xf { margin:0px auto; width:678px; height:364px;  background:url(http://image.7road.com/loginexe/xf_bj.jpg?timestamp=201212211439) top center no-repeat;}
+
+.xf .use { margin:0px auto; width:620px; font-size:12px; line-height:28px; color:#fff; overflow: hidden;}
+a.logout { font-size:12px; color:#ff470e; text-decoration:underline;}
+a.logout:hover { color:#F00; text-decoration:none;}
+
+.xf .zjdl {margin:0px auto; width:620px; height:101px; padding-bottom:6px;overflow: hidden;text-align: center;}
+
+.xf .zjdl .list{ float:left; width:160px; padding-top:40px; height:88px; margin-left:200px;color: #f8c000;display: inline;}
+
+
+.quickgame{width:620px;height:35px;color: #f9de33;font:16px "微软雅黑";}
+.xf .zjdl .start { margin-top:5px; margin-left:15px; }
+
+.xf .xfdh { width:598px; height:27px; margin:0px auto; margin-bottom:5px; color:#c7ac86; font-size:14px; font-weight:bold;}
+.xf .xfdh p { margin:0px 0px 0px 6px; padding:0px; float:left; width:108px; height:27px; line-height:27px; background:url(http://image.7road.com/loginexe/bq_bj.gif) top center no-repeat; text-align:center;}
+.xf .xfdh p a { color:#c7ac86; display:block; text-decoration:none; line-height:27px;}
+.xf .xfdh p a:hover { color:#fff9d2; display:block; background:url(http://image.7road.com/loginexe/bq_bj_on.gif) top center no-repeat; line-height:27px;}
+.xf .xfdh p.on { color:#fff9d2; display:block; background:url(http://image.7road.com/loginexe/bq_bj_on.gif) top center no-repeat; line-height:27px;}
+/* .xf .xfdh p.on { margin:0px 0px 0px 6px; padding:0px; float:left; width:108px; height:27px; color:#fff9d2; line-height:27px; background:url(http://image.7road.com/loginexe/bq_bj_on.gif) top center no-repeat; text-align:center;} */
+
+
+.xf .qb_list{width:620px; margin:0px auto; height:180px; font-size:12px;}
+.xf .qb_list ul{width:620px; margin:0px auto; padding:0px;}
+.xf .qb_list ul li{
+	width:185px;
+	height:44px;
+	margin:4px 8px;
+	padding:0px;
+	float:left;
+	display: inline;
+	line-height:44px;
+	list-style:none;
+	list-style-type:none;
+	text-indent:12px;
+	font-size:14px;
+}
+.xf .qb_list ul li.sFreely a{
+	width:154px;
+	_width:154px;
+	height:36px;
+	float:left;
+	text-decoration:none;
+	color:#ffecb8;
+	background-image:url(http://image.7road.com/loginexe/an_xf_l.gif);
+}
+.xf .qb_list ul li.sFreely a:hover{
+	width:154px;
+	_width:154px;
+	height:36px;
+	float:left;
+	color:#ffecb8;
+	background-image:url(http://image.7road.com/loginexe/an_xf_l_on.gif);
+}
+
+.xf .qb_list ul li.sHot a{
+	width:185px;
+	height:44px;
+	line-height: 44px;
+	float:left;
+	display: block;
+	*zoom:1;
+	text-decoration:none;
+	color:#ffecb8;
+	background-image:url(http://image.7road.com/loginexe/serverbg_hot.jpg);
+}
+.xf .qb_list ul li.sHot a:hover{
+
+	background-image:url(http://image.7road.com/loginexe/serverbg_hot_on.jpg);
+}
+
+.xf .qb_list ul li.stop a{
+	width:185px;
+	height:44px;
+	float:left;
+	display: block;
+	*zoom: 1;
+	text-decoration:none;
+	color:#ffecb8;
+	background-image:url(http://image.7road.com/loginexe/serverbg_down.jpg);
+}
+.xf .qb_list ul li.stop a:hover{
+/*	width:154px;
+	_width:154px;
+	height:36px;
+	float:left;
+	text-decoration:none;
+	color:#ffecb8;
+	background-image:url(http://image.7road.com/loginexe/an_xf_h_on.gif);*/
+}
+.xf .qb_list ul li.sBusy a{
+	width:154px;
+	_width:154px;
+	height:36px;
+	float:left;
+	text-decoration:none;
+	color:#ffecb8;
+	background-image:url(http://image.7road.com/loginexe/an_xf_l.gif);
+}
+.xf .qb_list ul li.sBusy a:hover{
+	width:154px;
+	_width:154px;
+	height:36px;
+	float:left;
+	color:#ffecb8;
+	background-image:url(http://image.7road.com/loginexe/an_xf_l_on.gif);
+}
+
+.tips{
+	font-size: 14px;
+	color: black;
+	background-color: #DAA236;
+	line-height: 20px;
+	display: none;
+	text-align: center;
+}

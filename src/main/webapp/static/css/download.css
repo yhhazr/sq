@@ -1,0 +1,14 @@
+.downloadNav{background:url(http://image.7road.com/dl_menu.jpg) no-repeat; width:655px; height:43px;}
+.downloadNav ul{ display:block;}
+.downloadNav ul li{ float:left; width:131px; height:43px; text-align:center; line-height:43px; color:#00162c; display:block; font-size:14px;}
+.downloadNav ul li a{ width:131px; height:43px; text-align:center; line-height:43px; color:#022E5A; display:block;font-size:16px; text-decoration:none;font-weight:bold;}
+.downloadNav ul li a:hover{ background:url(http://image.7road.com/dl_menu_on.jpg) no-repeat; color:#022E5A;text-decoration:none;}
+.downloadBox{ margin:10px 0 10px 0; background-color:#083461; border:1px solid #144577; width:653px; min-height:700px;}
+.ind{ margin:20px 0 0 0; color:#cceeff; height:33px; line-height:33px;}
+.ind a{color:#cceeff; height:33px; line-height:33px; text-decoration:none;}
+.ind a:hover{color:#ffe400; height:33px; line-height:33px; text-decoration:underline;}
+.img_list{ margin:15px 0 15px 5px; width:650px;}
+.img_list ul{ display:block;}
+.img_list ul li{margin:15px 10px 15px 0; float:left;width:206px;height:143px;}
+.img_list ul li img{width:204px; height:141px;border:1px solid #16508f;}
+p{padding:20px 0 20px 140px;}

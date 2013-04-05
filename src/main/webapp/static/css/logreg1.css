@@ -1,0 +1,21 @@
+.loginBox{width:460px; height:310px; color:#ffcb34;background-color:#090E16;filter:alpha(opacity=95);-moz-opacity: 0.95;opacity: 0.95;}
+.loginBox ul{}
+.loginBox ul li{padding:14px 0 0 32px;}
+.loginBtn{padding:18px 0 0 98px;}
+.fntTips{text-align:center;}
+.registBox{width:460px; height:310px; color:#ffcb34;}
+.registBox ul{}
+.registBox ul li{padding:14px 0 0 32px;}
+.registBtn{padding:18px 0 0 98px;}
+.logInput{background-color:#090e16; border:1px solid #8c782a; width:150px; height:28px; line-height:28px; color:#ffffff;}
+.registIpunt{background-color:#090e16; border:1px solid #8c782a; width:190px; height:28px; line-height:28px; color:#ffffff;}
+.autoLogin{margin:0 0 0 66px; color:#dadada;}
+h1{padding:12px 0 12px 0;font-size:24px; text-align:center; color:#ffcb34;}
+p{padding:8px 0 0 0; color:#ff0000; font-size:14px;}
+p a{color:#ff0000;}
+p a:hover{color:#ff0000;}
+
+.loginBox{margin:0 auto;}
+.registBox{margin:0 auto;}
+
+body{background-color:#000000;}

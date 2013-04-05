@@ -1,0 +1,28 @@
+body{background-color:#000000;}
+.page{text-align:center}
+.main-contant{position:relative; background:url(http://image.7road.com/login_static.jpg) no-repeat;width:1000px; height:600px;margin:0 auto;}
+.login-area{position:absolute; top:195px; left:99px; background:url(http://image.7road.com/regist_independent.jpg) no-repeat; padding:85px 0 0 0; width:504px; height:335px;}
+.login-area ul{}
+.login-area ul li{ padding:15px 0 0 20px; list-style-type:none; font-size:14px; color:#ffffff;}
+input{ border:1px solid #0e0f10; height:32px; line-height:32px; width:180px; text-indent:4px;}
+.ties{ font-size:12px; color:#5ecbf8; padding-left:8px;}
+h3{ margin:18px 0 0 0;}
+h3 a{ font-weight:normal; color:#10d5f2; text-decoration:underline;}
+h3 a:hover{ font-weight:normal; color:#10d5f2; text-decoration:underline;}
+h4{ padding:16px 0 0 12px; color:#cafffe; font-weight:normal; font-size:14px;}
+h4 a{ color:#0ecefe; text-decoration:underline;}
+h4 a:hover{ color:#0ecefe; text-decoration:underline;}
+.fnt_user{ font-size:14px; font-weight:bold; color:#ffb709;}
+h5{ padding:20px 0 0 12px; font-size:14px; font-weight:normal;}
+h5 a{ color:#0ecefe; text-decoration:underline;}
+h5 a:hover{ color:#0ecefe; text-decoration:underline;}
+h5 img{ vertical-align:bottom;}
+h6{ padding:20px 0 0 12px; height:30px; line-height:30px; font-weight:normal; color:#cafffe;}
+h6 a{ color:#0ecefe; text-decoration:none;}
+h6 a:hover{ color:#0ecefe; text-decoration:underline;}
+.fnt_info{ color:#f0aa01;}
+.fnt_log{ font-size:14px; color:#ffffff; height:50px; line-height:50px;}
+p{ float:left; margin:20px 0 0 129px;}
+p a{float:left; padding:0 0 0 12px; display:block; color:#10d5f2; text-decoration:underline; height:44px; line-height:44px;}
+p a:hover{float:left; padding:0 0 0 12px; display:block; color:#10d5f2; text-decoration:underline; height:44px; line-height:44px;}
+.login_error{color:white}

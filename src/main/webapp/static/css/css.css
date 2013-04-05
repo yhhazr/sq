@@ -1,0 +1,57 @@
+@charset "utf-8";
+ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,a,dl,dt,dd{margin:0;padding:0;border:0;}
+body,select,input{padding:0;margin:0;text-align:left;font-size:12px;font-family:"宋体","Arial"; }
+body{background:#000;}
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+img{ vertical-align:bottom;}
+a img{ border:none;}
+a{color:#535353;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.none{ display:none}
+.loginbox{ width:859px; height:462px;}
+.loginleft{ width:550px; float:left; overflow:hidden}
+.loginright{ width:309px; float:left; overflow:hidden; background: url(http://image.7road.com/rbg.jpg) no-repeat 0 0; height:462px;}
+.lefta{ background:url(http://image.7road.com/login_01.jpg) no-repeat 0 0; height:79px;}
+.leftb{ background:url(http://image.7road.com/login_03.jpg) no-repeat 0 0; height:70px; padding-left:45px;}
+.leftb ul{list-style-type: none;}
+.loginput{ background:url(http://image.7road.com/lobut.jpg) no-repeat 0 0; width:194px; height:53px; line-height:53px; font-size:14px; cursor:pointer; color:#fff; font-weight:bold; text-align: left; padding-left:40px; border:0; overflow:hidden; margin-left:0px; float:left}
+.leftc{ background:url(http://image.7road.com/login_04.jpg) no-repeat 0 0; height:56px;}
+.leftc ul{ float:right; width:170px; height:56px;}
+.leftc ul li{ float:left; width:55px;}
+.leftc ul li.a{ background:url(http://image.7road.com/login_06.jpg) no-repeat 0 center}
+.leftc ul li.b{ background:url(http://image.7road.com/login_08.jpg) no-repeat 0 center}
+.leftc ul li.c{ background:url(http://image.7road.com/login_10.jpg) no-repeat 0 center}
+.leftc ul li a{ color:#94d3ff; line-height:56px; padding-left:20px}
+.leftd{ background:url(http://image.7road.com/leftd.jpg) no-repeat 0 0; height:257px; overflow:hidden}
+.leftd ul li{ float:left; width:140px; padding-left:33px; height:32px; line-height:32px; margin:0 5px 12px 20px; vertical-align:bottom; display:inline}
+.leftd ul li a{ color:#b9f3fe; display:block;}
+.leftd ul li a:hover{ text-decoration:none}
+
+.sHot{ background:url(http://image.7road.com/login_18.jpg) no-repeat 0 0}
+.sFreely{ background:url(http://image.7road.com/login_27.jpg) no-repeat 0 0}
+.sBusy{ background:url(http://image.7road.com/loginhs.jpg) no-repeat 0 0}
+.tab{}
+#TabTab03Con1{width:294px; padding-left:15px; color:#57b6e8; padding-top:15px;}
+#TabTab03Con2{width:294px; padding-left:15px;color:#57b6e8; padding-top:15px;}
+#TabTab03Con1 a,#TabTab03Con2 a{ text-decoration:underline; color:#69a8d1}
+.inbg{ background:url(http://image.7road.com/inbg.jpg) no-repeat 0 0; _background-attachment:fixed; width:130px; padding: 0 4px; border:0; height:28px; line-height:28px;}
+.red{ color:#FF0000}
+
+.xixi1{width:309px;height:63px;line-height:27px;background:url(http://image.7road.com/taba.jpg) no-repeat right 0;cursor:pointer;}
+.xixi2{width:309px;height:63px;line-height:27px;background:url(http://image.7road.com/tabb.jpg) no-repeat right top;cursor:pointer;}
+.con ul li {margin-bottom : 10px;}
+.no_email span {margin-left: 10px;color:  #d9b815;}
+.login_error{color: #C2AA25;padding-left: 80px;}
+.loged {display:none;margin: 0px;padding: 0px;}	
+.username { font-size:14px; color:#ffb709;font-weight: bold;}
+.lastserver {font-size: 1.2em;color:  #d9b815;}
+.login_game_div {display:none;}
+.otherservers {color:#0ecefe;text-decoration:none;}
+.otherservers:hover{color:#0ecefe;text-decoration:underline;}
+.logout{margin-right:20px;color:#0ecefe; text-decoration:underline;}
+.myA{ color:#0ecefe; text-decoration:underline;}
+.tab1{width:151px;height:63px;line-height:27px;float:left;text-align:center;cursor:pointer;}
+.tab2{width:158px;height:63px;line-height:27px;float:left;text-align:center;cursor:pointer;color:#FFFFFF;}
+.jr{ background:url(http://image.7road.com/tc_login.jpg) no-repeat 0 0; width:162px; height:57px; border:0; margin:0 auto; cursor:pointer; overflow:hidden;}

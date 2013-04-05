@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<Stage Scale="noScale">
+</Stage>
+<Buttons count="7">
+		<Btn id="btn1"  movieclip="mc1"   out=""     over="">jmp:showDialog(1)</Btn>
+		<Btn id="btn2"  movieclip="mc2"   out=""     over="">jmp:showDialog(2)</Btn>
+		<Btn id="btn3"  movieclip="mc3"   out=""     over="">jmp:showDialog(3)</Btn>
+		<Btn id="btn4"  movieclip="mc4"   out=""     over="">jmp:showDialog(4)</Btn>
+		<Btn id="btn5"  movieclip="mc5"   out=""     over="">jmp:showDialog(5)</Btn>
+		<Btn id="btn6"  movieclip="mc6"   out=""     over="">http://www.7road.com</Btn><!--官网-->
+		<Btn id="btn7"  movieclip="mc7"   out=""     over="">jmp:showDialog(7)</Btn><!--火热报名-->
+		<!--<Btn id="btn7"  movieclip="mc7"   out=""     over="">http://sq.7road.com/activity/beauty/video.html</Btn><!--火热报名-->
+</Buttons>
+<swfs>
+		
+</swfs>
+</data>

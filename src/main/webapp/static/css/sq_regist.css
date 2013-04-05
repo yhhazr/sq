@@ -1,0 +1,45 @@
+body{
+	margin:0; padding:0;
+	overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {margin:0; padding:0;}
+ul li{list-style:none; }
+img{border:0px;}
+.page{margin:0 auto; background:url(http://image.7road.com/loginexe/regist_bg_new.jpg) no-repeat 0 0; width:678px; height:364px;}
+.nav{width:588px; height:38px; float:left; margin:65px 0 0 70px;}
+.nav ul{display:block;}
+.nav ul li{display:block; float:left; padding-right:10px;}
+.nav ul li a{width:94px; height:38px;}
+.navSpace{margin-right:170px;}
+.switch{display:block; float:right; margin:48px 4px 0 0;}
+.switch ul{display:block;}
+.switch ul li{display:block; float:left;}
+.minimize{padding-top:4px;}
+.picBox{margin:0px 0 0 17px;}
+.loginArea{width:689px;}
+.logo{float:left; padding:48px 0 0 35px;}
+.loginBox{float:left;width:256px; padding:28px 0 0 16px;}
+.loginBox ul{display:block;}
+.loginBox ul li{display:block; margin-bottom:6px; width:200px; height:33px;}
+.loginput{width:157px; font-size:12px; color:#b8b8b8; border:none; background:transparent; height:20px; line-height:20px;text-indent:4px;}
+.loginput2{padding:5px 0 0 91px;}
+.loginput3{padding:5px 0 0 68px; font-size:12px; color:#ffffff;}
+.loginput3 a{font-size:12px; color:#ffffff;}
+.loginput3 a:hover{font-size:12px; color:#ffffff;}
+.logpic{vertical-align:middle; padding:0 0 4px 4px;}
+.usename{background:url(http://image.7road.com/loginexe/usename.png) no-repeat;}
+.password{background:url(http://image.7road.com/loginexe/password.png) no-repeat;}
+.conpassword{background:url(http://image.7road.com/loginexe/conpassword.png) no-repeat;}
+.code{background:url(http://image.7road.com/loginexe/code.png) no-repeat;}
+.loginbtn{float:right; padding:35px 0 0 0;margin-right: 25px}
+.loginuser{padding:6px 0 0 50px;}
+.tips{
+	font-size: 14px;
+	color: black;
+	background-color: #DAA236;
+	line-height: 20px;
+	display: none;
+	width: 150px;
+	text-align: center;
+	margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+.page{background-color:#000000; overflow:hidden;}
+.close{ width:35px; position:relative;left:760px;}
+.main-contant{ width:807px; height:443px; background:url(http://image.7road.com/ind_log_bg.jpg) no-repeat; overflow:hidden;}
+.server-contant{ width:525px; float:left; position:relative;}
+.redserver{position:relative; padding:50px 0 0 0;}
+.redserver ul{ display:block;}
+.redserver ul li{ float:left; display:block; margin-right:15px; background:url(http://image.7road.com/select_btn.gif) no-repeat; height:50px; line-height:50px; text-align:center; width:168px; color:#241805; font-size:14px; font-weight:bold;}
+.redserver ul li a{color:white;text-decoration:none;}
+.allserver{ position:relative;width:525px; height:200px;;overflow:auto;margin-top:140px}
+.allserver ul{ display:block;}
+.allserver ul li{ float:left; display:block; margin:10px 10px 0 0; background:url(http://image.7road.com/select_btn.gif) no-repeat 0 -50px; height:30px; line-height:30px; text-align:center; width:138px; color:#ffffff; font-size:12px; font-weight:normal;}
+.allserver ul li a{color:white;text-decoration:none;}
+.login-contant{ width:282px; float:right;}
+.nav_tag{ margin-top:1px;}
+.n_tag_01,.n_tag_02{ background:url(http://image.7road.com/ind_log_menu.jpg) no-repeat; display:inline-block;}
+.n_tag_01{ float:left; width:141px; height:61px; background-position:0 0;}
+.n_tag_02{ width:141px; height:61px; background-position:-141px 0;}
+.n_tag_2_01,.n_tag_2_02{ background:url(http://image.7road.com/ind_log_menu.jpg) no-repeat; display:inline-block;}
+.n_tag_2_01{ float:left; width:141px; height:61px; background-position:0 -61px;}
+.n_tag_2_02{ width:141px; height:61px; background-position:-141px -61px;}
+.log_in{ margin:30px 0 0 26px;}
+.log_in ul{ margin:0; padding:0;}
+.log_in ul li{ list-style-type:none; padding-top:20px; color:#ffffff;}
+input{ border:1px solid #99310c; height:24px; line-height:24px; width:160spx; text-indent:4px;}
+p{ margin:30px 0 0 50px;}
+.STYLE1 {color: #011c2e}
+#reg_submit, #log_submit {cursor : pointer;}
+.hidden {display: none;}
+.text{display:none;}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="gameDate.artTitle">
+		<field-validator type="requiredstring">
+			<message key="admin.news.validate.newsTitle.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">50</param>
+			<message key="admin.news.validate.newsTitle.length.error"></message>
+		</field-validator>
+	</field>
+	<field name="gameDate.typeId">
+		<field-validator type="fieldexpression">
+			<param name="expression">(gameDate.typeId != "0")</param>
+			<message key="admin.news.selectType"/>
+		</field-validator>
+	</field>
+	<field name="gameDate.stateId">
+		<field-validator type="fieldexpression">
+			<param name="expression">(gameDate.stateId != "0")</param>
+			<message key="admin.news.selectState"/>
+		</field-validator>
+	</field>
+	<field name="gameDate.content">
+		<field-validator type="requiredstring">
+			<message key="admin.news.validate.newsContent.null.error"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">1</param>
+			<param name="maxLength">21000</param>
+			<message key="admin.news.validate.newsContent.length.error"></message>
+		</field-validator>
+	</field>
+	
+	<field name="gameDate.orderNum">
+		<field-validator type="regex">
+			<param name="expression">([0-9]{0,2})</param>
+			<message key="admin.msg.validate.msgSupport.type.error"></message>
+		</field-validator>
+	</field>
+</validators>

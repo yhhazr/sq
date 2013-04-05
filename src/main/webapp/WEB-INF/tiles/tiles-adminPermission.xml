@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminRoleList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.roleManage.roleList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/permission/admin_rolelist.jsp" />
+	</definition>
+	<definition name="adminCreateRole" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.roleManage.createRole"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/permission/admin_createRole.jsp" />
+	</definition>
+	<definition name="adminEditRole" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.userManage.editRole"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/permission/admin_editRole.jsp" />
+	</definition>
+	<definition name="adminAssignPermission" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.userManage.editRole"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/permission/admin_assignPermission.jsp" />
+	</definition>
+	<definition name="adminCreatePermission" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.permManage.createPermission"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/permission/admin_createPermission.jsp" />
+	</definition>
+	<definition name="adminEditPermission" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.permManage.editPermission"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/permission/admin_editPermission.jsp" />
+	</definition>
+	<definition name="adminPermissionList" extends="adminDefaultLayout">
+		<put-attribute name="titleKey" value="admin.permManage.permissionList"/>
+		<put-attribute name="content" value="/WEB-INF/web/admin/permission/admin_permissionlist.jsp" />
+	</definition>
+	
+
+</tiles-definitions>

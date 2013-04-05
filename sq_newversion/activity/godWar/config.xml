@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<swfs>
+		<swf>http://static.7road.com/flash/godwar/swf/loading1.swf</swf>
+		<swf>http://static.7road.com/flash/godwar/swf/loading2.swf</swf>
+		<swf>http://static.7road.com/flash/godwar/swf/loading3.swf</swf>
+		<swf>http://static.7road.com/flash/godwar/swf/loading4.swf</swf>	
+		<swf>http://static.7road.com/flash/godwar/swf/bg.swf</swf>
+		<swf>http://static.7road.com/flash/godwar/swf/menu.swf</swf>		
+	</swfs>
+	<urls>
+		<starturl>http://sq.7road.com/serverList.html</starturl>
+		<officeurl>http://sq.7road.com</officeurl>
+	</urls>
+</data>

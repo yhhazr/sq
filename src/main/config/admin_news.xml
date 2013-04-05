@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="newsManage" namespace="/newsManage" extends="default">
+
+		<action name="createNews" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="createNews">			
+			<result name="input" type="redirectAction">queryNews</result>
+			<result name="success" type="tiles">adminNewsCreate</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="upload" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="upload">
+			<result name="input" type="redirectAction">queryNews</result>
+			<result name="success">/WEB-INF/web/admin/news/adminNewsUpload.jsp</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryNews" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="queryNewsList">
+			<result name="input" type="tiles">adminHomePage</result>
+			<result name="success" type="tiles">adminNewsQuery</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="createNewsSubmit" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="createNewsSubmit">
+			<result name="input" type="tiles">adminNewsCreate</result>
+			<result name="success" type="redirectAction">queryNews</result>
+			<interceptor-ref name="fileUpload">
+            	<param name="allowedTypes">
+            		image/jpeg,image/pjpeg,image/x-ms-bmp,image/png
+            	</param>
+            	<param name="maximumSize">20000</param>
+            </interceptor-ref>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="deleteNews" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="deleteNews">
+			<result name="input" type="redirectAction">queryNews</result>
+			<result name="success" type="redirectAction">queryNews</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editNews" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="editNews">
+			<result name="input" type="redirectAction">queryNews</result>
+			<result name="success" type="tiles">adminNewsEdit</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="editNewsSubmit" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="editNewsSubmit">
+			<result name="input" type="tiles">adminNewsEdit</result>
+			<result name="success" type="redirectAction">queryNews</result>
+			<interceptor-ref name="fileUpload">
+            	<param name="allowedTypes">
+            		image/jpeg,image/pjpeg,image/x-ms-bmp,image/png
+            	</param>
+            	<param name="maximumSize">20000</param>
+            </interceptor-ref>			
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+		<action name="queryNewsByTitleKeyword" class="com.sz7road.web.action.admin.newsmanage.NewsManageAction" method="queryNewsListByTitleKeyword">
+			<result name="input" type="tiles">adminNewsQuery</result>
+			<result name="success" type="tiles">adminNewsQuery</result>
+			<interceptor-ref name="globalInterceptorStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>
